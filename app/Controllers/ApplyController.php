@@ -138,8 +138,8 @@ class ApplyController extends ResourceController
 
         $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
         p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
-        case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090negeri) as almtsemasa,a90.a090negeri as negeri,p001katbi,p001noreg,p001tkhexm 
-        from ppsdblocal.p00daftar,ppsdblocal.p001,ppsdblocal.a090 a90 where p00username='$user' and p00usrid=p001nokp and a90.a090knegeri=p001knegeri");
+        case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();
         // $p00katwarga = $result->p001uppassport;
         // $p00emel = $result->p00emel;
