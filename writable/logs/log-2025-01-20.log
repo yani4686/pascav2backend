@@ -1,0 +1,426 @@
+DEBUG - 2025-01-20 00:36:50 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:37:04 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:37:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:39:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:39:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:39:58 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:43:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:47:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:48:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:50:00 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:50:00 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:50:22 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:53:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:53:57 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:55:04 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:56:32 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 00:58:41 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:00:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:01:55 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:02:43 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:06:07 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:09:52 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:11:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:11:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:13:56 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:15:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:19:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:21:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:27:35 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:31:26 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:31:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:31:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:33:26 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:33:37 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:34:51 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:40:04 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:40:47 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:48:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:48:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 01:48:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:27:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:27:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:27:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:28:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:29:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:30:38 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:30:44 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:32:52 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:36:10 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:36:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:37:08 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:37:14 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:38:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:38:38 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:39:09 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:39:12 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:39:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:39:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:50:30 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:52:44 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:54:42 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:54:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:56:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 02:58:26 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:00:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:01 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:01 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:17 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:17 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:21 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:03:50 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:04:02 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:04:07 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:06:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:08:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:12:00 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:13:05 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:14:25 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:14:25 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:14:32 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:21:22 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:22:34 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:23:03 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:27:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:27:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:34:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:35:58 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:36:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:37:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:37:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:38:43 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:40:02 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:47:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:47:36 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:48:05 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:48:06 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:48:23 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:18 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:32 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:42 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:54 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:55 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:49:59 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:54:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:54:54 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:56:02 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 03:58:21 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:26:36 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:26:37 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:31:21 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:31:26 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:39:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:39:52 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:40:37 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:40:47 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:42:51 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:43:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:46:09 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:46:13 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 04:47:01 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 05:49:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 05:49:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 06:21:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 06:23:36 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 06:23:41 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 06:25:50 --> retPermohonan API endpoint called
+DEBUG - 2025-01-20 06:25:59 --> retPermohonan API endpoint called
+CRITICAL - 2025-01-20 07:59:08 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(860606465289)"
+[Method: GET, Route: retpermohonanbynokp/%28860606465289%29]
+in ROOTPATH\system\Router\Router.php on line 737.
+ 1 ROOTPATH\system\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('retpermohonanbynokp/(860606465289)')
+ 2 ROOTPATH\system\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('retpermohonanbynokp/(860606465289)')
+ 3 ROOTPATH\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:00:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(860606465289)"
+[Method: GET, Route: retpermohonanbynokp/%28860606465289%29]
+in ROOTPATH\system\Router\Router.php on line 737.
+ 1 ROOTPATH\system\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('retpermohonanbynokp/(860606465289)')
+ 2 ROOTPATH\system\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('retpermohonanbynokp/(860606465289)')
+ 3 ROOTPATH\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:00:25 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(860606465280)"
+[Method: GET, Route: retpermohonanbynokp/%28860606465280%29]
+in ROOTPATH\system\Router\Router.php on line 737.
+ 1 ROOTPATH\system\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('retpermohonanbynokp/(860606465280)')
+ 2 ROOTPATH\system\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('retpermohonanbynokp/(860606465280)')
+ 3 ROOTPATH\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:02:48 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(860606465280)"
+[Method: GET, Route: retpermohonanbynokp/%28860606465280%29]
+in ROOTPATH\system\Router\Router.php on line 737.
+ 1 ROOTPATH\system\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('retpermohonanbynokp/(860606465280)')
+ 2 ROOTPATH\system\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('retpermohonanbynokp/(860606465280)')
+ 3 ROOTPATH\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:06:04 --> TypeError: log_message(): Argument #2 ($message) must be of type string, null given, called in C:\laragon\www\pascav2\app\Controllers\SaringController.php on line 66
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in SYSTEMPATH\Common.php on line 772.
+ 1 APPPATH\Controllers\SaringController.php(66): log_message('debug', null)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:09:15 --> Error: Object of class CodeIgniter\Database\Postgre\Result could not be converted to string
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in APPPATH\Controllers\SaringController.php on line 66.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:10:04 --> Error: Object of class CodeIgniter\Database\Postgre\Result could not be converted to string
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in APPPATH\Controllers\SaringController.php on line 66.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-20 08:12:38 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = bigint
+LINE 3:         from ppsdblocal.p001 WHERE p001nokp=860606465280
+                                                   ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-20 08:12:38 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = bigint
+LINE 3:         from ppsdblocal.p001 WHERE p001nokp=860606465280
+                                                   ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:12:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = bigint
+LINE 3:         from ppsdblocal.p001 WHERE p001nokp=860606465280
+                                                   ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 3 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:12:38 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = bigint
+LINE 3:         from ppsdblocal.p001 WHERE p001nokp=860606465280
+                                                   ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  operator does not exist: character varying = bigint
+LINE 3:         from ppsdblocal.p001 WHERE p001nokp=860606465280
+                                                   ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 5 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE p001nokp=860606465280')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:13:54 --> Error: Object of class CodeIgniter\Database\Postgre\Result could not be converted to string
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in APPPATH\Controllers\SaringController.php on line 66.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:19:13 --> Error: Object of class CodeIgniter\Database\Postgre\Result could not be converted to string
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in APPPATH\Controllers\SaringController.php on line 65.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-20 08:21:23 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ppsdblocal&quot;
+LINE 3:         from ppsdblocal.p001 WHERE ppsdblocal.p001nokp='8606...
+                                           ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-20 08:21:23 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ppsdblocal&quot;
+LINE 3:         from ppsdblocal.p001 WHERE ppsdblocal.p001nokp='8606...
+                                           ^
+[Method: GET, Route: retpermohonanbynokp/860606465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:21:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ppsdblocal&quot;
+LINE 3:         from ppsdblocal.p001 WHERE ppsdblocal.p001nokp='8606...
+                                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 3 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:21:23 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ppsdblocal&quot;
+LINE 3:         from ppsdblocal.p001 WHERE ppsdblocal.p001nokp='8606...
+                                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ppsdblocal&quot;
+LINE 3:         from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'8606...
+                                           ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 5 APPPATH\Controllers\SaringController.php(61): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001 WHERE ppsdblocal.p001nokp=\'860606465280\'')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860606465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 08:57:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 09:00:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 09:04:49 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 09:05:52 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-20 09:18:14 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

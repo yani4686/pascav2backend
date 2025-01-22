@@ -1,0 +1,1392 @@
+CRITICAL - 2025-01-21 00:33:56 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 01:57:43 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:17:22 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:21:55 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:35:40 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:39:29 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:39:53 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:40:31 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:46:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:46:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:51:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 02:53:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:11:07 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:23:25 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:31:53 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:32:00 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:32:07 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:32:39 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:52:09 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:52:15 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 03:53:25 --> Error: Class "CodeIgniter\Services" not found
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 60.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:02:45 --> TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 56.
+ 1 APPPATH\Controllers\SaringController.php(56): error_log('info', 'Received CSRF Token: ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:03:47 --> TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 56.
+ 1 APPPATH\Controllers\SaringController.php(56): error_log('info', 'Received CSRF Token: ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 04:05:11 --> Received CSRF Token: 
+INFO - 2025-01-21 04:05:30 --> Received CSRF Token: 
+INFO - 2025-01-21 04:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:11:24 --> Received CSRF Token: 
+INFO - 2025-01-21 04:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-21 04:18:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:22:11 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:25:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:25:45 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:26:02 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:26:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:27:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonanbynokp/860604465280', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 04:27:54 --> Received CSRF Token: 
+INFO - 2025-01-21 04:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-21 04:29:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:29:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:29:40 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 04:29:47 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 04:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-21 04:33:25 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 04:39:30 --> Received CSRF Token: 
+INFO - 2025-01-21 04:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 04:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-21 04:46:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: retlogin]
+in ROOTPATH\system\Security\Security.php on line 262.
+ 1 ROOTPATH\system\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 ROOTPATH\system\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retlogin', 'before')
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 06:17:22 --> ParseError: syntax error, unexpected single-quoted string "after", expecting variable
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+ 4 ROOTPATH\system\Config\Factories.php(297): class_exists('Config\\Filters')
+ 5 ROOTPATH\system\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'Config\\Filters')
+ 6 ROOTPATH\system\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Config\\Filters', [])
+ 7 ROOTPATH\system\Config\Factories.php(188): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 8 SYSTEMPATH\Common.php(208): CodeIgniter\Config\Factories::get('config', 'Config\\Filters')
+ 9 SYSTEMPATH\Config\Services.php(295): config('Config\\Filters')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::filters(null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+12 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::filters()
+14 ROOTPATH\system\CodeIgniter.php(346): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 06:17:22 --> ParseError: syntax error, unexpected single-quoted string "after", expecting variable
+[Method: GET, Route: /]
+in APPPATH\Config\Filters.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Filters.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+ 4 ROOTPATH\system\Config\Factories.php(297): class_exists('Config\\Filters')
+ 5 ROOTPATH\system\Config\Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'Config\\Filters')
+ 6 ROOTPATH\system\Config\Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Config\\Filters', [])
+ 7 ROOTPATH\system\Config\Factories.php(188): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 8 SYSTEMPATH\Common.php(208): CodeIgniter\Config\Factories::get('config', 'Config\\Filters')
+ 9 SYSTEMPATH\Config\Services.php(295): config('Config\\Filters')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::filters(null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('filters', [...])
+12 SYSTEMPATH\Config\Services.php(292): CodeIgniter\Config\BaseService::getSharedInstance('filters', null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::filters()
+14 ROOTPATH\system\CodeIgniter.php(346): CodeIgniter\Config\BaseService::__callStatic('filters', [])
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 06:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 06:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-21 07:55:49 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 07:55:49 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:55:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 3 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:55:49 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 5 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE and z13.z013kodjenkcctn = p001kcacat AND p001nokp=\'860604465280\' ')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-21 07:57:14 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 07:57:14 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:57:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:57:14 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 5 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-21 07:58:07 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 07:58:07 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:58:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 3 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:58:07 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604...
+                                     ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 5 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-21 07:58:08 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 07:58:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:58:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 3 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 07:58:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp='860604...
+                                     ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 5:         from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604...
+                                     ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 5 APPPATH\Controllers\SaringController.php(66): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,
+        case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+        p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,z13.z013jenkcctn ,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        from ppsdblocal.p001,z013 z13 WHERE p001nokp=\'860604465280\' and z13.z013kodjenkcctn = p001kcacat')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-21 08:01:52 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 08:01:52 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 08:01:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 08:01:52 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:         p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,...
+                           ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 5 APPPATH\Controllers\SaringController.php(65): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+        FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-01-21 08:10:24 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 8:             FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodj...
+                                         ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(69): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 08:10:24 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 8:             FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodj...
+                                         ^
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(69): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 08:10:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 8:             FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodj...
+                                         ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 APPPATH\Controllers\SaringController.php(69): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 08:10:24 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 8:             FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodj...
+                                         ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;z013&quot; does not exist
+LINE 8:             FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodj...
+                                         ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 5 APPPATH\Controllers\SaringController.php(69): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when \'7\' then \'Coursework\' when \'8\' then \'Research\' when \'9\' then \'Mix-Mode\' end as kaedah, 
+            case p001modebelajar when \'1\' then \'Full Time\' when \'2\' then \'Park Time\' end as modebelajar,p001modebelajar,p001tajuk,
+            p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when \'1\' then \'Malaysia\' when \'2\' then \'Non Malaysia\' when \'3\' then \'PR\' end as ktrgnstatwarga,
+            p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,
+            p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+            p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+            p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+            FROM ppsdblocal.p001,z013 z13 WHERE z13.z013kodjenkcctn = p001kcacat and p001nokp=\'860604465280\' ')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonanbynokp('860604465280')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 08:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 08:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 15:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 16:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 16:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 16:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 16:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-21 17:28:44 --> ErrorException: Undefined variable $user
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 97.
+ 1 APPPATH\Controllers\ApplyController.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 97)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->getkodpenaja()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 17:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 17:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-21 18:04:35 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 18:04:35 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+[Method: GET, Route: displayprofile]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:35 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090ne...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 5 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 18:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-21 18:04:37 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 18:04:37 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+[Method: GET, Route: displayprofile]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:37 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090ne...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 5 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 18:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-21 18:04:57 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-21 18:04:57 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+[Method: GET, Route: displayprofile]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-21 18:04:57 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...' ',p001alamat2,' ',p001bandar,' ',p001poskod,' ',a90.a090ne...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;a90&quot;
+LINE 3: ...\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090ne...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 5 APPPATH\Controllers\ApplyController.php(150): CodeIgniter\Database\BaseConnection->query('SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        case p00katwarga when \'M\' then \'Malaysian\' when \'NM\' then \'Non Malaysian\' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod,\' \',a90.a090negeri) as almtsemasa 
+        from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username=\'yani\' and p00usrid=p001nokp')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfile()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-21 18:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-21 18:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

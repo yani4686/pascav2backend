@@ -1,0 +1,67 @@
+INFO - 2024-12-11 00:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-11 00:35:51 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-11 00:35:51 --> TypeError: Illegal offset type
+in SYSTEMPATH\Session\Session.php on line 468.
+ 1 APPPATH\Controllers\LoginController.php(69): CodeIgniter\Session\Session->set([...])
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-11 00:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-11 00:36:19 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+INFO - 2024-12-11 00:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-11 00:38:32 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-11 00:38:32 --> ErrorException: Undefined array key 1234
+in APPPATH\Controllers\LoginController.php on line 52.
+ 1 APPPATH\Controllers\LoginController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1234', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-11 00:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-11 00:42:15 --> Session: Sessions is enabled, and one exists. Please don't $session->start();
+CRITICAL - 2024-12-11 00:42:15 --> ErrorException: Undefined variable $session
+in APPPATH\Controllers\LoginController.php on line 55.
+ 1 APPPATH\Controllers\LoginController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-11 07:56:26 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pascav2\app\Controllers\LoginController.php(38): CodeIgniter\Database\BaseConnection->query('SELECT z016kodu...')
+#3 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->testDb()
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-12-11 07:56:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Database\BaseConnection->query('SELECT z016kodunisza, z016kodagama, z016nmagama from z016')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->testDb()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-11 08:01:07 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pascav2\app\Controllers\LoginController.php(39): CodeIgniter\Database\BaseConnection->query('SELECT z016kodu...')
+#3 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->testDb()
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-12-11 08:01:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\LoginController.php(39): CodeIgniter\Database\BaseConnection->query('SELECT z016kodunisza, z016kodagama, z016nmagama from z016')
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->testDb()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,843 @@
+CRITICAL - 2024-12-08 01:25:03 --> ParseError: syntax error, unexpected variable "$usr", expecting ")"
+in APPPATH\Controllers\LoginController.php on line 72.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 01:25:18 --> ParseError: syntax error, unexpected variable "$usr", expecting ")"
+in APPPATH\Controllers\LoginController.php on line 72.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 01:30:37 --> ParseError: syntax error, unexpected variable "$usr", expecting ")"
+in APPPATH\Controllers\LoginController.php on line 74.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 05:02:58 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\LoginController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 05:55:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 05:55:31 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 05:55:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 05:55:31 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 05:59:16 --> ErrorException: Undefined array key "username"
+in APPPATH\Controllers\LoginController.php on line 69.
+ 1 APPPATH\Controllers\LoginController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 05:59:23 --> ErrorException: Undefined array key "username"
+in APPPATH\Controllers\LoginController.php on line 69.
+ 1 APPPATH\Controllers\LoginController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 06:02:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 06:02:23 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:02:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:02:23 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username, p00password from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:12:22 --> ErrorException: Undefined variable $querys
+in APPPATH\Controllers\LoginController.php on line 78.
+ 1 APPPATH\Controllers\LoginController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $querys', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 06:13:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 06:13:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:13:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:13:59 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 06:17:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 06:17:46 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:17:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:17:46 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:19:54 --> ErrorException: Undefined variable $countlogin
+in APPPATH\Controllers\LoginController.php on line 82.
+ 1 APPPATH\Controllers\LoginController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $countlogin', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:20:20 --> ErrorException: Undefined variable $countlogin
+in APPPATH\Controllers\LoginController.php on line 89.
+ 1 APPPATH\Controllers\LoginController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $countlogin', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 06:29:42 --> ErrorException: Undefined variable $adalogin
+in APPPATH\Controllers\LoginController.php on line 78.
+ 1 APPPATH\Controllers\LoginController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $adalogin', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:05:18 --> ErrorException: Undefined array key "ADALOGIN"
+in APPPATH\Controllers\LoginController.php on line 78.
+ 1 APPPATH\Controllers\LoginController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADALOGIN"', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:06:04 --> ErrorException: Undefined array key "ADALOGIN"
+in APPPATH\Controllers\LoginController.php on line 78.
+ 1 APPPATH\Controllers\LoginController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ADALOGIN"', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:13:38 --> ErrorException: Undefined variable $countlogin
+in APPPATH\Controllers\LoginController.php on line 78.
+ 1 APPPATH\Controllers\LoginController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $countlogin', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:15:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:15:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:15:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:15:30 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:18:48 --> mysqli_sql_exception: Unknown column 'qq' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:18:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:18:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:18:48 --> [Caused by] mysqli_sql_exception: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:19:07 --> mysqli_sql_exception: Unknown column 'qq' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:19:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:19:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:19:07 --> [Caused by] mysqli_sql_exception: Unknown column 'qq' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=qq and p00password= qq')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:20:16 --> mysqli_sql_exception: Unknown column 'aa' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:20:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:20:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:20:16 --> [Caused by] mysqli_sql_exception: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:20:43 --> mysqli_sql_exception: Unknown column 'aa' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:20:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:20:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:20:43 --> [Caused by] mysqli_sql_exception: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:23:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:23:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:23:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:23:07 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:24:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:24:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:24:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:24:03 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:24:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:24:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:24:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:24:20 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:30:45 --> ErrorException: Undefined array key "username"
+in APPPATH\Controllers\LoginController.php on line 69.
+ 1 APPPATH\Controllers\LoginController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:32:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:32:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:32:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:32:45 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:34:57 --> mysqli_sql_exception: Unknown column 'aa' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:34:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:34:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:34:57 --> [Caused by] mysqli_sql_exception: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username=aa and p00password= aa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= aa')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:35:27 --> mysqli_sql_exception: Unknown column 'sas' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:35:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:35:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:35:27 --> [Caused by] mysqli_sql_exception: Unknown column 'sas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=sas and p00password= ss')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:36:30 --> mysqli_sql_exception: Unknown column 'aa' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p0...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p0...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p0...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p0...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:36:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:36:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:36:30 --> [Caused by] mysqli_sql_exception: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(p00username) as adalogin from p00daftar where p00username=aa and p00password= aa')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:37:37 --> mysqli_sql_exception: Unknown column 'a' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:37:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:37:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:37:37 --> [Caused by] mysqli_sql_exception: Unknown column 'a' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username=a and p00password= a', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=a and p00password= a')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:37:55 --> mysqli_sql_exception: Unknown column 'www' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:37:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'www' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:37:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'www' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:37:55 --> [Caused by] mysqli_sql_exception: Unknown column 'www' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username=www and p00password= ww', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=www and p00password= ww')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:42:25 --> mysqli_sql_exception: Unknown column 'aa' in 'where clause' in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:42:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:42:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:42:25 --> [Caused by] mysqli_sql_exception: Unknown column 'aa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username=aa and p00password= qq', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=aa and p00password= qq')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-08 07:42:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`12' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-08 07:42:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`12' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:42:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`12' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-08 07:42:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`12' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username=1234 and p00password= `12', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username=1234 and p00password= `12')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

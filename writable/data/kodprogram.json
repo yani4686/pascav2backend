@@ -1,0 +1,434 @@
+ [
+	{
+		"p020kprog" : "PT5010",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Computer science                                                           "
+	},
+	{
+		"p020kprog" : "PT5011",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN MATHEMATICS",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Mathematics                                                                "
+	},
+	{
+		"p020kprog" : "PT5012",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN STATISTICS",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Statistics                                                                 "
+	},
+	{
+		"p020kprog" : "PT6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Computer science                                                           "
+	},
+	{
+		"p020kprog" : "PT6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Mathematics                                                                "
+	},
+	{
+		"p020kprog" : "PT6004",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INFORMATICS AND COMPUTING                                       ",
+		"z054bnecdetail" : "Statistics                                                                 "
+	},
+	{
+		"p020kprog" : "PB5004",
+		"p020namaprogbi" : "MASTER OF ENGLISH LANGUAGE STUDIES",
+		"a019bi" : "FACULTY OF LANGUAGES & COMMUNICATION                                       ",
+		"z054bnecdetail" : "Other languages                                                            "
+	},
+	{
+		"p020kprog" : "PB5005",
+		"p020namaprogbi" : "MASTER OF ARABIC LANGUAGE STUDIES",
+		"a019bi" : "FACULTY OF LANGUAGES & COMMUNICATION                                       ",
+		"z054bnecdetail" : "Other languages                                                            "
+	},
+	{
+		"p020kprog" : "PB6004",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY ENGLISH LANGUAGE STUDIES",
+		"a019bi" : "FACULTY OF LANGUAGES & COMMUNICATION                                       ",
+		"z054bnecdetail" : "Other languages                                                            "
+	},
+	{
+		"p020kprog" : "PB6005",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY ARABIC LANGUAGE STUDIES",
+		"a019bi" : "FACULTY OF LANGUAGES & COMMUNICATION                                       ",
+		"z054bnecdetail" : "Other languages                                                            "
+	},
+	{
+		"p020kprog" : "PI5024",
+		"p020namaprogbi" : "MASTER OF ISLAMIC STUDIES     ",
+		"a019bi" : "FACULTY OF ISLAMIC CONTEMPORARY STUDIES                                    ",
+		"z054bnecdetail" : "Religion                                                                   "
+	},
+	{
+		"p020kprog" : "PI5025",
+		"p020namaprogbi" : "MASTER OF EDUCATION",
+		"a019bi" : "FACULTY OF ISLAMIC CONTEMPORARY STUDIES                                    ",
+		"z054bnecdetail" : "Teacher training and education sciences                                    "
+	},
+	{
+		"p020kprog" : "PI6017",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF ISLAMIC CONTEMPORARY STUDIES                                    ",
+		"z054bnecdetail" : "Religion                                                                   "
+	},
+	{
+		"p020kprog" : "PI6018",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF ISLAMIC CONTEMPORARY STUDIES                                    ",
+		"z054bnecdetail" : "Teacher training and education sciences                                    "
+	},
+	{
+		"p020kprog" : "PM5010",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN MANAGEMENT",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Management and administration                                              "
+	},
+	{
+		"p020kprog" : "PM5011",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN FINANCE",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Finance, banking, insurance                                                "
+	},
+	{
+		"p020kprog" : "PM5012",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN ECONOMICS",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Economics                                                                  "
+	},
+	{
+		"p020kprog" : "PM5013",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN ACCOUNTING",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Accounting and taxation                                                    "
+	},
+	{
+		"p020kprog" : "PM5014",
+		"p020namaprogbi" : "MASTER OF SCIENCE IN MARKETING",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Marketing and advertising                                                  "
+	},
+	{
+		"p020kprog" : "PM6010",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Management and administration                                              "
+	},
+	{
+		"p020kprog" : "PM6011",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Finance, banking, insurance                                                "
+	},
+	{
+		"p020kprog" : "PM6012",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Economics                                                                  "
+	},
+	{
+		"p020kprog" : "PM6013",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Accounting and taxation                                                    "
+	},
+	{
+		"p020kprog" : "PM6014",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BUSINESS AND MANAGEMENT                                         ",
+		"z054bnecdetail" : "Marketing and advertising                                                  "
+	},
+	{
+		"p020kprog" : "PL5006",
+		"p020namaprogbi" : "MASTER OF INTERNATIONAL RELATIONS",
+		"a019bi" : "FACULTY OF LAW & INTERNATIONAL RELATIONS                                   ",
+		"z054bnecdetail" : "Political science and civics                                               "
+	},
+	{
+		"p020kprog" : "PL5007",
+		"p020namaprogbi" : "MASTER OF LAW",
+		"a019bi" : "FACULTY OF LAW & INTERNATIONAL RELATIONS                                   ",
+		"z054bnecdetail" : "Law                                                                        "
+	},
+	{
+		"p020kprog" : "PL6007",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF LAW & INTERNATIONAL RELATIONS                                   ",
+		"z054bnecdetail" : "Law                                                                        "
+	},
+	{
+		"p020kprog" : "PL6008",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF LAW & INTERNATIONAL RELATIONS                                   ",
+		"z054bnecdetail" : "Social and behavioural science                                             "
+	},
+	{
+		"p020kprog" : "PD5003",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Engineering and engineering trades                                         "
+	},
+	{
+		"p020kprog" : "PD5004",
+		"p020namaprogbi" : "MASTER OF ARTS",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Arts                                                                       "
+	},
+	{
+		"p020kprog" : "PD5005",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Manufacturing and processing                                               "
+	},
+	{
+		"p020kprog" : "PD5006",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PD6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Engineering and engineering trades                                         "
+	},
+	{
+		"p020kprog" : "PD6003",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Manufacturing and processing                                               "
+	},
+	{
+		"p020kprog" : "PD6004",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PD6005",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF INOVATIVE DESIGN AND TECHNOLOGY                                 ",
+		"z054bnecdetail" : "Arts                                                                       "
+	},
+	{
+		"p020kprog" : "PU5009",
+		"p020namaprogbi" : "MASTER OF ISLAMIC STUDIES",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Islamic Studies                                                            "
+	},
+	{
+		"p020kprog" : "PU5009",
+		"p020namaprogbi" : "MASTER OF ISLAMIC STUDIES",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Islamic Studies                                                            "
+	},
+	{
+		"p020kprog" : "PU5014",
+		"p020namaprogbi" : "MASTER OF SOCIAL SCIENCE",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Humanities (Except Languages) Not Further Defined                          "
+	},
+	{
+		"p020kprog" : "PU6006",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Social and Behavioural Sciences Not Further Defined                        "
+	},
+	{
+		"p020kprog" : "PU6007",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Islamic Studies                                                            "
+	},
+	{
+		"p020kprog" : "PU6007",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF GENERAL STUDIES AND ADVANCED EDUCATION                          ",
+		"z054bnecdetail" : "Islamic Studies                                                            "
+	},
+	{
+		"p020kprog" : "PR5001",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PR5002",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Biology and biochemistry                                                   "
+	},
+	{
+		"p020kprog" : "PR5003",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Food processing                                                            "
+	},
+	{
+		"p020kprog" : "PR5004",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Agriculture, forestry and fishery                                          "
+	},
+	{
+		"p020kprog" : "PR6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PR6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Biology and biochemistry                                                   "
+	},
+	{
+		"p020kprog" : "PR6003",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Food processing                                                            "
+	},
+	{
+		"p020kprog" : "PR6004",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF BIORESOURCES & FOOD INDUSTRY                                    ",
+		"z054bnecdetail" : "Agriculture, forestry and fishery                                          "
+	},
+	{
+		"p020kprog" : "PS5001",
+		"p020namaprogbi" : "MASTER OF SOCIAL SCIENCE ",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Social and behavioural science                                             "
+	},
+	{
+		"p020kprog" : "PS5002",
+		"p020namaprogbi" : "MASTER OF SOCIAL WORK",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Social work and counseling                                                 "
+	},
+	{
+		"p020kprog" : "PS5005",
+		"p020namaprogbi" : "MASTER",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Travel, tourism and leisure                                                "
+	},
+	{
+		"p020kprog" : "PS6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Social and behavioural science                                             "
+	},
+	{
+		"p020kprog" : "PS6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Social work and counseling                                                 "
+	},
+	{
+		"p020kprog" : "PS6003",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF APPLIED SOCIAL SCIENCES                                         ",
+		"z054bnecdetail" : "Travel, tourism and leisure                                                "
+	},
+	{
+		"p020kprog" : "PE5001",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "EAST COAST ENVIRONMENTAL RESEARCH INSTITUTE                                ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PE5002",
+		"p020namaprogbi" : "MASTER OF ENVIRONMENTAL SCIENCE",
+		"a019bi" : "EAST COAST ENVIRONMENTAL RESEARCH INSTITUTE                                ",
+		"z054bnecdetail" : "Environmental science                                                      "
+	},
+	{
+		"p020kprog" : "PE6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "EAST COAST ENVIRONMENTAL RESEARCH INSTITUTE                                ",
+		"z054bnecdetail" : "Applied science                                                            "
+	},
+	{
+		"p020kprog" : "PE6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY OF ENVIRONMENTAL SCIENCE",
+		"a019bi" : "EAST COAST ENVIRONMENTAL RESEARCH INSTITUTE                                ",
+		"z054bnecdetail" : "Environmental science                                                      "
+	},
+	{
+		"p020kprog" : "PJ5010",
+		"p020namaprogbi" : "MASTER OF ISLAMIC CIVILLIZATION",
+		"a019bi" : "RESEARCH INSTITUTE FOR ISLAMIC PRODUCTS AND MALAY CIVILIZATION             ",
+		"z054bnecdetail" : "History, philosophy and related subjects =225+226                          "
+	},
+	{
+		"p020kprog" : "PJ6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY IN ISLAMIC CIVILLIZATION",
+		"a019bi" : "RESEARCH INSTITUTE FOR ISLAMIC PRODUCTS AND MALAY CIVILIZATION             ",
+		"z054bnecdetail" : "History, philosophy and related subjects =225+226                          "
+	},
+	{
+		"p020kprog" : "PK5001",
+		"p020namaprogbi" : "MASTER OF SCIENCE ",
+		"a019bi" : "FACULTY OF HEALTH SCIENCES                                                 ",
+		"z054bnecdetail" : "Health                                                                     "
+	},
+	{
+		"p020kprog" : "PK5002",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF HEALTH SCIENCES                                                 ",
+		"z054bnecdetail" : "Sports                                                                     "
+	},
+	{
+		"p020kprog" : "PK6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF HEALTH SCIENCES                                                 ",
+		"z054bnecdetail" : "Health                                                                     "
+	},
+	{
+		"p020kprog" : "PK6002",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF HEALTH SCIENCES                                                 ",
+		"z054bnecdetail" : "Sports                                                                     "
+	},
+	{
+		"p020kprog" : "PP5001",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF MEDICINE                                                        ",
+		"z054bnecdetail" : "Health                                                                     "
+	},
+	{
+		"p020kprog" : "PP5004",
+		"p020namaprogbi" : "MASTER OF OCCUPATIONAL AND ENVIRONMENTAL HEALTH",
+		"a019bi" : "FACULTY OF MEDICINE                                                        ",
+		"z054bnecdetail" : "Occupational health and safety                                             "
+	},
+	{
+		"p020kprog" : "PP6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF MEDICINE                                                        ",
+		"z054bnecdetail" : "Health                                                                     "
+	},
+	{
+		"p020kprog" : "PP6004",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY IN OCCUPATIONAL AND ENVIRONMENTAL HEALTH",
+		"a019bi" : "FACULTY OF MEDICINE                                                        ",
+		"z054bnecdetail" : "Occupational health and safety                                             "
+	},
+	{
+		"p020kprog" : "PV5001",
+		"p020namaprogbi" : "MASTER OF SCIENCE",
+		"a019bi" : "FACULTY OF PHARMACY                                                        ",
+		"z054bnecdetail" : "Health                                                                     "
+	},
+	{
+		"p020kprog" : "PV6001",
+		"p020namaprogbi" : "DOCTOR OF PHILOSOPHY",
+		"a019bi" : "FACULTY OF PHARMACY                                                        ",
+		"z054bnecdetail" : "Health                                                                     "
+	}
+]

@@ -1,0 +1,535 @@
+CRITICAL - 2025-01-05 01:14:45 --> Error: Class "informixdb" not found
+[Method: GET, Route: apply]
+in APPPATH\Controllers\BaseController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-05 01:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-05 01:25:10 --> Error: Class "informixdb" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\BaseController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 01:26:03 --> Error: Class "informixdb" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\BaseController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-05 01:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-05 01:33:46 --> Error: Class "informixdb" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\BaseController.php on line 59.
+ 1 ROOTPATH\system\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-05 01:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 01:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 02:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 02:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 02:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 02:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-05 02:07:05 --> Error: Class "App\Controllers\informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 32.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:15:28 --> Error: Class "App\Controllers\informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 32.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:18:27 --> Error: Class "App\Controllers\informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 32.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:19:57 --> Error: Class "App\Controllers\informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 32.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:20:14 --> Error: Class "App\Controllers\informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 32.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:21:19 --> Error: Class "informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 33.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:21:45 --> Error: Class "informixConfig" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 33.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:23:22 --> Error: Call to undefined function App\Controllers\informixConfig()
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 33.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:30:47 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:35:26 --> TypeError: CodeIgniter\Config\BaseService::get(): Return value must be of type ?object, int returned
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Config\BaseService.php on line 202.
+ 1 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('informixConfig')
+ 2 APPPATH\Controllers\LoginController.php(30): service('informixConfig')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:36:30 --> TypeError: CodeIgniter\Config\BaseService::get(): Return value must be of type ?object, int returned
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Config\BaseService.php on line 202.
+ 1 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('informixConfig')
+ 2 APPPATH\Controllers\LoginController.php(30): service('informixConfig')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:37:54 --> TypeError: CodeIgniter\Config\BaseService::get(): Return value must be of type ?object, array returned
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Config\BaseService.php on line 202.
+ 1 SYSTEMPATH\Common.php(998): CodeIgniter\Config\BaseService::get('informixConfig')
+ 2 APPPATH\Controllers\LoginController.php(30): service('informixConfig')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:48:13 --> Error: Class "informixdb" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 54.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:56:48 --> Error: Undefined constant "INFORMIX_WEBUESR"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\Informixdb.php on line 21.
+ 1 APPPATH\Controllers\LoginController.php(54): Informixdb->__construct('production')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 02:59:18 --> Error: Undefined constant "INFORMIX_UJI"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\Informixdb.php on line 24.
+ 1 APPPATH\Controllers\LoginController.php(54): Informixdb->__construct('development')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:00:26 --> Error: Undefined constant "INFORMIX_UJI"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\InformixDB.php on line 24.
+ 1 APPPATH\Controllers\LoginController.php(54): InformixDB->__construct('development')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:01:06 --> Error: Undefined constant "INFORMIX_WEBUESR"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\InformixDB.php on line 21.
+ 1 APPPATH\Controllers\LoginController.php(54): InformixDB->__construct('production')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:02:30 --> Error: Class "informixdb" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 54.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:04:03 --> Error: Class "informixdb" not found
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 54.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:07:31 --> Error: Undefined constant "INFORMIX_WEBUESR"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\InformixDB.php on line 21.
+ 1 APPPATH\Controllers\LoginController.php(54): InformixDB->__construct('production')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:08:59 --> Error: Undefined constant "INFORMIX_WEBUESR"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\InformixDB.php on line 21.
+ 1 APPPATH\Controllers\LoginController.php(54): InformixDB->__construct('production')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:10:27 --> Error: Undefined constant "INFORMIX_WEBUESR"
+[Method: GET, Route: testdb]
+in APPPATH\ThirdParty\Informix\InformixDB.php on line 21.
+ 1 APPPATH\Controllers\LoginController.php(54): InformixDB->__construct('production')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:32:42 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: testdb]
+in APPPATH\Config\Database.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(258): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(75): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 ROOTPATH\system\Debug\Toolbar.php(68): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(796): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(791): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::toolbar()
+11 APPPATH\Config\Events.php(47): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 ROOTPATH\system\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+13 ROOTPATH\system\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:33:52 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: testdb]
+in APPPATH\Config\Database.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(258): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(75): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 ROOTPATH\system\Debug\Toolbar.php(68): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(796): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(791): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::toolbar()
+11 APPPATH\Config\Events.php(47): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 ROOTPATH\system\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+13 ROOTPATH\system\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:36:24 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: testdb]
+in APPPATH\Config\Database.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(258): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(75): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 ROOTPATH\system\Debug\Toolbar.php(68): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(796): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(791): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::toolbar()
+11 APPPATH\Config\Events.php(47): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 ROOTPATH\system\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+13 ROOTPATH\system\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:43:26 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: testdb]
+in APPPATH\Config\Database.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(258): CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 ROOTPATH\system\Debug\Toolbar\Collectors\Database.php(75): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 ROOTPATH\system\Debug\Toolbar.php(68): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(796): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 7 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 8 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+ 9 SYSTEMPATH\Config\Services.php(791): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+10 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::toolbar()
+11 APPPATH\Config\Events.php(47): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+12 ROOTPATH\system\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+13 ROOTPATH\system\CodeIgniter.php(340): CodeIgniter\Events\Events::trigger('pre_system')
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:43:56 --> ErrorException: require(C:\laragon\www\pascav2\/ThirdParty/Informix/InformixTest.php): Failed to open stream: No such file or directory
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 APPPATH\Controllers\LoginController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\laragon\\www\\pascav2\\/ThirdParty/Informix/InformixTest.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 51)
+ 2 APPPATH\Controllers\LoginController.php(51): require()
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:44:28 --> ErrorException: require(C:\laragon\www\pascav2\\ThirdParty\Informix\InformixTest.php): Failed to open stream: No such file or directory
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 APPPATH\Controllers\LoginController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\laragon\\www\\pascav2\\\\ThirdParty\\Informix\\InformixTest.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 51)
+ 2 APPPATH\Controllers\LoginController.php(51): require()
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 03:45:06 --> ErrorException: require(C:\laragon\www\pascav2\ThirdParty\Informix\InformixTest.php): Failed to open stream: No such file or directory
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 51.
+ 1 APPPATH\Controllers\LoginController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\laragon\\www\\pascav2\\ThirdParty\\Informix\\InformixTest.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 51)
+ 2 APPPATH\Controllers\LoginController.php(51): require()
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 05:51:56 --> PDOException: could not find driver
+[Method: GET, Route: testdb]
+in APPPATH\Helpers\informix_helper.php on line 9.
+ 1 APPPATH\Helpers\informix_helper.php(9): PDO->__construct('informix:host=uniszadb.unisza.edu.my; service=60003; database=sismak; server=unisza_prod; protocol=onsoctcp; EnableScrollableCursors=1', 'rpa_saga', 'saga@21300', [...])
+ 2 APPPATH\Helpers\informix_helper.php(18): informix_connect()
+ 3 APPPATH\Controllers\LoginController.php(31): informix_query('SELECT a017namaper FROM a017 where a017ptjskrg=\'22\' LIMIT 5')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 05:54:20 --> PDOException: could not find driver
+[Method: GET, Route: testdb]
+in APPPATH\Helpers\informix_helper.php on line 9.
+ 1 APPPATH\Helpers\informix_helper.php(9): PDO->__construct('informix:host=uniszadb.unisza.edu.my; service=60003; database=sismak; server=unisza_prod; protocol=onsoctcp; EnableScrollableCursors=1', 'rpa_saga', 'saga@21300', [...])
+ 2 APPPATH\Helpers\informix_helper.php(18): informix_connect()
+ 3 APPPATH\Controllers\LoginController.php(31): informix_query('SELECT a017namaper FROM a017 where a017ptjskrg=\'22\' LIMIT 5')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 05:54:23 --> PDOException: could not find driver
+[Method: GET, Route: testdb]
+in APPPATH\Helpers\informix_helper.php on line 9.
+ 1 APPPATH\Helpers\informix_helper.php(9): PDO->__construct('informix:host=uniszadb.unisza.edu.my; service=60003; database=sismak; server=unisza_prod; protocol=onsoctcp; EnableScrollableCursors=1', 'rpa_saga', 'saga@21300', [...])
+ 2 APPPATH\Helpers\informix_helper.php(18): informix_connect()
+ 3 APPPATH\Controllers\LoginController.php(31): informix_query('SELECT a017namaper FROM a017 where a017ptjskrg=\'22\' LIMIT 5')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-05 07:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 07:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 23:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-05 23:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-05 23:47:26 --> ParseError: syntax error, unexpected integer "22", expecting ")"
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:48:07 --> ParseError: syntax error, unexpected integer "22", expecting ")"
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:49:21 --> ParseError: syntax error, unexpected integer "22", expecting ")"
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:49:24 --> ParseError: syntax error, unexpected integer "22", expecting ")"
+[Method: GET, Route: testdb]
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LoginController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LoginController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LoginController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:51:13 --> CodeIgniter\Exceptions\ConfigException: Invalid DBDriver name: "pdo"
+[Method: GET, Route: testdb]
+in ROOTPATH\system\Database\Database.php on line 172.
+ 1 ROOTPATH\system\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('pdo')
+ 2 ROOTPATH\system\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'fourthDB')
+ 3 APPPATH\Controllers\LoginController.php(36): CodeIgniter\Database\Config::connect('fourthDB')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:51:59 --> PDOException: could not find driver
+[Method: GET, Route: testdb]
+in APPPATH\Helpers\informix_helper.php on line 9.
+ 1 APPPATH\Helpers\informix_helper.php(9): PDO->__construct('informix:host=uniszadb.unisza.edu.my; service=60003; database=sismak; server=unisza_prod; protocol=onsoctcp; EnableScrollableCursors=1', 'rpa_saga', 'saga@21300', [...])
+ 2 APPPATH\Helpers\informix_helper.php(18): informix_connect()
+ 3 APPPATH\Controllers\LoginController.php(31): informix_query('SELECT a017namaper FROM a017 where a017ptjskrg=\'22\' LIMIT 5')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-05 23:54:32 --> PDOException: could not find driver
+[Method: GET, Route: testdb]
+in APPPATH\Helpers\informix_helper.php on line 9.
+ 1 APPPATH\Helpers\informix_helper.php(9): PDO->__construct('informix:host=uniszadb.unisza.edu.my; service=60003; database=sismak; server=unisza_prod; protocol=onsoctcp; EnableScrollableCursors=1', 'rpa_saga', 'saga@21300', [...])
+ 2 APPPATH\Helpers\informix_helper.php(18): informix_connect()
+ 3 APPPATH\Controllers\LoginController.php(31): informix_query('SELECT a017namaper FROM a017 where a017ptjskrg=\'22\' LIMIT 5')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->testDb()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,148 @@
+ERROR - 2024-12-09 05:02:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-09 05:02:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:02:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:02:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 05:03:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-09 05:03:04 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:03:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:03:04 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 05:06:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-09 05:06:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:06:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:06:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-09 05:13:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1 in C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00usern...', 0)
+#1 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00usern...')
+#2 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00usern...')
+#3 C:\laragon\www\pascav2\app\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00usern...')
+#4 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+#5 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\pascav2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-12-09 05:13:14 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:13:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-09 05:13:14 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and p00password=' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p00username from p00daftar where p00username= and p00password= ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 4 APPPATH\Controllers\LoginController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT p00username from p00daftar where p00username= and p00password= ')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\LoginController->retlogin()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

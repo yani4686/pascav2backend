@@ -1,0 +1,465 @@
+INFO - 2025-01-19 00:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 00:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-19 00:51:27 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;p001&quot; does not exist
+LINE 2: ...Time&quot; when &quot;2&quot; then &quot;Park Time&quot; end as modebelajar from p001
+                                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\SaringController.php(21): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-19 00:51:27 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;p001&quot; does not exist
+LINE 2: ...Time&quot; when &quot;2&quot; then &quot;Park Time&quot; end as modebelajar from p001
+                                                                   ^
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\SaringController.php(21): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 00:51:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;p001&quot; does not exist
+LINE 2: ...Time&quot; when &quot;2&quot; then &quot;Park Time&quot; end as modebelajar from p001
+                                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 3 APPPATH\Controllers\SaringController.php(21): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 00:51:27 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;p001&quot; does not exist
+LINE 2: ...Time&quot; when &quot;2&quot; then &quot;Park Time&quot; end as modebelajar from p001
+                                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;p001&quot; does not exist
+LINE 2: ...Time&quot; when &quot;2&quot; then &quot;Park Time&quot; end as modebelajar from p001
+                                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 5 APPPATH\Controllers\SaringController.php(21): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when "7" then "Coursework" when "8" then "Research" when "9" then "Mix-Mode" end as kaedah,p001modebelajar,
+        case p001modebelajar when "1" then "Full Time" when "2" then "Park Time" end as modebelajar from p001')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 00:53:26 --> ParseError: syntax error, unexpected integer "7", expecting ")"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 00:55:02 --> ParseError: syntax error, unexpected integer "7", expecting ")"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 00:57:56 --> ParseError: syntax error, unexpected integer "7", expecting ")"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-19 00:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-19 02:55:41 --> ParseError: syntax error, unexpected integer "7", expecting ")"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 02:56:47 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 33.
+ 1 APPPATH\Controllers\SaringController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 33)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 03:35:36 --> CodeIgniter\Filters\Exceptions\FilterException: "cors" filter must have a matching alias defined.
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\Filters\Filters.php on line 778.
+ 1 ROOTPATH\system\Filters\Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+ 2 ROOTPATH\system\Filters\Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 ROOTPATH\system\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('retpermohonan')
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 03:36:41 --> Error: Class "Config\Cors" not found
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\Filters\Filters.php on line 197.
+ 1 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 03:39:19 --> Error: Class "Config\Cors" not found
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\Filters\Filters.php on line 197.
+ 1 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 03:40:28 --> ErrorException: Attempt to read property "default" on null
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\HTTP\Cors.php on line 72.
+ 1 ROOTPATH\system\HTTP\Cors.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "default" on null', 'C:\\laragon\\www\\pascav2\\system\\HTTP\\Cors.php', 72)
+ 2 ROOTPATH\system\Filters\Cors.php(84): CodeIgniter\HTTP\Cors::factory()
+ 3 ROOTPATH\system\Filters\Cors.php(59): CodeIgniter\Filters\Cors->createCorsService(null)
+ 4 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 7 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 03:41:51 --> ErrorException: Attempt to read property "default" on null
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\HTTP\Cors.php on line 72.
+ 1 ROOTPATH\system\HTTP\Cors.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "default" on null', 'C:\\laragon\\www\\pascav2\\system\\HTTP\\Cors.php', 72)
+ 2 ROOTPATH\system\Filters\Cors.php(84): CodeIgniter\HTTP\Cors::factory()
+ 3 ROOTPATH\system\Filters\Cors.php(59): CodeIgniter\Filters\Cors->createCorsService(null)
+ 4 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 7 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 04:42:47 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-01-19 06:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-19 06:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-19 06:26:55 --> ErrorException: Attempt to read property "default" on null
+[Method: GET, Route: retpermohonan]
+in ROOTPATH\system\HTTP\Cors.php on line 72.
+ 1 ROOTPATH\system\HTTP\Cors.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "default" on null', 'C:\\laragon\\www\\pascav2\\system\\HTTP\\Cors.php', 72)
+ 2 ROOTPATH\system\Filters\Cors.php(84): CodeIgniter\HTTP\Cors::factory()
+ 3 ROOTPATH\system\Filters\Cors.php(59): CodeIgniter\Filters\Cors->createCorsService(null)
+ 4 ROOTPATH\system\Filters\Filters.php(205): CodeIgniter\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 7 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 06:47:47 --> ErrorException: Cannot use CodeIgniter\RESTful\ResourceController as ResourceController because the name is already in use
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-19 06:48:46 --> ErrorException: Cannot use CodeIgniter\RESTful\ResourceController as ResourceController because the name is already in use
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-01-19 07:17:41 --> retPermohonan API called
+DEBUG - 2025-01-19 07:17:46 --> retPermohonan API called
+DEBUG - 2025-01-19 07:19:52 --> retPermohonan API called
+CRITICAL - 2025-01-19 07:19:52 --> Error: Call to undefined method CodeIgniter\Database\Postgre\Result::getSQL()
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 36.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-19 07:20:44 --> retPermohonan API called
+CRITICAL - 2025-01-19 07:20:44 --> TypeError: log_message(): Argument #2 ($message) must be of type string, stdClass given, called in C:\laragon\www\pascav2\app\Controllers\SaringController.php on line 36
+[Method: GET, Route: retpermohonan]
+in SYSTEMPATH\Common.php on line 772.
+ 1 APPPATH\Controllers\SaringController.php(36): log_message('debug', Object(stdClass))
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->retpermohonan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-19 07:21:07 --> retPermohonan API called
+CRITICAL - 2025-01-19 07:37:57 --> ParseError: syntax error, unexpected token "else"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 39.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-19 07:38:10 --> retPermohonan API endpoint called
+CRITICAL - 2025-01-19 07:43:42 --> ParseError: syntax error, unexpected token "else"
+[Method: GET, Route: retpermohonan]
+in APPPATH\Controllers\SaringController.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-19 07:44:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:53:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:56:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:56:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:56:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:56:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:40 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 07:58:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:01:44 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:23 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:28 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 08:57:54 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:22 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:23 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:23 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:06:32 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:08:43 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:09:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:10:06 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:11:02 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:23:29 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:26:27 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:27:18 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:27:30 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:27:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:30:25 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:33:35 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:35:32 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:36:44 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:38:05 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:39:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:46:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:46:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:46:34 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:46:34 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:46:56 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:49:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:49:58 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:52:00 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:53:54 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:54:34 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:54:45 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:58:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:58:38 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:59:10 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 14:59:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:00:28 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:02:19 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:02:33 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:05:03 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:06:11 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:06:14 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:08:13 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:10:22 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:10:28 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:10:51 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:12:21 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:15:21 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:15:48 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:18:06 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:18:10 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:20:04 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:20:22 --> retPermohonan API endpoint called
+CRITICAL - 2025-01-19 15:23:44 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 15:25:12 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 15:25:25 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 15:26:00 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 15:28:04 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-19 15:28:42 --> ErrorException: Undefined variable $response
+[Method: GET, Route: retpermohonan]
+in APPPATH\Filters\Cors.php on line 14.
+ 1 APPPATH\Filters\Cors.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\laragon\\www\\pascav2\\app\\Filters\\Cors.php', 14)
+ 2 ROOTPATH\system\Filters\Filters.php(205): App\Filters\Cors->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 ROOTPATH\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 ROOTPATH\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('retpermohonan', 'before')
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-01-19 15:29:30 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:29:47 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:29:53 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:32:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:33:59 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:36:10 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:38:47 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:38:51 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:41:09 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:49:42 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:54:52 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:57:35 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:57:52 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 15:58:25 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:01:55 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:05:12 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:06:16 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:10:03 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:17:37 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:24:59 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:31:49 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:32:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:33:43 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:34:47 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:35:14 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:35:20 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:41:24 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:41:29 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:42:31 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:44:05 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:49:55 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:50:00 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:54:55 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:57:41 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:58:39 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:59:46 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 16:59:57 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 17:01:43 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 17:03:05 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 17:03:12 --> retPermohonan API endpoint called
+DEBUG - 2025-01-19 17:59:52 --> retPermohonan API endpoint called

@@ -1,0 +1,74 @@
+[
+	{
+		"a090knegeri" : "01",
+		"a090negeri" : "JOHOR"
+	},
+	{
+		"a090knegeri" : "02",
+		"a090negeri" : "KEDAH"
+	},
+	{
+		"a090knegeri" : "03",
+		"a090negeri" : "KELANTAN"
+	},
+	{
+		"a090knegeri" : "04",
+		"a090negeri" : "MELAKA"
+	},
+	{
+		"a090knegeri" : "05",
+		"a090negeri" : "NEGERI SEMBILAN"
+	},
+	{
+		"a090knegeri" : "06",
+		"a090negeri" : "PAHANG"
+	},
+	{
+		"a090knegeri" : "07",
+		"a090negeri" : "PULAU PINANG"
+	},
+	{
+		"a090knegeri" : "08",
+		"a090negeri" : "PERAK"
+	},
+	{
+		"a090knegeri" : "09",
+		"a090negeri" : "PERLIS"
+	},
+	{
+		"a090knegeri" : "10",
+		"a090negeri" : "SELANGOR"
+	},
+	{
+		"a090knegeri" : "11",
+		"a090negeri" : "TERENGGANU"
+	},
+	{
+		"a090knegeri" : "12",
+		"a090negeri" : "SABAH"
+	},
+	{
+		"a090knegeri" : "13",
+		"a090negeri" : "SARAWAK"
+	},
+	{
+		"a090knegeri" : "14",
+		"a090negeri" : "W.P.(KL)"
+	},
+	{
+		"a090knegeri" : "15",
+		"a090negeri" : "W.P.(LABUAN)"
+	},
+	{
+		"a090knegeri" : "16",
+		"a090negeri" : "PUTRAJAYA"
+	},
+	{
+		"a090knegeri" : "99",
+		"a090negeri" : "LAIN-LAIN"
+	},
+	{
+		"a090knegeri" : "71",
+		"a090negeri" : "LUAR NEGARA\/OVERSEAS"
+	}
+]

@@ -1,0 +1,754 @@
+[
+	{
+		"c028kod" : "A01",
+		"c028keterangan" : "AFGHANISTAN"
+	},
+	{
+		"c028kod" : "A02",
+		"c028keterangan" : "ALBANIA"
+	},
+	{
+		"c028kod" : "A03",
+		"c028keterangan" : "ALGERIA"
+	},
+	{
+		"c028kod" : "A04",
+		"c028keterangan" : "ANDORRA"
+	},
+	{
+		"c028kod" : "A05",
+		"c028keterangan" : "ANGOLA"
+	},
+	{
+		"c028kod" : "A05",
+		"c028keterangan" : "ANTIGUA  AND BARBUDA"
+	},
+	{
+		"c028kod" : "A06",
+		"c028keterangan" : "ARGENTINA"
+	},
+	{
+		"c028kod" : "A07",
+		"c028keterangan" : "ARMENIA"
+	},
+	{
+		"c028kod" : "A08",
+		"c028keterangan" : "AUSTRALIA"
+	},
+	{
+		"c028kod" : "A09",
+		"c028keterangan" : "AUSTRIA"
+	},
+	{
+		"c028kod" : "B01",
+		"c028keterangan" : "BAHAMAS"
+	},
+	{
+		"c028kod" : "B02",
+		"c028keterangan" : "BAHRAIN"
+	},
+	{
+		"c028kod" : "B03",
+		"c028keterangan" : "BANGLADESH"
+	},
+	{
+		"c028kod" : "B04",
+		"c028keterangan" : "BARBADOS"
+	},
+	{
+		"c028kod" : "B05",
+		"c028keterangan" : "BELARUS"
+	},
+	{
+		"c028kod" : "B06",
+		"c028keterangan" : "BELGIUM"
+	},
+	{
+		"c028kod" : "B07",
+		"c028keterangan" : "BELIZE"
+	},
+	{
+		"c028kod" : "B08",
+		"c028keterangan" : "BENIN"
+	},
+	{
+		"c028kod" : "B09",
+		"c028keterangan" : "BERMUDA"
+	},
+	{
+		"c028kod" : "B10",
+		"c028keterangan" : "BHUTAN"
+	},
+	{
+		"c028kod" : "B11",
+		"c028keterangan" : "BOLIVIA"
+	},
+	{
+		"c028kod" : "B12",
+		"c028keterangan" : "BOSNIA"
+	},
+	{
+		"c028kod" : "B13",
+		"c028keterangan" : "BOTSWANA"
+	},
+	{
+		"c028kod" : "B14",
+		"c028keterangan" : "BRAZIL"
+	},
+	{
+		"c028kod" : "B15",
+		"c028keterangan" : "BRUNEI"
+	},
+	{
+		"c028kod" : "B16",
+		"c028keterangan" : "BULGARIA"
+	},
+	{
+		"c028kod" : "B17",
+		"c028keterangan" : "BURKINA"
+	},
+	{
+		"c028kod" : "B18",
+		"c028keterangan" : "BURUNDI"
+	},
+	{
+		"c028kod" : "C01",
+		"c028keterangan" : "CAMBODIA"
+	},
+	{
+		"c028kod" : "C02",
+		"c028keterangan" : "CANADA"
+	},
+	{
+		"c028kod" : "C03",
+		"c028keterangan" : "CAMEROON"
+	},
+	{
+		"c028kod" : "C04",
+		"c028keterangan" : "CAPE VERDE"
+	},
+	{
+		"c028kod" : "C05",
+		"c028keterangan" : "CENTRAL AFRICA"
+	},
+	{
+		"c028kod" : "C06",
+		"c028keterangan" : "CHAD"
+	},
+	{
+		"c028kod" : "C07",
+		"c028keterangan" : "CHILE"
+	},
+	{
+		"c028kod" : "C08",
+		"c028keterangan" : "CHINA"
+	},
+	{
+		"c028kod" : "C09",
+		"c028keterangan" : "COLOMBIA"
+	},
+	{
+		"c028kod" : "C10",
+		"c028keterangan" : "COMOROS"
+	},
+	{
+		"c028kod" : "C11",
+		"c028keterangan" : "CONGO"
+	},
+	{
+		"c028kod" : "C12",
+		"c028keterangan" : "COSTA RICA"
+	},
+	{
+		"c028kod" : "C13",
+		"c028keterangan" : "CROATIA"
+	},
+	{
+		"c028kod" : "C14",
+		"c028keterangan" : "CUBA"
+	},
+	{
+		"c028kod" : "C15",
+		"c028keterangan" : "CYPRUS"
+	},
+	{
+		"c028kod" : "C16",
+		"c028keterangan" : "CZECH REPUBLIC"
+	},
+	{
+		"c028kod" : "D01",
+		"c028keterangan" : "DENMARK"
+	},
+	{
+		"c028kod" : "D02",
+		"c028keterangan" : "DJIBOUTI"
+	},
+	{
+		"c028kod" : "E01",
+		"c028keterangan" : "ECUADOR"
+	},
+	{
+		"c028kod" : "E02",
+		"c028keterangan" : "EGYPT"
+	},
+	{
+		"c028kod" : "E03",
+		"c028keterangan" : "EL SALVADOR"
+	},
+	{
+		"c028kod" : "E04",
+		"c028keterangan" : "ENGLAND"
+	},
+	{
+		"c028kod" : "E05",
+		"c028keterangan" : "EQUATORIAL GUINEA"
+	},
+	{
+		"c028kod" : "E06",
+		"c028keterangan" : "ESTONIA"
+	},
+	{
+		"c028kod" : "E07",
+		"c028keterangan" : "ETHIOPIA"
+	},
+	{
+		"c028kod" : "F01",
+		"c028keterangan" : "FIJI"
+	},
+	{
+		"c028kod" : "F02",
+		"c028keterangan" : "FINLAND"
+	},
+	{
+		"c028kod" : "F04",
+		"c028keterangan" : "FRANCE"
+	},
+	{
+		"c028kod" : "G01",
+		"c028keterangan" : "GABON"
+	},
+	{
+		"c028kod" : "G02",
+		"c028keterangan" : "GAMBIA"
+	},
+	{
+		"c028kod" : "G03",
+		"c028keterangan" : "GERMANY"
+	},
+	{
+		"c028kod" : "G04",
+		"c028keterangan" : "GHANA"
+	},
+	{
+		"c028kod" : "G05",
+		"c028keterangan" : "GREECE"
+	},
+	{
+		"c028kod" : "G06",
+		"c028keterangan" : "GRENADA"
+	},
+	{
+		"c028kod" : "G07",
+		"c028keterangan" : "GUATEMALA"
+	},
+	{
+		"c028kod" : "G08",
+		"c028keterangan" : "GUINEA"
+	},
+	{
+		"c028kod" : "G09",
+		"c028keterangan" : "GUINEA-BISSAU"
+	},
+	{
+		"c028kod" : "G10",
+		"c028keterangan" : "GUYANA"
+	},
+	{
+		"c028kod" : "H01",
+		"c028keterangan" : "HAITI"
+	},
+	{
+		"c028kod" : "H02",
+		"c028keterangan" : "HONDURAS"
+	},
+	{
+		"c028kod" : "H03",
+		"c028keterangan" : "HONG KONG"
+	},
+	{
+		"c028kod" : "H04",
+		"c028keterangan" : "HUNGARY"
+	},
+	{
+		"c028kod" : "I01",
+		"c028keterangan" : "INDIA"
+	},
+	{
+		"c028kod" : "I02",
+		"c028keterangan" : "INDONESIA"
+	},
+	{
+		"c028kod" : "I03",
+		"c028keterangan" : "IRAN"
+	},
+	{
+		"c028kod" : "I04",
+		"c028keterangan" : "IRAQ"
+	},
+	{
+		"c028kod" : "I05",
+		"c028keterangan" : "ISRAEL"
+	},
+	{
+		"c028kod" : "I06",
+		"c028keterangan" : "ITALY"
+	},
+	{
+		"c028kod" : "I07",
+		"c028keterangan" : "IVORY COAST"
+	},
+	{
+		"c028kod" : "I08",
+		"c028keterangan" : "ICELAND"
+	},
+	{
+		"c028kod" : "I09",
+		"c028keterangan" : "REPUBLIC OF IRELAND"
+	},
+	{
+		"c028kod" : "J01",
+		"c028keterangan" : "JAMAICA"
+	},
+	{
+		"c028kod" : "J02",
+		"c028keterangan" : "JAPAN"
+	},
+	{
+		"c028kod" : "J03",
+		"c028keterangan" : "JORDAN"
+	},
+	{
+		"c028kod" : "K01",
+		"c028keterangan" : "KAZAKSTHAN"
+	},
+	{
+		"c028kod" : "K02",
+		"c028keterangan" : "KENYA"
+	},
+	{
+		"c028kod" : "K03",
+		"c028keterangan" : "KIRIBATI"
+	},
+	{
+		"c028kod" : "K04",
+		"c028keterangan" : "KUWAIT"
+	},
+	{
+		"c028kod" : "L01",
+		"c028keterangan" : "LAOS"
+	},
+	{
+		"c028kod" : "L02",
+		"c028keterangan" : "LEBANON"
+	},
+	{
+		"c028kod" : "L03",
+		"c028keterangan" : "LESOTHO"
+	},
+	{
+		"c028kod" : "L04",
+		"c028keterangan" : "LIBERIA"
+	},
+	{
+		"c028kod" : "L05",
+		"c028keterangan" : "LIBYA"
+	},
+	{
+		"c028kod" : "L06",
+		"c028keterangan" : "LIECHTENSTEIN"
+	},
+	{
+		"c028kod" : "L07",
+		"c028keterangan" : "LUXEMBOURG"
+	},
+	{
+		"c028kod" : "L08",
+		"c028keterangan" : "LATVIA"
+	},
+	{
+		"c028kod" : "L09",
+		"c028keterangan" : "LITHUANIA"
+	},
+	{
+		"c028kod" : "M01",
+		"c028keterangan" : "MALAYSIA"
+	},
+	{
+		"c028kod" : "M02",
+		"c028keterangan" : "MALAWI"
+	},
+	{
+		"c028kod" : "M03",
+		"c028keterangan" : "MADAGASCAR"
+	},
+	{
+		"c028kod" : "M04",
+		"c028keterangan" : "MALDIVES"
+	},
+	{
+		"c028kod" : "M05",
+		"c028keterangan" : "MALI"
+	},
+	{
+		"c028kod" : "M06",
+		"c028keterangan" : "MALTA"
+	},
+	{
+		"c028kod" : "M07",
+		"c028keterangan" : "MAURITIUS"
+	},
+	{
+		"c028kod" : "M08",
+		"c028keterangan" : "MEXICO"
+	},
+	{
+		"c028kod" : "M09",
+		"c028keterangan" : "MONACO"
+	},
+	{
+		"c028kod" : "M10",
+		"c028keterangan" : "MONGOLIA"
+	},
+	{
+		"c028kod" : "M11",
+		"c028keterangan" : "MOROCCO"
+	},
+	{
+		"c028kod" : "M12",
+		"c028keterangan" : "MOZAMBIQUE"
+	},
+	{
+		"c028kod" : "M13",
+		"c028keterangan" : "MYANMAR"
+	},
+	{
+		"c028kod" : "M14",
+		"c028keterangan" : "MACEDONIA"
+	},
+	{
+		"c028kod" : "M15",
+		"c028keterangan" : "MOLDOVA"
+	},
+	{
+		"c028kod" : "N01",
+		"c028keterangan" : "NAURU"
+	},
+	{
+		"c028kod" : "N02",
+		"c028keterangan" : "NEPAL"
+	},
+	{
+		"c028kod" : "N03",
+		"c028keterangan" : "NETHERLANDS"
+	},
+	{
+		"c028kod" : "N04",
+		"c028keterangan" : "NEW ZEALAND"
+	},
+	{
+		"c028kod" : "N05",
+		"c028keterangan" : "NICARAGUA"
+	},
+	{
+		"c028kod" : "N07",
+		"c028keterangan" : "NIGERIA"
+	},
+	{
+		"c028kod" : "N08",
+		"c028keterangan" : "NORTH KOREA"
+	},
+	{
+		"c028kod" : "N10",
+		"c028keterangan" : "NORWAY"
+	},
+	{
+		"c028kod" : "N11",
+		"c028keterangan" : "NAMIBIA"
+	},
+	{
+		"c028kod" : "O01",
+		"c028keterangan" : "OMAN"
+	},
+	{
+		"c028kod" : "P01",
+		"c028keterangan" : "PAKISTAN"
+	},
+	{
+		"c028kod" : "P02",
+		"c028keterangan" : "PANAMA"
+	},
+	{
+		"c028kod" : "P03",
+		"c028keterangan" : "PAPUA NEW GUINEA"
+	},
+	{
+		"c028kod" : "P04",
+		"c028keterangan" : "PARAGUAY"
+	},
+	{
+		"c028kod" : "P05",
+		"c028keterangan" : "PERU"
+	},
+	{
+		"c028kod" : "P06",
+		"c028keterangan" : "PHILIPPINES"
+	},
+	{
+		"c028kod" : "P07",
+		"c028keterangan" : "POLAND"
+	},
+	{
+		"c028kod" : "P08",
+		"c028keterangan" : "PORTUGAL"
+	},
+	{
+		"c028kod" : "Q01",
+		"c028keterangan" : "QATAR"
+	},
+	{
+		"c028kod" : "R01",
+		"c028keterangan" : "ROMANIA"
+	},
+	{
+		"c028kod" : "R02",
+		"c028keterangan" : "RWANDA"
+	},
+	{
+		"c028kod" : "R03",
+		"c028keterangan" : "RUSSIA"
+	},
+	{
+		"c028kod" : "S01",
+		"c028keterangan" : "SAUDI ARABIA"
+	},
+	{
+		"c028kod" : "S02",
+		"c028keterangan" : "SINGAPORE"
+	},
+	{
+		"c028kod" : "S03",
+		"c028keterangan" : "SALVADOR"
+	},
+	{
+		"c028kod" : "S04",
+		"c028keterangan" : "SAINT KITTS-NEVIS"
+	},
+	{
+		"c028kod" : "S05",
+		"c028keterangan" : "SAINT LUCIA"
+	},
+	{
+		"c028kod" : "S06",
+		"c028keterangan" : "SAINT VINCENT"
+	},
+	{
+		"c028kod" : "S07",
+		"c028keterangan" : "SAN MARINO"
+	},
+	{
+		"c028kod" : "S08",
+		"c028keterangan" : "SAO TOME AND PRINCIPE"
+	},
+	{
+		"c028kod" : "S09",
+		"c028keterangan" : "SENEGAL"
+	},
+	{
+		"c028kod" : "S10",
+		"c028keterangan" : "SEYCHELLES"
+	},
+	{
+		"c028kod" : "S11",
+		"c028keterangan" : "SIERRA LEONE"
+	},
+	{
+		"c028kod" : "S12",
+		"c028keterangan" : "SOLOMON ISLANDS"
+	},
+	{
+		"c028kod" : "S13",
+		"c028keterangan" : "SOUTH KOREA"
+	},
+	{
+		"c028kod" : "S14",
+		"c028keterangan" : "SPAIN"
+	},
+	{
+		"c028kod" : "S15",
+		"c028keterangan" : "SRI LANKA"
+	},
+	{
+		"c028kod" : "S16",
+		"c028keterangan" : "SWEDEN"
+	},
+	{
+		"c028kod" : "S17",
+		"c028keterangan" : "SWITZERLAND"
+	},
+	{
+		"c028kod" : "S18",
+		"c028keterangan" : "SOMALIA"
+	},
+	{
+		"c028kod" : "S19",
+		"c028keterangan" : "SOUTH AFRICA"
+	},
+	{
+		"c028kod" : "S21",
+		"c028keterangan" : "SUDAN"
+	},
+	{
+		"c028kod" : "S22",
+		"c028keterangan" : "SURINAM"
+	},
+	{
+		"c028kod" : "S23",
+		"c028keterangan" : "SWAZILAND"
+	},
+	{
+		"c028kod" : "S24",
+		"c028keterangan" : "SYRIA"
+	},
+	{
+		"c028kod" : "S25",
+		"c028keterangan" : "SERBIA & MONTENEGRO"
+	},
+	{
+		"c028kod" : "S26",
+		"c028keterangan" : "SLOVAKIA"
+	},
+	{
+		"c028kod" : "S27",
+		"c028keterangan" : "SLOVENIA"
+	},
+	{
+		"c028kod" : "T01",
+		"c028keterangan" : "TAIWAN"
+	},
+	{
+		"c028kod" : "T02",
+		"c028keterangan" : "TANZANIA"
+	},
+	{
+		"c028kod" : "T03",
+		"c028keterangan" : "THAILAND"
+	},
+	{
+		"c028kod" : "T04",
+		"c028keterangan" : "TIBET"
+	},
+	{
+		"c028kod" : "T05",
+		"c028keterangan" : "TOGO"
+	},
+	{
+		"c028kod" : "T06",
+		"c028keterangan" : "TONGA"
+	},
+	{
+		"c028kod" : "T07",
+		"c028keterangan" : "TRINIDAD"
+	},
+	{
+		"c028kod" : "T08",
+		"c028keterangan" : "TUNISIA"
+	},
+	{
+		"c028kod" : "T09",
+		"c028keterangan" : "TURKEY"
+	},
+	{
+		"c028kod" : "T10",
+		"c028keterangan" : "TUVALU"
+	},
+	{
+		"c028kod" : "U01",
+		"c028keterangan" : "UGANDA"
+	},
+	{
+		"c028kod" : "U02",
+		"c028keterangan" : "UKRAINE"
+	},
+	{
+		"c028kod" : "U03",
+		"c028keterangan" : "UNITED ARAB EMIRATES"
+	},
+	{
+		"c028kod" : "U04",
+		"c028keterangan" : "UNITED KINGDOM"
+	},
+	{
+		"c028kod" : "U05",
+		"c028keterangan" : "UNITED STATES OF AMERICA"
+	},
+	{
+		"c028kod" : "U06",
+		"c028keterangan" : "URUGUAY"
+	},
+	{
+		"c028kod" : "U07",
+		"c028keterangan" : "UZBEKISTAN"
+	},
+	{
+		"c028kod" : "V01",
+		"c028keterangan" : "VANUATU"
+	},
+	{
+		"c028kod" : "V02",
+		"c028keterangan" : "VATICAN CITY"
+	},
+	{
+		"c028kod" : "V03",
+		"c028keterangan" : "VENEZUELA"
+	},
+	{
+		"c028kod" : "V04",
+		"c028keterangan" : "VIETNAM"
+	},
+	{
+		"c028kod" : "V05",
+		"c028keterangan" : "VIRGIN ISLANDS"
+	},
+	{
+		"c028kod" : "W01",
+		"c028keterangan" : "WESTERN SAMOA"
+	},
+	{
+		"c028kod" : "Z01",
+		"c028keterangan" : "ZAIRE"
+	},
+	{
+		"c028kod" : "Z02",
+		"c028keterangan" : "ZAMBIA"
+	},
+	{
+		"c028kod" : "Z03",
+		"c028keterangan" : "ZIMBABWE"
+	},
+	{
+		"c028kod" : "999",
+		"c028keterangan" : "LAIN-LAIN"
+	},
+	{
+		"c028kod" : "Y01",
+		"c028keterangan" : "YEMEN"
+	},
+	{
+		"c028kod" : "P09",
+		"c028keterangan" : "PALESTIN "
+	},
+	{
+		"c028kod" : "G11",
+		"c028keterangan" : "GREENLAND"
+	}
+]

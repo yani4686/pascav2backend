@@ -1,0 +1,66 @@
+[
+	{
+		"z013akod" : "1 ",
+		"z013abi" : "BLIND"
+	},
+	{
+		"z013akod" : "2 ",
+		"z013abi" : "DEAF USE TOOLS        "
+	},
+	{
+		"z013akod" : "3 ",
+		"z013abi" : "LEGALLY BLIND"
+	},
+	{
+		"z013akod" : "4 ",
+		"z013abi" : "COLOR BLIND"
+	},
+	{
+		"z013akod" : "5 ",
+		"z013abi" : "DEAF"
+	},
+	{
+		"z013akod" : "6 ",
+		"z013abi" : "MUTE"
+	},
+	{
+		"z013akod" : "7 ",
+		"z013abi" : "STUTTER             "
+	},
+	{
+		"z013akod" : "8 ",
+		"z013abi" : "DEFORMED FEET            "
+	},
+	{
+		"z013akod" : "9 ",
+		"z013abi" : "DEFORMED HAND"
+	},
+	{
+		"z013akod" : "10",
+		"z013abi" : "PARALYZED             "
+	},
+	{
+		"z013akod" : "11",
+		"z013abi" : "OTHERS DISABILITY"
+	},
+	{
+		"z013akod" : "12",
+		"z013abi" : "NORMAL"
+	},
+	{
+		"z013akod" : "13",
+		"z013abi" : "DWARF"
+	},
+	{
+		"z013akod" : "14",
+		"z013abi" : "NASAL"
+	},
+	{
+		"z013akod" : "15",
+		"z013abi" : "LEARNING DISABILITY"
+	},
+	{
+		"z013akod" : "15",
+		"z013abi" : "BLINDNESS IN ONE EYE"
+	}
+]
