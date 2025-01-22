@@ -684,3 +684,13 @@ INFO - 2025-01-22 08:18:23 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-01-22 08:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-01-22 08:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-01-22 08:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-22 09:23:06 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(860604465280)"
+[Method: GET, Route: retpermohonan/%28860604465280%29]
+in ROOTPATH\system\Router\Router.php on line 737.
+ 1 ROOTPATH\system\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('retpermohonan/(860604465280)')
+ 2 ROOTPATH\system\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('retpermohonan/(860604465280)')
+ 3 ROOTPATH\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
