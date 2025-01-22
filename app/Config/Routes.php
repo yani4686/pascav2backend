@@ -42,6 +42,7 @@ $routes->post('/generatepdf', 'ApplyController::generatePdf');
 
 $routes->get('/retpermohonan', 'SaringController::retpermohonan');
 $routes->get('/countpermohonan', 'SaringController::countpermohonan');
+$routes->post('/updsaringan', 'SaringController::updsaringan');
 $routes->get('/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbynokp/$1');
 // $routes->match(['GET','POST'],'/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbynokp/$1');
 

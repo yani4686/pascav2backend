@@ -83,7 +83,11 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
 
         $db = Config::connect();
 
-        $selectMohon= $db->query("SELECT count(p.p001nokp)as bildraf from ppsdblocal.p001 p where p.p001status ='0'");
+        $selectMohon= $db->query("select(SELECT count(p.p001nokp)as bildraf from ppsdblocal.p001 p where p.p001status ='0') as bildraf,
+(SELECT count(p.p001nokp)as bildraf1 from ppsdblocal.p001 p where p.p001status is null or p.p001status='') as bildraf1,
+(SELECT count(p.p001nokp)as billulusf from ppsdblocal.p001 p where p.p001status ='2') as billulusf,
+(SELECT count(p.p001nokp)as bilpindahf from ppsdblocal.p001 p where p.p001status ='4') as bilpindahf,
+(SELECT count(p.p001nokp)as bilgagalf from ppsdblocal.p001 p where p.p001status ='3') as bilgagalf");
 
         $result = $selectMohon->getRow();
 
@@ -93,45 +97,48 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
         return $this->response->setJSON(['status' => 'failed', 'msg' => 'Required parameter.']);
 
     }
-    // public function updsaringan()
-    // {
-    // //$session = session();
-    // //$user = $session->get('username');// nt ret dr session staf fakulti
+    public function updsaringan()
+    {
+    //$session = session();
+    //$user = $session->get('username');// nt ret dr session staf fakulti
     
-    // $db = \Config\Database::connect();
+    $db = \Config\Database::connect();
 
-    // // Use ISO date format
-    // $cur = date('Y-m-d');
+    // Use ISO date format
+    $cur = date('Y-m-d');
 
-    // $input = $this->request->getPost();
+    $input = $this->request->getPost();
 
-    // $transfer = $input['stsacctkr'] ?? null;
-    // $sah = $input['sah'] ?? null;
+    $updstatus = $input['stsacctkr'] ?? null;
+    $catatan   = $input['sah'] ?? null;
+    $catatan   = $input['sah'] ?? null;
+    $nokp      = $input['sah'] ?? null;
 
-    // // Debugging: Log the POST data for analysis
-    // error_log(json_encode($this->request->getPost()));
+    // Debugging: Log the POST data for analysis
+    error_log(json_encode($this->request->getPost()));
 
-    // // Update database
-    // $update = $db->table('ppsdblocal.p001')
-    //              ->set([
-    //                  'p001tkhstatus' => $cur,
-    //                  'p001status' => $sah,
-    //                //  'p001setujutransfer' => $transfer,
-    //              ])
-    //             // ->where('p001nokp', $p001nokp)
-    //              ->update();
+    // Update database
+    $update = $db->table('ppsdblocal.p001')
+                 ->set([
+                     'p001catatan ' => $catatan,
+                      'p001tkhstatus ' => $cur,
+                     'p001status' => $updstatus,
+                   
+                 ])
+                ->where('p001nokp', $nokp)
+                 ->update();
 
-    // if ($update) {
-    //     return $this->response->setJSON(['success' => 'ok']);
-    // } else {
-    //     $error = $db->error();
-    //     error_log("SQL Error: " . json_encode($error));
-    //     return $this->response->setJSON([
-    //         'success' => 'ko',
-    //         'message' => 'Update failed.',
-    //         'error' => $error,
-    //     ]);
-    // }
+    if ($update) {
+        return $this->response->setJSON(['success' => 'ok']);
+    } else {
+        $error = $db->error();
+        error_log("SQL Error: " . json_encode($error));
+        return $this->response->setJSON([
+            'success' => 'ko',
+            'message' => 'Update failed.',
+            'error' => $error,
+        ]);
+    }
 
-    // }
+    }
 }
