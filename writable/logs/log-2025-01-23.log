@@ -1,0 +1,1927 @@
+INFO - 2025-01-23 02:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 02:37:14 --> ErrorException: Attempt to read property "p00usrid" on null
+[Method: GET, Route: verifylogin/40ac41ab1caff714884dd693a5f49228]
+in APPPATH\Controllers\LoginController.php on line 195.
+ 1 APPPATH\Controllers\LoginController.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p00usrid" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 195)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifylogin('40ac41ab1caff714884dd693a5f49228')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 02:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 02:37:23 --> ErrorException: Attempt to read property "p00username" on null
+[Method: POST, Route: retlogin]
+in APPPATH\Controllers\LoginController.php on line 64.
+ 1 APPPATH\Controllers\LoginController.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p00username" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 64)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->retlogin()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 02:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:29 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:32 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:33 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:33 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:25:49 --> ParseError: syntax error, unexpected variable "$homeadd", expecting "]"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 235.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:29:20 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:29:28 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 158.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-23 03:30:39 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-23 03:30:39 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:30:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:30:39 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 5 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-23 03:30:42 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-23 03:30:42 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:30:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:30:42 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 5 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-23 03:31:00 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-23 03:31:00 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:31:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:31:00 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = 'AP', p001sesimsk = '871222', p001tkhlahir = 'NUR AMINA...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;NUR AMINA&quot;
+LINE 2: ...ma = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'871222\', p001tkhlahir = \'NUR AMINA\', p001kwarganegara = \'2022-01-01\', 
+                    p001kwarga = \'1\', p001alamat1 = \'M01\', p001alamat2 = \'12\', p001bandar = \'kg tg sabtu\', 
+                    p001knegeri = NULL, p001poskod = \'21200\', p001alamatt1 = \'kuala terengganu\', p001alamatt2 = \'11\', 
+                    p001bandart = \'M01\', p001knegerit = \'0162321563\', p001poskodt = \'0162321563\', p001notel = NULL, 
+                    p001nohp = NULL, p001kcacat = \'kg tg sabtu\', p001upgambar = NULL, p001laluanmohon = \'21200\', 
+                    p001nooku = \'kuala terengganu\', p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = NULL, 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 5 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-23 03:33:05 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:                     p001nama = ?, p001sesimsk = ?, p001tkhla...
+                                        ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-23 03:33:05 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:                     p001nama = ?, p001sesimsk = ?, p001tkhla...
+                                        ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:33:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:                     p001nama = ?, p001sesimsk = ?, p001tkhla...
+                                        ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?')
+ 3 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:33:05 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:                     p001nama = ?, p001sesimsk = ?, p001tkhla...
+                                        ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2:                     p001nama = ?, p001sesimsk = ?, p001tkhla...
+                                        ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?')
+ 5 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-23 03:35:58 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;kuala terengganu&quot;
+LINE 4: ...              p001knegeri = '21200', p001poskod = 'kuala ter...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-01-23 03:35:58 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;kuala terengganu&quot;
+LINE 4: ...              p001knegeri = '21200', p001poskod = 'kuala ter...
+                                                             ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:35:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;kuala terengganu&quot;
+LINE 4: ...              p001knegeri = '21200', p001poskod = 'kuala ter...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'NUR AMINA\', p001tkhlahir = \'2022-01-01\', p001kwarganegara = \'1\', 
+                    p001kwarga = \'M01\', p001alamat1 = \'12\', p001alamat2 = \'kg tg sabtu\', p001bandar = NULL, 
+                    p001knegeri = \'21200\', p001poskod = \'kuala terengganu\', p001alamatt1 = \'11\', p001alamatt2 = \'M01\', 
+                    p001bandart = \'0162321563\', p001knegerit = \'0162321563\', p001poskodt = NULL, p001notel = NULL, 
+                    p001nohp = \'kg tg sabtu\', p001kcacat = NULL, p001upgambar = \'21200\', p001laluanmohon = \'kuala terengganu\', 
+                    p001nooku = NULL, p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = \'JAN-2025\', 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'NUR AMINA\', p001tkhlahir = \'2022-01-01\', p001kwarganegara = \'1\', 
+                    p001kwarga = \'M01\', p001alamat1 = \'12\', p001alamat2 = \'kg tg sabtu\', p001bandar = NULL, 
+                    p001knegeri = \'21200\', p001poskod = \'kuala terengganu\', p001alamatt1 = \'11\', p001alamatt2 = \'M01\', 
+                    p001bandart = \'0162321563\', p001knegerit = \'0162321563\', p001poskodt = NULL, p001notel = NULL, 
+                    p001nohp = \'kg tg sabtu\', p001kcacat = NULL, p001upgambar = \'21200\', p001laluanmohon = \'kuala terengganu\', 
+                    p001nooku = NULL, p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = \'JAN-2025\', 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:35:58 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;kuala terengganu&quot;
+LINE 4: ...              p001knegeri = '21200', p001poskod = 'kuala ter...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;kuala terengganu&quot;
+LINE 4: ...              p001knegeri = \'21200\', p001poskod = \'kuala ter...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'NUR AMINA\', p001tkhlahir = \'2022-01-01\', p001kwarganegara = \'1\', 
+                    p001kwarga = \'M01\', p001alamat1 = \'12\', p001alamat2 = \'kg tg sabtu\', p001bandar = NULL, 
+                    p001knegeri = \'21200\', p001poskod = \'kuala terengganu\', p001alamatt1 = \'11\', p001alamatt2 = \'M01\', 
+                    p001bandart = \'0162321563\', p001knegerit = \'0162321563\', p001poskodt = NULL, p001notel = NULL, 
+                    p001nohp = \'kg tg sabtu\', p001kcacat = NULL, p001upgambar = \'21200\', p001laluanmohon = \'kuala terengganu\', 
+                    p001nooku = NULL, p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = \'JAN-2025\', 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'NUR AMINA\', p001tkhlahir = \'2022-01-01\', p001kwarganegara = \'1\', 
+                    p001kwarga = \'M01\', p001alamat1 = \'12\', p001alamat2 = \'kg tg sabtu\', p001bandar = NULL, 
+                    p001knegeri = \'21200\', p001poskod = \'kuala terengganu\', p001alamatt1 = \'11\', p001alamatt2 = \'M01\', 
+                    p001bandart = \'0162321563\', p001knegerit = \'0162321563\', p001poskodt = NULL, p001notel = NULL, 
+                    p001nohp = \'kg tg sabtu\', p001kcacat = NULL, p001upgambar = \'21200\', p001laluanmohon = \'kuala terengganu\', 
+                    p001nooku = NULL, p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = \'JAN-2025\', 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+                    p001nama = \'AP\', p001sesimsk = \'NUR AMINA\', p001tkhlahir = \'2022-01-01\', p001kwarganegara = \'1\', 
+                    p001kwarga = \'M01\', p001alamat1 = \'12\', p001alamat2 = \'kg tg sabtu\', p001bandar = NULL, 
+                    p001knegeri = \'21200\', p001poskod = \'kuala terengganu\', p001alamatt1 = \'11\', p001alamatt2 = \'M01\', 
+                    p001bandart = \'0162321563\', p001knegerit = \'0162321563\', p001poskodt = NULL, p001notel = NULL, 
+                    p001nohp = \'kg tg sabtu\', p001kcacat = NULL, p001upgambar = \'21200\', p001laluanmohon = \'kuala terengganu\', 
+                    p001nooku = NULL, p001faxno = NULL, p001offno = NULL, p001faxnot = NULL, 
+                    p001offnot = NULL, p001alamatneg = NULL, p001alamatnegt = NULL, p001notelt = \'JAN-2025\', 
+                    p001nohpt = \'\', p001uplaluan = \'\' 
+                 WHERE p001nokp = \'871222\'')
+ 5 APPPATH\Controllers\ApplyController.php(214): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+                    p001nama = ?, p001sesimsk = ?, p001tkhlahir = ?, p001kwarganegara = ?, 
+                    p001kwarga = ?, p001alamat1 = ?, p001alamat2 = ?, p001bandar = ?, 
+                    p001knegeri = ?, p001poskod = ?, p001alamatt1 = ?, p001alamatt2 = ?, 
+                    p001bandart = ?, p001knegerit = ?, p001poskodt = ?, p001notel = ?, 
+                    p001nohp = ?, p001kcacat = ?, p001upgambar = ?, p001laluanmohon = ?, 
+                    p001nooku = ?, p001faxno = ?, p001offno = ?, p001faxnot = ?, 
+                    p001offnot = ?, p001alamatneg = ?, p001alamatnegt = ?, p001notelt = ?, 
+                    p001nohpt = ?, p001uplaluan = ? 
+                 WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:23 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodkecacatan]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodnegara]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkoddun]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodprogram]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodpenaja]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodnegeri]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: displayprofile]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-23 03:47:34 --> ParseError: syntax error, unexpected variable "$newNamePic"
+[Method: GET, Route: getkodsek]
+in APPPATH\Controllers\ApplyController.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApplyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApplyController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\ApplyController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-23 03:51:52 --> [DEPRECATED] error_log(): Passing null to parameter #2 ($message_type) of type int is deprecated in APPPATH\Controllers\ApplyController.php on line 187.
+ 1 APPPATH\Controllers\ApplyController.php(187): error_log('doclaluan', null)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-23 03:55:09 --> [DEPRECATED] error_log(): Passing null to parameter #2 ($message_type) of type int is deprecated in APPPATH\Controllers\ApplyController.php on line 187.
+ 1 APPPATH\Controllers\ApplyController.php(187): error_log('doclaluan', null)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 03:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 04:27:27 --> ErrorException: Undefined variable $kppass
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 183.
+ 1 APPPATH\Controllers\ApplyController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kppass', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 183)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 04:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 04:27:29 --> ErrorException: Undefined variable $kppass
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 183.
+ 1 APPPATH\Controllers\ApplyController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kppass', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 183)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 04:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 04:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 06:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 07:52:36 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php7D18.tmp" to "C:\laragon\www\pascav2\writable\uploads/". Reason: 
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\HTTP\Files\UploadedFile.php on line 154.
+ 1 ROOTPATH\system\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php7D18.tmp', 'C:\\laragon\\www\\pascav2\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\ApplyController.php(273): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\pascav2\\writable\\uploads/', '871222laluan.')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 07:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 07:56:11 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "phpC705.tmp" to "C:\laragon\www\pascav2\writable\uploads/". Reason: 
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\HTTP\Files\UploadedFile.php on line 154.
+ 1 ROOTPATH\system\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpC705.tmp', 'C:\\laragon\\www\\pascav2\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\ApplyController.php(273): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\pascav2\\writable\\uploads/', '871222laluan.')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 07:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 07:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 07:59:05 --> CodeIgniter\HTTP\Exceptions\HTTPException: Could not move file "php6B9D.tmp" to "C:\laragon\www\pascav2\writable\uploads/". Reason: 
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\HTTP\Files\UploadedFile.php on line 154.
+ 1 ROOTPATH\system\HTTP\Files\UploadedFile.php(154): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php6B9D.tmp', 'C:\\laragon\\www\\pascav2\\writable\\uploads/', '')
+ 2 APPPATH\Controllers\ApplyController.php(273): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\pascav2\\writable\\uploads/', '871222laluan.')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:21:22 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan.,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620482.jpg): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620482.jpg): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620482.jpg')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:21:23 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan.,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620483.jpg): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620483.jpg): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620483.jpg')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:21:42 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan.,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620502.jpg): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620502.jpg): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620502.jpg')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:21:51 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan.,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620511.jpg): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620511.jpg): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan.', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620511.jpg')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:23:11 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620591.): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620591.): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620591.')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-23 08:25:12 --> ErrorException: rename(C:\laragon\www\pascav2\writable\uploads/871222laluan,C:\laragon\www\pascav2\writable\uploads/871222laluan_backup_1737620712.): Access is denied (code: 5)
+[Method: POST, Route: insstep1]
+in APPPATH\Controllers\ApplyController.php on line 201.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan,C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620712.): Access is denied (code: 5)', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\ApplyController.php', 201)
+ 2 APPPATH\Controllers\ApplyController.php(201): rename('C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan', 'C:\\laragon\\www\\pascav2\\writable\\uploads/871222laluan_backup_1737620712.')
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-23 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-23 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -206,7 +206,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             	<!--begin::Login Header-->
                                 <div class="d-flex flex-center mb-15">
                                     <a href="#">
-                                        <img src="pascav2/assets/images/logo.png" class="max-h-75px" alt="" />
+                                        <img src="pascav2/assets/images/logounisza.png" class="max-h-75px" alt="" />
                                     </a>
                                 </div>
 						        <!--end::Login Header-->

@@ -10,6 +10,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/apply', 'Home::applySc');
 $routes->get('/accept', 'Home::acceptanceSc');
 $routes->get('/dashboard', 'Home::dashboardSc');
+$routes->get('/test', 'Home::test');
 
 $routes->get('/getdata', 'DashboardController::getAllSessionData');
 $routes->get('/getdisplaystatusmohon', 'DashboardController::getDisplayStatusMohon');
@@ -45,6 +46,11 @@ $routes->get('/countpermohonan', 'SaringController::countpermohonan');
 $routes->post('/updsaringan', 'SaringController::updsaringan');
 $routes->get('/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbynokp/$1');
 // $routes->match(['GET','POST'],'/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbynokp/$1');
+
+$routes->get('/retpermohonansaring', 'LulusPpsController::retpermohonansaring');
+$routes->get('/countpermohonan', 'LulusPpsController::countpermohonan');
+$routes->post('/updsaringan', 'LulusPpsController::updsaringan');
+$routes->get('/retpermohonanbynokp/(:any)', 'LulusPpsController::retpermohonanbynokp/$1');
 
 $routes->get('/generateletter', 'PdfController::GenerateLetter');
 

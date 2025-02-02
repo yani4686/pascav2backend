@@ -49,28 +49,17 @@ $(document).ready(function () {
 
     $('div.setup-panel div a.btn-success').trigger('click');
 /*selectdropdown */
-    /* test hide div */
     $('#laluan').on('change', function () {
 
-      //  var valuetest = $(this).val();
-       // alert(valuetest);
-        
        if($(this).val() === 'AP' || $(this).val() === 'NG'){
 
-           // alert("b");
-          // $("input[type=text],input[type=checkbox]").attr('disabled', true);
-           // $("#divhide").hide();
              $("#docap").show();
         }
-        else{
-         //   $("input[type=text],input[type=checkbox]").attr('disabled', false);
-        //  $("#divhide").show();
+        else{  
             $("#docap").hide();
-         //   alert("a");
         }
 
     });
-    //$("#divhide").hide();
     $("#docap").hide();
 
 //hide and display col no oku
@@ -786,6 +775,8 @@ $.ajax({
         var resultbi =  result.p001muet ;
         var noregbi = result.p001noreg;
         var tkhexmbi = result.p001tkhexm;
+        var doclaluan = result.p001uplaluan;
+        var docworkexp = result.p001upworkex;
 
         var url = 'http://localhost/pascav2/public/uploads/';
 
@@ -794,12 +785,16 @@ $.ajax({
         var urldisplayakadtggi;
         var urldisplayupproposal;
         var urldisplayresit;
+        var urldisplaydoclaluan;
+        var urldisplayworkexp;
 
         urldisplaypic = 'http://localhost/pascav2/public/uploads/' + image;
         urldisplaypass = url + passport;
         urldisplayakadtggi = url + akadtgg;
         urldisplayupproposal = url + upproposal;
         urldisplayresit = url + upresit;
+        urldisplaydoclaluan = url + doclaluan;
+        urldisplayworkexp = url + docworkexp;
 
         if (image) {
             $('#previewImage').attr('src', urldisplaypic).show();
@@ -851,17 +846,21 @@ $.ajax({
         $("#registerid").val(noregbi);
         $("#datexm").val(tkhexmbi);
 
-       // $("#cpt a").attr('href',urldisplaypass);
+        $("#cpt1 a").attr({
+            'href': urldisplaydoclaluan,
+            'target': '_blank' // Ensures the link opens in a new tab
+        });
+
+        $("#cpt2 a").attr({
+            'href': urldisplayworkexp,
+            'target': '_blank' // Ensures the link opens in a new tab
+        });
 
 //##################
 // Define modal-related elements
 var modal = document.getElementById('myModal1');
-//var link = document.getElementById("cpt").getElementsByTagName('a')[0]; // Assuming you're using the 'a' tag inside #cpt
 var span = document.getElementsByClassName("close1")[0]; // Close button
 var iframe = document.getElementById("content1");
-
-// Set the href of the link to the passport image URL
-//$("#cpt a").attr('href', urldisplaypass);
 
 // Handle the "View File" link click event to open the modal
 document.querySelectorAll('.view-file').forEach(function(link) {
@@ -878,7 +877,7 @@ document.querySelectorAll('.view-file').forEach(function(link) {
         }else if (fileType === 'proposal') {
             fileUrl = urldisplayupproposal;
         }else if (fileType === 'resit') {
-            fileUrl = urldisplayupproposal;
+            fileUrl = urldisplayresit;
         }
     
     // Set the iframe's source to the passport image URL
@@ -930,6 +929,7 @@ window.onclick = function(event) {
         var val_oku = result.p001kcacat;
         var val_modest = result.p001kaedah;
         var val_taja = result.p001kpenaja;
+        var val_laluan = result.p001laluanmohon;
         $("#kdtaja1").val(val_taja);
      // alert(val_taja);
 
@@ -960,6 +960,12 @@ window.onclick = function(event) {
         $("#nooku").show();
         $("#divoku").show();
        }
+//hide doc laluan
+if(val_laluan === 'AP' || val_laluan === 'NG'){
+    $("#docap").show();
+   }else{
+    $("#docap").hide();
+   }
 //mode research
        if(val_modest == '8'){
         $("#hidespc").show();

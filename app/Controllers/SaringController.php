@@ -107,38 +107,38 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     // Use ISO date format
     $cur = date('Y-m-d');
 
-    $input = $this->request->getPost();
+    //$input = $this->request->getPost();
+    $input = $this->request->getJSON();
+    error_log(json_encode($input));
+   
 
-    $updstatus = $input['stsacctkr'] ?? null;
-    $catatan   = $input['sah'] ?? null;
-    $catatan   = $input['sah'] ?? null;
-    $nokp      = $input['sah'] ?? null;
+    $tindakanPengesahan   = !empty($input->tindakanPengesahan) ? $input->tindakanPengesahan : null;
+    $catatanPengesahan    = !empty($input->catatanPengesahan) ? $input->catatanPengesahan : null;
+    $nokpform            = !empty($input->nokpform) ? $input->nokpform : null;
+   
+   $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus  = ?,p001catatan = ? WHERE p001nokp = ?", 
+   [$tindakanPengesahan,$cur,$catatanPengesahan,$nokpform]);
 
-    // Debugging: Log the POST data for analysis
-    error_log(json_encode($this->request->getPost()));
+   error_log("tindakanPengesahan: " . json_encode($tindakanPengesahan));
 
-    // Update database
-    $update = $db->table('ppsdblocal.p001')
-                 ->set([
-                     'p001catatan ' => $catatan,
-                      'p001tkhstatus ' => $cur,
-                     'p001status' => $updstatus,
-                   
-                 ])
-                ->where('p001nokp', $nokp)
-                 ->update();
+    // $Data = [
+    //     'p001status'     => esc($input->tindakanPengesahan),
+    //     'p001tkhstatus ' => $cur,
+    //     'p001catatan '   => esc($input->catatanPengesahan),
+    //     'p001nokp '   => esc($input->nokpform),
+    // ];
 
-    if ($update) {
-        return $this->response->setJSON(['success' => 'ok']);
-    } else {
-        $error = $db->error();
-        error_log("SQL Error: " . json_encode($error));
-        return $this->response->setJSON([
-            'success' => 'ko',
-            'message' => 'Update failed.',
-            'error' => $error,
-        ]);
+    // $update = $this->db->table('ppsdblocal.p001')->where('p001nokp',$input->nokpform)->update($Data);
+    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus = ?, p001catatan = ? WHERE p001nokp = ?", 
+   [$tindakanPengesahan, $cur, $catatanPengesahan, $nokpform]);
+
+    if (!$update) {
+        $error = $db->error(); // Get database error
+        error_log("Database error: " . json_encode($error));
+        return $this->response->setJSON(['status' => 'error', 'msg' => 'Update failed', 'error' => $error]);
     }
+
+    return $this->response->setJSON(['status' => 'success', 'msg' => 'Update successful']);
 
     }
 }

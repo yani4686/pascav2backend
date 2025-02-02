@@ -50,6 +50,10 @@ class Home extends BaseController
 
       return view('indexMain');
     }
+    public function test(): string
+    {
+        return view('form/test');
+    }
     // public function test_informix() {
     //     helper('informix');
     //     $query = "SELECT a017namaper FROM a017 where a017ptjskrg='22' LIMIT 5";

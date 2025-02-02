@@ -1,0 +1,536 @@
+INFO - 2025-02-02 00:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 00:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 03:20:38 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:20:38 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:26:36 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:26:36 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:26:49 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:26:49 --> ErrorException: Undefined property: stdClass::$selectedOption
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$selectedOption', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:29:14 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:29:14 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:30:35 --> ErrorException: Undefined property: stdClass::$catatanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 116.
+ 1 APPPATH\Controllers\SaringController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$catatanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 116)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:30:35 --> ErrorException: Undefined property: stdClass::$catatanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 116.
+ 1 APPPATH\Controllers\SaringController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$catatanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 116)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:35:45 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:36:41 --> ErrorException: Attempt to read property "tindakanPengesahan" on array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tindakanPengesahan" on array', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:38:42 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:44:49 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:44:49 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:46:45 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:46:45 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:49:00 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:51:29 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:51:29 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:53:43 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:53:43 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 120.
+ 1 APPPATH\Controllers\SaringController.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 120)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:55:15 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:56:49 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:56:59 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 03:59:11 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:00:06 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:00:51 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:01:02 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:04:51 --> ErrorException: Undefined property: stdClass::$tindakanPengesahan
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 114.
+ 1 APPPATH\Controllers\SaringController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tindakanPengesahan', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 114)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:15:12 --> ParseError: Unclosed '{' on line 12
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 145.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:15:38 --> ParseError: Unclosed '{' on line 12
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 145.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:17:47 --> ParseError: Unclosed '{' on line 12
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 150.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:18:42 --> ParseError: Unclosed '{' on line 12
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 150.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:23:20 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:23:20 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:30:14 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 130.
+ 1 APPPATH\Controllers\SaringController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 130)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:30:14 --> ErrorException: Undefined property: App\Controllers\SaringController::$db
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 130.
+ 1 APPPATH\Controllers\SaringController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SaringController::$db', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php', 130)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:33:22 --> ParseError: syntax error, unexpected token "if", expecting "function" or "const"
+[Method: GET, Route: retpermohonanbynokp/860604465280]
+in APPPATH\Controllers\SaringController.php on line 133.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pascav2\\app\\Controllers\\SaringController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SaringController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SaringController')
+ 4 ROOTPATH\system\CodeIgniter.php(887): class_exists('\\App\\Controllers\\SaringController', true)
+ 5 ROOTPATH\system\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:34:08 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:34:08 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:35:11 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-02 04:35:11 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: updsaringan]
+in APPPATH\Controllers\SaringController.php on line 115.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\SaringController->updsaringan()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaringController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-02 06:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 06:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 07:00:28 --> Error: Call to a member function getErrorString() on null
+[Method: POST, Route: insstep3]
+in APPPATH\Controllers\ApplyController.php on line 442.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep3()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-02 07:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 07:00:41 --> Error: Call to a member function getErrorString() on null
+[Method: POST, Route: insstep3]
+in APPPATH\Controllers\ApplyController.php on line 442.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep3()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-02 07:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-02 07:01:04 --> Error: Call to a member function getErrorString() on null
+[Method: POST, Route: insstep3]
+in APPPATH\Controllers\ApplyController.php on line 442.
+ 1 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep3()
+ 2 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-02-02 07:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 07:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-02 08:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

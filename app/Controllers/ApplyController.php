@@ -138,7 +138,7 @@ class ApplyController extends ResourceController
 
         $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
         p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
-        case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm 
+        case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex
         from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();
         // $p00katwarga = $result->p001uppassport;
@@ -159,156 +159,169 @@ class ApplyController extends ResourceController
         $user = $session->get('username');
 
         //hardcode dulu sesi pasca nnt retrieve dari table a042
-        $sesi = 'JAN-2024';
-
-        $input = $this->request->getPost();
-
-        $laluan      = !empty($input['laluan']) ? $input['laluan'] : null;//$input['laluan'] ?? '';
-        $kppass      = !empty($input['kppass']) ? $input['kppass'] : null;//$input["kppass"] ?? '';
-        $fullname    = !empty($input['fullname']) ? $input['fullname'] : null;//$input['fullname'] ?? '';
-        $dob         = !empty($input['dob']) ? $input['dob'] : '0000-00-00';//$input['dob'] ?? '';
-
-        // Log or check the value for debugging
-       // error_log("Date of Birth: " . var_export($dob, true));
-		//$wargast     = $input['wargast'] ?? '';
-		$statwarga     = !empty($input['wargast']) ? $input['wargast'] : null;//$input['warganeg'] ?? '';
-		$warganeg     = !empty($input['warganeg']) ? $input['warganeg'] : null;//$input['warganeg'] ?? '';
-		$stsoku      = !empty($input['stsoku']) ? $input['stsoku'] : null;//$input['stsoku'] ?? '';
-        $corradd     = !empty($input['corradd']) ? $input['corradd'] : null;//$input['corradd'] ?? '';
-        $corradd1     = !empty($input['corradd1']) ? $input['corradd1'] : null;//$input['corradd1'] ?? '';
-        $postcorradd  = !empty($input['postcorradd']) ? $input['postcorradd'] : null;//$input['postcorradd'] ?? '';
-        $bndrcorradd  = !empty($input['bndrcorradd']) ? $input['bndrcorradd'] : null;//$input['bndrcorradd'] ?? '';
-        $kdnegeri    = !empty($input['kdnegeri']) ? $input['kdnegeri'] : null;//$input['kdnegeri'] ?? '';
-        $kdnegara    = !empty($input['kdnegara']) ? $input['kdnegara'] : null;//$input['kdnegara'] ?? '';
-        $notel       = !empty($input['notel']) ? $input['notel'] : null;//$input['notel'] ?? '';
-        $hpno        = !empty($input['hpno']) ? $input['hpno'] : null;//$input['hpno'] ?? '';
-        $offno       = !empty($input['offno']) ? $input['offno'] : null;//$input['offno'] ?? '';
-        $faxno       = !empty($input['faxno']) ? $input['faxno'] : null;//$input['faxno'] ?? '';
-        $homeadd     = !empty($input['homeadd']) ? $input['homeadd'] : null;//$input['homeadd'] ?? '';
-        $homeadd1    = !empty($input['homeadd1']) ? $input['homeadd1'] : null;//$input['homeadd1'] ?? '';
-        $posthomeadd = !empty($input['posthomeadd']) ? $input['posthomeadd'] : null;//$input['posthomeadd'] ?? '';
-        $bndrhomeadd = !empty($input['bndrhomeadd']) ? $input['bndrhomeadd'] : null;//$input['bndrhomeadd'] ?? '';
-        $kdnegerihome= !empty($input['kdnegerihome']) ? $input['kdnegerihome'] : null;//$input['kdnegerihome'] ?? '';
-        $kdnegarahome= !empty($input['kdnegarahome']) ? $input['kdnegarahome'] : null;//$input['kdnegarahome'] ?? '';
-        $notelhome   = !empty($input['notelhome']) ? $input['notelhome'] : null;//$input['notelhome'] ?? '';
-        $hpnohome    = !empty($input['hpnohome']) ? $input['hpnohome'] : null;//$input['hpnohome'] ?? '';
-        $offnohome   = !empty($input['offnohome']) ? $input['offnohome'] : null;//$input['offnohome'] ?? '';
-        $faxnohome   = !empty($input['faxnohome']) ? $input['faxnohome'] : null;//$input['faxnohome'] ?? '';
-        $no_oku      = !empty($input['no_oku']) ? $input['no_oku'] : null;//$input['no_oku'] ?? '';
+        $sesi = 'JAN-2025';
 
         $db = Config::connect();
 
         /* ret file name upload */
-        $fileQuery = $db->query("SELECT p001upgambar from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
+        $fileQuery = $db->query("SELECT p001nokp,p001upgambar,p001uplaluan from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $fileQuery->getRow();
-        $p001upgambar = $result->p001upgambar;
-
-        // check file name and path
-        $file = $this->request->getFile('file1');
-
-        if ($file && $file->isValid()) {
-            // Guess the file extension and define the new file name
-            $ext = $file->guessExtension();
-            $newNamePic = $kppass . '_pic.' . $ext;
         
-            // Define the upload directory
-            $uploadDir = WRITEPATH . 'uploads/';
-           // $uploadDirBackup = WRITEPATH . 'uploads/backup';
-            // Ensure the upload directory exists
-            if (!is_dir($uploadDir)) {
-                mkdir($uploadDir, 0777, true);
-            }
+        $p001nokp = $result->p001nokp;
+
+        $existingpasspic = $result->p001upgambar;
+        $existinguplaluan = $result->p001uplaluan;
+
+        //##########
+         // check file name and path
+        // $file = $this->request->getFile('file1');
+
+        // if ($file && $file->isValid()) {
+        //     // Guess the file extension and define the new file name
+        //     $ext = $file->guessExtension();
+        //     $newNamePic = $p001nokp . '_pic.' . $ext;
         
-            // Define the absolute path for the uploaded file
-            $absolutePath = $uploadDir . $newNamePic;
+        //     // Define the upload directory
+        //     $uploadDir = WRITEPATH . 'uploads/';
         
-           // Check if the file already exists before moving the new file
-            if (file_exists($absolutePath)) {
-                // Generate a backup name with a timestamp
-                $backupName = pathinfo($newNamePic, PATHINFO_FILENAME) . '_backup_' . time() . '.' . pathinfo($newNamePic, PATHINFO_EXTENSION);
-                $backupPath = $uploadDir . $backupName;
+        //     if (!is_dir($uploadDir)) {
+        //         mkdir($uploadDir, 0777, true);
+        //     }
+        
+        //     // Define the absolute path for the uploaded file
+        //     $absolutePath = $uploadDir . $newNamePic;
+        
+        //    // Check if the file already exists before moving the new file
+        //     if (file_exists($absolutePath)) {
+        //         // Generate a backup name with a timestamp
+        //         $backupName = pathinfo($newNamePic, PATHINFO_FILENAME) . '_backup_' . time() . '.' . pathinfo($newNamePic, PATHINFO_EXTENSION);
+        //         $backupPath = $uploadDir . $backupName;
 
-                // Rename (backup) the existing file
-                if (!rename($absolutePath, $backupPath)) {
-                    return $this->response->setJSON([
-                        'success' => false,
-                        'message' => 'Failed to backup the existing file.',
-                    ]);
-                }
+        //         // Rename (backup) the existing file
+        //         if (!rename($absolutePath, $backupPath)) {
+        //             return $this->response->setJSON([
+        //                 'success' => false,
+        //                 'message' => 'Failed to backup the existing file.',
+        //             ]);
+        //         }
 
-                // Log backup action
-                error_log("Backup created: " . $backupPath);
-            }
+        //         // Log backup action
+        //         error_log("Backup created: " . $backupPath);
+        //     }
 
-            // Now move the new file
-            if (!$file->move($uploadDir, $newNamePic)) {
-                return $this->response->setJSON([
-                    'success' => false,
-                    'message' => 'Failed to upload the file.',
-                ]);
-            }
+        //     // Now move the new file
+        //     if (!$file->move($uploadDir, $newNamePic)) {
+        //         return $this->response->setJSON([
+        //             'success' => false,
+        //             'message' => 'Failed to upload the file.',
+        //         ]);
+        //     }
 
-            // Log the successful upload
-            error_log("Uploaded file: " . $absolutePath);
+        //     // Log the successful upload
+        //     error_log("Uploaded file: " . $absolutePath);
+        // }
+        // else{
+        //     $newNamePic = $newNamePic ?? $existingpasspic;
+        // }
+        //###########
+
+        $uploadDir = WRITEPATH . 'uploads/';
+         error_log('Resolved path: ' . WRITEPATH . 'uploads/');
+     
+         // Ensure upload directory exists
+         if (!is_dir($uploadDir)) {
+             mkdir($uploadDir, 0777, true);
+         }
+
+         // File upload logic
+         $newNamePic = $this->handleFileUpload($this->request->getFile('file1'), $uploadDir, $p001nokp, 'pic');
+         $newNameFilelaluan = $this->handleFileUpload($this->request->getFile('filelalu'), $uploadDir, $p001nokp, 'laluan');      
+         
+         $newNamePic = $newNamePic ?? $existingpasspic;
+         $newNameFilelaluan = $newNameFilelaluan ?? $existinguplaluan;
+
+    $input = $this->request->getPost();
+
+    $laluan      = !empty($input['laluan']) ? $input['laluan'] : null;//$input['laluan'] ?? '';
+    $kppass      = !empty($input['kppass']) ? $input['kppass'] : null;//$input["kppass"] ?? '';
+    $fullname    = !empty($input['fullname']) ? $input['fullname'] : null;//$input['fullname'] ?? '';
+    $dob         = !empty($input['dob']) ? $input['dob'] : '0000-00-00';//$input['dob'] ?? '';
+    $statwarga     = !empty($input['wargast']) ? $input['wargast'] : null;//$input['warganeg'] ?? '';
+    $warganeg     = !empty($input['warganeg']) ? $input['warganeg'] : null;//$input['warganeg'] ?? '';
+    $stsoku      = !empty($input['stsoku']) ? $input['stsoku'] : null;//$input['stsoku'] ?? '';
+    $corradd     = !empty($input['corradd']) ? $input['corradd'] : null;//$input['corradd'] ?? '';
+    $corradd1     = !empty($input['corradd1']) ? $input['corradd1'] : null;//$input['corradd1'] ?? '';
+    $postcorradd  = !empty($input['postcorradd']) ? $input['postcorradd'] : null;//$input['postcorradd'] ?? '';
+    $bndrcorradd  = !empty($input['bndrcorradd']) ? $input['bndrcorradd'] : null;//$input['bndrcorradd'] ?? '';
+    $kdnegeri    = !empty($input['kdnegeri']) ? $input['kdnegeri'] : null;//$input['kdnegeri'] ?? '';
+    $kdnegara    = !empty($input['kdnegara']) ? $input['kdnegara'] : null;//$input['kdnegara'] ?? '';
+    $notel       = !empty($input['notel']) ? $input['notel'] : null;//$input['notel'] ?? '';
+    $hpno        = !empty($input['hpno']) ? $input['hpno'] : null;//$input['hpno'] ?? '';
+    $offno       = !empty($input['offno']) ? $input['offno'] : null;//$input['offno'] ?? '';
+    $faxno       = !empty($input['faxno']) ? $input['faxno'] : null;//$input['faxno'] ?? '';
+    $homeadd     = !empty($input['homeadd']) ? $input['homeadd'] : null;//$input['homeadd'] ?? '';
+    $homeadd1    = !empty($input['homeadd1']) ? $input['homeadd1'] : null;//$input['homeadd1'] ?? '';
+    $posthomeadd = !empty($input['posthomeadd']) ? $input['posthomeadd'] : null;//$input['posthomeadd'] ?? '';
+    $bndrhomeadd = !empty($input['bndrhomeadd']) ? $input['bndrhomeadd'] : null;//$input['bndrhomeadd'] ?? '';
+    $kdnegerihome= !empty($input['kdnegerihome']) ? $input['kdnegerihome'] : null;//$input['kdnegerihome'] ?? '';
+    $kdnegarahome= !empty($input['kdnegarahome']) ? $input['kdnegarahome'] : null;//$input['kdnegarahome'] ?? '';
+    $notelhome   = !empty($input['notelhome']) ? $input['notelhome'] : null;//$input['notelhome'] ?? '';
+    $hpnohome    = !empty($input['hpnohome']) ? $input['hpnohome'] : null;//$input['hpnohome'] ?? '';
+    $offnohome   = !empty($input['offnohome']) ? $input['offnohome'] : null;//$input['offnohome'] ?? '';
+    $faxnohome   = !empty($input['faxnohome']) ? $input['faxnohome'] : null;//$input['faxnohome'] ?? '';
+    $no_oku      = !empty($input['no_oku']) ? $input['no_oku'] : null;//$input['no_oku'] ?? '';
+
+    $updateQuery = $db->query(
+        "UPDATE ppsdblocal.p001 SET 
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001nokp = ?",
+        [
+            $fullname, $sesi, $dob, $statwarga, $warganeg, $corradd, $corradd1, $bndrcorradd, 
+            $kdnegeri, $postcorradd, $homeadd, $homeadd1, $bndrhomeadd, $kdnegerihome, 
+            $posthomeadd, $notel, $hpno, $stsoku, $newNamePic, $laluan, $no_oku, $faxno, 
+            $offno, $faxnohome, $offnohome, $kdnegara, $kdnegarahome, $notelhome, 
+            $hpnohome, $newNameFilelaluan, $p001nokp
+        ]
+    );
+    
+
+        if ($db->affectedRows() > 0) {
+        return $this->response->setJSON(['success' => 'ok']);
+        } else {
+        error_log("SQL Error: " . json_encode($db->error()));
+        return $this->response->setJSON(['success' => 'ko']);
         }
-        else{
-            $newNamePic = $p001upgambar;
-        }
 
-    //     $data = [
-    //         'p001nama'          => $fullname,
-    //         'p001tkhlahir'      => $dob,
-    //         'p001kwarganegara'  => $warganeg,
-    //        // 'p001kwarga'        => $wargast,
-    //         // 'p001knlahir'       => $kdnegeri,
-    //         'p001alamat1'       => $corradd,
-    //         'p001alamat2'       => $corradd1,
-    //         'p001bandar'        => $bndrcorradd,
-    //         'p001knegeri'       => $kdnegeri,
-    //         'p001poskod'        => $postcorradd,
-    //         'p001alamatt1'      => $homeadd,
-    //         'p001alamatt2'      => $homeadd1,
-    //         'p001bandart'       => $bndrhomeadd,
-    //         'p001knegerit'      => $kdnegerihome,
-    //         'p001poskodt'       => $posthomeadd,
-    //         'p001notel'         => $notel,
-    //         'p001nohp'          => $hpno,
-    //         'p001kcacat'        => $stsoku,
-    //         'p001upgambar'      => $newNamePic,
-    //         'p001laluanmohon'   => $laluan,
-    //         'p001nooku'         => $no_oku,
-    //         'p001faxno'         => $faxno,
-    //         'p001offno'         => $offno,
-    //         'p001faxnot'        => $faxnohome,
-    //         'p001offnot'        => $offnohome,
-    //         'p001alamatneg'     => $kdnegara,
-    //         'p001alamatnegt'    => $kdnegarahome,
-    //         'p001notelt'        => $notelhome,
-    //         'p001nohpt'         => $hpnohome,
-    //         'p001kaedah'
-    // ];
-
-            // Save data to the database    
-            $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001nama='$fullname',p001sesimsk='$sesi',p001tkhlahir = '$dob',p001kwarganegara='$statwarga',p001kwarga='$warganeg',p001alamat1='$corradd',p001alamat2='$corradd1',
-            p001bandar='$bndrcorradd',p001knegeri='$kdnegeri',p001poskod=$postcorradd,p001alamatt1 ='$homeadd',p001alamatt2 ='$homeadd1',p001bandart='$bndrhomeadd',p001knegerit='$kdnegerihome',p001poskodt=$posthomeadd,
-            p001notel='$notel',p001nohp='$hpno',p001kcacat = '$stsoku',p001upgambar='$newNamePic',p001laluanmohon = '$laluan',p001nooku = '$no_oku',p001faxno='$faxno',p001offno='$offno',p001faxnot='$faxnohome',p001offnot='$offnohome',p001alamatneg='$kdnegara',p001alamatnegt='$kdnegarahome',p001notelt='$notelhome',p001nohpt='$hpnohome' 
-            WHERE p001nokp='$kppass'");  
-        // $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001nama  = '$fullname',p001tkhlahir = '$dob',p001kwarganegara='$warganeg',p001alamat1='$corradd',p001alamat2='$corradd1',p001bandar='$bndrcorradd',p001knegeri='$kdnegeri',p001poskod=$postcorradd,
-        // p001alamatt1 ='$homeadd',p001alamatt2 ='$homeadd1',p001bandart='$bndrhomeadd',p001knegerit='$kdnegerihome',p001poskodt=$posthomeadd,p001notel='$notel',p001nohp='$hpno',
-        // p001kcacat = '$stsoku',p001upgambar='$newNamePic',p001laluanmohon = '$laluan',p001nooku = '$no_oku',p001faxno='$faxno',p001offno='$offno',p001faxnot='$faxnohome',p001offnot='$offnohome',p001alamatneg='$kdnegara',p001alamatnegt='$kdnegarahome',p001notelt='$notelhome',p001nohpt='$hpnohome'
-        // WHERE p001nokp='$kppass'");
-
-         error_log("sqlupdateQuery: " . $sqlupdateQuery);
-
-        $resultupd = $db->getLastQuery();
-
-           if($resultupd){
-            $data['success'] = 'ok';
-           }else{
-            $data['success'] = 'ko';
-           }
-
-        return $this->response->setJSON($data);   
+    // error_log("sqlupdateQuery: " . $sqlupdateQuery); 
     }
     //step2
     public function InsStep2()
@@ -325,7 +338,7 @@ class ApplyController extends ResourceController
 
         // Fetch user details
         $loginQuery = $db->query("SELECT p001nokp,p001upworkex FROM ppsdblocal.p00daftar, ppsdblocal.p001 
-        WHERE p00username = ? AND p000statsahreg = 1 AND p00usrid = p001nokp", [$user]);
+        WHERE p00username = ? AND p00usrid = p001nokp", [$user]);
 
         $result = $loginQuery->getRow();
         if (!$result) {
@@ -383,21 +396,7 @@ class ApplyController extends ResourceController
     error_log("SQL Error: " . json_encode($db->error()));
     return $this->response->setJSON(['success' => 'ko']);
     }
-        // $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001kprog='$program',p001tajuk='$proresearch',p001penyelia='$prosv',p001kaedah='$kaedah',p001modebelajar='$modebelajar',p001akadtinggi='$highedu',p001cgpa='$highunicgpa',p001unilama='$highuniname',p001bilexp=$exp,p001upworkex='$newNameExpr',p001knegaracgpa='$highcountryuni',p001cgpa2='$cgpamasterphd',
-        // p001knegaracgpa2='$masterphdcountry',p001unilama2='$unimasterphd' 
-        // WHERE p001nokp='$p001nokp'");  
-
-        //  error_log("sqlupdateQuery: " . $sqlupdateQuery);
-
-        // $resultupd = $db->getLastQuery();
-
-        //    if($resultupd){
-        //     $data['success'] = 'ok';
-        //    }else{
-        //     $data['success'] = 'ko';
-        //    }
-
-        // return $this->response->setJSON($data);   
+         
     }
 
      //step3
@@ -411,7 +410,7 @@ class ApplyController extends ResourceController
     // Fetch user details
     $loginQuery = $db->query("SELECT p001nokp,p001uppassport,p001uptrans,p001upproposal,p001upresit
                               FROM ppsdblocal.p00daftar, ppsdblocal.p001 
-                              WHERE p00username = ? AND p000statsahreg = 1 AND p00usrid = p001nokp", [$user]);
+                              WHERE p00username = ? AND p00usrid = p001nokp", [$user]);
 
     $result = $loginQuery->getRow();
     if (!$result) {
@@ -429,13 +428,21 @@ class ApplyController extends ResourceController
    
     $uploadDir = WRITEPATH . 'uploads/';
    // error_log('Resolved path: ' . WRITEPATH . 'uploads/');
-
+   if (!is_writable($uploadDir)) {
+    error_log("Directory is not writable: " . $uploadDir);
+    return;
+}
     // Ensure upload directory exists
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir, 0777, true);
     }
         // File upload logic
     $newNameIcPass = $this->handleFileUpload($this->request->getFile('fileic'), $uploadDir, $p001nokp, 'ic');
+    if ($newNameIcPass === null) {
+        error_log("Failed to upload IC/passport. File Error: " . $this->request->getFile('fileic')->getErrorString());
+    } else {
+        error_log("Successfully uploaded IC/passport as: " . $newNameIcPass);
+    }
     $newNameCert = $this->handleFileUpload($this->request->getFile('fileaka'), $uploadDir, $p001nokp, 'certificate');
     $newNamePro = $this->handleFileUpload($this->request->getFile('filePro'), $uploadDir, $p001nokp, 'proposal');
     $newNameFee = $this->handleFileUpload($this->request->getFile('fileFee'), $uploadDir, $p001nokp, 'receipt');
@@ -782,27 +789,29 @@ public function generatePdf(){
  * @param string $suffix
  * @return string|null The new file name or null if upload failed.
  */
-private function handleFileUpload($file, $uploadDir, $prefix, $suffix)
+
+ private function handleFileUpload($file, $uploadDir, $prefix, $suffix)
 {
     if ($file && $file->isValid()) {
 
-        // error_log("File Name: " . $file->getClientName());
-        // error_log("File Type: " . $file->getMimeType());
-        // error_log("File Size: " . $file->getSize());
+        error_log("File Name: " . $file->getClientName());
+        error_log("File Type: " . $file->getMimeType());
+        error_log("File Size: " . $file->getSize());
 
         // Ensure the file is not empty
         if ($file->getSize() === 0) {
-           // error_log("File is empty.");
+            error_log("File is empty.");
             return null;
         }
 
         // Allowed MIME types
-        $allowedMimeTypes = ['application/pdf','application/doc','application/docx'];// 'image/jpg', 'image/jpeg','image/png'
+        $allowedMimeTypes = ['application/pdf','application/doc','application/docx','application/x-pdf','application/octet-stream','image/jpg', 'image/jpeg','image/png'];
 
         // Check MIME type
         $mimeType = $file->getMimeType();
+        error_log("Detected MIME Type: $mimeType");
         if (!in_array($mimeType, $allowedMimeTypes)) {
-         //   error_log("Invalid file type: " . $mimeType);
+            error_log("Invalid file type: " . $mimeType);
             return null;
         }
 
@@ -818,7 +827,7 @@ private function handleFileUpload($file, $uploadDir, $prefix, $suffix)
             $backupPath = $uploadDir . $backupName;
 
             if (!rename($absolutePath, $backupPath)) {
-               // error_log("Failed to backup file: " . $absolutePath);
+                error_log("Failed to backup file: " . $absolutePath);
                 return null;
             }
 
@@ -827,7 +836,7 @@ private function handleFileUpload($file, $uploadDir, $prefix, $suffix)
 
         // Move the new file
         if ($file->move($uploadDir, $newFileName)) {
-          //  error_log("Uploaded file: " . $absolutePath);
+            error_log("Uploaded file: " . $absolutePath);
             return $newFileName;
         } else {
             error_log("Failed to upload file: " . $file->getClientName());
@@ -835,6 +844,7 @@ private function handleFileUpload($file, $uploadDir, $prefix, $suffix)
     }
     return null;
  }
+
  
  
  

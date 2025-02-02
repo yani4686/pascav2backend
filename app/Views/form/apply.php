@@ -103,8 +103,12 @@
 													<label class="col-lg-3 col-form-label">APEL. A certificate<span class="text-danger">*</span>
 													<span class="form-text text-muted">(Except normal)</span></label>
 													<div class="col-lg-4 custom-file ap">
-														<input type="file" class="custom-file-input" id="customFile" />
-														<label class="custom-file-label" for="customFile">Choose file</label>
+														<input type="file" class="custom-file-input" id ="filelalu" name="filelalu" />
+														<label class="custom-file-label" for="filelalu">Choose file</label>
+													</div>
+
+													<div style="padding: 20px;" id="cpt1">
+														<a href="#" id="doclalu" name="doclalu" data-file="lalu" class="view-file text-primary font-weight-bolder">View File</a>
 													</div>
 									</div>
 
@@ -445,8 +449,8 @@
                                                         <input type="file" class="custom-file-input" id="fileexpr" name="fileexpr" />
                                                         <label class="custom-file-label" for="fileexpr">Choose file</label>
                                                     </div>
-													<div style="padding: 10px;" id="cptExpr">
-														<a href="#" id="docic" name="docic" class="text-primary font-weight-bolder">View File</a>
+													<div style="padding: 10px;" id="cpt2">
+														<a href="#" id="docexp" name="docexp" class="text-primary font-weight-bolder">View File</a>
 													</div>
                                                 </div>
 

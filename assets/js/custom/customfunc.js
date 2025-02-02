@@ -71,82 +71,6 @@ $(document).ready(function () {
 	});
 
     // Navigate between steps
-    //method 1
-    // $(".save").click(function () {  
-   
-    //     var curStep = $(this).closest(".setup-content");
-    //     var curStepBtn = curStep.attr("id");
-    //     var nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a");
-    //     var curInputs = curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='file'],input[type='date']").serialize();
-  
-    //      // Optionally send data for the current step
-    //      sendStepData(curInputs);
-
-    //  });
-
-    //  //post apply step1
-    //  function sendStepData(value) {
-
-    //     var value1 =value;
-
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "http://localhost/pascav2/public/insstep1",
-    //         data: value1,
-    //         processData: false,  // tell jQuery not to process the data
-    //         contentType: 'application/x-www-form-urlencoded',	
-    //         beforeSend: function() {
-    //           $(".se-pre-con").fadeIn("slow");
-    //         },	
-    //         dataType: 'json',				
-    //         success: function(data){
-                
-    //             $(".se-pre-con").fadeOut("slow");
-                
-    //             switch (data.success) {
-    //               case 'ko':
-    //               var msg_header = "Error";
-    //               var msg = "Please try again.";
-    //               var icon_flag = 'error';
-    //               break;						
-    //               case 'ok':
-    //               var msg_header = "Success";
-    //               var msg = "Record have been successfully saved.";
-    //               var icon_flag = 'success';
-    //               break;
-    //               default:
-    //               var msg_header = "Error";
-    //               var msg = "Please try again.";
-    //               var icon_flag = 'error';	
-    //           }
-                
-    //             if(data=='ok'){
-                
-    //                 Swal.fire(
-    //                   msg_header,
-    //                   msg,
-    //                   icon_flag 
-    //                 ).then(function(){
-    //                         window.location = "http://localhost/pascav2/public/apply";
-    //                 });					
-    //             }
-    //             else{
-    //                 Swal.fire(
-    //                   msg_header,
-    //                   msg,
-    //                   icon_flag     
-    //                 ).then(function(){
-    //                   window.location = "http://localhost/pascav2/public/apply";
-    //               });						
-    //             }
-    //         },
-    //         error: function (xhr) {
-    //             console.error("Error:", xhr.responseText);
-    //         },
-
-    //         });
-        
-    //  }
 
    // method 2
    $(".save").click(function () {
@@ -168,7 +92,7 @@ $(document).ready(function () {
         if (this.files.length > 0) {
             for (let i = 0; i < this.files.length; i++) {
                 formData.append(this.name, this.files[i]);
-                //console.log(files[i].name);
+               // console.log(files[i].name);
             }
         }
     });
@@ -692,7 +616,13 @@ $(".updaddinfo").click(function () {
 $('#updreject').click(function() {
     alert('Rejec clicked & belum ada backend');
   });
-   
+
+$(".printPdfsurat").click(function () {
+
+alert("print & belum ada backend");
+
+});
+
 });
 
  
