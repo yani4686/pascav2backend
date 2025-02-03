@@ -137,7 +137,7 @@ class ApplyController extends ResourceController
         $db = Config::connect();
 
         $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
-        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex
         from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();
@@ -444,6 +444,11 @@ class ApplyController extends ResourceController
         error_log("Successfully uploaded IC/passport as: " . $newNameIcPass);
     }
     $newNameCert = $this->handleFileUpload($this->request->getFile('fileaka'), $uploadDir, $p001nokp, 'certificate');
+    if ($newNameCert === null) {
+        error_log("Failed to academic supporting doc. File Error: " . $this->request->getFile('fileaka')->getErrorString());
+    } else {
+        error_log("Successfully academic supporting doc as: " . $newNameCert);
+    }
     $newNamePro = $this->handleFileUpload($this->request->getFile('filePro'), $uploadDir, $p001nokp, 'proposal');
     $newNameFee = $this->handleFileUpload($this->request->getFile('fileFee'), $uploadDir, $p001nokp, 'receipt');
     

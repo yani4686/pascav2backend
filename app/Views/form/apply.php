@@ -562,7 +562,7 @@
 												
 									<!--  -->
                                                <div class="form-group row">                                             
-													<label class="col-lg-6 col-form-label">Scanned Copy of IC (Malaysian candidates)/Passport <span class="text-danger">*</span id="val_ada"><i class="fas fa-times-circle text-danger mr-5"></i></label>
+													<label class="col-lg-6 col-form-label">Scanned Copy of IC (Malaysian candidates)/Passport <span class="text-danger">*</span id="val_ada"><i id="iconpass" class="fas"></i></label>
 														<div class="col-lg-4 custom-file">
 															<input type="file" class="custom-file-input" id="fileic" name="fileic"/>
 															<label class="custom-file-label" for="fileic">Choose file</label>
@@ -582,7 +582,7 @@
 												</div>
 
 												<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">Academic Certificates/ Senate Letter/ Completion Letter Of Programme<span class="text-danger">*</span><i class="fas fa-check-circle text-success mr-5"></i></label>
+                                                <label class="col-lg-6 col-form-label">Academic Certificates/ Senate Letter/ Completion Letter Of Programme<span class="text-danger">*</span><i id="iconakad" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileaka" name="fileaka" accept=".doc, .docx, .pdf"/>
                                                         <label class="custom-file-label" for="fileaka">Choose file</label>
@@ -592,7 +592,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">Academic Transcript<span class="text-danger">*</span><i class="fas fa-check-circle text-success mr-5"></i></label>
+                                                <label class="col-lg-6 col-form-label">Academic Transcript<span class="text-danger">*</span></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileakaT" name="fileakaT"/>
                                                         <label class="custom-file-label" for="fileakaT">Choose file</label>
@@ -602,7 +602,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">English Language Qualification<span class="text-danger">*</span><i class="fas fa-check-circle text-success mr-5"></i></label>
+                                                <label class="col-lg-6 col-form-label">English Language Qualification<span class="text-danger">*</span><i id="iconeng" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileEng" name="fileEng"/>
                                                         <label class="custom-file-label" for="fileEng">Choose file</label>
@@ -612,7 +612,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">Research Proposal<span class="text-danger">*</span><i class="fas fa-check-circle text-success mr-5"></i></label>
+                                                <label class="col-lg-6 col-form-label">Research Proposal<span class="text-danger">*</span><i id="iconpro" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="filePro" name="filePro" />
                                                         <label class="custom-file-label" for="filePro">Choose file</label>
@@ -622,7 +622,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">Processing Fee Receipt<span class="text-danger">*</span><img style="margin:5px" id="info-mdl-5" src="pascav2/assets/images/info-icon-small.png" width="20" height="20"><i class="fas fa-check-circle text-success mr-5"></i></label>
+                                                <label class="col-lg-6 col-form-label">Processing Fee Receipt<span class="text-danger">*</span><img style="margin:5px" id="info-mdl-5" src="pascav2/assets/images/info-icon-small.png" width="20" height="20"><i id="iconresit" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileFee" name="fileFee"/>
                                                         <label class="custom-file-label" for="fileFee">Choose file</label>

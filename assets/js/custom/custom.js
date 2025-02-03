@@ -768,6 +768,7 @@ $.ajax({
         var akadtgg =  result.p001uptrans ;
         var upproposal =  result.p001upproposal;
         var upresit =  result.p001upresit;
+        var upbi =  result.p001upmuet;
         var namaejen =  result.p001ejenname ;
         var emelejen =  result.p001ejenemail ;
         var almtsemasa =  result.almtsemasa ;
@@ -778,6 +779,43 @@ $.ajax({
         var doclaluan = result.p001uplaluan;
         var docworkexp = result.p001upworkex;
 
+        //hide n display icon exist upload
+        if (passport === '' || passport === null){
+            $('#iconpass').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
+            $("#docic").hide();
+        }else{
+            $('#iconpass').removeClass().addClass('fas fa-check-circle text-success');
+            $("#docic").show();
+        }
+        if (akadtgg === '' || akadtgg === null){
+            $('#iconakad').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
+            $("#docaka").hide();
+        }else{
+            $('#iconakad').removeClass().addClass('fas fa-check-circle text-success');
+            $("#docaka").show();
+        }
+        if (upproposal === '' || upproposal === null){
+            $('#iconpro').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
+            $("#docpro").hide();
+        }else{
+            $('#iconpro').removeClass().addClass('fas fa-check-circle text-success');
+            $("#docpro").show();
+        }
+        if (upbi === '' || upbi === null){
+            $('#iconeng').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
+            $("#doceng").hide();
+        }else{
+            $('#iconeng').removeClass().addClass('fas fa-check-circle text-success');
+            $("#doceng").show();
+        }
+        if (upresit === '' || upresit === null){
+            $('#iconresit').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
+            $("#docfee").hide();
+        }else{
+            $('#iconresit').removeClass().addClass('fas fa-check-circle text-success');
+            $("#docfee").show();
+        }
+        //############
         var url = 'http://localhost/pascav2/public/uploads/';
 
         var urldisplaypic;
@@ -785,6 +823,7 @@ $.ajax({
         var urldisplayakadtggi;
         var urldisplayupproposal;
         var urldisplayresit;
+        var urldisplayeng;
         var urldisplaydoclaluan;
         var urldisplayworkexp;
 
@@ -793,6 +832,7 @@ $.ajax({
         urldisplayakadtggi = url + akadtgg;
         urldisplayupproposal = url + upproposal;
         urldisplayresit = url + upresit;
+        urldisplayeng = url + upbi;
         urldisplaydoclaluan = url + doclaluan;
         urldisplayworkexp = url + docworkexp;
 
@@ -878,6 +918,8 @@ document.querySelectorAll('.view-file').forEach(function(link) {
             fileUrl = urldisplayupproposal;
         }else if (fileType === 'resit') {
             fileUrl = urldisplayresit;
+        }else if (fileType === 'eng') {
+            fileUrl = urldisplayeng;
         }
     
     // Set the iframe's source to the passport image URL
