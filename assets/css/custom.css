@@ -108,10 +108,16 @@
     display: block;
 }
 /**/
+/* Default layout and style for timeline steps */
+/* Default layout and style for timeline steps */
 .timeline-steps {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+}
+
+.timeline-step p small {
+    color: #555;
 }
 
 .timeline-steps .timeline-step {
@@ -119,7 +125,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 1rem
+    margin: 1rem;
 }
 
 @media (min-width:768px) {
@@ -130,7 +136,7 @@
         width: 3.46rem;
         position: absolute;
         left: 7.5rem;
-        top: .3125rem
+        top: .3125rem;
     }
     .timeline-steps .timeline-step:not(:first-child):before {
         content: "";
@@ -139,15 +145,17 @@
         width: 3.8125rem;
         position: absolute;
         right: 7.5rem;
-        top: .3125rem
+        top: .3125rem;
     }
 }
 
+/* Timeline step content */
 .timeline-steps .timeline-content {
     width: 10rem;
-    text-align: center
+    text-align: center;
 }
 
+/* Default color for circle (neutral gray) */
 .timeline-steps .timeline-content .inner-circle {
     border-radius: 1.5rem;
     height: 1rem;
@@ -155,19 +163,42 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #3b82f6
+    background-color: #dddddd38; /* Neutral color (default) */
 }
 
+/* Circle background (before) - neutral color */
 .timeline-steps .timeline-content .inner-circle:before {
     content: "";
-    background-color: #3b82f6;
+    background-color: #dddddd38;  /* Neutral color */
     display: inline-block;
     height: 3rem;
     width: 3rem;
     min-width: 3rem;
     border-radius: 6.25rem;
-    opacity: .5
+    opacity: .5;
 }
+
+/* Active state (Yellow) */
+.timeline-step.active .inner-circle {
+    background-color: #ff9800;  /* Yellow for active */
+}
+
+/* Optional: Adjust opacity to make the active step more prominent */
+.timeline-step.active .inner-circle:before {
+    opacity: 1;  /* Full opacity for active steps */
+}
+
+/* Reset inactive steps to neutral color (gray) */
+.timeline-step:not(.active) .inner-circle {
+    background-color: #ccc;  /* Reset to neutral (gray) for inactive */
+}
+
+.timeline-step:not(.active) .inner-circle:before {
+    background-color: #ccc;  /* Reset outer circle to neutral */
+    opacity: .5;  /* More transparent for inactive steps */
+}
+
+
 /*label color*/
 .label1{
     /* border:1px solid #000 */
@@ -188,6 +219,12 @@
 .label1-info[href]:focus,.label1-info[href]:hover{
     background-color:#31b0d5
     }
+    .label2-info{
+        background-color: #31b0d5;
+        }
+    .label2-info[href]:focus,.label2-info[href]:hover{
+        background-color:#31b0d5
+        }
 .lbl-font {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;

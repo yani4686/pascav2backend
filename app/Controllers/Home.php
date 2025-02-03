@@ -34,6 +34,10 @@ class Home extends BaseController
     {
         return view('form/acceptance');
     }
+    public function summmarySc(): string
+    {
+        return view('form/summary');
+    }
     public function dashboardSc(): string
     {
         $session = \Config\Services::session();

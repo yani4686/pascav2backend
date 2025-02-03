@@ -313,14 +313,16 @@ $(document).ready(function () {
         $('#homeadd1').val($('#corradd1').val());
         $('#posthomeadd').val($('#postcorradd').val());
         $('#bndrhomeadd').val($('#bndrcorradd').val());
-     //   $('#kdnegerihome').val($('#kdnegeri').val());
+        $('#notelhome').val($('#notel').val());
+        $('#faxnohome').val($('#faxno').val());
     } else {
         // Clear the office address field when unchecked
         $('#homeadd').val('');
         $('#homeadd1').val('');
         $('#posthomeadd').val('');
         $('#bndrhomeadd').val('');
-    //    $('#kdnegerihome').val('');
+        $('#notelhome').val('');
+        $('#faxnohome').val('');
     }
 });
 
@@ -346,6 +348,18 @@ $('#postcorradd').on('input', function () {
 $('#bndrcorradd').on('input', function () {
     if ($('#sameAddress').is(':checked')) {
         $('#bndrhomeadd').val($(this).val());
+    }
+  });
+
+  $('#notel').on('input', function () {
+    if ($('#sameAddress').is(':checked')) {
+        $('#notelhome').val($(this).val());
+    }
+  });
+
+  $('#faxno').on('input', function () {
+    if ($('#sameAddress').is(':checked')) {
+        $('#faxnohome').val($(this).val());
     }
   });
 
@@ -455,7 +469,8 @@ $('#bndrcorradd').on('input', function () {
             $('#masterphdcountry').selectpicker('refresh');
 
         } else {
-            alert('No data found');
+           // alert('No data found');
+            console.log("fail ret ajax negara");
         }
     },
     error: function (xhr, status, error) {
@@ -494,7 +509,8 @@ $.ajax({
           $('#kdnegerihome').selectpicker('refresh');
 
       } else {
-          alert('No data found');
+        //  alert('No data found');
+          console.log("fail ret ajax negeri");
       }
   },
   error: function (xhr, status, error) {
@@ -525,7 +541,8 @@ $.ajax({
           $('#stsoku').selectpicker('refresh');
 
       } else {
-          alert('No data found');
+       //   alert('No data found');
+          console.log("fail ret ajax oku");
       }
   },
   error: function (xhr, status, error) {
@@ -557,7 +574,8 @@ $.ajax({
             $('#kdtaja').selectpicker('refresh');
   
         } else {
-            alert('No data found');
+           // alert('No data found');
+            console.log("fail ret ajax penaja");
         }
     },
     error: function (xhr, status, error) {
@@ -597,7 +615,8 @@ $.ajax({
             $('#dun').selectpicker('refresh');
   
         } else {
-            alert('No data found');
+            //alert('No data found');
+            console.log("fail ret ajax dun");
         }
     },
     error: function (xhr, status, error) {
@@ -778,6 +797,8 @@ $.ajax({
         var tkhexmbi = result.p001tkhexm;
         var doclaluan = result.p001uplaluan;
         var docworkexp = result.p001upworkex;
+        var statmohon = result.p001status;
+        var statdesc = result.statdesc;
 
         //hide n display icon exist upload
         if (passport === '' || passport === null){
@@ -816,6 +837,13 @@ $.ajax({
             $("#docfee").show();
         }
         //############
+        //change value color button status
+        if (statmohon === '' || statmohon === null) {
+            $('#stat').removeClass().addClass('label1 label1-info lbl-font');  
+        } else if (statmohon === '0') {
+            $('#stat').removeClass().addClass('label1 label2-info lbl-font'); 
+        }
+
         var url = 'http://localhost/pascav2/public/uploads/';
 
         var urldisplaypic;
@@ -868,10 +896,10 @@ $.ajax({
         $('#hpno').val(nohp);
         $('#notelhome').val(notelt);
         $('#hpnohome').val(nohpt);
-        $('#offno').val(faxno);
-        $('#faxno').val(offno);
-        $('#offnohome').val(faxnot);
-        $('#faxnohome').val(offnot);
+        $('#faxno').val(faxno);
+        $('#offno').val(offno);
+        // $('#offnohome').val(faxnot);
+        $('#faxnohome').val(faxnot);
         $('#highuni').val(namauni);
         $('#highcgpa').val(highcgpa);
         $('#unimasterphd').val(masteruni);
@@ -885,6 +913,7 @@ $.ajax({
         $("#resultaddbi").val(resultbi);
         $("#registerid").val(noregbi);
         $("#datexm").val(tkhexmbi);
+        $("#stat").text(statdesc);
 
         $("#cpt1 a").attr({
             'href': urldisplaydoclaluan,

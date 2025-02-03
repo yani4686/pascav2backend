@@ -175,6 +175,22 @@ License: You must have a valid license purchased only from themeforest(the above
 										<span class="menu-text">Acceptance</span>	
 									</a>
 								</li>
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+									<a href="http://localhost/pascav2/public/summary" class="menu-link">
+										<span class="svg-icon menu-icon">
+											<!--begin::Svg Icon | path:assets/media/svg/icons/Shopping/Barcode-read.svg-->
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<rect x="0" y="0" width="24" height="24" />
+													<rect fill="#000000" opacity="0.3" x="4" y="4" width="8" height="16" />
+													<path d="M6,18 L9,18 C9.66666667,18.1143819 10,18.4477153 10,19 C10,19.5522847 9.66666667,19.8856181 9,20 L4,20 L4,15 C4,14.3333333 4.33333333,14 5,14 C5.66666667,14 6,14.3333333 6,15 L6,18 Z M18,18 L18,15 C18.1143819,14.3333333 18.4477153,14 19,14 C19.5522847,14 19.8856181,14.3333333 20,15 L20,20 L15,20 C14.3333333,20 14,19.6666667 14,19 C14,18.3333333 14.3333333,18 15,18 L18,18 Z M18,6 L15,6 C14.3333333,5.88561808 14,5.55228475 14,5 C14,4.44771525 14.3333333,4.11438192 15,4 L20,4 L20,9 C20,9.66666667 19.6666667,10 19,10 C18.3333333,10 18,9.66666667 18,9 L18,6 Z M6,6 L6,9 C5.88561808,9.66666667 5.55228475,10 5,10 C4.44771525,10 4.11438192,9.66666667 4,9 L4,4 L9,4 C9.66666667,4 10,4.33333333 10,5 C10,5.66666667 9.66666667,6 9,6 L6,6 Z" fill="#000000" fill-rule="nonzero" />
+												</g>
+											</svg>
+											<!--end::Svg Icon-->
+										</span>
+										<span class="menu-text">Summary&Print</span>
+									</a>
+								</li>
 							</ul>
 							<!--end::Menu Nav-->
 						</div>
@@ -244,17 +260,23 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="card card-custom gutter-b">
 										<div class="card-body">
 												<div class="d-flex justify-content-between flex-column pt-4 h-100">
+													
 													<div class="pb-5">
-														<div class="d-flex flex-column flex-center">
+
+													<!--begin::Header-->
+														<div class="ad-header" style="margin-top:-10px; padding: 13px;">Checklist</div>
+													<!--end::Header-->
+
+														<div class="d-flex flex-column flex-center" style="padding-top: 16px;">
 															<div class="symbol symbol-120 symbol-circle symbol-success overflow-hidden">	
 																<div class="image-boxdashboard" id="imageBox">
 																	<img id="previewImage" src="./assets/media/users/blank.png" alt="Passport Picture" style="width: 100%; height: 100%; display: block;">
 																</div>
-																<!-- <i class="symbol-badge bg-success"></i> -->
 															</div>
 														</div>
 													
 													<div class="pt-1">
+
 														<!-- profile -->
 														<div class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
@@ -272,8 +294,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
 																		<span class="text-muted font-weight-bold">Profile</span>
-																		<div id="statComplete"><a href="http://localhost/pascav2/public/apply"><span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px ">Not Completed</span></a></div>
-																		<div id="statCompletedone"><a href="http://localhost/pascav2/public/apply"><span class="font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px step-link">Completed</span></a></div>
+																		<div id="statComplete"><a href="http://localhost/pascav2/public/apply"><span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px ">Incomplete</span></a></div>
+																		<div id="statCompletedone"><a href="http://localhost/pascav2/public/apply"><span class="font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px step-link">Complete</span></a></div>
 																	</div>
 														</div>
 														<!-- program -->
@@ -307,16 +329,14 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
-																			<span class="svg-icon svg-icon-2x svg-icon-dark-50">
-																				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																								<rect x="0" y="0" width="24" height="24"></rect>
-																								<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
-																								<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
-																								<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
-																								<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
-																							</g>
-																						</svg>
+																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Code\Plus.svg-->
+																			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+																				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																					<rect x="0" y="0" width="24" height="24"/>
+																					<circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"/>
+																					<path d="M11,11 L11,7 C11,6.44771525 11.4477153,6 12,6 C12.5522847,6 13,6.44771525 13,7 L13,11 L17,11 C17.5522847,11 18,11.4477153 18,12 C18,12.5522847 17.5522847,13 17,13 L13,13 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,13 L7,13 C6.44771525,13 6,12.5522847 6,12 C6,11.4477153 6.44771525,11 7,11 L11,11 Z" fill="#000000"/>
+																				</g>
+																			</svg><!--end::Svg Icon-->
 																			</span>
 																		</span>
 																</div>
@@ -329,16 +349,15 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
-																			<span class="svg-icon svg-icon-2x svg-icon-dark-50">
+																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Files\File.svg-->
 																				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																								<rect x="0" y="0" width="24" height="24"></rect>
-																								<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
-																								<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
-																								<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
-																								<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
-																							</g>
-																						</svg>
+																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																						<polygon points="0 0 24 0 24 24 0 24"/>
+																						<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+																						<rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+																						<rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
+																					</g>
+																				</svg><!--end::Svg Icon-->
 																			</span>
 																		</span>
 																</div>
@@ -351,16 +370,14 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
-																			<span class="svg-icon svg-icon-2x svg-icon-dark-50">
+																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Design\Stamp.svg-->
 																				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																								<rect x="0" y="0" width="24" height="24"></rect>
-																								<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
-																								<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
-																								<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
-																								<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
-																							</g>
-																						</svg>
+																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																						<rect x="0" y="0" width="24" height="24"/>
+																						<path d="M12.9863016,8.83409843 C12.9953113,8.88805868 13,8.94348179 13,9 L13,11 L17,11 C18.1045695,11 19,11.8954305 19,13 L19,16 L5,16 L5,13 C5,11.8954305 5.8954305,11 7,11 L11,11 L11,9 C11,8.94348179 11.0046887,8.88805868 11.0136984,8.83409843 C9.84135601,8.42615464 9,7.31133193 9,6 C9,4.34314575 10.3431458,3 12,3 C13.6568542,3 15,4.34314575 15,6 C15,7.31133193 14.158644,8.42615464 12.9863016,8.83409843 Z" fill="#000000"/>
+																						<rect fill="#000000" opacity="0.3" x="5" y="18" width="14" height="2" rx="1"/>
+																					</g>
+																				</svg><!--end::Svg Icon-->
 																			</span>
 																		</span>
 																</div>
@@ -373,16 +390,14 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
-																			<span class="svg-icon svg-icon-2x svg-icon-dark-50">
+																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Devices\Printer.svg-->
 																				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																								<rect x="0" y="0" width="24" height="24"></rect>
-																								<rect fill="#000000" opacity="0.3" x="13" y="4" width="3" height="16" rx="1.5"></rect>
-																								<rect fill="#000000" x="8" y="9" width="3" height="11" rx="1.5"></rect>
-																								<rect fill="#000000" x="18" y="11" width="3" height="9" rx="1.5"></rect>
-																								<rect fill="#000000" x="3" y="13" width="3" height="7" rx="1.5"></rect>
-																							</g>
-																						</svg>
+																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																						<rect x="0" y="0" width="24" height="24"/>
+																						<path d="M16,17 L16,21 C16,21.5522847 15.5522847,22 15,22 L9,22 C8.44771525,22 8,21.5522847 8,21 L8,17 L5,17 C3.8954305,17 3,16.1045695 3,15 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,15 C21,16.1045695 20.1045695,17 19,17 L16,17 Z M17.5,11 C18.3284271,11 19,10.3284271 19,9.5 C19,8.67157288 18.3284271,8 17.5,8 C16.6715729,8 16,8.67157288 16,9.5 C16,10.3284271 16.6715729,11 17.5,11 Z M10,14 L10,20 L14,20 L14,14 L10,14 Z" fill="#000000"/>
+																						<rect fill="#000000" opacity="0.3" x="8" y="2" width="8" height="2" rx="1"/>
+																					</g>
+																				</svg><!--end::Svg Icon-->
 																			</span>
 																		</span>
 																</div>
@@ -391,8 +406,10 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
 																	</div>
 														</div>
+
 													</div>
 													</div>
+
 												</div>
 											</div>
 										</div>
@@ -414,42 +431,31 @@ License: You must have a valid license purchased only from themeforest(the above
 											<!--end::Header-->
 
 											<!--begin::Body-->
-										<!-- <div class="stepwizard1">
-                                    	<div class="stepwizard1-row setup-panel">
-											<div class="stepwizard1-step"> 
-												<a href="#step-1" type="button" class="btn btn-success btn-circle1" id="click-1">1</a>
-												<p><small>Profile</small></p>
-											</div>
-											<div class="stepwizard1-step"> 
-												<a href="#step-2" type="button" class="btn btn-default btn-circle1" disabled="disabled" id="click-2">2</a>
-												<p><small>Program Detail</small></p>
-											</div>
-										</div>
-										</div> -->
 											<div class="row">
-        									 <div class="col">
-												<div class="timeline-steps aos-init aos-animate" data-aos="fade-up" style="margin-top:10px; padding: 13px;">
-													<div class="timeline-step">
-														<div class="timeline-content">
-														<div class="inner-circle"></div>
+												<div class="col">
+													<div class="timeline-steps aos-init aos-animate" data-aos="fade-up" style="margin-top:10px; padding: 13px;">
+														<div class="timeline-step" id="step-application">
+															<div class="timeline-content">
+																<div class="inner-circle"></div>
 																<p><small>Application</small></p>
+															</div>
 														</div>
-													</div>
-													<div class="timeline-step">
-														<div class="timeline-content">
-														<div class="inner-circle"></div>
+														<div class="timeline-step" id="step-processing">
+															<div class="timeline-content">
+																<div class="inner-circle"></div>
 																<p><small>Processing</small></p>
+															</div>
 														</div>
-													</div>
-													<div class="timeline-step">
-														<div class="timeline-content">
-														<div class="inner-circle"></div>
-																<p><small>Approve</small></p>
+														<div class="timeline-step" id="step-result">
+															<div class="timeline-content">
+																<div class="inner-circle"></div>
+																<p><small>Result</small></p>
+															</div>
 														</div>
 													</div>
 												</div>
-											 </div>	
-											</div>	
+											</div>
+
 											<!--end::Body-->
 											
 										</div>
@@ -476,6 +482,12 @@ License: You must have a valid license purchased only from themeforest(the above
 																</thead>
 																	<tbody>
 																		<tr>
+																			<td class="pl-0">01/10/2024</td>
+																			<td>Successful sign up application postgraduate program. Complete checklist</td>
+																			<td><a href="#">Click Here</a></td>
+																			<!-- <td><span class="label label-grey label-pill label-inline mr-2">Draft</span></td> -->
+																		</tr>
+																		<tr>
 																			<td class="pl-0">14/10/2024</td>
 																			<td>Your application has been submitted</td>
 																			<!-- <td><a href="form/apply.php">Click Here</a></td> -->
@@ -500,32 +512,6 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</tr> -->
 																	</tbody>
 															</table>
-													<!-- <div class="form-group">
-														<h6 class="card-title font-weight-bolder text-dark">Guidelines Checklist</h6>
-														<div class="radio-inline mb-11">
-																<label class="radio radio-accent radio-secondary mr-0">
-																	<input type="radio" name="color-selector" />
-																	<span></span>Draft/Incomplete
-																</label>
-																<label class="radio radio-accent radio-primary mr-0">
-																	<input type="radio" name="color-selector" />
-																	<span></span>Processing
-																</label>
-																<label class="radio radio-accent radio-success mr-0">
-																	<input type="radio" name="color-selector" />
-																	<span></span>Complete/New
-																</label>
-																<label class="radio radio-accent radio-info mr-0">
-																	<input type="radio" name="color-selector" />
-																	<span></span>Approve
-																</label>																
-																<label class="radio radio-accent radio-danger mr-0">
-																	<input type="radio" name="color-selector"/>
-																	<span></span>Reject
-																</label>
-															</div>
-													</div> -->
-													<!-- end ::form -->
                                                 </div>
                                                  <!-- end ::Table -->
 												</div>												

@@ -10,6 +10,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/apply', 'Home::applySc');
 $routes->get('/accept', 'Home::acceptanceSc');
 $routes->get('/dashboard', 'Home::dashboardSc');
+$routes->get('/summary', 'Home::summmarySc');
 $routes->get('/test', 'Home::test');
 
 $routes->get('/getdata', 'DashboardController::getAllSessionData');

@@ -292,21 +292,23 @@
                                                     <div class="col-lg-4">
                                                         <input type="text" class="form-control" name="notelhome" id="notelhome"/>
                                                     </div>
-													<label class="col-lg-3 col-form-label">Mobile No <span class="text-danger">*</span></label>
-                                                    <div class="col-lg-4">
-                                                        <input type="text" class="form-control" name="hpnohome" id="hpnohome"/>
-                                                    </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                                    <label class="col-lg-3 col-form-label">Office.No</label>
-                                                    <div class="col-lg-4">
-                                                        <input type="text" class="form-control" name="offnohome" id="offnohome" />
-                                                    </div>
 													<label class="col-lg-3 col-form-label">Fax.No</label>
                                                     <div class="col-lg-4">
                                                         <input type="text" class="form-control" name="faxnohome" id="faxnohome"/>
                                                     </div>
+													
+                                    </div>
+
+                                    <div class="form-group row">
+                                                    <!-- <label class="col-lg-3 col-form-label">Office.No</label>
+                                                    <div class="col-lg-4">
+                                                        <input type="hidden" class="form-control" name="offnohome" id="offnohome" />
+                                                    </div> -->
+													<!-- <label class="col-lg-3 col-form-label">Mobile No <span class="text-danger">*</span></label>
+                                                    <div class="col-lg-4">
+                                                        <input type="text" class="form-control" name="hpnohome" id="hpnohome"/>
+                                                    </div> -->
+													
                                     </div>
 
 									<div class="separator separator-dashed my-6"></div>

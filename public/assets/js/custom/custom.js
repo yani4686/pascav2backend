@@ -160,6 +160,7 @@ $.ajax({
   success: function (result) {
       // Check if the response contains data
       var image     =  result.p001upgambar ;
+      var statmohondash = result.p001status;
 
       var urldisplaypic;
       urldisplaypic = 'http://localhost/pascav2/public/uploads/' + image;
@@ -173,7 +174,21 @@ $.ajax({
         $('#image-boxdashboard').removeClass('has-image');
     }
 
-      // $('#profilepic').attr('src', urldisplaypic).show();
+    $('.timeline-step').removeClass('active');
+    // Apply different classes or styles depending on the status
+      if (statmohondash === '' || statmohondash === null) {
+        $('#step-application').addClass('active');  // Yellow for active
+        $('#step-processing').removeClass('active'); // Reset to gray
+        $('#step-result').removeClass('active');     // Reset to gray
+    } else if (statmohondash === '0') {
+      $('#step-application').addClass('active'); // Reset to gray
+      $('#step-processing').addClass('active');    // Yellow for active
+      $('#step-result').removeClass('active');     // Reset to gray
+    } else if (statmohondash === '1') {
+      $('#step-application').removeClass('active'); // Reset to gray
+      $('#step-processing').removeClass('active');  // Reset to gray
+      $('#step-result').addClass('active');         // Yellow for active
+    }
 
   }
 });
