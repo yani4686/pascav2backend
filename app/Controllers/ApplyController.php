@@ -137,7 +137,17 @@ class ApplyController extends ResourceController
         $db = Config::connect();
 
         $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
-        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,case p001status when '' then 'Draf' when '0' then 'Baru' when '1' then 'Lulus PPS' when '2' then 'Lulus Fakulti1' when '3' then 'Gagal Fakulti1' when '4' then 'Pindah Fakulti' when '5' then 'Lulus Fakulti2' when '6' then 'Gagal Fakulti2' end as statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+    WHEN p001status = '' THEN 'Draft'
+    WHEN p001status IS NULL THEN 'Draft'
+    WHEN p001status = '0' THEN 'New'
+    WHEN p001status = '1' THEN 'Approved'
+    WHEN p001status = '2' THEN 'Lulus Fakulti1'
+    WHEN p001status = '3' THEN 'Gagal Fakulti1'
+    WHEN p001status = '4' THEN 'Pindah Fakulti'
+    WHEN p001status = '5' THEN 'Lulus Fakulti2'
+    WHEN p001status = '6' THEN 'Gagal Fakulti2'
+END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex
         from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();

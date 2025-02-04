@@ -7,6 +7,108 @@ $(window).on('load', function() {
 
 $(document).ready(function () {
 
+//include jump page from dashboard
+
+    // Initially hide all steps
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn');
+
+    allWells.hide(); // Default hide all steps
+
+    // Handle clicking on step links in the wizard
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
+
+        // Make sure the current item is not disabled
+        if (!$item.hasClass('disabled')) {
+            // Reset the button states
+            navListItems.removeClass('btn-success').addClass('btn-default');
+            $item.addClass('btn-success');
+            
+            // Hide all steps and show the current step
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus(); // Focus the first input of the step
+        }
+    });
+
+    // Handle Next button click
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find(""),
+            isValid = true;
+
+        // Check for valid inputs
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        // If valid, move to the next step
+        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    // Handle the jump to specific step from the dashboard
+    $(".setup-content").hide();
+
+    // Show Step 1 by default (or any other step you want)
+    var targetStep = getParameterByName("step") || "step-1";  // Default to step-1 if no step param
+    $("#" + targetStep).show();
+
+    $(".dashboard-link").click(function () {
+
+        var targetStep = $(this).attr("href").split('?step=')[1];
+        window.location.href = "http://localhost/pascav2/public/apply?step=" + targetStep; 
+
+        // Function to get URL parameters
+        function getParameterByName(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&]*)|&|$)"),
+                results = regex.exec(url);
+            return results ? decodeURIComponent(results[2].replace(/\+/g, " ")) : "";
+        }
+
+        // var targetStep = $(this).attr("id").replace("go-to-step-", "step-");
+
+        // console.log("Target step found sblm condition: " + targetStep);
+        // console.log($("#" + targetStep));
+        // console.log("test:" + ($("#" + targetStep).length > 0)); // Log if step exists
+        // console.log($("#" + targetStep).html());
+        // console.log($("#" + targetStep).length);
+
+       // var targetUrl = "/form/" + targetStep + ".html";
+      //  console.log(targetUrl);
+
+        // Check if the target step exists in the DOM
+        // if ($("#" + targetStep).length > 0) {
+        //   console.log("Target step found: " + targetStep);
+        //     // Hide all steps
+        //     allWells.hide();
+
+        //     // Show the corresponding step
+        //    $("#" + targetStep).show();
+
+        //     // Activate the corresponding step button in the wizard
+        //     navListItems.removeClass('btn-success').addClass('btn-default');
+        //     $("#click-" + targetStep.split("-")[1]).removeClass('btn-default').addClass('btn-success');
+        // } else {
+        //   console.log("Error: Target step not found - " + targetStep);  // Debugging: Show error if target step doesn't exist
+        // }
+    });
+
+    // Initially trigger the first step (Optional, you can remove this if you don't need a default step on load)
+    $('div.setup-panel div a.btn-success').trigger('click');
+   //------
+
     $('#login_submit').click(function (e) {
 
         var form = document.getElementById('kt_login_signin_form');
@@ -597,14 +699,6 @@ $(".printPageIcon").click(function () {
 
 });
 
-//link page dr dashboard
-// On click of the dashboard link
-// $(".step-link").click(function () {
-//     // Get the target step ID
-//    // var targetStep = $(this).data("target-step");
-
-//     //alert(targetStep);
-// });
 //upd add info after accept offer
 $(".updaddinfo").click(function () {
 
@@ -612,10 +706,43 @@ $(".updaddinfo").click(function () {
  
 });
 
-//upd reject offer
+//upd reject offer dr dashboard
 $('#updreject').click(function() {
     alert('Rejec clicked & belum ada backend');
   });
+
+//jump to stepwizard from dashboard
+
+// Initially hide all steps
+// $(".setup-content").hide();
+
+// // Show Step 1 by default
+// $("#step-1").show();
+
+// // When the dashboard link (e.g., "Profile") is clicked, jump to the corresponding step
+// $(".dashboard-link").click(function () {
+//     // Get the target step from the span id (e.g., go-to-step-1 -> step-1)
+//     var targetStep = $(this).attr("id").replace("go-to-step-", "step-");
+//     console.log("Target Step: " + targetStep);  // Debugging: Check the targetStep value
+
+//     // Check if the target step exists in the DOM
+//     if ($("#" + targetStep).length > 0) {
+//         // Hide all steps
+//         $(".setup-content").hide();
+
+//         // Show the corresponding step
+//         $("#" + targetStep).show();
+
+//         // Reset step wizard button states
+//         $(".stepwizard-step a").removeClass("btn-success").addClass("btn-default").prop("disabled", true); // Reset all steps
+//         var stepNum = targetStep.split("-")[1]; // Extract step number
+//         console.log("stepNum: " + stepNum);
+//         $("#click-" + stepNum).removeClass("btn-default").addClass("btn-success").prop("disabled", false); // Activate current step
+//     } else {
+//         alert("Error: Target step not found - " + targetStep);  // Debugging: Show error if target step doesn't exist
+//     }
+// });
+//########
 
 $(".printPdfsurat").click(function () {
 

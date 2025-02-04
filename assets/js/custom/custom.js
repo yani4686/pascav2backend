@@ -1,53 +1,54 @@
 $(document).ready(function () {
 
-    var navListItems = $('div.setup-panel div a'),
-    allWells = $('.setup-content'),
-    allNextBtn = $('.nextBtn');
-   // alert(allNextBtn);
+//     var navListItems = $('div.setup-panel div a'),
+//     allWells = $('.setup-content'),
+//     allNextBtn = $('.nextBtn');
+//    // alert(allNextBtn);
 
-    allWells.show();//default hide
+//     allWells.show();//default hide
 
-    navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-            $item = $(this);
+//     navListItems.click(function (e) {
+//         e.preventDefault();
+//         var $target = $($(this).attr('href')),
+//             $item = $(this);
 	
-        if (!$item.hasClass('disabled')) {
-            navListItems.removeClass('btn-success').addClass('btn-default');
-            $item.addClass('btn-success');
-            allWells.hide();
-            $target.show();
-            $target.find('input:eq(0)').focus();
-        }
+//         if (!$item.hasClass('disabled')) {
+//             navListItems.removeClass('btn-success').addClass('btn-default');
+//             $item.addClass('btn-success');
+//             allWells.hide();
+//             $target.show();
+//             $target.find('input:eq(0)').focus();
+//         }
 	
-    });
+//     });
 
-    allNextBtn.click(function () {
+//     allNextBtn.click(function () {
 
-        isValid = true;
+//         isValid = true;
 
-        var curStep = $(this).closest(".setup-content"),
-        curStepBtn = curStep.attr("id"),
-        nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-        curInputs = curStep.find("input[type='text']"),
-        //curInputs = curStep.find(""),
-        isValid = true;
+//         var curStep = $(this).closest(".setup-content"),
+//         curStepBtn = curStep.attr("id"),
+//         nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+//         curInputs = curStep.find("input[type='text']"),
+//         //curInputs = curStep.find(""),
+//         isValid = true;
 
-      //  alert(curStep);
+//       //  alert(curStep);
 
-        $(".form-group").removeClass("has-error");
-        for (var i = 0; i < curInputs.length; i++) {
-            if (!curInputs[i].validity.valid) {
-                isValid = false;
-                $(curInputs[i]).closest(".form-group").addClass("has-error");
-            }
-        }
+//         $(".form-group").removeClass("has-error");
+//         for (var i = 0; i < curInputs.length; i++) {
+//             if (!curInputs[i].validity.valid) {
+//                 isValid = false;
+//                 $(curInputs[i]).closest(".form-group").addClass("has-error");
+//             }
+//         }
 
-        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+//         if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
 
-    });
+//     });
 
-    $('div.setup-panel div a.btn-success').trigger('click');
+//     $('div.setup-panel div a.btn-success').trigger('click');
+
 /*selectdropdown */
     $('#laluan').on('change', function () {
 
