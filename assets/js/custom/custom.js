@@ -134,38 +134,37 @@ $(document).ready(function () {
 
         $("#hideag").hide();
 
-    // $("input[name$='stssc']").on('click', function () {
-    //     var radio_value = $(this).val();
+    $("input[name$='stssc']").on('click', function () {
+        var radio_value = $(this).val();
 
-    //     if(radio_value=='') {
-    //         $("#divtypefinance1").hide();
-    //         $("#divtypefinance2").hide();
-    //         $("#divtypefinance3").hide();
-    //         $("#hidetypefinance").hide();
-    //       }
-    //       else if(radio_value=='sch') {
-    //         $("#divtypefinance1").show();
-    //         $("#typesponser").show();
-    //         $("#divtypefinance2").hide();
-    //         $("#house").hide();
-    //         $("#divtypefinance3").hide();
-    //         $("#upload").hide();
-    //         $("#hidetypefinance").show();
-    //       }
-    //       else if(radio_value=='self') {
-    //         $("#divtypefinance1").hide();
-    //         $("#typesponser").hide();
-    //         $("#divtypefinance2").show();
-    //         $("#house").show();
-    //         $("#divtypefinance3").show();
-    //         $("#upload").show();
-    //         $("#hidetypefinance").show();
-    //        }
-    //     });
+        if(radio_value==='') {
+            $("#divtypefinance1").hide();
+            $("#divtypefinance2").hide();
+            $("#divtypefinance3").hide();
+            $("#hidetypefinance").hide();
+          }
+          else if(radio_value==='sch') {
+            $("#divtypefinance1").show();
+            $("#typesponser").show();
+            $("#divtypefinance2").hide();
+            $("#house").hide();
+            $("#divtypefinance3").hide();
+            $("#upload").hide();
+            $("#hidetypefinance").show();
+          }
+          else if(radio_value==='self') {
+            $("#divtypefinance1").hide();
+            $("#typesponser").hide();
+            $("#divtypefinance2").show();
+            $("#house").show();
+            $("#divtypefinance3").show();
+            $("#upload").show();
+            $("#hidetypefinance").show();
+           }
+        });
 
-    //     $('[name="stssc"]:checked').trigger('click');
-    
-    //      $("#hidetypefinance").hide();
+        $('[name="stssc"]:checked').trigger('click');
+         $("#hidetypefinance").hide();
 
         // status english
         
@@ -552,31 +551,27 @@ $.ajax({
 });
 /* kod penaja */
 $.ajax({
-    url: 'http://localhost/pascav2/public/getkodpenaja', // Replace with your server endpoint
+    url: 'http://localhost/pascav2/public/getkodpenaja',
     method: 'GET',
-    dataType: 'json', // Expect JSON response
+    dataType: 'json',
     success: function (response) {
-        // Check if the response contains data
         if (response && response.length > 0) {
-            // Iterate through the data
             response.forEach(function (item) {
-                var tajaCode = item.a010kpenaja;        // Retrieve the value of 'z041dun'
+                var tajaCode = String(item.a010kpenaja).trim();//samakan type data
                 var tajaktrg = item.a010penaja;
-                // Append each item as an option
                 $('#kdtaja').append(
                     $('<option>', {
-                        value: tajaCode, // Use 'id' from response
-                        text: tajaktrg, // Use 'name' from response
+                        value: tajaCode,
+                        text: tajaktrg, 
                     })
                 );
             });
   
-            // Refresh the selectpicker to update UI
+          //  $('#kdtaja').selectpicker('val', response[0].a010kpenaja);
             $('#kdtaja').selectpicker('refresh');
   
         } else {
            // alert('No data found');
-            console.log("fail ret ajax penaja");
         }
     },
     error: function (xhr, status, error) {
@@ -748,6 +743,23 @@ $('#file1').on('change', function (event) {
 });
 /* Display pd apply form */
 
+// $.ajax({
+//     url: 'http://localhost/pascav2/public/getkodpenaja',
+//     method: 'GET',
+//     dataType: 'json',
+//     success: function (response) {
+//         if (response && response.length > 0) {
+//             response.forEach(function (item) {
+//                 var tajaCode = item.a010kpenaja;
+//                 var tajaktrg = item.a010penaja;
+//                 $('#kdtaja').append($('<option>', {
+//                     value: tajaCode,
+//                     text: tajaktrg,
+//                 }));
+//             });
+
+//             $('#kdtaja').selectpicker('refresh');        
+
 $.ajax({
     url: 'http://localhost/pascav2/public/displayprofile', // Replace with your server endpoint
     method: 'GET',
@@ -800,6 +812,7 @@ $.ajax({
         var docworkexp = result.p001upworkex;
         var statmohon = result.p001status;
         var statdesc = result.statdesc;
+        var amounthouse = result.p001amthouse;
 
         //hide n display icon exist upload
         if (passport === '' || passport === null){
@@ -915,6 +928,7 @@ $.ajax({
         $("#registerid").val(noregbi);
         $("#datexm").val(tkhexmbi);
         $("#stat").text(statdesc);
+        $("#income").val(amounthouse);
 
         $("#cpt1 a").attr({
             'href': urldisplaydoclaluan,
@@ -995,14 +1009,27 @@ window.onclick = function(event) {
         $("#masterphdcountry").val(result.p001knegaracgpa2);
         $("#exp").val(result.p001bilexp);
         $("#bitype").val(result.p001katbi);
-        $("#kdtaja").val(result.p001kpenaja).trigger('change');//masih x keluar pd select..check semula
-        console.log($("#kdtaja").val(result.p001kpenaja));
-        
+      
+      setTimeout(function () {
+        //var profileValue = String(result.p001kpenaja).trim();
+        var profileValue = result.p001kpenaja ? String(result.p001kpenaja).trim() : "";
+        var exists = $("#kdtaja option[value='" + profileValue + "']").length > 0;
+
+        if (exists) {
+            $("#kdtaja").val(profileValue).trigger('change');
+        } else {
+            console.warn("Value not found in select options, setting to default");
+            $("#kdtaja").val("").trigger('change'); // Set to empty instead
+        }
+        //$("#kdtaja").val(profileValue).trigger('change');
+        $('#kdtaja').selectpicker('refresh');
+         }, 100);
+
         var val_oku = result.p001kcacat;
         var val_modest = result.p001kaedah;
-        var val_taja = result.p001kpenaja;
         var val_laluan = result.p001laluanmohon;
-        $("#kdtaja1").val(val_taja);
+        var val_bitype = result.p001katbi;
+        var val_taja = result.p001kpenaja;
      // alert(val_taja);
 
        $('#wargast').selectpicker('refresh');
@@ -1022,8 +1049,10 @@ window.onclick = function(event) {
        $('#exp').selectpicker('refresh');
        $('#kdtaja').selectpicker('refresh');
        $('#bitype').selectpicker('refresh');
-
-       //$('.selectpicker').selectpicker('refresh');
+       
+       if(val_bitype!=''){
+         $("#hidediveng").show();
+       }
 //file no oku
        if(val_oku == '12' || val_oku != ''){
         $("#nooku").hide();
@@ -1058,24 +1087,41 @@ if(val_laluan === 'AP' || val_laluan === 'NG'){
         $("#hideag").show();
     }
     // tajaan
-    // if(val_taja != null){
-    //     $("#divtypefinance").show();
-    //     $("#divtypefinance1").show();
-    //     $("#typesponser").show();
-    //     $("#hidetypefinance").show();
-    //     $("#house").hide();
-    //     $("#divtypefinance2").hide();
-    //     $("#upload").hide();
-    //     $("#divtypefinance3").hide();
-    //    }else{
-    //     $("#divtypefinance1").hide();
-    //     $("#divtypefinance2").hide();
-    //     $("#divtypefinance3").hide();
-    //     $("#hidetypefinance").hide();
-    //    }
-        
+    if (val_taja !== null && val_taja !== '') {
+        $("#divtypefinance1").show();
+        $("#typesponser").show();
+        $("#hidetypefinance").show();
+    
+        $("#house").hide();
+        $("#divtypefinance2").hide();
+        $("#upload").hide();
+        $("#divtypefinance3").hide();
+    } else if (amounthouse !== '' && amounthouse !== null) {
+        $("#house").show();
+        $("#divtypefinance2").show();
+        $("#upload").show();
+        $("#divtypefinance3").show();
+    
+        $("#divtypefinance1").hide();
+        $("#typesponser").hide();
+        $("#hidetypefinance").show();
+    } else {
+        $("#divtypefinance1").hide();
+        $("#divtypefinance2").hide();
+        $("#divtypefinance3").hide();
+        $("#hidetypefinance").hide();
     }
+        
+    }//respon
   });
+
+//========
+// }
+// },
+// error: function (xhr, status, error) {
+//     console.error('Error fetching data:', error);
+// }
+// });
 
 
 

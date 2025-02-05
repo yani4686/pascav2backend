@@ -56,55 +56,41 @@ $(document).ready(function () {
         if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
     });
 
-    // Handle the jump to specific step from the dashboard
-    $(".setup-content").hide();
+//click to step from dashboard without using wizard
+//--page apply
+$(".setup-content").hide();
 
-    // Show Step 1 by default (or any other step you want)
-    var targetStep = getParameterByName("step") || "step-1";  // Default to step-1 if no step param
-    $("#" + targetStep).show();
+    // Get the step parameter from the URL, default to "step-1" if not present
+    var targetStep = getParameterByName("step") || "step-1";  
+   // console.log("Target Step Before Load: " + targetStep);  // Debugging: Log target step before loading
 
-    $(".dashboard-link").click(function () {
+    // Get the target step element based on the ID
+    var stepElement = $("#" + targetStep);
+   // console.log("Step Element: ", stepElement);  // Log the jQuery object to check if the step exists
 
-        var targetStep = $(this).attr("href").split('?step=')[1];
-        window.location.href = "http://localhost/pascav2/public/apply?step=" + targetStep; 
+    // Show the corresponding step if it exists
+    if (stepElement.length > 0) {
+        stepElement.show();
+    } else {
+        console.log("Error: Target step not found: " + targetStep);  // Debugging: Show error if not found
+    }
 
-        // Function to get URL parameters
-        function getParameterByName(name) {
-            var url = window.location.href;
-            name = name.replace(/[\[\]]/g, "\\$&");
-            var regex = new RegExp("[?&]" + name + "(=([^&]*)|&|$)"),
-                results = regex.exec(url);
-            return results ? decodeURIComponent(results[2].replace(/\+/g, " ")) : "";
-        }
+    // Optionally, update the navigation buttons
+    $('div.setup-panel div a').removeClass('btn-success').addClass('btn-default');  // Reset all buttons
+    $('div.setup-panel div a[href="#' + targetStep + '"]').addClass('btn-success');  // Activate the current step button
 
-        // var targetStep = $(this).attr("id").replace("go-to-step-", "step-");
-
-        // console.log("Target step found sblm condition: " + targetStep);
-        // console.log($("#" + targetStep));
-        // console.log("test:" + ($("#" + targetStep).length > 0)); // Log if step exists
-        // console.log($("#" + targetStep).html());
-        // console.log($("#" + targetStep).length);
-
-       // var targetUrl = "/form/" + targetStep + ".html";
-      //  console.log(targetUrl);
-
-        // Check if the target step exists in the DOM
-        // if ($("#" + targetStep).length > 0) {
-        //   console.log("Target step found: " + targetStep);
-        //     // Hide all steps
-        //     allWells.hide();
-
-        //     // Show the corresponding step
-        //    $("#" + targetStep).show();
-
-        //     // Activate the corresponding step button in the wizard
-        //     navListItems.removeClass('btn-success').addClass('btn-default');
-        //     $("#click-" + targetStep.split("-")[1]).removeClass('btn-default').addClass('btn-success');
-        // } else {
-        //   console.log("Error: Target step not found - " + targetStep);  // Debugging: Show error if target step doesn't exist
-        // }
-    });
-
+// Handle clicking on dashboard links (e.g., go-to-step-1, go-to-step-2)
+//page dashboard
+$(".dashboard-link").click(function (e) {
+    e.preventDefault();  // Prevent the default link action
+    
+    // Get the corresponding step ID (e.g., from go-to-step-1 -> step-1)
+    var targetStep = $(this).attr("id").replace("go-to-step-", "step-");  
+   // console.log("Target Step: " + targetStep);  // Debugging: Log target step
+    
+    // Redirect to the page with the correct step parameter
+    window.location.href = "apply?step=" + targetStep;
+});
     // Initially trigger the first step (Optional, you can remove this if you don't need a default step on load)
     $('div.setup-panel div a.btn-success').trigger('click');
    //------
@@ -752,4 +738,12 @@ alert("print & belum ada backend");
 
 });
 
+// Function to get URL parameters
+function getParameterByName(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&]*)|&|$)"),
+        results = regex.exec(url);
+    return results ? decodeURIComponent(results[2].replace(/\+/g, " ")) : "";
+}
  

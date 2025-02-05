@@ -154,16 +154,50 @@ $.ajax({
   success: function (result) {
       // Check if the response contains data
       var step1     =  result.adastep1 ;
-     // alert(step1);
+      var step2     =  result.adastep2 ;
+      var step3     =  result.adastep3 ;
+      var statcomp = 'Complete';
+      var statincomp = 'Incomplete';
 
-    if(step1 == 1){
-      $("#statComplete").show();
-      $("#statCompletedone").hide();
-    }else{
-      $("#statCompletedone").show();
-      $("#statComplete").hide();
-    }
+      step1 = step1.trim();
+      step2 = step2.trim();
+      step3 = step3.trim();
+     // console.log("Trimmed step1: ", step1);
+     // console.log("Type of step1: ", typeof step3);
 
+     // alert(statcomp);
+      if(step1 === '0'){
+        $('#go-to-step-1').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px'); 
+        $('#go-to-step-1').text(statcomp); 
+      }else if (step1 === '1') {
+        $('#go-to-step-1').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px ');  
+        $('#go-to-step-1').text(statincomp);  
+      } 
+      
+      if(step2 === '0'){ 
+        $('#go-to-step-2').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px'); 
+        $('#go-to-step-2').text(statcomp); 
+      }else if (step2 === '1') {
+        $('#go-to-step-2').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px '); 
+        $('#go-to-step-2').text(statincomp);
+       }
+       
+      if(step3 === '0'){ 
+        $('#go-to-step-3').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px'); 
+        $('#go-to-step-3').text(statcomp); 
+      }else if (step3 === '1') {
+        $('#go-to-step-3').removeClass().addClass('dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px '); 
+        $('#go-to-step-3').text(statincomp);
+      }
+
+      if(step1 === '0' && step2 === '0' && step3 === '0'){ 
+        $('#summary').removeClass().addClass('font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px'); 
+        $('#summary').text(statcomp); 
+      }else if (step1 === '1' || step2 === '1' || step3 === '1') {
+        $('#summary').removeClass().addClass('font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px '); 
+        $('#summary').text(statincomp);
+      }
+    //console.log($("#go-to-step-1").length);
   }
 });
 

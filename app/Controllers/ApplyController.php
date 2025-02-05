@@ -147,7 +147,7 @@ class ApplyController extends ResourceController
     WHEN p001status = '4' THEN 'Pindah Fakulti'
     WHEN p001status = '5' THEN 'Lulus Fakulti2'
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
-END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex
         from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();
@@ -519,7 +519,7 @@ public function InsStep4()
 
     $namaejen   = !empty($input['namaejen']) ? $input['namaejen'] : null;
     $emailejen  = !empty($input['emailejen']) ? $input['emailejen'] : null;
-    $sponsor    = !empty($input['kdtaja']) ? $input['kdtaja'] : null;
+    $sponsor    = !empty($input['kdtaja']) ? $input['kdtaja'] : null ;
     $valueincome= !empty($input['income']) ? $input['income'] : null;
 
     // Update database

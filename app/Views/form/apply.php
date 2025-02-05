@@ -713,7 +713,7 @@
 											<div class="col-lg-4" id="divtypefinance1">
 													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdtaja" name="kdtaja">
 													</select>
-													<input type="text" class="form-control" id="kdtaja1" name="kdtaja1"/>
+													<!-- <input type="text" class="form-control" id="kdtaja1" name="kdtaja1"/> -->
 											</div>																						
 										<label id="house" class="col-lg-2 col-form-label">HouseHold Income<span class="text-danger">*</span></label> 
 											<div class="col-lg-3" id="divtypefinance2">

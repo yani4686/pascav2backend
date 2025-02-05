@@ -84,8 +84,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
 																		<span class="text-muted font-weight-bold">Profile</span>
-																		<div id="statComplete"><span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px ">Incomplete</span></div>
-																		<div id="statCompletedone"><a href="http://localhost/pascav2/public/apply?step=step-1"><span id="go-to-step-1" class="dashboard-link font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px">Complete</span></a></div>
+																		<!-- <div id="statComplete"><span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px ">Incomplete</span></div> -->
+																		<span id="go-to-step-1" class="dashboard-link font-weight-bolder label label-xl label-light-success label-inline px-3 py-1 min-w-45px"></span>
 																	</div>
 														</div>
 														<!-- program -->
@@ -111,8 +111,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</span>
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
-																		<span class="text-muted font-weight-bold">Maklumat Program</span>
-																		<a href="http://localhost/pascav2/public/apply?step=step-2"><span id="go-to-step-2" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px step-link" id="step2">Incomplete</span></a>
+																		<span class="text-muted font-weight-bold">Programme Details</span>
+																		<span id="go-to-step-2" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px step-link">Incomplete</span>
 																	</div>
 														</div>
 														<!-- tambahan -->
@@ -131,8 +131,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</span>
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
-																		<span class="text-muted font-weight-bold">Maklumat Tambahan</span>
-																		<span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
+																		<span class="text-muted font-weight-bold">Supporting Documents</span>
+																		<span id="go-to-step-3" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px"></span>
 																	</div>
 														</div>
 														<!-- doc sok -->
@@ -152,8 +152,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</span>
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
-																		<span class="text-muted font-weight-bold">Dokumen Sokongan</span>
-																		<span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
+																		<span class="text-muted font-weight-bold">Additional Information</span>
+																		<span id="go-to-step-4" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
 																	</div>
 														</div>
 														<!-- Pengesahan -->
@@ -172,8 +172,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</span>
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
-																		<span class="text-muted font-weight-bold">Pengesahan Permohonan</span>
-																		<span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
+																		<span class="text-muted font-weight-bold">Submission</span>
+																		<span id="go-to-step-5" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
 																	</div>
 														</div>
 														<!-- summary&print -->
@@ -193,7 +193,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																</div>
 																	<div class="d-flex flex-column flex-grow-1">
 																		<span class="text-muted font-weight-bold">Summary & Print</span>
-																		<span class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px">Not Completed</span>
+																		<a href="summary"><span id="summary" class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px"></span></a>
 																	</div>
 														<!-- </div> -->
 													<!-- end -->
