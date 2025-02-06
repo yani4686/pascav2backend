@@ -89,7 +89,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</div>
 														</div>
 														<!-- program -->
-														<div class="d-flex align-items-center pb-9">
+														<div id ="program" class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
 																		<span class="svg-icon svg-icon-primary svg-icon-2x">
@@ -115,8 +115,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<span id="go-to-step-2" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px step-link">Incomplete</span>
 																	</div>
 														</div>
-														<!-- tambahan -->
-														<div class="d-flex align-items-center pb-9">
+														<!-- sokongan -->
+														<div id="sokongan" class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
 																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Code\Plus.svg-->
@@ -135,8 +135,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<span id="go-to-step-3" class="dashboard-link font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px"></span>
 																	</div>
 														</div>
-														<!-- doc sok -->
-														<div class="d-flex align-items-center pb-9">
+														<!-- doc tambahan -->
+														<div id="tambahan" class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
 																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Files\File.svg-->
@@ -157,7 +157,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</div>
 														</div>
 														<!-- Pengesahan -->
-														<div class="d-flex align-items-center pb-9">
+														<div id="pengesahan" class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
 																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Design\Stamp.svg-->
@@ -177,7 +177,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</div>
 														</div>
 														<!-- summary&print -->
-														<div class="d-flex align-items-center pb-9">
+														<div id="divsumm" class="d-flex align-items-center pb-9">
 																<div class="symbol symbol-45 symbol-light mr-4">
 																		<span class="symbol-label">
 																			<span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Devices\Printer.svg-->
@@ -272,25 +272,25 @@ License: You must have a valid license purchased only from themeforest(the above
 																			</tr>
 																</thead>
 																	<tbody>
-																		<tr>
+																		<tr id="sttmntdraft">
 																			<td class="pl-0">01/10/2024</td>
-																			<td>Successful sign up application postgraduate program. Complete checklist</td>
+																			<td>Successful sign up application postgraduate. Please complete checklist</td>
 																			<td><a href="#">Click Here</a></td>
 																			<!-- <td><span class="label label-grey label-pill label-inline mr-2">Draft</span></td> -->
 																		</tr>
-																		<tr>
+																		<tr id="sttmntnew">
 																			<td class="pl-0">14/10/2024</td>
 																			<td>Your application has been submitted</td>
 																			<!-- <td><a href="form/apply.php">Click Here</a></td> -->
 																			<td><span class="label label-primary label-pill label-inline mr-2">New</span></td>
 																		</tr>
-																		<tr>
+																		<tr id="sttmntproccess">
 																			<td class="pl-0">20/10/2024</td>
 																			<td>Your application has been processed</td>
 																			<!-- <td><a href="">Click Here</a></td> -->
 																			<td><span class="label label-warning label-pill label-inline mr-2">Processing</span></td>
 																		</tr>
-																		<tr>
+																		<tr id="sttmntapprove">
 																			<td class="pl-0">25/10/2024</td>
 																			<td>Your application has been approved</td>
 																			<!-- <td><a href="form/acceptance.php">Accept</a>|<a href="form/acceptance.php">Reject</a></td> -->

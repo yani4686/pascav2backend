@@ -67,10 +67,10 @@
                                             <p><small>Submission</small></p>
                                         </div>
 
-										<div class="stepwizard-step"> 
+										<!-- <div class="stepwizard-step"> 
                                             <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled" id="click-6">6</a>
                                             <p><small>Summary&Print</small></p>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </div> 
@@ -785,7 +785,7 @@
 
 												<div class="row">
 													<div class="col">
-														<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Summary & Print</button>
+														<a href="pascav2/public/summary"><button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Summary & Print</button></a>
 														<button class="btn btn-primary save4 pull-right m-1" type="button" data-inline="true">Submit Application</button>
 													</div>
 												</div>
@@ -796,15 +796,12 @@
 
 						</div>
 
-						<div class="panel panel-primary setup-content" id="step-6">
+						<!-- <div class="panel panel-primary setup-content" id="step-6">
 
 							<div class="panel-heading"><h3 class="panel-title">Summary & Print</h3></div>
 																				
 								<div class="panel-body form-horizontal m-10">
 
-								<!-- <div class="card-toolbar">
-									<button type="button" class="btn btn-success mr-2 printPage" onclick="window.print()">Print</button>
-								</div> -->
 								<div class="d-flex justify-content-end">
 									<div class="d-flex justify-content-end">
 									<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon printPageIcon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -814,16 +811,13 @@
 								</div>
 
 								<div class="mb-3">
-								<!--  -->
+								
 								<h3 class="font-size-h6 mb-5">Profile Information</h3>								
 									<div class="separator separator-dashed my-6"></div>
 
 									<div class="form-group row">
 												<label class="col-xl-3 col-lg-3 col-form-label">Passport-sized Picture<span class="text-danger">*</span><img style="margin:5px"></label>
 													<div class="col-lg-9 col-xl-6">
-														<!-- <div class="image-input image-input-outline" id="kt_profile_avatar" style="background-image: url(pascav2/assets/media/users/blank.png)">
-															<div class="image-input-wrapper" style="background-image: url(pascav2/assets/media/users/300_21.jpg)"></div>
-														</div>	 -->
 														<div class="image-boxdashboard" id="imageBox">
 																<img id="previewImage1" src="./pascav2/assets/media/users/blank.png" alt="Passport Picture" style="width: 100%; height: 100%; display: block;">
 															</div>
@@ -1091,10 +1085,10 @@
 														<button class="btn btn-primary printPdf pull-right m-1" type="button" data-inline="true">Print</button>
 														</div>
 												</div>
-								<!--  -->
+								
 								</div>
 								</div>
-						</div>
+						</div> -->
 				<!-- xx -->
 			</form>
 

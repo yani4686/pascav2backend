@@ -133,14 +133,38 @@ $.ajax({
         $('#step-application').addClass('active');  // Yellow for active
         $('#step-processing').removeClass('active'); // Reset to gray
         $('#step-result').removeClass('active');     // Reset to gray
+
+        //---hide menu checklist
+        $("#program, #sokongan, #tambahan, #pengesahan, #divsumm").show();
+        $("#sttmntdraft").show();
+        $("#sttmntnew").hide();
+        $("#sttmntproccess").hide();
+        $("#sttmntapprove").hide();
     } else if (statmohondash === '0') {
       $('#step-application').addClass('active'); // Reset to gray
       $('#step-processing').addClass('active');    // Yellow for active
       $('#step-result').removeClass('active');     // Reset to gray
+      //-----
+      //$("#program, #sokongan, #tambahan, #pengesahan").hide();
+      $("#program, #sokongan, #tambahan, #pengesahan").removeClass("d-flex").addClass("d-none");
+      $("#divsumm").show();
+
+      $("#sttmntdraft").hide();
+      $("#sttmntnew").show();
+      $("#sttmntproccess").show();
+      $("#sttmntapprove").hide();
     } else if (statmohondash === '1') {
       $('#step-application').removeClass('active'); // Reset to gray
       $('#step-processing').removeClass('active');  // Reset to gray
       $('#step-result').addClass('active');         // Yellow for active
+      //----
+      $("#program, #sokongan, #tambahan, #pengesahan").removeClass("d-flex").addClass("d-none");
+      $("#divsumm").show();
+
+      $("#sttmntdraft").hide();
+      $("#sttmntnew").hide();
+      $("#sttmntproccess").hide();
+      $("#sttmntapprove").show();
     }
 
   }

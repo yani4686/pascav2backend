@@ -566,4 +566,11 @@ background: none; /* Remove default background */
         font-size: 12px; /* Adjust text size */
     }
 }
+
+.headerSurat { 
+    text-align: right; font-size: 12px;
+}
+.contentSurat { 
+    margin-top: 20px; 
+}
   

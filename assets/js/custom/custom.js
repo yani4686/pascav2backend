@@ -975,8 +975,13 @@ document.querySelectorAll('.view-file').forEach(function(link) {
 });
 
 // Close the modal when the close button is clicked
-span.onclick = function() {
-    modal.style.display = "none";
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+if (span && modal) { 
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
 }
 
 // Close the modal if the user clicks anywhere outside the modal

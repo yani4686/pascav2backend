@@ -180,6 +180,7 @@ class LoginController extends ResourceController
         $db = Config::connect();
 
         $t	= date('Y');
+        $curdatecreate = date('Y-m-d');
         $verifycode = $code;
         
       $checkmaxrow = $db->query('SELECT max(SUBSTRING(p001norujuk,17,2)) as bilmax from ppsdblocal.p001');
@@ -198,7 +199,7 @@ class LoginController extends ResourceController
 	
         if($p00usrid != ''){
 
-            $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p00daftar SET p000statsahreg  = 1 WHERE p00verifycode='$verifycode'");
+            $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p00daftar SET p000statsahreg  = 1,p00tkhreg='$curdatecreate' WHERE p00verifycode='$verifycode'");
             $resultupd = $db->getLastQuery();
 
             if($resultupd){

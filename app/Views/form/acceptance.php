@@ -25,16 +25,62 @@
 					<div class="content d-flex flex-column flex-column-fluid">
 						<!--begin::Container-->
 						<div class="container">
-                                <form role="form" id="idFrmAddInfo">
+                        	<form role="form" id="idFrmAddInfo">
 <!--  -->
 							<div class="panel panel-primary">
-
-								<div class="panel-heading"><h3 class="panel-title">Update Addition Information</h3></div>
+								<div class="panel-heading"><h3 class="panel-title">Acceptance Approval</h3></div>
 								
 									<div class="panel-body form-horizontal m-10">
 									 <div class="mb-3">
 
-									 <div class="form-group row">
+									 <h4 class="font-size-h6 mb-5">Approval Details</h4>
+
+									 <div class="form-group  row my-2">
+									 	<label class="col-lg-3 col-form-label">Name : </label>
+												<div class="col-lg-4">
+														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
+													</div>
+										<label class="col-lg-3 col-form-label">IC/Passport No. : </label>
+												<div class="col-lg-4">
+													<span class="form-control-plaintext font-weight-bolder" id="labelic" data-name="labelic"></span>
+												</div>
+									</div>
+									<div class="form-group row my-2">
+											<label class="col-2 col-form-label">Programme:</label>
+											<div class="col-4">
+												<span class="form-control-plaintext font-weight-bolder">Master Of Science</span>
+											</div>										
+											<label class="col-2 col-form-label">Mode</label>
+											<div class="col-4">
+												<span class="form-control-plaintext font-weight-bolder">Research</span>
+											</div>
+										</div>
+										<div class="form-group row my-2">
+											<label class="col-2 col-form-label">Faculty</label>
+											<div class="col-4">
+												<span class="form-control-plaintext font-weight-bolder">FIK</span>
+											</div>																				
+											<label class="col-2 col-form-label">Type Of Study</label>
+											<div class="col-4">
+												<span class="form-control-plaintext font-weight-bolder">Full Time</span>
+											</div>
+										</div>
+										<div class="form-group row my-2">
+											<label class="col-2 col-form-label">Date Of Registration:</label>
+											<div class="col-4">
+												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
+											</div>
+										</div>
+
+									<div class="separator separator-dashed my-6"></div>
+
+									 <h4 class="font-size-h6 mb-5">Update Additional Personal Details</h4>
+
+									 <div class="separator separator-dashed my-6"></div>
+
+									 
+
+									 <div class="form-group  row my-2">
 									 	<label class="col-lg-3 col-form-label">Name : </label>
 												<div class="col-lg-4">
 														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
@@ -61,21 +107,18 @@
 										<label class="col-lg-3 col-form-label">Country : </label>
 												<div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
-													</div>	
+												</div>	
 									</div>	
-								<div class="form-group row">
-
+									<div class="form-group row my-2">
 										<label class="col-lg-3 col-form-label">Dun <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="dun" name="dun">
 												</select>
 												</div>
-
 										<label class="col-lg-3 col-form-label">Parliment <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 													<input type="text" class="form-control" name="parliment" id="parlimen" readonly/>
-												</div>
-										
+												</div>									
 										<label class="col-lg-3 col-form-label">Type of Secondary School <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="sek" name="sek">
@@ -85,7 +128,6 @@
 												<div class="col-lg-4">
 													<input type="text" class="form-control" name="bispm" id="bispm"/>
 												</div>
-
 									</div>
 
 									 <div class="row" id="">
@@ -94,115 +136,75 @@
 										</div>
 									</div>
 									
-<div class="row"><span class="text-danger">*</span><span class="text-danger">*</span><span class="form-text text-muted">Please update Additional Information above before Generate Offer Letter</span></div>
+		<div class="row">
+			<span class="text-danger">*</span><span class="text-danger">*</span><span class="form-text text-muted">Please update Additional Information above before Generate Offer Letter</span>
+		</div>
+
+		<div class="separator separator-dashed my-6"></div>
+
+		<div class="form-group row my-2">										
+					<div class="checkbox-inline">
+							<label class="checkbox m-0">
+							<input type="checkbox" name="stsagree" id="stsagree" value ="1"/>
+							<span></span>I understand and accept the offer from Unisza.</label>
+						</div>
+					<div class="form-text text-muted text-center"></div>					
+		</div>
+
+		<div class="row">
+			<label class="col-lg-12 col-form-label text-muted"><span class="text-danger">*</span><span class="text-danger">*</span>For your information,this offer letter valid 1 year after approval date. If the application expires, a new application process is required again.</label>
+		</div>
+			<div class="row" id="hidebtnoffer">
+				<div class="col">
+					<button class="btn btn-primary previewBtnPDF pull-right m-1" type="button" data-inline="true">Preview Offer Letter</button>
+				</div>
+			</div>
+
+			<!-- modal show surat -->
+			<!-- Bootstrap Modal for Offer Letter Preview -->
+				<div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="previewModalLabel">Offer Letter Preview</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div id="previewContent">Loading...</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 <!--  -->
+									
 									 </div>
-									 </div>
+
+								  </div>
 								  </div>
 								  
 								</form>
-
-					<!--begin::Content-->
-                                <form role="form" id="idFrmAccept">
-<!--  -->
-								 <div class="panel panel-primary">
-									<div class="panel-heading">
-											<h3 class="panel-title">Acceptance Approval</h3>
-									</div>
-
-									<div class="panel-body form-horizontal m-10">
-									 <div class="mb-3">
-										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Name:</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">MR ALI</span>
-											</div>
-										<!-- </div>
-										<div class="form-group row my-2"> -->
-											<label class="col-2 col-form-label">IC No/ Passport No:</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">SQ123</span>
-											</div>
-										</div>
-										
-										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Programme:</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Master Of Science</span>
-											</div>
-										<!-- </div>
-										<div class="form-group row my-2"> -->
-											<label class="col-2 col-form-label">Mode</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Research</span>
-											</div>
-										</div>
-
-										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Faculty</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">FIK</span>
-											</div>
-										</div>
-										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Type Of Study</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Full Time</span>
-											</div>
-										</div>
-										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Date Of Registration:</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
-											</div>
-										</div>
-									</div>
-
-									<div class="separator separator-dashed my-6"></div>
-
-									<div class="form-group row my-2">
-										<!-- <label class="col-2 col-form-label">Date Of Approve:</label> -->
-												<div class="checkbox-inline">
-														<label class="checkbox m-0">
-														<input type="checkbox" name="stsagree" id="stsagree" value ="1"/>
-														<span></span>I understand and accept the offer from Unisza.</label>
-													</div>
-												<div class="form-text text-muted text-center"></div>					
-									</div>
-
-									<div class="row">
-										<label class="col-lg-12 col-form-label text-muted"><span class="text-danger">*</span><span class="text-danger">*</span>For your information,this offer letter valid 1 year after approval date. If the application expires, a new application process is required again.</label>
-									</div>
-
-									<div class="row" id="hidebtnoffer">
-										<div class="col">
-											<button class="btn btn-primary printPdfsurat pull-right m-1" type="button" data-inline="true">Generate Offer Letter</button>
-										</div>
-									</div>
-<!--  -->
-									</div>  
-									</div>   
-									</div>   
-                                </form>
-
-								<!-- <form role="form" id="idFrmAccept">
-								<div class="panel panel-primary" id="">
-									<div class="panel-heading">
-											<h3 class="panel-title">Offer Letter</h3>
-									</div>
-		
-									<div class="row">
-										<div class="col">
-											<button class="btn btn-primary pull-right m-1" type="button" data-inline="true">Generate Offer Letter</button>
-										</div>
-									</div>
-
-								</div>   
-                                </form> -->
-					<!--end::Content-->
+				
 					<!--begin::Footer-->
-					<?php echo view('/form/footer.php'); ?>
+					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+							<!--begin::Container-->
+							<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
+								<!--begin::Copyright-->
+								<div class="text-dark order-2 order-md-1">
+									<span class="text-muted font-weight-bold mr-2">2020©</span>
+									<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">yani</a>
+								</div>
+								<!--end::Copyright-->
+								<!--begin::Nav-->
+								<div class="nav nav-dark">
+									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">About</a>
+									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">Team</a>
+									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-0">Contact</a>
+								</div>
+								<!--end::Nav-->
+							</div>
+							<!--end::Container-->
+					</div>
 					<!--end::Footer-->
 					</div><!-- end container -->
 				
@@ -213,7 +215,7 @@
 				</div><!--end::Page-->
 				
 				</div><!--End Starter-->
-				
+				<?php echo view('/form/footer.php'); ?>
 	
 		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->

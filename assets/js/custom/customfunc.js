@@ -730,9 +730,10 @@ $('#updreject').click(function() {
 // });
 //########
 
-$(".printPdfsurat").click(function () {
+$(".previewBtnPDF").click(function () {
 
-alert("print & belum ada backend");
+//alert("print & belum ada backend");
+$("#previewModal").modal("show");
 
 });
 
