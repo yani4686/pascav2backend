@@ -44,7 +44,7 @@ class PdfController extends BaseController
             .headerSurat { text-align: right; font-size: 12px; }
             .contentSurat { text-align: left;font-size: 10px; }
             table {width: 100%; border: none; }
-            td { padding: 5px; border: none;}
+            td { padding: 2px; border: none;}
         </style>
     
         <div class="headerSurat">
@@ -69,14 +69,14 @@ class PdfController extends BaseController
             <p>Your offered program details are as follows:</p>
     
             <table>
-                <tr><td>Program</td><td>MASTER OF SCIENCE</td></tr>
-                <tr><td>NEC</td><td>ABC123</td></tr>
-                <tr><td>Mode</td><td>RESEARCH</td></tr>
-                <tr><td>Faculty</td><td>FST</td></tr>
-                <tr><td>Method of Registration</td><td>FULL TIME</td></tr>
-                <tr><td>Campus</td><td>GONG BADAK</td></tr>
-                <tr><td>Main Supervisor</td><td>DR A</td></tr>
-                <tr><td>Date of Offer Approval</td><td>31/01/2024</td></tr>
+                <tr><td>Program</td><td>: MASTER OF SCIENCE</td></tr>
+                <tr><td>NEC</td><td>: ABC123</td></tr>
+                <tr><td>Mode</td><td>: RESEARCH</td></tr>
+                <tr><td>Faculty</td><td>: FST</td></tr>
+                <tr><td>Method of Registration</td><td>: FULL TIME</td></tr>
+                <tr><td>Campus</td><td>: GONG BADAK</td></tr>
+                <tr><td>Main Supervisor</td><td>: DR A</td></tr>
+                <tr><td>Date of Offer Approval</td><td>: 31/01/2024</td></tr>
             </table>
     
             <p>This offer is valid for twelve (12) months from the date of offer.</p>

@@ -66,7 +66,7 @@
 											</div>
 										</div>
 										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Date Of Registration:</label>
+											<label class="col-2 col-form-label">Date Of Offer Approval:</label>
 											<div class="col-4">
 												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
 											</div>
@@ -81,14 +81,14 @@
 									 
 
 									 <div class="form-group  row my-2">
-									 	<label class="col-lg-3 col-form-label">Name : </label>
+									 	<!-- <label class="col-lg-3 col-form-label">Name : </label>
 												<div class="col-lg-4">
 														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
 													</div>
 										<label class="col-lg-3 col-form-label">IC/Passport No. : </label>
 												<div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" id="labelic" data-name="labelic"></span>
-												</div>
+												</div> -->
 										<label class="col-lg-3 col-form-label">Nationality : </label>
 												<div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" id="labelnat"></span>
@@ -156,7 +156,8 @@
 		</div>
 			<div class="row" id="hidebtnoffer">
 				<div class="col">
-					<button class="btn btn-primary previewBtnPDF pull-right m-1" type="button" data-inline="true">Preview Offer Letter</button>
+				<button class="btn btn-primary previewBtnPDF pull-right m-1" type="button" data-inline="true">Preview Offer Letter</button>
+					<!-- <button class="btn btn-primary saveBtnPDF pull-right m-1" type="button" data-inline="true">Download as PDF</button> -->
 				</div>
 			</div>
 

@@ -114,6 +114,7 @@ $.ajax({
       // Check if the response contains data
       var image     =  result.p001upgambar ;
       var statmohondash = result.p001status;
+      var statjanasurat = result.p001ststerimatwr;
 
       var urldisplaypic;
       urldisplaypic = 'http://localhost/pascav2/public/uploads/' + image;
@@ -165,6 +166,24 @@ $.ajax({
       $("#sttmntnew").hide();
       $("#sttmntproccess").hide();
       $("#sttmntapprove").show();
+    }
+    //hide display icon print surat
+    if (statmohondash === '1' && statjanasurat === '1') {
+      $("#sttmntapprove").show();
+      $("#viewpdf").show();
+      $("#updaccept").hide();
+      $("#updreject").hide();
+    }
+    else if (statmohondash === '1' && statjanasurat === '0') {
+      $("#sttmntapprove").show();
+      $("#viewpdf").hide();
+      $("#updaccept").show();
+      $("#updreject").show();
+    }else{
+      $("#sttmntapprove").show();
+      $("#viewpdf").hide();
+      $("#updaccept").show();
+      $("#updreject").show();
     }
 
   }

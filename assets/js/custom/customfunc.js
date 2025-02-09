@@ -733,11 +733,18 @@ $('#updreject').click(function() {
 $(".previewBtnPDF").click(function () {
 
 //alert("print & belum ada backend");
+window.location.href="http://localhost/pascav2/public/generateletter";
 $("#previewModal").modal("show");
 
 });
 
-});
+//view pdf dr dashboard
+$('#viewpdf').click(function() {
+    alert('Rejec clicked & belum ada backend');
+    window.location.href="http://localhost/pascav2/public/generateletter";
+  });
+
+});//end jquery doc function
 
 // Function to get URL parameters
 function getParameterByName(name) {
