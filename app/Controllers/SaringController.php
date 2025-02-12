@@ -63,7 +63,17 @@ class SaringController extends ResourceController
 case p001modebelajar when '1' then 'Full Time' when '2' then 'Park Time' end as modebelajar,p001modebelajar,p001tajuk,
 p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when '1' then 'Malaysia' when '2' then 'Non Malaysia' when '3' then 'PR' end as ktrgnstatwarga,
 p001alamat1,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,concat(p001alamatt1,' ',p001alamatt2,' ',p001bandart,' ',p001poskodt) as almttetap,p001notel,
-p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,case p001akadtinggi when '1' then 'Bachelor' when '2' then 'Master Degree' when '3' then 'Diploma' end as akadtggi,p001kpenaja,p001tkhpohon,p001status,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,p001cgpa,p001unilama,p001bilexp,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,case p001akadtinggi when '1' then 'Bachelor' when '2' then 'Master Degree' when '3' then 'Diploma' end as akadtggi,p001kpenaja,p001tkhpohon,p001status,CASE 
+    WHEN p001status = '' THEN 'Draft'
+    WHEN p001status IS NULL THEN 'Draft'
+    WHEN p001status = '0' THEN 'New'
+    WHEN p001status = '1' THEN 'Approved(PPS)'
+    WHEN p001status = '2' THEN 'Approved(Faculty1)'
+    WHEN p001status = '3' THEN 'Gagal Fakulti1'
+    WHEN p001status = '4' THEN 'Pindah Fakulti'
+    WHEN p001status = '5' THEN 'Approved(Faculty2)'
+    WHEN p001status = '6' THEN 'Gagal Fakulti2'
+END AS statdesc,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,p001cgpa,p001unilama,p001bilexp,p001catatan,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
 p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
 p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
 FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001kcacat  WHERE p001nokp='$idpemohon'");
@@ -85,7 +95,7 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
 
         $selectMohon= $db->query("select(SELECT count(p.p001nokp)as bildraf from ppsdblocal.p001 p where p.p001status ='0') as bildraf,
 (SELECT count(p.p001nokp)as bildraf1 from ppsdblocal.p001 p where p.p001status is null or p.p001status='') as bildraf1,
-(SELECT count(p.p001nokp)as billulusf from ppsdblocal.p001 p where p.p001status ='2') as billulusf,
+(SELECT count(p.p001nokp)as billulusf from ppsdblocal.p001 p where p.p001status in('2','1')) as billulusf,
 (SELECT count(p.p001nokp)as bilpindahf from ppsdblocal.p001 p where p.p001status ='4') as bilpindahf,
 (SELECT count(p.p001nokp)as bilgagalf from ppsdblocal.p001 p where p.p001status ='3') as bilgagalf");
 

@@ -115,6 +115,8 @@ $.ajax({
       var image     =  result.p001upgambar ;
       var statmohondash = result.p001status;
       var statjanasurat = result.p001ststerimatwr;
+      var sttmentapp = 'Your application has been approved';
+      var sttmentdisapp = 'Your application has been disapproved';
 
       var urldisplaypic;
       urldisplaypic = 'http://localhost/pascav2/public/uploads/' + image;
@@ -153,14 +155,45 @@ $.ajax({
       $("#sttmntdraft").hide();
       $("#sttmntnew").show();
       $("#sttmntproccess").show();
-      $("#sttmntapprove").hide();
-    } else if (statmohondash === '1') {
+      $("#sttmntapprove").removeClass("d-flex").addClass("d-none");
+    } else if (statmohondash === '2') {
+      $('#step-application').addClass('active'); // Reset to gray
+      $('#step-processing').addClass('active');    // Yellow for active
+      $('#step-result').removeClass('active');     // Reset to gray
+      //-----
+      //$("#program, #sokongan, #tambahan, #pengesahan").hide();
+      $("#program, #sokongan, #tambahan, #pengesahan").removeClass("d-flex").addClass("d-none");
+      $("#divsumm").show();
+
+      $("#sttmntdraft").hide();
+      $("#sttmntnew").hide();
+      $("#sttmntproccess").show();
+      $("#sttmntapprove").removeClass("d-flex").addClass("d-none");
+    }
+    else if (statmohondash === '1') {
       $('#step-application').removeClass('active'); // Reset to gray
       $('#step-processing').removeClass('active');  // Reset to gray
       $('#step-result').addClass('active');         // Yellow for active
       //----
       $("#program, #sokongan, #tambahan, #pengesahan").removeClass("d-flex").addClass("d-none");
       $("#divsumm").show();
+
+      $('#approvedstt').text(sttmentapp);  
+
+      $("#sttmntdraft").hide();
+      $("#sttmntnew").hide();
+      $("#sttmntproccess").hide();
+      $("#sttmntapprove").show();
+    }
+    else if (statmohondash === '3') {
+      $('#step-application').removeClass('active'); // Reset to gray
+      $('#step-processing').removeClass('active');  // Reset to gray
+      $('#step-result').addClass('active');         // Yellow for active
+      //----
+      $("#program, #sokongan, #tambahan, #pengesahan").removeClass("d-flex").addClass("d-none");
+      $("#divsumm").show();
+
+      $('#approvedstt').text(sttmentdisapp);  
 
       $("#sttmntdraft").hide();
       $("#sttmntnew").hide();

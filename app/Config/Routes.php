@@ -49,8 +49,8 @@ $routes->get('/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbyno
 // $routes->match(['GET','POST'],'/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbynokp/$1');
 
 $routes->get('/retpermohonansaring', 'LulusPpsController::retpermohonansaring');
-$routes->get('/countpermohonan', 'LulusPpsController::countpermohonan');
-$routes->post('/updsaringan', 'LulusPpsController::updsaringan');
+$routes->get('/countpermohonanpps', 'LulusPpsController::countpermohonanpps');
+$routes->post('/updsaringanpps', 'LulusPpsController::updsaringanpps');
 $routes->get('/retpermohonanbynokp/(:any)', 'LulusPpsController::retpermohonanbynokp/$1');
 
 $routes->get('/generateletter', 'PdfController::GenerateLetter');

@@ -292,7 +292,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																		</tr>
 																		<tr id="sttmntapprove">
 																			<td class="pl-0">25/10/2024</td>
-																			<td>Your application has been approved</td>
+																			<td><span id="approvedstt"></span></td>
 																			<!-- <td><a href="form/acceptance.php">Accept</a>|<a href="form/acceptance.php">Reject</a></td> -->
 																			<td><a href="http://localhost/pascav2/public/accept"><span id ="updaccept" class="label label-success label-pill label-inline mr-2">Accept</a></span>
 																			<a><span class="label label-danger label-pill label-inline mr-2" id="updreject">Reject</span></a>
