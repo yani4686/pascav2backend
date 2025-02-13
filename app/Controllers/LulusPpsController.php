@@ -74,7 +74,7 @@ p001nohp,p001kcacat,z13.z013jenkcctn,p001akadtinggi,case p001akadtinggi when '1'
     WHEN p001status = '5' THEN 'Approved(Faculty2)'
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
 END AS statdesc,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,p001cgpa,p001unilama,p001bilexp,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
-p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001cttnlulus,
 p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
 FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001kcacat  WHERE p001nokp='$idpemohon'");
 
@@ -118,7 +118,14 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     // Use ISO date format
     $cur = date('Y-m-d');
 
-    //$input = $this->request->getPost();
+    // $checkmaxidsurat = $db->query('SELECT max(SUBSTRING(p001nosrttawar,25,2)) as bilmax from ppsdblocal.p001');
+    // $result = $checkmaxidsurat->getRow();
+    // $maxid= ($result->bilmax ?? 0) + 1;
+
+    // $kodrujuk = $db->query("SELECT CONCAT('UniSZA','/','PPS','/','$t','/','$maxid') as kodrujuk");
+    // $resultQuery = $kodrujuk->getRow();
+    // $kdrujuk = $resultQuery->kodrujuk;
+
     $input = $this->request->getJSON();
     error_log(json_encode($input));
    
