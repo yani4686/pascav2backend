@@ -514,7 +514,7 @@
 										<div id="addeng">
 
 												<div class="form-group row">
-															<label class="col-lg-2 col-form-label">Exam Type <span class="text-danger">*</span></label>
+															<label class="col-lg-2 col-form-label text-lg-left">Examination <span class="text-danger">*</span></label>
 															<div class="col-lg-4">
 																<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" name="bitype" id="bitype">
 																	<option value="MT">MUET</option>
@@ -523,21 +523,22 @@
 																	<option value="CF">CEFR</option>
 																</select>
 															</div>
-
-														<label class="col-lg-2 col-form-label">Result<span class="text-danger">*</span></label>
-														<div class="col-lg-4">
+												</div>
+												<div class="form-group row mt-3">
+														<label class="col-lg-2 col-form-label text-lg-left">Score<span class="text-danger">*</span></label>
+														<div class="col-lg-3">
 															<input type="text" class="form-control" name="resultaddbi" id="resultaddbi" />
 															<!-- <span class="form-text text-muted">Malaysian University English Test(MUET)</span> -->
 														</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-2 col-form-label">Registration No./Candidate No.<span class="text-danger">*</span></label>
-													<div class="col-lg-4">
+												<!-- </div> -->
+												<!-- <div class="form-group row"> -->
+													<label class="col-lg-2 col-form-label text-lg-left">Registration/Candidate No.<span class="text-danger">*</span></label>
+													<div class="col-lg-3">
 														<input type="text" class="form-control" name="registerid" id="registerid" />
 													</div>
 
-													<label class="col-lg-3 col-form-label">Date of Examination <span class="text-danger">*</span></label>
-                                                    <div class="col-lg-4">
+													<label class="col-lg-2 col-form-label text-lg-left">Date of Examination <span class="text-danger">*</span></label>
+                                                    <div class="col-lg-3">
                                                         <input type="date" class="form-control" name="datexm" id="datexm"/>
                                                     </div>
 

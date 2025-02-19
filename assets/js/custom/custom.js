@@ -855,7 +855,9 @@ $.ajax({
         if (statmohon === '' || statmohon === null) {
             $('#stat').removeClass().addClass('label1 label1-info lbl-font');  
         } else if (statmohon === '0') {
-            $('#stat').removeClass().addClass('label1 label2-info lbl-font'); 
+            $('#stat').removeClass().addClass('label2 label2-info lbl-font'); 
+        }else if (statmohon === '4') {
+            $('#stat').removeClass().addClass('label3 label3-info lbl-font'); 
         }
 
         var url = 'http://localhost/pascav2/public/uploads/';

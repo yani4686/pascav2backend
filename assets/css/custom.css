@@ -219,15 +219,48 @@
 .label1-info[href]:focus,.label1-info[href]:hover{
     background-color:#31b0d5
     }
+.label2{
+        /* border:1px solid #000 */
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        }
     .label2-info{
         background-color: #31b0d5;
         }
     .label2-info[href]:focus,.label2-info[href]:hover{
         background-color:#31b0d5
         }
+    .label3{
+        /* border:1px solid #000 */
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        }
+    .label3-info{
+        background-color: #e3e317;
+        }
+    .label3-info[href]:focus,.label2-info[href]:hover{
+        background-color:#f3d10d
+        }
 .lbl-font {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
+    
 }
 /*heading*/
 /* h3 {

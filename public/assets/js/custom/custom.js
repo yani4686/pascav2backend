@@ -143,7 +143,7 @@ $.ajax({
         $("#sttmntnew").hide();
         $("#sttmntproccess").hide();
         $("#sttmntapprove").hide();
-    } else if (statmohondash === '0') {
+    } else if (statmohondash === '0'||statmohondash === '4') {
       $('#step-application').addClass('active'); // Reset to gray
       $('#step-processing').addClass('active');    // Yellow for active
       $('#step-result').removeClass('active');     // Reset to gray

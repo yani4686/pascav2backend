@@ -116,19 +116,25 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013a z13a on z13a.z013akod = p001kcac
 
     // Use ISO date format
     $cur = date('Y-m-d');
+    $cur1 = date('Y-m-d H:i:s');
 
     $input = $this->request->getJSON();
-    error_log(json_encode($input));
+    //error_log(json_encode($input));
    
-
     $tindakanPengesahan   = !empty($input->tindakanPengesahan) ? $input->tindakanPengesahan : null;
     $catatanPengesahan    = !empty($input->catatanPengesahan) ? $input->catatanPengesahan : null;
-    $nokpform            = !empty($input->nokpform) ? $input->nokpform : null;
+    $nokpform             = !empty($input->nokpform) ? $input->nokpform : null;
+    $kdprogrambaru      = !empty($input->kdprogrambaru) ? $input->kdprogrambaru : null;
+
+     //select record mohon program asal
+    $selectMohonpre = $db->query("SELECT p001norujuk as rujukan from ppsdblocal.p001 where p001nokp='$nokpform'");
+    $result = $selectMohonpre->getRow();
+    $rujukan = $result->rujukan;
    
    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus  = ?,p001catatan = ? WHERE p001nokp = ?", 
    [$tindakanPengesahan,$cur,$catatanPengesahan,$nokpform]);
 
-   error_log("tindakanPengesahan: " . json_encode($tindakanPengesahan));
+  // error_log("tindakanPengesahan: " . json_encode($tindakanPengesahan));
 
     // $update = $this->db->table('ppsdblocal.p001')->where('p001nokp',$input->nokpform)->update($Data);
     $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus = ?, p001catatan = ? WHERE p001nokp = ?", 
@@ -140,6 +146,19 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013a z13a on z13a.z013akod = p001kcac
         return $this->response->setJSON(['status' => 'error', 'msg' => 'Update failed', 'error' => $error]);
     }
 
+    if($update && $tindakanPengesahan == '4'){
+         // insert into table p001d
+         $sqlinsertQuery = $db->table('ppsdblocal.p001d')->insert([
+            'p001dnorujuk'               => $rujukan,
+            'p001dnokp'                  => $nokpform,
+            'p001dkprogbr'               => $kdprogrambaru,
+            'p001statsah'                => '0',
+            'p001dassign'                => $rujukan,
+            'p001dassignthcreate'        => $cur1,
+        ]);
+   }
+    
+       
     return $this->response->setJSON(['status' => 'success', 'msg' => 'Update successful']);
 
     }

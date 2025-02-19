@@ -118,11 +118,14 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     // Use ISO date format
     $cur = date('Y-m-d');
 
+    $suratA ='UniSZA.600-4/2/2 Jld.1';
+    $suratBC ='UniSZA.600-4/2/4 Jld.1';
+
     // $checkmaxidsurat = $db->query('SELECT max(SUBSTRING(p001nosrttawar,25,2)) as bilmax from ppsdblocal.p001');
     // $result = $checkmaxidsurat->getRow();
     // $maxid= ($result->bilmax ?? 0) + 1;
 
-    // $kodrujuk = $db->query("SELECT CONCAT('UniSZA','/','PPS','/','$t','/','$maxid') as kodrujuk");
+    // $kodrujuk = $db->query("SELECT CONCAT('$suratA','(','$maxid',')') as kodrujuk");
     // $resultQuery = $kodrujuk->getRow();
     // $kdrujuk = $resultQuery->kodrujuk;
 
@@ -134,6 +137,19 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     $jenistawaran  = !empty($input->JenisTawaran) ? $input->JenisTawaran : null;
     $catatanPengesahan    = !empty($input->catatanPengesahan) ? $input->catatanPengesahan : null;
     $nokpform            = !empty($input->nokpform) ? $input->nokpform : null;
+
+    // if($jenistawaran == 'B'||$jenistawaran == 'C'){
+
+       // $kodrujuk = $db->query("SELECT CONCAT('$suratBC','(','$maxid',')') as kodrujuk");
+
+    // }elseif($jenistawaran == 'A'){
+      //  $kodrujuk = $db->query("SELECT CONCAT('$suratA','(','$maxid',')') as kodrujuk");
+    // }else{
+    //     "empty";
+    // }
+
+    // $resultQuery = $kodrujuk->getRow();
+    // $kdrujuk = $resultQuery->kodrujuk;
    
    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus  = ?,p001catatan = ? WHERE p001nokp = ?", 
    [$tindakanPengesahan,$cur,$catatanPengesahan,$nokpform]);
