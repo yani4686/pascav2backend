@@ -37,7 +37,7 @@ class Filters extends BaseConfig
      */
     public array $globals = [
         'before' => [
-           'cors',
+            'cors' => ['except' => ['login', 'retpermohonan']],
           // 'csrf' => ['except' => ['api/*', 'auth/*']
          //  'csrf' => ['except' => [ 'retpermohonanbynokp/*',]],],
             // 'honeypot',

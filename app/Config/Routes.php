@@ -55,5 +55,5 @@ $routes->get('/retpermohonanbynokp/(:any)', 'LulusPpsController::retpermohonanby
 
 $routes->get('/generateletter', 'PdfController::GenerateLetter');
 
-// $routes->post('/add-reg', 'LoginController::addLogin');
+ $routes->post('/retloginadminq', 'LoginControllerQuasar::retloginAdminQuasar');
 // $routes->post('/list-reg', 'LoginController::getLogin');
