@@ -365,50 +365,70 @@ $('#bndrcorradd').on('input', function () {
 
 
   // ret data for lookup kod program
-  $.ajax({
-    type: "GET",
-    url: "http://localhost/pascav2/public/getkodprogram",
-    data: {},
-    //cache: false, // Disable caching of AJAX responses
-    success: function(data) {
-        var json_data = data;
+//   var retprogram = $('#labelkdprogrm').text(program);
 
-        var select = $("#kdprg").empty(); // Empty the select before adding new options
+//   $.ajax({
+//     type: "GET",
+//     url: "http://localhost/pascav2/public/getkodprogram",
+//     data: {},
+//     //cache: false, // Disable caching of AJAX responses
+//     success: function(data) {
+//         var json_data = data;
+//         var foundProgram = null;
+
+//           // Search for the matching program code in the returned data
+//           $.each(json_data, function(key, cat) {
+//             if (cat.p020kprog === retprogram) {
+//                 foundProgram = cat;
+//             }
+//         });
+
+//         if (foundProgram) {
+//             // Combine code and description and show it in the label
+//             var displayText = foundProgram.p020kprog + " - " + foundProgram.p020namaprogbi + " - " + foundProgram.z054bnecdetail;
+//             $('#labelkdprogrm').text(displayText);
+//         } else {
+//             $('#labelkdprogrm').text("Program not found: " + retprogram);
+//         }
+
+//         // Optional: populate the select options as in your original AJAX
+
+//         var select = $("#kdprg").empty(); // Empty the select before adding new options
         
-        $.each(json_data, function(key, cat) {
-            // Create the option element
-            var option = "<option value='" + cat.p020kprog + "'>" + cat.p020namaprogbi + "-" + cat.z054bnecdetail + "</option>";
+//         $.each(json_data, function(key, cat) {
+//             // Create the option element
+//             var option = "<option value='" + cat.p020kprog + "'>" + cat.p020namaprogbi + "-" + cat.z054bnecdetail + "</option>";
             
-            // Check if there is a group (a019bi)
-            if (cat.hasOwnProperty("a019bi")) {
-                var group = cat.a019bi;
+//             // Check if there is a group (a019bi)
+//             if (cat.hasOwnProperty("a019bi")) {
+//                 var group = cat.a019bi;
                 
-                // Check if the optgroup already exists
-                var optgroup = select.find("optgroup[label='" + group + "']");
+//                 // Check if the optgroup already exists
+//                 var optgroup = select.find("optgroup[label='" + group + "']");
                 
-                // If the optgroup doesn't exist, create it
-                if (optgroup.length === 0) {
-                    select.append("<optgroup label='" + group + "'></optgroup>");
-                    optgroup = select.find("optgroup[label='" + group + "']"); // Re-find the newly created optgroup
-                }
+//                 // If the optgroup doesn't exist, create it
+//                 if (optgroup.length === 0) {
+//                     select.append("<optgroup label='" + group + "'></optgroup>");
+//                     optgroup = select.find("optgroup[label='" + group + "']"); // Re-find the newly created optgroup
+//                 }
                 
-                // Append the option to the appropriate optgroup
-                optgroup.append(option);
+//                 // Append the option to the appropriate optgroup
+//                 optgroup.append(option);
 
-            } else {
-                // If there's no group, just append the option directly
-                select.append(option);
-            }
+//             } else {
+//                 // If there's no group, just append the option directly
+//                 select.append(option);
+//             }
         
-        });
+//         });
 
-         // Refresh the selectpicker to update UI
-         $('#kdprg').selectpicker('refresh');
-    },
-    error: function(xhr, status, error) {
-        console.error("Error fetching data: " + error);
-    }
-});
+//          // Refresh the selectpicker to update UI
+//          $('#kdprg').selectpicker('refresh');
+//     },
+//     error: function(xhr, status, error) {
+//         console.error("Error fetching data: " + error);
+//     }
+// });
   /*kod negara */
 
   $.ajax({
@@ -813,6 +833,86 @@ $.ajax({
         var statmohon = result.p001status;
         var statdesc = result.statdesc;
         var amounthouse = result.p001amthouse;
+        var program = result.p001kprog;
+        var mode = result.desckaedah;
+        var method = result.descmode;
+
+        //display skrin accept
+      //  $('#labelkdprogrm').text(program);
+        $('#modest').text(mode);
+        $('#methodst').text(method);
+        //+++++++++++
+
+         // ret data for lookup kod program
+  var retprogram = program;
+  console.log(retprogram);
+
+  $.ajax({
+    type: "GET",
+    url: "http://localhost/pascav2/public/getkodprogram",
+    data: {},
+    //cache: false, // Disable caching of AJAX responses
+    success: function(data) {
+        var json_data = data;
+        var foundProgram = null;
+
+          // Search for the matching program code in the returned data
+          $.each(json_data, function(key, cat) {
+            if (cat.p020kprog === retprogram) {
+                foundProgram = cat;
+            }
+        });
+
+        if (foundProgram) {
+            // Combine code and description and show it in the label
+            var displayText = foundProgram.p020kprog + " - " + foundProgram.p020namaprogbi + " - " + foundProgram.z054bnecdetail;
+            var displayFakulti = foundProgram.a019bi;
+            $('#labelkdprogrm').text(displayText);
+            $('#labelfakulti').text(displayFakulti);
+        } else {
+            $('#labelkdprogrm').text("Program not found: " + retprogram);
+        }
+
+        // Optional: populate the select options as in your original AJAX
+
+        var select = $("#kdprg").empty(); // Empty the select before adding new options
+        
+        $.each(json_data, function(key, cat) {
+            // Create the option element
+            var option = "<option value='" + cat.p020kprog + "'>" + cat.p020namaprogbi + "-" + cat.z054bnecdetail + "</option>";
+            
+            // Check if there is a group (a019bi)
+            if (cat.hasOwnProperty("a019bi")) {
+                var group = cat.a019bi;
+                
+                // Check if the optgroup already exists
+                var optgroup = select.find("optgroup[label='" + group + "']");
+                
+                // If the optgroup doesn't exist, create it
+                if (optgroup.length === 0) {
+                    select.append("<optgroup label='" + group + "'></optgroup>");
+                    optgroup = select.find("optgroup[label='" + group + "']"); // Re-find the newly created optgroup
+                }
+                
+                // Append the option to the appropriate optgroup
+                optgroup.append(option);
+
+            } else {
+                // If there's no group, just append the option directly
+                select.append(option);
+            }
+        
+        });
+
+         // Refresh the selectpicker to update UI
+         $('#kdprg').selectpicker('refresh');
+    },
+    error: function(xhr, status, error) {
+        console.error("Error fetching data: " + error);
+    }
+});
+
+        //++++++++++
 
         //hide n display icon exist upload
         if (passport === '' || passport === null){

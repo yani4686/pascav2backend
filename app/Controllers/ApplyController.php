@@ -136,7 +136,13 @@ class ApplyController extends ResourceController
 
         $db = Config::connect();
 
-        $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001ststerimatwr,
+        $loginQuery = $db->query("SELECT p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = '7' THEN 'COURSEWORK'
+        WHEN p001kaedah = '8' THEN 'RESEARCH'
+        WHEN p001kaedah = '9' THEN 'MIX_MODE' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = '1' THEN 'Full Time'
+        WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001ststerimatwr,
         p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
     WHEN p001status = '' THEN 'Draft'
     WHEN p001status IS NULL THEN 'Draft'

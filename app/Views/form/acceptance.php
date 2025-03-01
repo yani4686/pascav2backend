@@ -35,60 +35,57 @@
 
 									 <h4 class="font-size-h6 mb-5">Approval Details</h4>
 
-									 <div class="form-group  row my-2">
-									 	<label class="col-lg-3 col-form-label">Name : </label>
+									 <div class="form-group row">
+									 	<label class="col-lg-2 col-form-label">Name: </label>
 												<div class="col-lg-4">
 														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
 													</div>
-										<label class="col-lg-3 col-form-label">IC/Passport No. : </label>
+										<label class="col-lg-2 col-form-label">IC/Passport No.: </label>
 												<div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" id="labelic" data-name="labelic"></span>
 												</div>
 									</div>
-									<div class="form-group row my-2">
+									<div class="form-group row">
 											<label class="col-2 col-form-label">Programme:</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Master Of Science</span>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="labelkdprogrm" data-name="labelkdprogrm"></span>
 											</div>										
-											<label class="col-2 col-form-label">Mode</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Research</span>
+											<label class="col-2 col-form-label">Mode Of Study:</label>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="modest" data-name="modest"></span>
 											</div>
 										</div>
 										<div class="form-group row my-2">
 											<label class="col-2 col-form-label">Faculty</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">FIK</span>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="labelfakulti" data-name="labelfakulti"></span>
 											</div>																				
-											<label class="col-2 col-form-label">Type Of Study</label>
-											<div class="col-4">
-												<span class="form-control-plaintext font-weight-bolder">Full Time</span>
+											<label class="col-2 col-form-label">Mode Of Registration:</label>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="methodst" data-name="methodst"></span>
 											</div>
 										</div>
 										<div class="form-group row my-2">
 											<label class="col-2 col-form-label">Date Of Offer Approval:</label>
-											<div class="col-4">
+											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
 											</div>
 										</div>
+										<div class="separator separator-dashed my-6"></div>
+										
 
-									<div class="separator separator-dashed my-6"></div>
+									
 
 									 <h4 class="font-size-h6 mb-5">Update Additional Personal Details</h4>
+			<span class="form-text text-muted">Please update Additional Information below before Download Offer Letter</span>
+		
 
-									 <div class="separator separator-dashed my-6"></div>
+									 <!-- <div class="separator separator-dashed my-6"></div> -->
 
 									 
 
 									 <div class="form-group  row my-2">
-									 	<!-- <label class="col-lg-3 col-form-label">Name : </label>
-												<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
-													</div>
-										<label class="col-lg-3 col-form-label">IC/Passport No. : </label>
-												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" id="labelic" data-name="labelic"></span>
-												</div> -->
+									 	
 										<label class="col-lg-3 col-form-label">Nationality : </label>
 												<div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" id="labelnat"></span>
@@ -109,7 +106,7 @@
 													<span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
 												</div>	
 									</div>	
-									<div class="form-group row my-2">
+									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Dun <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="dun" name="dun">
@@ -136,9 +133,7 @@
 										</div>
 									</div>
 									
-		<div class="row">
-			<span class="text-danger">*</span><span class="text-danger">*</span><span class="form-text text-muted">Please update Additional Information above before Generate Offer Letter</span>
-		</div>
+		
 
 		<div class="separator separator-dashed my-6"></div>
 
