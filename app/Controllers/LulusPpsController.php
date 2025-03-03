@@ -118,19 +118,19 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     // Use ISO date format
     $cur = date('Y-m-d');
 
-    $suratA ='UniSZA.600-4/2/2 Jld.1';
-    $suratBC ='UniSZA.600-4/2/4 Jld.1';
+    $suratA ='UniSZA.600-4_2_2 Jld.1';
+    $suratBC ='UniSZA.600-4_2_4 Jld.1';
 
-    // $checkmaxidsurat = $db->query('SELECT max(SUBSTRING(p001nosrttawar,25,2)) as bilmax from ppsdblocal.p001');
-    // $result = $checkmaxidsurat->getRow();
-    // $maxid= ($result->bilmax ?? 0) + 1;
+    $checkmaxidsurat = $db->query('SELECT max(SUBSTRING(p001nosrttawar,25,2)) as bilmax from ppsdblocal.p001');
+    $result = $checkmaxidsurat->getRow();
+    $maxid= ($result->bilmax ?? 0) + 1;
 
     // $kodrujuk = $db->query("SELECT CONCAT('$suratA','(','$maxid',')') as kodrujuk");
     // $resultQuery = $kodrujuk->getRow();
     // $kdrujuk = $resultQuery->kodrujuk;
 
     $input = $this->request->getJSON();
-    error_log(json_encode($input));
+    //error_log(json_encode($input));
    
 
     $tindakanPengesahan   = !empty($input->tindakanPengesahan) ? $input->tindakanPengesahan : null;
@@ -138,21 +138,24 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     $catatanPengesahan    = !empty($input->catatanPengesahan) ? $input->catatanPengesahan : null;
     $nokpform            = !empty($input->nokpform) ? $input->nokpform : null;
 
-    // if($jenistawaran == 'B'||$jenistawaran == 'C'){
+    if($jenistawaran == 'B'||$jenistawaran == 'C'){
 
-       // $kodrujuk = $db->query("SELECT CONCAT('$suratBC','(','$maxid',')') as kodrujuk");
+       $kodrujuk = $db->query("SELECT CONCAT('$suratBC','(','$maxid',')') as kodrujuk");
 
-    // }elseif($jenistawaran == 'A'){
-      //  $kodrujuk = $db->query("SELECT CONCAT('$suratA','(','$maxid',')') as kodrujuk");
-    // }else{
-    //     "empty";
-    // }
+    }elseif($jenistawaran == 'A'){
+       $kodrujuk = $db->query("SELECT CONCAT('$suratA','(','$maxid',')') as kodrujuk");
+    }else{
+        "empty";
+    }
 
-    // $resultQuery = $kodrujuk->getRow();
-    // $kdrujuk = $resultQuery->kodrujuk;
+    $resultQuery = $kodrujuk->getRow();
+    $kdrujuk = $resultQuery->kodrujuk;
+
+   //  $kodrujukResult = stripslashes($kdrujuk);
+    $kodrujukResult1 = str_replace('_/', '/', $kdrujuk);
    
-   $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus  = ?,p001catatan = ? WHERE p001nokp = ?", 
-   [$tindakanPengesahan,$cur,$catatanPengesahan,$nokpform]);
+//    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus  = ?,p001catatan = ? WHERE p001nokp = ?", 
+//    [$tindakanPengesahan,$cur,$catatanPengesahan,$nokpform]);
 
     // $Data = [
     //     'p001status'     => esc($input->tindakanPengesahan),
@@ -162,10 +165,10 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
     // ];
 
     // $update = $this->db->table('ppsdblocal.p001')->where('p001nokp',$input->nokpform)->update($Data);
-    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus = ?,p001jnstawar = ?, p001cttnlulus = ?,p001pelulus = ? WHERE p001nokp = ?", 
-   [$tindakanPengesahan, $cur,$jenistawaran, $catatanPengesahan,'yani', $nokpform]);
+    $update = $db->query("UPDATE ppsdblocal.p001 SET p001status = ?, p001tkhstatus = ?,p001jnstawar = ?,p001nosrttawar =?,p001cttnlulus = ?,p001pelulus = ? WHERE p001nokp = ?", 
+   [$tindakanPengesahan, $cur,$jenistawaran,$kodrujukResult1, $catatanPengesahan,'yani', $nokpform]);
 
-   error_log("update: " . json_encode($update));
+   //error_log("update: " . json_encode($kodrujukResult1));
 
     if (!$update) {
         $error = $db->error(); // Get database error
@@ -173,7 +176,69 @@ FROM ppsdblocal.p001 left join ppsdblocal.z013 z13 on z13.z013kodjenkcctn = p001
         return $this->response->setJSON(['status' => 'error', 'msg' => 'Update failed', 'error' => $error]);
     }
 
+
+        // $subject = "Your Application Has Approve";
+        // $message = "Click the link to download offer letter:\n";
+        // $message .= "http://localhost/pascav2/public/";
+        // $headers = "From: yani4686@gmail.com";
+
+        // //test send ke local shj
+        // if (mail($emel, $subject, $message, $headers)) {
+        //     $data['success'] = 'successemail';
+        // } else {
+        //     $data['success'] = 'failedemail';
+        // }    
+
     return $this->response->setJSON(['status' => 'success', 'msg' => 'Update successful']);
 
     }
+
+    public function countcalonjaya() {
+
+        $db = Config::connect();
+
+        $selectMohon= $db->query("select(SELECT count(p.p001nokp)as billuluspps from ppsdblocal.p001 p where p.p001status ='1' and p.p001ststerimatwr is null and p.p001savesurat is null) as billuluspps,
+(SELECT count(p.p001nokp)as bilterima from ppsdblocal.p001 p where p.p001ststerimatwr is not null and p.p001savesurat is not null) as bilterima
+");
+        $result = $selectMohon->getRow();
+
+        if ($result != null)
+        return $this->response->setJSON(['status' => 'success', 'msg' => 'retrive success', 'data' => $result]);
+        else
+        return $this->response->setJSON(['status' => 'failed', 'msg' => 'Required parameter.']);
+
+    }
+
+    public function retcalonjaya() {
+
+        $response = service('response');
+        $response->setHeader('Access-Control-Allow-Origin', '*');
+        $response->setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+        $response->setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+    
+        if ($this->request->getMethod() === 'options') {
+            return $response->setStatusCode(200);
+        }
+            // $session = session();
+    
+            // $user = $session->get('username');
+    
+            $db = Config::connect();
+    
+            $selectMohon= $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when '7' then 'Coursework' when '8' then 'Research' when '9' then 'Mix-Mode' end as kaedah, case p001modebelajar when '1' then 'Full Time' when '2' then 'Park Time' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+            p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,p001ststerimatwr 
+            from ppsdblocal.p001 where p001status ='1'");
+         
+            $result = $selectMohon->getResult();
+    
+            // return $this->response->setJSON($result);
+          //  log_message('debug', 'retPermohonan API endpoint called');
+         //  error_log("debug: " . 'retPermohonan API endpoint called');
+    
+            if ($result != null)
+            return $this->response->setJSON(['status' => 'success', 'msg' => 'retrive success', 'data' => $result]);
+            else
+            return $this->response->setJSON(['status' => 'failed', 'msg' => 'Required parameter.']);
+    
+        }
 }

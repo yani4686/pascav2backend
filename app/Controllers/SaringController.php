@@ -107,7 +107,11 @@ p001nohp,p001kcacat,z13a.z013aketerangan,p001akadtinggi,case p001akadtinggi when
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
 END AS statdesc,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,p001cgpa,p001unilama,p001bilexp,p001catatan,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
 p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
-p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
+p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,p001muet,CASE  
+WHEN p001katbi = 'MT' THEN 'MUET' 
+WHEN p001katbi = 'IE' THEN 'IELTS'
+WHEN p001katbi = 'TF' THEN 'TOEFL'
+WHEN p001katbi = 'CEFR' THEN 'CEFR' end as bidesc,p001noreg,p001tkhexm
 FROM ppsdblocal.p001 left join ppsdblocal.z013a z13a on z13a.z013akod = p001kcacat  WHERE p001nokp='$idpemohon'");
 
 //print_r($selectMohon);

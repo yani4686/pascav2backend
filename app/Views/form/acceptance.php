@@ -50,25 +50,31 @@
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder" id="labelkdprogrm" data-name="labelkdprogrm"></span>
 											</div>										
-											<label class="col-2 col-form-label">Mode Of Study:</label>
-											<div class="col-lg-4">
-												<span class="form-control-plaintext font-weight-bolder" id="modest" data-name="modest"></span>
-											</div>
-										</div>
-										<div class="form-group row my-2">
 											<label class="col-2 col-form-label">Faculty</label>
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder" id="labelfakulti" data-name="labelfakulti"></span>
-											</div>																				
+											</div>
+										</div>
+										<div class="form-group row my-2">
+												
+											<label class="col-2 col-form-label">Mode Of Study:</label>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="labelmodest" data-name="labelmodest"></span>
+											</div>																			
 											<label class="col-2 col-form-label">Mode Of Registration:</label>
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder" id="methodst" data-name="methodst"></span>
 											</div>
 										</div>
 										<div class="form-group row my-2">
-											<label class="col-2 col-form-label">Date Of Offer Approval:</label>
+											<label class="col-2 col-form-label">Date Of Approval:</label>
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
+											</div>
+							
+											<label class="col-2 col-form-label">Offer Letter No:</label>
+											<div class="col-lg-4">
+												<span class="form-control-plaintext font-weight-bolder" id="labelnosurat" data-name="labelnosurat"></span>
 											</div>
 										</div>
 										<div class="separator separator-dashed my-6"></div>
@@ -85,10 +91,15 @@
 									 
 
 									 <div class="form-group  row my-2">
-									 	
-										<label class="col-lg-3 col-form-label">Nationality : </label>
+
+									 <label class="col-lg-3 col-form-label">Race: </label>
 												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" id="labelnat"></span>
+													<span class="form-control-plaintext font-weight-bolder" name = "labelrace" id="labelrace"></span>
+												</div>
+									 	
+										<label class="col-lg-3 col-form-label">Nationality: </label>
+												<div class="col-lg-4">
+													<span class="form-control-plaintext font-weight-bolder" name = "labelnat" id="labelnat"></span>
 												</div>
 										
 										<label class="col-lg-3 col-form-label">Corresponding Address : </label>
@@ -98,12 +109,12 @@
 											
 										<label class="col-lg-3 col-form-label">State : </label>
 												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" id="labeladdstate"></span>
+													<span class="form-control-plaintext font-weight-bolder" name = "labeladdstate" id="labeladdstate"></span>
 												</div>
 
 										<label class="col-lg-3 col-form-label">Country : </label>
 												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
+													<span class="form-control-plaintext font-weight-bolder" name ="labeladdcountry" id="labeladdcountry"></span>
 												</div>	
 									</div>	
 									<div class="form-group row">
@@ -114,7 +125,9 @@
 												</div>
 										<label class="col-lg-3 col-form-label">Parliment <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
-													<input type="text" class="form-control" name="parliment" id="parlimen" readonly/>
+													<!-- <input type="text" class="form-control" name="parliment" id="parlimen" readonly/> -->
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="parlimen" name="parlimen">
+												</select>
 												</div>									
 										<label class="col-lg-3 col-form-label">Type of Secondary School <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
@@ -127,7 +140,7 @@
 												</div>
 									</div>
 
-									 <div class="row" id="">
+									 <div class="row" id="hidebuttonupdaccept">
 										<div class="col">
 											<button class="btn btn-primary updaddinfo pull-right m-1" type="button" data-inline="true">Update</button>
 										</div>
@@ -137,19 +150,19 @@
 
 		<div class="separator separator-dashed my-6"></div>
 
-		<div class="form-group row my-2">										
+		<!-- <div class="form-group row my-2" id="hidebtnoffer">										
 					<div class="checkbox-inline">
 							<label class="checkbox m-0">
 							<input type="checkbox" name="stsagree" id="stsagree" value ="1"/>
 							<span></span>I understand and accept the offer from Unisza.</label>
 						</div>
 					<div class="form-text text-muted text-center"></div>					
-		</div>
+		</div> -->
 
-		<div class="row">
+		<div class="row" id="infoacceptval">
 			<label class="col-lg-12 col-form-label text-muted"><span class="text-danger">*</span><span class="text-danger">*</span>For your information,this offer letter valid 1 year after approval date. If the application expires, a new application process is required again.</label>
 		</div>
-			<div class="row" id="hidebtnoffer">
+			<div class="row" id="buttonviewsurat" >
 				<div class="col">
 				<button class="btn btn-primary previewBtnPDF pull-right m-1" type="button" data-inline="true">Preview Offer Letter</button>
 					<!-- <button class="btn btn-primary saveBtnPDF pull-right m-1" type="button" data-inline="true">Download as PDF</button> -->

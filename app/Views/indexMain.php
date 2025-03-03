@@ -275,7 +275,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<tr id="sttmntdraft">
 																			<td class="pl-0">01/10/2024</td>
 																			<td>Successful sign up application postgraduate. Please complete checklist</td>
-																			<td><a href="#">Click Here</a></td>
+																			<td><a href="./apply">Click Here</a></td>
 																			<!-- <td><span class="label label-grey label-pill label-inline mr-2">Draft</span></td> -->
 																		</tr>
 																		<tr id="sttmntnew">

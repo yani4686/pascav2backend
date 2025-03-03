@@ -42,6 +42,9 @@ $routes->post('/insstep5', 'ApplyController::InsStep5');
 $routes->get('/generatePdf', 'ApplyController::generatePdfExample');
 $routes->post('/generatepdf', 'ApplyController::generatePdf');
 
+$routes->post('/updaccept', 'AcceptController::UpdAccept');
+$routes->post('/viewsurat', 'AcceptController::ViewSurat');
+
 $routes->get('/retpermohonan', 'SaringController::retpermohonan');
 $routes->get('/countpermohonan', 'SaringController::countpermohonan');
 $routes->post('/updsaringan', 'SaringController::updsaringan');
@@ -50,7 +53,9 @@ $routes->get('/retpermohonanbynokp/(:any)', 'SaringController::retpermohonanbyno
 
 $routes->get('/retpermohonansaring', 'LulusPpsController::retpermohonansaring');
 $routes->get('/countpermohonanpps', 'LulusPpsController::countpermohonanpps');
+$routes->get('/countcalonjaya', 'LulusPpsController::countcalonjaya');
 $routes->post('/updsaringanpps', 'LulusPpsController::updsaringanpps');
+$routes->get('/retcalonjaya', 'LulusPpsController::retcalonjaya');
 $routes->get('/retpermohonanbynokp/(:any)', 'LulusPpsController::retpermohonanbynokp/$1');
 
 $routes->get('/generateletter', 'PdfController::GenerateLetter');

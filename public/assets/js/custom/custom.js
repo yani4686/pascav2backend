@@ -132,6 +132,7 @@ $.ajax({
 
     $('.timeline-step').removeClass('active');
     // Apply different classes or styles depending on the status
+   // console.log(statmohondash);
       if (statmohondash === '' || statmohondash === null) {
         $('#step-application').addClass('active');  // Yellow for active
         $('#step-processing').removeClass('active'); // Reset to gray
@@ -142,7 +143,8 @@ $.ajax({
         $("#sttmntdraft").show();
         $("#sttmntnew").hide();
         $("#sttmntproccess").hide();
-        $("#sttmntapprove").hide();
+       // $("#sttmntapprove").hide();
+        $("#sttmntapprove").removeClass("d-flex").addClass("d-none");
     } else if (statmohondash === '0'||statmohondash === '4') {
       $('#step-application').addClass('active'); // Reset to gray
       $('#step-processing').addClass('active');    // Yellow for active

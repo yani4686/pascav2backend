@@ -142,7 +142,10 @@ class ApplyController extends ResourceController
         WHEN p001kaedah = '9' THEN 'MIX_MODE' end as desckaedah,
         p001modebelajar,CASE  
         WHEN p001modebelajar = '1' THEN 'Full Time'
-        WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001ststerimatwr,
+        WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN '1' THEN 'MALAYSIAN' 
+        WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001ststerimatwr,
         p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
     WHEN p001status = '' THEN 'Draft'
     WHEN p001status IS NULL THEN 'Draft'
@@ -154,7 +157,9 @@ class ApplyController extends ResourceController
     WHEN p001status = '5' THEN 'Lulus Fakulti2'
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
 END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
-        case p00katwarga when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex
+        CASE 
+        p00katwarga WHEN '1' THEN 'Malaysian' 
+        WHEN '2' THEN 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
         from ppsdblocal.p00daftar,ppsdblocal.p001 where p00username='$user' and p00usrid=p001nokp");
         $result = $loginQuery->getRow();
         // $p00katwarga = $result->p001uppassport;
@@ -396,15 +401,15 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
           $proresearch = !empty($input['proresearch']) ? $input['proresearch'] : null;//$input['corradd1'] ?? '';
           $prosv       = !empty($input['prosv']) ? $input['prosv'] : null;//$input['postcorradd'] ?? '';
           $typebi      = !empty($input['bitype']) ? $input['bitype'] : null;
-          $resultbi      = !empty($input['resultaddbi']) ? $input['resultaddbi'] : null;
-          $noregbi      = !empty($input['registerid']) ? $input['registerid'] : null;
-          //$datexm      = !empty($input['datexm']) ? $input['datexm'] : '0000-00-00';
+          $resultbi    = !empty($input['resultaddbi']) ? $input['resultaddbi'] : null;
+          $noregbi     = !empty($input['registerid']) ? $input['registerid'] : null;
+          $datexm      = !empty($input['datexm']) ? $input['datexm'] : '0000-00-00';
          // '{' . implode(',', $datexm) . '}'
 
         // Save data to the database    
          // Update database
     $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
-    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi, $p001nokp]);
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi,$datexm, $p001nokp]);
 
     if ($db->affectedRows() > 0) {
     return $this->response->setJSON(['success' => 'ok']);
@@ -454,17 +459,17 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
     }
         // File upload logic
     $newNameIcPass = $this->handleFileUpload($this->request->getFile('fileic'), $uploadDir, $p001nokp, 'ic');
-    if ($newNameIcPass === null) {
-        error_log("Failed to upload IC/passport. File Error: " . $this->request->getFile('fileic')->getErrorString());
-    } else {
-        error_log("Successfully uploaded IC/passport as: " . $newNameIcPass);
-    }
+    // if ($newNameIcPass === null) {
+    //     error_log("Failed to upload IC/passport. File Error: " . $this->request->getFile('fileic')->getErrorString());
+    // } else {
+    //     error_log("Successfully uploaded IC/passport as: " . $newNameIcPass);
+    // }
     $newNameCert = $this->handleFileUpload($this->request->getFile('fileaka'), $uploadDir, $p001nokp, 'certificate');
-    if ($newNameCert === null) {
-        error_log("Failed to academic supporting doc. File Error: " . $this->request->getFile('fileaka')->getErrorString());
-    } else {
-        error_log("Successfully academic supporting doc as: " . $newNameCert);
-    }
+    // if ($newNameCert === null) {
+    //     error_log("Failed to academic supporting doc. File Error: " . $this->request->getFile('fileaka')->getErrorString());
+    // } else {
+    //     error_log("Successfully academic supporting doc as: " . $newNameCert);
+    // }
     $newNamePro = $this->handleFileUpload($this->request->getFile('filePro'), $uploadDir, $p001nokp, 'proposal');
     $newNameFee = $this->handleFileUpload($this->request->getFile('fileFee'), $uploadDir, $p001nokp, 'receipt');
     
