@@ -10,7 +10,7 @@ class LoginModel extends Model
     protected $primaryKey = 'p00uid';
 
     protected $allowedFields = [
-        'p00username','p00password','p00emel','p00katwarga','p000statsahreg','p00verifycode','p00usrid'
+        'p00username','p00password','p00emel','p00katwarga','p000statsahreg','p00verifycode','p00usrid','p00tkhreg'
     ];
 
     // Disable automatic timestamps

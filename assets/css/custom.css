@@ -606,4 +606,23 @@ background: none; /* Remove default background */
 .contentSurat { 
     margin-top: 20px; 
 }
+
+.apply-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Control the image button size */
+.apply-button-img {
+    width: 350px; /* Wider button */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.apply-button-img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
   

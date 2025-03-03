@@ -48,8 +48,7 @@ class LoginController extends ResourceController
 
     public function retlogin() {
 
-        //belum cater untuk session lps login
-        $session = \Config\Services::session();
+        $session = \Config\Services::session();//session set kt local
 
         $input = $this->request->getPost();
 
@@ -58,27 +57,26 @@ class LoginController extends ResourceController
 
         $db = Config::connect();
 
-        $loginQuery = $db->query("SELECT p00username,p00password from ppsdblocal.p00daftar where p00username='$usr' and p00password= '$pwd' and p000statsahreg = 1");
+        $loginQuery = $db->query("SELECT p00username,p00password,p00usrid from ppsdblocal.p00daftar where p00username='$usr' and p00password= '$pwd' and p000statsahreg = 1");
       // $result = $loginQuery->getResult();
         $result = $loginQuery->getRow();
-        $username = $result->p00username;
-        $password = $result->p00password;
+       // $username = $result->p00username;
+       // $password = $result->p00password;
 
-        $data = [
-            'username'  => $username,
-            'logged_in' => true,
+           if ($result) {
+            // Valid login
+            $data = [
+                'username' => $result->p00username,
+                'id'       => $result->p00usrid,
+                'logged_in' => true
             ];
-
-           $session->set($data);
-
-        if($username != '' && $password != ''){ 
-            $data['success'] = 'ok';
+            $session->set($data);
+    
+            return $this->response->setJSON(['success' => 'ok']);
+        } else {
+            // Invalid login
+            return $this->response->setJSON(['success' => 'ko']);
         }
-        else{
-            $data['success'] = 'ko';
-        }
-
-        return $this->response->setJSON($data);
 
     }
 
@@ -110,34 +108,64 @@ class LoginController extends ResourceController
 
     public function regnewlogin() {
 
+        $curdatecreate = date('Y-m-d H:i:s');
+
         $input = $this->request->getPost();
 
         $user       = $input['usr'];
         $warga      = $input['stswarga'] ?? null;
         $icno       = $input['icno'];
-        $passport   = $input['passno'];
+        $passport   = $input['passno'];//'required|min_length[6]'
 		$pwd        = $input['password'];
 		$emel       = $input['email'];
         $verifycode = $verification_code = bin2hex(random_bytes(16)); // Generate a random verification code
        
-
-        //problem insert radio button -- blm solve
-        //validate -- blm check
-        
-
-        if ($warga = '1'){
+        if ($warga == '1') {
             $username = $icno;
-
-        }elseif($warga = '2'){
-            $username =  $passport;
-        }else{
+        } elseif ($warga == '2') {
+            $username = $passport;
+        } else {
             $username = 'noinput';
         }
 
         $db = Config::connect();
+
+        $sql = "SELECT * FROM ppsdblocal.p00daftar WHERE p00usrid = ?";
+
+        // Execute the query and get the result
+        $query = $db->query($sql, [$username]);
+        
+        // Fetch the result
+        $existingUser = $query->getRow(); 
+
+        if ($existingUser) {
+            // If username exists, return error response
+            $data['success'] = 'username_taken';
+            return $this->response->setJSON($data);
+        }
+
+       //error_log("existingUser: " . print_r($existingUser, true));
         // $db2 = \Config\Database::connect('thirdDB');
 
-        //belum checking jika username sama dlm table 
+      // Validate fields
+        $validationRule = [
+            'usr'       => 'required',
+            'stswarga'  => 'required',
+            'password'  => 'required',
+            'email'     => 'required|valid_email',
+        ];
+
+    // Conditionally validate icno or passno based on stswarga value
+    if ($warga == '1') {
+        $validationRule['icno'] = 'required';
+    } elseif ($warga == '2') {
+        $validationRule['passno'] = 'required';
+    }
+
+    // Validate the input fields with dynamic validation rules
+    if (!$this->validate($validationRule)) {
+        return $this->failValidationErrors('Please fill all the fields correctly.');
+    }
 
         // Save data to the database
         $insert = $this->model->insert([
@@ -147,18 +175,18 @@ class LoginController extends ResourceController
             'p00katwarga'          => $warga,
             'p000statsahreg'       => '0',
             'p00verifycode'        => $verifycode,
-            'p00usrid'             => $username
+            'p00usrid'             => $username,
+            'p00tkhreg'            => $curdatecreate
         ]);
-
 
         if($insert){
 
-            $subject = "Verify Your Email";
+            $subject = "Registration Emel Verification";
             $message = "Click the link below to verify your email:\n";
             $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
             $headers = "From: yani4686@gmail.com";
 
-            //test send ke local shj
+            //test send dr local shj blm test kt server
             if (mail($emel, $subject, $message, $headers)) {
                 $data['success'] = 'successemail';
             } else {
@@ -171,6 +199,47 @@ class LoginController extends ResourceController
 
         return $this->response->setJSON($data);
 
+        //     $email = \Config\Services::email();
+
+        //         // Configure the email preferences
+        //     $config = [
+        //         'protocol' => 'smtp', // Set the protocol to 'smtp' for sending via SMTP
+        //         'SMTPHost' => 'smtp.gmail.com',  // Replace with your SMTP server
+        //         'SMTPUser' => '', // Replace with your email address
+        //         'SMTPPass' => '',  // Replace with your email password or app password
+        //         'SMTPPort' => 587,
+        //         'SMTPCrypto' => 'tls',  // TLS encryption (or 'ssl' if required by your email provider)
+        //         'mailType' => 'html',   // Set the email format to HTML
+        //         'charset' => 'utf-8',
+        //     ];
+
+        //     // Initialize the email class with the configuration
+        //     $email->initialize($config);
+
+        //     // Set the email headers and content
+        //     $email->setFrom('yani4686@gmail.com', 'Alyani');
+        //     $email->setTo($emel);  // Set the recipient email address
+        //     $email->setSubject('Verify Your Email');
+            
+        //     // Prepare the verification message
+        //     $message = "Click the link below to verify your email:\n";
+        //     $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
+        //     $email->setMessage($message);
+
+        //     // Send the email
+        //     if ($email->send()) {
+        //         $data['success'] = 'successemail';
+        //     } else {
+        //         // If email fails, output the error details for debugging
+        //         $data['success'] = 'failedemail';
+        //         $data['error'] = $email->printDebugger();
+        //     }
+        // } else {
+        //     $data['success'] = 'ko';
+        // }
+
+          
+
     }
 
     public function verifylogin($code) {
@@ -180,7 +249,7 @@ class LoginController extends ResourceController
         $db = Config::connect();
 
         $t	= date('Y');
-        $curdatecreate = date('Y-m-d');
+        $curdatecreate = date('Y-m-d H:i:s');
         $verifycode = $code;
         
       $checkmaxrow = $db->query('SELECT max(SUBSTRING(p001norujuk,17,2)) as bilmax from ppsdblocal.p001');
@@ -230,5 +299,43 @@ class LoginController extends ResourceController
     public function verify()
     {
         return view('form/verifyemel');
+    }
+
+    public function forgotpwd()
+    {
+        $input = $this->request->getPost();
+
+		$emel       = $input['email'];
+
+        $db = Config::connect();
+
+        $sql = "SELECT p00emel,p00password FROM ppsdblocal.p00daftar WHERE p00emel = ?";
+        // Execute the query and get the result
+        $query = $db->query($sql, [$emel]);
+        
+        // Fetch the result
+        $existingUser = $query->getRow(); 
+        $emel = $existingUser->p00emel;
+        $pwd = $existingUser->p00password;
+
+        if($existingUser){
+
+            $subject = "Forgot Password Request";
+            $message = "Your Password is $pwd";
+            $message .= " Click Here <a href=http://localhost/pascav2/public/></a> To Login";
+            $headers = "From: yani4686@gmail.com";
+
+            //test send dr local shj blm test kt server
+            if (mail($emel, $subject, $message, $headers)) {
+                $data['success'] = 'successemail';
+            } else {
+                $data['success'] = 'failedemail';
+            }             
+        }
+        else{
+            $data['success'] = 'email_empty';         
+        }
+
+        return $this->response->setJSON($data);
     }
 }

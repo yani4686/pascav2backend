@@ -24,6 +24,7 @@ $routes->post('/logout', 'LoginController::logout');
 $routes->post('/regnewlogin', 'LoginController::regnewlogin');
 $routes->match(['GET','POST'],'/verifylogin/(:any)', 'LoginController::verifylogin/$1');
 $routes->get('/verify', 'LoginController::verify');
+$routes->post('/forgotpwd', 'LoginController::forgotpwd');
 
 $routes->get('/getkodprogram', 'ApplyController::getkodprogram');
 $routes->get('/getkodnegara', 'ApplyController::getkodnegara');

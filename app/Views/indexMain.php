@@ -1,16 +1,5 @@
 <!DOCTYPE html>
-<!--
-Template Name: Metronic - Bootstrap 4 HTML, React, Angular 10 & VueJS Admin Dashboard Theme
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: https://1.envato.market/EA4JP
-Renew Support: https://1.envato.market/EA4JP
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
+
 <html lang="en">
 	<!--begin::Head-->
 	<?php echo view('/headmain.php'); ?>
@@ -50,8 +39,6 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="card card-custom gutter-b">
 										<div class="card-body">
 												<div class="d-flex justify-content-between flex-column pt-4 h-100">
-													
-													<!-- <div class="pb-5"> -->
 
 													<!--begin::Header-->
 														<div class="ad-header" style="margin-top:-10px; padding: 13px;">Checklist</div>
@@ -63,9 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<img id="previewImage" src="./assets/media/users/blank.png" alt="Passport Picture" style="width: 100%; height: 100%; display: block;">
 																</div>
 															</div>
-														</div>
-													
-													<!-- <div class="pt-1"> -->
+														</div>										
 
 														<!-- profile -->
 														<div class="d-flex align-items-center pb-9">
@@ -195,16 +180,14 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<span class="text-muted font-weight-bold">Summary & Print</span>
 																		<a href="summary"><span id="summary" class="font-weight-bolder label label-xl label-light-danger label-inline px-3 py-1 min-w-45px"></span></a>
 																	</div>
-														<!-- </div> -->
 													<!-- end -->
 													
-													<!-- </div> -->
 													</div>
 
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
 									<!--end::Aside-->
 
@@ -252,8 +235,22 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 										</div>
 										</div>
+
+									<!-- main enter form -->
 									  
-								
+									<div class="card card-custom gutter-b">
+										<div class="card card-custom">
+											<div class="card-body p-0">
+												<div class="d-flex align-items-center" style="height: 150px;"">
+													<a href="./apply"  class="apply-link">
+														<img src="./assets/images/click_here.png" class="apply-button-img"/>
+													</a>		
+												</div>
+											</div>
+										</div>
+										
+									</div>
+
 									<!-- start ::cardTable -->
 									<div class="card card-custom gutter-b">
 										<div class="card card-custom">
@@ -324,7 +321,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<!-- end ::cardTable -->
-								</div>
+									</div>
 								<!--end::LayoutTimeline-->
 								</div>
 								<!--end::Page Layout-->

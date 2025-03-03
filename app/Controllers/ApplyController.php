@@ -132,7 +132,8 @@ class ApplyController extends ResourceController
 
         $session = session();
 
-        $user = $session->get('username');
+        $user   = $session->get('username');
+        $idsess = $session->get('id');
 
         $db = Config::connect();
 

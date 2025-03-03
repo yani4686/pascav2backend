@@ -171,7 +171,7 @@ var KTLogin = function() {
 				var form = document.getElementById('kt_login_signup_form');
 				var formData = new FormData(form);
 		
-				console.log(formData);
+				//console.log(formData);
 		
 				$.ajax({
 				type: "POST",
@@ -186,61 +186,73 @@ var KTLogin = function() {
 					success: function(data){
 							
 					$(".se-pre-con").fadeOut("slow");
-		
-					switch (data.success) {
-						case 'ko':
-						var msg_header = "Error";
-						var msg = "Please try again.";
-						var icon_flag = 'error';
-						case 'successemail':
-						var msg_header = "Registration successful!";
-						var msg = "Check your email to verify your account..";
-						var icon_flag = 'success';
-						case 'failedemail':
-						var msg_header = "Error";
-						var msg = "Failed to send verification email.";
-						var icon_flag = 'error';
-						break;						
-						case 'ok':
-						var msg_header = "Success";
-						var msg = "Record has been submitted.";
-						var icon_flag = 'success';
-						break;
-						default:
-						var msg_header = "Ralat";
-						var msg = "Please try again.";
-						var icon_flag = 'error';	
-					}
-		
-					if(data.success=='ok'){
-							
+
+					// Check if the data is null or empty
+					if (!data || Object.keys(data).length === 0 || !data.success) {
 						Swal.fire(
+							'Error',
+							'No response from server. Please try again later.',
+							'error'
+						);
+						return; // Stop further execution if data is invalid or empty
+					}
+
+					// Default values for message
+					var msg_header, msg, icon_flag;
+		
+					// Switch based on response
+            switch (data.success) {
+                case 'ko':
+                    msg_header = "Error";
+                    msg = "Please try again.";
+                    icon_flag = 'error';
+                    break;
+                case 'successemail':
+                    msg_header = "Registration successful!";
+                    msg = "Check your email to verify your account..";
+                    icon_flag = 'success';
+                    break;
+                case 'failedemail':
+                    msg_header = "Error";
+                    msg = "Failed to send verification email.";
+                    icon_flag = 'error';
+                    break;
+                case 'ok':
+                    msg_header = "Success";
+                    msg = "Record has been submitted.";
+                    icon_flag = 'success';
+                    break;
+				case 'username_taken':
+					msg_header = "Error";
+					msg = "This username (IC/Passport) is already taken.";  // Use the message sent from the backend
+					icon_flag = 'error';
+					break;
+                default:
+                    msg_header = "Ralat";
+                    msg = "Please try again.";
+                    icon_flag = 'error';
+                    break;
+            }
+		
+					 // Show the alert
+					 Swal.fire(
 						msg_header,
 						msg,
-						icon_flag 
-						).then(function(){
+						icon_flag
+					).then(function () {
+						if (data.success === 'ok' || data.success === 'successemail') {
 							window.location = "http://localhost/pascav2/public/";
-						});					
-					}
-					// else if(data.success=='exist'){
-							
-					// 	Swal.fire(
-					// 	msg_header,
-					// 	msg,
-					// 	icon_flag 
-					// 	).then(function(){
-					// 		window.location = "http://localhost/pascav2/public/";
-					// 	});					
-					// }
-					else{
+						}
+					});
+
+					},
+					error: function (xhr, status, error) {
+						$(".se-pre-con").fadeOut("slow");
 						Swal.fire(
-						msg_header,
-						msg,
-						icon_flag 
-						).then(function(){
-							window.location = "http://localhost/pascav2/public/";
-						});							
-					}
+							'Error',
+							'There was an issue with the request. Please try again.',
+							'error'
+						);
 					}
 				
 				});
@@ -370,6 +382,93 @@ var KTLogin = function() {
         // Handle submit button
         $('#kt_login_forgot_submit').on('click', function (e) {
             e.preventDefault();
+
+			var form = document.getElementById('kt_login_forgot_form');
+			var formData = new FormData(form);
+
+			$.ajax({
+				type: "POST",
+				url: "http://localhost/pascav2/public/forgotpwd" ,
+				data: formData,
+						processData: false,  // tell jQuery not to process the data
+						contentType: false,   // tell jQuery not to set contentType		
+				beforeSend: function() {
+							$(".se-pre-con").fadeIn("slow");
+						},
+					dataType: 'json',
+					success: function(data){
+							
+					$(".se-pre-con").fadeOut("slow");
+
+					// Check if the data is null or empty
+					if (!data || Object.keys(data).length === 0 || !data.success) {
+						Swal.fire(
+							'Error',
+							'No response from server. Please try again later.',
+							'error'
+						);
+						return; // Stop further execution if data is invalid or empty
+					}
+
+					// Default values for message
+					var msg_header, msg, icon_flag;
+		
+					// Switch based on response
+            switch (data.success) {
+                case 'ko':
+                    msg_header = "Error";
+                    msg = "Please try again.";
+                    icon_flag = 'error';
+                    break;
+                case 'successemail':
+                    msg_header = "Registration successful!";
+                    msg = "Check your email to verify your account..";
+                    icon_flag = 'success';
+                    break;
+                case 'failedemail':
+                    msg_header = "Error";
+                    msg = "Failed to send verification email.";
+                    icon_flag = 'error';
+                    break;
+                case 'ok':
+                    msg_header = "Success";
+                    msg = "Record has been submitted.";
+                    icon_flag = 'success';
+                    break;
+				case 'email_empty':
+					msg_header = "Error";
+					msg = "This emel  is not registered in system";  // Use the message sent from the backend
+					icon_flag = 'error';
+					break;
+                default:
+                    msg_header = "Error";
+                    msg = "Please try again.";
+                    icon_flag = 'error';
+                    break;
+            }
+		
+					 // Show the alert
+					 Swal.fire(
+						msg_header,
+						msg,
+						icon_flag
+					).then(function () {
+						if (data.success === 'ok' || data.success === 'successemail') {
+							window.location = "http://localhost/pascav2/public/";
+						}
+					});
+
+					},
+					// error: function (xhr, status, error) {
+					// 	$(".se-pre-con").fadeOut("slow");
+					// 	Swal.fire(
+					// 		'Error',
+					// 		'There was an issue with the request. Please try again.',
+					// 		'error'
+					// 	);
+					// }
+				
+				});
 
             validation.validate().then(function(status) {
 		        if (status == 'Valid') {

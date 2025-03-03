@@ -327,8 +327,8 @@
 
 										 <div class="row">
 											<div class="col">
-												<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Save & Next</button>
-												<button class="btn btn-primary save pull-right m-1" type="button" data-inline="true">Save</button>
+												<button class="btn btn-primary saveNextBtn pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+												<button class="btn btn-primary saveBtn pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
 												<!-- <button class="btn btn-primary pull-right m-1" type="button" onclick="executeSubmitFrmStep1('SubmitConfirmStep1')" data-inline="true">Save</button> -->
 											</div>
 										</div>
@@ -550,8 +550,8 @@
 
                                         <div class="row">
 											<div class="col">
-												<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Save & Next</button>
-												<button class="btn btn-primary save1 pull-right m-1" type="button" data-inline="true">Save</button>
+												<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+												<button class="btn btn-primary save1 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
 											</div>
 										</div>
 									<!--  -->                                           
