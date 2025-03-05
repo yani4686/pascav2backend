@@ -157,7 +157,7 @@
                                     <div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">Nationality Status <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" name="wargast" id="wargast">
+                                                        <select class ="form-control selectpicker" title="Please Choose" name="wargast" id="wargast" required>
                                                             <option value="1">Malaysian</option>
                                                             <option value="2">Non Malaysian</option>
                                                             <option value="3">Permanent Residence (PR)</option>
@@ -550,8 +550,8 @@
 
                                         <div class="row">
 											<div class="col">
-												<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
-												<button class="btn btn-primary save1 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
+												<button class="btn btn-primary saveNextBtn1 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+												<button class="btn btn-primary saveBtn1 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
 											</div>
 										</div>
 									<!--  -->                                           
@@ -647,8 +647,8 @@
 									
 												<div class="row">
 													<div class="col">
-														<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Save & Next</button>
-														<button class="btn btn-primary save2 pull-right m-1" type="button" data-inline="true">Save</button>
+														<button class="btn btn-primary saveNextBtn2 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+														<button class="btn btn-primary saveBtn2 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
 													</div>
 												</div>
 									<!--  -->
@@ -731,8 +731,8 @@
 
 									<div class="row">
 										<div class="col">
-											<button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Save & Next</button>
-											<button class="btn btn-primary save3 pull-right m-1" type="button" data-inline="true">Save</button>
+											<button class="btn btn-primary saveNextBtn3 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+											<button class="btn btn-primary saveBtn3 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
 										</div>
 									</div>
 									<!--  -->
@@ -786,8 +786,8 @@
 
 												<div class="row">
 													<div class="col">
-														<a href="pascav2/public/summary"><button class="btn btn-primary nextBtn pull-right m-1" type="button" data-inline="true">Summary & Print</button></a>
-														<button class="btn btn-primary save4 pull-right m-1" type="button" data-inline="true">Submit Application</button>
+														<a href="pascav2/public/summary"><button class="btn btn-primary saveNextBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Summary & Print</button></a>
+														<button class="btn btn-primary saveBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Submit Application</button>
 													</div>
 												</div>
 									<!--  -->

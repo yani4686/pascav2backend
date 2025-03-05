@@ -430,7 +430,7 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         $db = Config::connect();
 
     // Fetch user details
-    $loginQuery = $db->query("SELECT p001nokp,p001uppassport,p001uptrans,p001upproposal,p001upresit
+    $loginQuery = $db->query("SELECT p001nokp,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet
                               FROM ppsdblocal.p00daftar, ppsdblocal.p001 
                               WHERE p00username = ? AND p00usrid = p001nokp", [$user]);
 
@@ -442,11 +442,12 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         ]);
     }
 
-    $p001nokp = $result->p001nokp;
-    $existingPassport = $result->p001uppassport;
-    $existingCert = $result->p001uptrans;
-    $existingProposal = $result->p001upproposal;
-    $existingFee = $result->p001upresit;
+    $p001nokp          = $result->p001nokp;
+    $existingPassport  = $result->p001uppassport;
+    $existingCert      = $result->p001uptrans;
+    $existingProposal  = $result->p001upproposal;
+    $existingFee       = $result->p001upresit;
+    $existingBi        = $result->p001upmuet;
    
     $uploadDir = WRITEPATH . 'uploads/';
    // error_log('Resolved path: ' . WRITEPATH . 'uploads/');
@@ -460,29 +461,21 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
     }
         // File upload logic
     $newNameIcPass = $this->handleFileUpload($this->request->getFile('fileic'), $uploadDir, $p001nokp, 'ic');
-    // if ($newNameIcPass === null) {
-    //     error_log("Failed to upload IC/passport. File Error: " . $this->request->getFile('fileic')->getErrorString());
-    // } else {
-    //     error_log("Successfully uploaded IC/passport as: " . $newNameIcPass);
-    // }
     $newNameCert = $this->handleFileUpload($this->request->getFile('fileaka'), $uploadDir, $p001nokp, 'certificate');
-    // if ($newNameCert === null) {
-    //     error_log("Failed to academic supporting doc. File Error: " . $this->request->getFile('fileaka')->getErrorString());
-    // } else {
-    //     error_log("Successfully academic supporting doc as: " . $newNameCert);
-    // }
     $newNamePro = $this->handleFileUpload($this->request->getFile('filePro'), $uploadDir, $p001nokp, 'proposal');
     $newNameFee = $this->handleFileUpload($this->request->getFile('fileFee'), $uploadDir, $p001nokp, 'receipt');
+    $newNameBi = $this->handleFileUpload($this->request->getFile('fileEng'), $uploadDir, $p001nokp, 'result');
     
     // Retain existing values if no new files are uploaded
     $newNameIcPass = $newNameIcPass ?? $existingPassport;
     $newNameCert = $newNameCert ?? $existingCert;
     $newNamePro = $newNamePro ?? $existingProposal;
     $newNameFee = $newNameFee ?? $existingFee;
+    $newNameBi = $newNameBi ?? $existingBi;
 
     // Update database
-    $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001uppassport = ?, p001uptrans = ?, p001upproposal = ?,p001upresit = ? WHERE p001nokp = ?", 
-                              [$newNameIcPass, $newNameCert,$newNamePro,$newNameFee, $p001nokp]);
+    $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001uppassport = ?, p001uptrans = ?, p001upproposal = ?,p001upresit = ?,p001upmuet = ? WHERE p001nokp = ?", 
+                              [$newNameIcPass, $newNameCert,$newNamePro,$newNameFee,$newNameBi, $p001nokp]);
 
     if ($db->affectedRows() > 0) {
         return $this->response->setJSON(['success' => 'ok']);

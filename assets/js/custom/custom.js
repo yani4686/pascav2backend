@@ -784,9 +784,7 @@ $.ajax({
     url: 'http://localhost/pascav2/public/displayprofile', // Replace with your server endpoint
     method: 'GET',
    dataType: 'json', // Expect JSON response
-   //header :'"Cache-Control": "no-cache"',
     success: function (result) {
-        // Check if the response contains data
         var nokppass  =  result.p00usrid;
         // var statwarga =  result.ktrgwarga;
         var email     =  result.p00emel;
@@ -894,19 +892,21 @@ $.ajax({
                     $('#masterphdcountry').val(negara);  // Pre-select for #kdnegerihome
         
                     // Refresh the selectpicker to update UI
+                    setTimeout(function () {
                     $('#kdnegara').selectpicker('refresh');
                     $('#warganeg').selectpicker('refresh');
                     $('#kdnegarahome').selectpicker('refresh');
                     $('#highunicountry').selectpicker('refresh');
                     $('#masterphdcountry').selectpicker('refresh');
+                    },100)
         
                 } else {
-                    console.log("fail ret ajax negara");
+                   // console.log("fail ret ajax negara");
                     $("#labeladdcountry").text("Negara not found");
                 }
             },
             error: function (xhr, status, error) {
-                console.error('Error fetching data:', error);
+               // console.error('Error fetching data:', error);
                 $("#labeladdcountry").text("Error fetching negara data");
             }
         });
@@ -957,7 +957,7 @@ $.ajax({
                     $('#kdnegeri').selectpicker('refresh');
                     $('#kdnegerihome').selectpicker('refresh');
                 } else {
-                    console.log("No negeri data found.");
+                   // console.log("No negeri data found.");
                     $("#labeladdstate").text("Negeri not found");
                 }
             },
@@ -976,13 +976,13 @@ $.ajax({
  //$("#kdprg").val(result.p001kprog);
  var retprogram = program;  // Make sure 'program' is set before this
 
- console.log("Start loading programs, pre-selecting:", program);
+ //console.log("Start loading programs, pre-selecting:", program);
  
  $.ajax({
      type: "GET",
      url: "http://localhost/pascav2/public/getkodprogram",
      success: function(data) {
-         console.log("Received program data:", data);
+     //    console.log("Received program data:", data);
  
          var json_data = data;
          var foundProgram = null;

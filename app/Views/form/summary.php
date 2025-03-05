@@ -27,7 +27,7 @@
 						<div class="container">
                             <form role="form" id="idFrmSummary">
 							    <div class="panel panel-primary">
-                                <div class="panel-heading"><h3 class="panel-title">Summary & Print</h3></div>
+                                <div class="panel-heading"><h3 class="panel-title">Summary Application</h3></div>
 																				
                                                                                 <div class="panel-body form-horizontal m-10">
                                                 
