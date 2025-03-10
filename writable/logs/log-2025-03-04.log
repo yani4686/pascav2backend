@@ -1,0 +1,427 @@
+INFO - 2025-03-04 23:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-04 23:41:53 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-04 23:41:53 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+[Method: POST, Route: insstep2]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:41:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:41:53 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 5 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-04 23:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-04 23:43:16 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-04 23:43:16 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+[Method: POST, Route: insstep2]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:43:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:43:16 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 5 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-04 23:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-04 23:44:39 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-04 23:44:39 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+[Method: POST, Route: insstep2]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:44:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:44:39 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 5 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-04 23:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-04 23:44:42 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-04 23:44:42 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+[Method: POST, Route: insstep2]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:44:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:44:42 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm='0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  malformed array literal: &quot;0000-00-00&quot;
+LINE 2: ...atbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-0...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = NULL, p001tajuk = NULL, p001penyelia = NULL,p001kaedah = NULL,p001modebelajar = NULL,p001akadtinggi = NULL,p001cgpa = NULL,p001unilama=NULL,p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=NULL,p001cgpa2=NULL,p001katbi=NULL,p001muet=NULL,p001noreg=NULL,p001tkhexm=\'0000-00-00\' WHERE p001nokp = \'860604465280\'')
+ 5 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-04 23:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-04 23:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-04 23:54:37 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;2025-02-26&quot;
+LINE 2: ...='MT',p001muet='3',p001noreg='vax5595',p001tkhexm='2025-02-2...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-04 23:54:37 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;2025-02-26&quot;
+LINE 2: ...='MT',p001muet='3',p001noreg='vax5595',p001tkhexm='2025-02-2...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+[Method: POST, Route: insstep2]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:54:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;2025-02-26&quot;
+LINE 2: ...='MT',p001muet='3',p001noreg='vax5595',p001tkhexm='2025-02-2...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = \'PT5010\', p001tajuk = \'network security\', p001penyelia = \'prof k\',p001kaedah = \'8\',p001modebelajar = \'2\',p001akadtinggi = \'1\',p001cgpa = \'3.00\',p001unilama=\'usim\',p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=\'M01\',p001cgpa2=NULL,p001katbi=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-26\' WHERE p001nokp = \'860604465280\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = \'PT5010\', p001tajuk = \'network security\', p001penyelia = \'prof k\',p001kaedah = \'8\',p001modebelajar = \'2\',p001akadtinggi = \'1\',p001cgpa = \'3.00\',p001unilama=\'usim\',p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=\'M01\',p001cgpa2=NULL,p001katbi=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-26\' WHERE p001nokp = \'860604465280\'')
+ 3 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-04 23:54:37 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;2025-02-26&quot;
+LINE 2: ...='MT',p001muet='3',p001noreg='vax5595',p001tkhexm='2025-02-2...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  malformed array literal: &quot;2025-02-26&quot;
+LINE 2: ...=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-2...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET p001kprog = \'PT5010\', p001tajuk = \'network security\', p001penyelia = \'prof k\',p001kaedah = \'8\',p001modebelajar = \'2\',p001akadtinggi = \'1\',p001cgpa = \'3.00\',p001unilama=\'usim\',p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=\'M01\',p001cgpa2=NULL,p001katbi=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-26\' WHERE p001nokp = \'860604465280\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET p001kprog = \'PT5010\', p001tajuk = \'network security\', p001penyelia = \'prof k\',p001kaedah = \'8\',p001modebelajar = \'2\',p001akadtinggi = \'1\',p001cgpa = \'3.00\',p001unilama=\'usim\',p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=\'M01\',p001cgpa2=NULL,p001katbi=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-26\' WHERE p001nokp = \'860604465280\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET p001kprog = \'PT5010\', p001tajuk = \'network security\', p001penyelia = \'prof k\',p001kaedah = \'8\',p001modebelajar = \'2\',p001akadtinggi = \'1\',p001cgpa = \'3.00\',p001unilama=\'usim\',p001bilexp=NULL,p001upworkex=NULL,
+    p001knegaracgpa=\'M01\',p001cgpa2=NULL,p001katbi=\'MT\',p001muet=\'3\',p001noreg=\'vax5595\',p001tkhexm=\'2025-02-26\' WHERE p001nokp = \'860604465280\'')
+ 5 APPPATH\Controllers\ApplyController.php(413): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep2()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
