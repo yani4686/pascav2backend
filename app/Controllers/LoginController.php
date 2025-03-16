@@ -23,6 +23,14 @@ class LoginController extends ResourceController
 
 
     // }
+    protected $anotherModel;
+
+    public function __construct()
+    {
+        $this->model = new LoginModel(); // Initialize the main model
+        $this->anotherModel = new LoginModelp051(); // Initialize the second model
+    }
+
     public function testDb()
     {
 
@@ -104,6 +112,139 @@ class LoginController extends ResourceController
 
 
        
+    }
+
+    public function regnewloginp051() {
+
+        $curdatecreate = date('Y-m-d H:i:s');
+
+        $input = $this->request->getPost();
+
+        $user       = $input['usr'];
+        $warga      = $input['stswarga'] ?? null;
+        $icno       = $input['icno'];
+        $passport   = $input['passno'];//'required|min_length[6]'
+		$pwd        = $input['password'];
+		$emel       = $input['email'];
+        $verifycode = $verification_code = bin2hex(random_bytes(16)); // Generate a random verification code
+       
+        if ($warga == '1') {
+            $username = $icno;
+        } elseif ($warga == '2') {
+            $username = $passport;
+        } else {
+            $username = 'noinput';
+        }
+
+        $db = Config::connect();
+
+        $sql = "SELECT * FROM ppsdblocal.p051 WHERE p051usrid = ?";
+
+        // Execute the query and get the result
+        $query = $db->query($sql, [$username]);
+        
+        // Fetch the result
+        $existingUser = $query->getRow(); 
+
+        if ($existingUser) {
+            // If username exists, return error response
+            $data['success'] = 'username_taken';
+            return $this->response->setJSON($data);
+        }
+
+       //error_log("existingUser: " . print_r($existingUser, true));
+        // $db2 = \Config\Database::connect('thirdDB');
+
+      // Validate fields
+        $validationRule = [
+            'usr'       => 'required',
+            'stswarga'  => 'required',
+            'password'  => 'required',
+            'email'     => 'required|valid_email',
+        ];
+
+    // Conditionally validate icno or passno based on stswarga value
+    if ($warga == '1') {
+        $validationRule['icno'] = 'required';
+    } elseif ($warga == '2') {
+        $validationRule['passno'] = 'required';
+    }
+
+    // Validate the input fields with dynamic validation rules
+    if (!$this->validate($validationRule)) {
+        return $this->failValidationErrors('Please fill all the fields correctly.');
+    }
+
+        // Save data to the database
+        $insert = $this->anotherModel->insert([
+            'p051username'          => $user,
+            'p051password'          => $pwd,
+            'p051emel'              => $emel,
+            'p051katwarga'          => $warga,
+            'p051statsahreg'       => '0',
+            'p051verifycode'        => $verifycode,
+            'p051srid'             => $username,
+            'p051tkhreg'            => $curdatecreate
+        ]);
+
+        if($insert){
+
+            $subject = "Registration Emel Verification";
+            $message = "Click the link below to verify your email:\n";
+            $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
+            $headers = "From: yani4686@gmail.com";
+
+            //test send dr local shj blm test kt server
+            if (mail($emel, $subject, $message, $headers)) {
+                $data['success'] = 'successemail';
+            } else {
+                $data['success'] = 'failedemail';
+            }    
+        }
+        else{
+            $data['success'] = 'ko';
+        }
+
+        return $this->response->setJSON($data);
+
+        //     $email = \Config\Services::email();
+
+        //         // Configure the email preferences
+        //     $config = [
+        //         'protocol' => 'smtp', // Set the protocol to 'smtp' for sending via SMTP
+        //         'SMTPHost' => 'smtp.gmail.com',  // Replace with your SMTP server
+        //         'SMTPUser' => '', // Replace with your email address
+        //         'SMTPPass' => '',  // Replace with your email password or app password
+        //         'SMTPPort' => 587,
+        //         'SMTPCrypto' => 'tls',  // TLS encryption (or 'ssl' if required by your email provider)
+        //         'mailType' => 'html',   // Set the email format to HTML
+        //         'charset' => 'utf-8',
+        //     ];
+
+        //     // Initialize the email class with the configuration
+        //     $email->initialize($config);
+
+        //     // Set the email headers and content
+        //     $email->setFrom('yani4686@gmail.com', 'Alyani');
+        //     $email->setTo($emel);  // Set the recipient email address
+        //     $email->setSubject('Verify Your Email');
+            
+        //     // Prepare the verification message
+        //     $message = "Click the link below to verify your email:\n";
+        //     $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
+        //     $email->setMessage($message);
+
+        //     // Send the email
+        //     if ($email->send()) {
+        //         $data['success'] = 'successemail';
+        //     } else {
+        //         // If email fails, output the error details for debugging
+        //         $data['success'] = 'failedemail';
+        //         $data['error'] = $email->printDebugger();
+        //     }
+        // } else {
+        //     $data['success'] = 'ko';
+        // }
     }
 
     public function regnewlogin() {
