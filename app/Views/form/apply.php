@@ -136,7 +136,7 @@
                                     <div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">IC/Passport No.<span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <input type="text"  required="required" class="form-control" name="kppass" id="kppass" readonly/>
+                                                        <input type="text"  required="required" class="form-control" name="kppass" id="kppass"/>
                                                     </div>
                                     </div>
 
@@ -187,7 +187,7 @@
                                      <div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">Corresponding Address<span class="text-danger">*</span></label>
                                                     <div class="col-lg-8">
-                                                        <input type="text" class="form-control" name="corradd" id="corradd"/>
+                                                        <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()"/>
                                                     </div>
 									</div>
 									<div class="form-group row">
@@ -204,7 +204,7 @@
                                                     </div>
 													<label class="col-lg-3 col-form-label">City<span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <input type="text" class="form-control" name="bndrcorradd" id="bndrcorradd"/>
+                                                        <input type="text" class="form-control" name="bndrcorradd" id="bndrcorradd" oninput="this.value = this.value.toUpperCase()"/>
                                                     </div>
                                     </div>
 
@@ -255,7 +255,7 @@
 									<div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">Home Address<span class="text-danger">*</span></label>
                                                     <div class="col-lg-8">
-                                                        <input type="text" class="form-control" name="homeadd" id="homeadd" />
+                                                        <input type="text" class="form-control" name="homeadd" id="homeadd" oninput="this.value = this.value.toUpperCase()"/>
                                                     </div>
 									</div>	
 									<div class="form-group row">
@@ -272,7 +272,7 @@
                                                     </div>
 													<label class="col-lg-3 col-form-label">City<span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <input type="text" class="form-control" name="bndrhomeadd" id="bndrhomeadd"/>
+                                                        <input type="text" class="form-control" name="bndrhomeadd" id="bndrhomeadd" oninput="this.value = this.value.toUpperCase()"/>
                                                     </div>
                                     </div>
 
@@ -347,6 +347,15 @@
 									<!--  -->
 									
 									<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Campus <span class="text-danger">*</span></label>
+                                                    <div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" id ="modest" name ="modest">
+															<option value ="1">Gong Badak</option>
+															<option value ="2">Tembila</option>
+                                                            <option value ="3">Kota</option>
+                                                            <option value ="4">Kota</option>
+                                                        </select>
+                                                    </div>
                                                 	<label class="col-lg-3 col-form-label">Mode Of Study <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
                                                         <select class ="form-control selectpicker" title="Please Choose" id ="modest" name ="modest">

@@ -148,7 +148,7 @@
 															</div>
 														</div>
                                     </div>
-                                    <div class="form-group row">
+                                    <!-- <div class="form-group row">
 									<label class="col-lg-4 col-form-label">UserID <span class="text-danger">*</span></label>
 										<div class="col-lg-8"  id ="nokplabel">
 											<input class="form-control h-auto form-control-solid py-4 px-8" type="text" placeholder="IC No" name="icno" id="icno"/>
@@ -156,7 +156,7 @@
 										<div class="col-lg-8"  id ="nopasslabel">
                                         <input class="form-control h-auto form-control-solid py-4 px-8" type="text" placeholder="Passport No" name="passno" id="passno"/>
 										</div>
-                                    </div>
+                                    </div> -->
 									<div class="form-group row">
 									<label class="col-lg-4 col-form-label">Username<span class="text-danger">*</span></label>
                                     	<div class="col-lg-8">
@@ -265,7 +265,7 @@
 		<!--end::Page Scripts-->
         <!-- begin custom js -->
         <script src="pascav2/assets/js/custom/custom.js"></script>
-        <script src="pascav2/assets/js/custom/customfunc.js"></script>
+        <!-- <script src="pascav2/assets/js/custom/customfunc.js"></script> -->
         <!-- end custom js -->
 	</body>
 	<!--end::Body-->

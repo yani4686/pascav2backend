@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\LoginModel;
+use App\Models\LoginModelp051;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\Database\Config;
 //use informixdb;
@@ -88,6 +89,40 @@ class LoginController extends ResourceController
 
     }
 
+    public function retloginp051() {
+
+        $session = \Config\Services::session();//session set kt local
+
+        $input = $this->request->getPost();
+
+        $usr = $input['username'];
+		$pwd = $input['password'];
+
+        $db = Config::connect();
+
+        $loginQuery = $db->query("SELECT p051username,p051password,p051emel from ppsdblocal.p051 where p051username='$usr' and p051password= '$pwd' and p051statsahreg = 1");
+      // $result = $loginQuery->getResult();
+        $result = $loginQuery->getRow();
+       // $username = $result->p00username;
+       // $password = $result->p00password;
+
+           if ($result) {
+            // Valid login
+            $data = [
+                'username' => $result->p051username,
+                'id'       => $result->p051emel,
+                'logged_in' => true
+            ];
+            $session->set($data);
+    
+            return $this->response->setJSON(['success' => 'ok']);
+        } else {
+            // Invalid login
+            return $this->response->setJSON(['success' => 'ko']);
+        }
+
+    }
+
     public function logout()
     {
         $session = \Config\Services::session();
@@ -122,32 +157,32 @@ class LoginController extends ResourceController
 
         $user       = $input['usr'];
         $warga      = $input['stswarga'] ?? null;
-        $icno       = $input['icno'];
-        $passport   = $input['passno'];//'required|min_length[6]'
+       // $icno       = $input['icno'];
+       // $passport   = $input['passno'];//'required|min_length[6]'
 		$pwd        = $input['password'];
 		$emel       = $input['email'];
         $verifycode = $verification_code = bin2hex(random_bytes(16)); // Generate a random verification code
        
-        if ($warga == '1') {
-            $username = $icno;
-        } elseif ($warga == '2') {
-            $username = $passport;
-        } else {
-            $username = 'noinput';
-        }
+        // if ($warga == '1') {
+        //     $username = $icno;
+        // } elseif ($warga == '2') {
+        //     $username = $passport;
+        // } else {
+        //     $username = 'noinput';
+        // }
 
         $db = Config::connect();
 
-        $sql = "SELECT * FROM ppsdblocal.p051 WHERE p051usrid = ?";
+        $sql = "SELECT * FROM ppsdblocal.p051 WHERE p051emel = ?";
 
         // Execute the query and get the result
-        $query = $db->query($sql, [$username]);
+        $query = $db->query($sql, [$emel]);
         
         // Fetch the result
         $existingUser = $query->getRow(); 
 
         if ($existingUser) {
-            // If username exists, return error response
+            // If emel exists, return error response
             $data['success'] = 'username_taken';
             return $this->response->setJSON($data);
         }
@@ -164,11 +199,11 @@ class LoginController extends ResourceController
         ];
 
     // Conditionally validate icno or passno based on stswarga value
-    if ($warga == '1') {
-        $validationRule['icno'] = 'required';
-    } elseif ($warga == '2') {
-        $validationRule['passno'] = 'required';
-    }
+    // if ($warga == '1') {
+    //     $validationRule['icno'] = 'required';
+    // } elseif ($warga == '2') {
+    //     $validationRule['passno'] = 'required';
+    // }
 
     // Validate the input fields with dynamic validation rules
     if (!$this->validate($validationRule)) {
@@ -181,9 +216,9 @@ class LoginController extends ResourceController
             'p051password'          => $pwd,
             'p051emel'              => $emel,
             'p051katwarga'          => $warga,
-            'p051statsahreg'       => '0',
+            'p051statsahreg'       => 0,
             'p051verifycode'        => $verifycode,
-            'p051srid'             => $username,
+           // 'p051srid'             => $username,
             'p051tkhreg'            => $curdatecreate
         ]);
 
@@ -324,7 +359,7 @@ class LoginController extends ResourceController
 
             $subject = "Registration Emel Verification";
             $message = "Click the link below to verify your email:\n";
-            $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
+            $message .= "http://localhost/pascav2/public/verifyloginp051/$verifycode";
             $headers = "From: yani4686@gmail.com";
 
             //test send dr local shj blm test kt server
@@ -437,6 +472,60 @@ class LoginController extends ResourceController
         return $this->response->setJSON($data);
 
     }
+    public function verifyloginp051($code) {
+
+        //belum cater untuk expired link dr emel
+
+        $db = Config::connect();
+
+        $t	= date('Y');
+        $curdatecreate = date('Y-m-d H:i:s');
+        $verifycode = $code;
+        
+      $checkmaxrow = $db->query('SELECT max(SUBSTRING(p001norujuk,17,2)) as bilmax from ppsdblocal.p001');
+      $result = $checkmaxrow->getRow();
+      $maxid= ($result->bilmax ?? 0) + 1;
+
+      $kodrujuk = $db->query("SELECT CONCAT('UniSZA','/','PPS','/','$t','/','$maxid') as kodrujuk");
+      $resultQuery = $kodrujuk->getRow();
+      $kdrujuk = $resultQuery->kodrujuk;
+
+       $loginQuery = $db->query("SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode='$verifycode' and p051statsahreg = 0");
+       $result = $loginQuery->getRow();
+      // $p00usrid = $result->p00usrid;
+       $p051katwarga = $result->p051katwarga;
+       $p051emel = $result->p051emel;
+	
+        if($p051emel != ''){
+
+            $sqlupdateQuery = $db->query("UPDATE ppsdblocal.p051 SET p051statsahreg  = 1,p051tkhreg='$curdatecreate' WHERE p051verifycode='$verifycode'");
+            $resultupd = $db->getLastQuery();
+
+            if($resultupd){
+
+                //insert into table p001
+                 $sqlinsertQuery = $db->table('ppsdblocal.p001')->insert([
+                    'p001nokp'          => '0',
+                    'p001kbumi'         => $p051katwarga,
+                    'p001email'         => $p051emel,
+                    'p001norujuk'       => $kdrujuk
+                ]);
+
+                $data['success'] = 'sah';
+
+                return view('form/verifyemel');
+
+            }else{
+                $data['success'] = 'xsah';
+            }
+        }
+        else{
+           $data['success'] = 'not exist';
+        }
+
+        return $this->response->setJSON($data);
+
+    }
     public function verify()
     {
         return view('form/verifyemel');
@@ -458,6 +547,44 @@ class LoginController extends ResourceController
         $existingUser = $query->getRow(); 
         $emel = $existingUser->p00emel;
         $pwd = $existingUser->p00password;
+
+        if($existingUser){
+
+            $subject = "Forgot Password Request";
+            $message = "Your Password is $pwd";
+            $message .= " Click Here <a href=http://localhost/pascav2/public/></a> To Login";
+            $headers = "From: yani4686@gmail.com";
+
+            //test send dr local shj blm test kt server
+            if (mail($emel, $subject, $message, $headers)) {
+                $data['success'] = 'successemail';
+            } else {
+                $data['success'] = 'failedemail';
+            }             
+        }
+        else{
+            $data['success'] = 'email_empty';         
+        }
+
+        return $this->response->setJSON($data);
+    }
+
+    public function forgotpwdp051()
+    {
+        $input = $this->request->getPost();
+
+		$emel       = $input['email'];
+
+        $db = Config::connect();
+
+        $sql = "SELECT p051emel,p051password FROM ppsdblocal.p051 WHERE p051emel = ? and p051statsahreg = 1";
+        // Execute the query and get the result
+        $query = $db->query($sql, [$emel]);
+        
+        // Fetch the result
+        $existingUser = $query->getRow(); 
+        $emel = $existingUser->p051emel;
+        $pwd = $existingUser->p051password;
 
         if($existingUser){
 

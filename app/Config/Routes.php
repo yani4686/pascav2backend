@@ -20,11 +20,15 @@ $routes->get('/countdisplaydashboard', 'DashboardController::countDisplayDashboa
 
 $routes->get('/testdb', 'LoginController::testDb');
 $routes->post('/retlogin', 'LoginController::retlogin');
+$routes->post('/retloginp051', 'LoginController::retloginp051');
 $routes->post('/logout', 'LoginController::logout');
 $routes->post('/regnewlogin', 'LoginController::regnewlogin');
+$routes->post('/regnewloginp051', 'LoginController::regnewloginp051');
 $routes->match(['GET','POST'],'/verifylogin/(:any)', 'LoginController::verifylogin/$1');
+$routes->match(['GET','POST'],'/verifyloginp051/(:any)', 'LoginController::verifyloginp051/$1');
 $routes->get('/verify', 'LoginController::verify');
 $routes->post('/forgotpwd', 'LoginController::forgotpwd');
+$routes->post('/forgotpwdp051', 'LoginController::forgotpwdp051');
 
 $routes->get('/getkodprogram', 'ApplyController::getkodprogram');
 $routes->get('/getkodnegara', 'ApplyController::getkodnegara');
@@ -35,6 +39,7 @@ $routes->get('/getkoddun', 'ApplyController::getkoddun');
 $routes->get('/getkodlayak', 'ApplyController::getkodlayak');
 $routes->get('/getkodsek', 'ApplyController::getkodsek');
 $routes->get('/displayprofile', 'ApplyController::DisplayProfile');
+$routes->get('/displayprofilep001', 'ApplyController::DisplayProfilep001');
 $routes->post('/insstep1', 'ApplyController::InsStep1');
 $routes->post('/insstep2', 'ApplyController::InsStep2');
 $routes->post('/insstep3', 'ApplyController::InsStep3');

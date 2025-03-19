@@ -49,6 +49,108 @@ var KTLogin = function() {
 			}
 		);
 
+		$('#login_submit').click(function (e) {
+
+			var form = document.getElementById('kt_login_signin_form');
+			var formData = new FormData(form);
+	
+			//console.log(formData);
+	
+			$.ajax({
+			type: "POST",
+			//url: "http://localhost/pascav2/public/retlogin" ,
+			url: "http://localhost/pascav2/public/retloginp051" ,
+			data: formData,
+					processData: false,  // tell jQuery not to process the data
+					contentType: false,   // tell jQuery not to set contentType		
+			beforeSend: function() {
+						$(".se-pre-con").fadeIn("slow");
+					},
+				dataType: 'json',
+				success: function(data){
+						
+				$(".se-pre-con").fadeOut("slow");
+
+						// Default values for message
+					var msg_header, msg, icon_flag;
+
+				switch (data.success) {
+					case 'ko':
+						msg_header = "Error";
+						msg = "Please try again.";
+						icon_flag = 'error';
+						break;
+					case 'ok':
+						msg_header = "Success";
+						msg = "You have been successfully login.";
+						icon_flag = 'success';
+						break;
+					default:
+						msg_header = "Error";
+						msg = "Please try again.";
+						icon_flag = 'error';
+						break;
+				}
+	
+				// if(data.success=='ok'){
+						
+				// 	Swal.fire(
+				// 	msg_header,
+				// 	msg,
+				// 	icon_flag 
+				// 	).then(function(){
+				// 		window.location = "http://localhost/pascav2/public/dashboard";
+				// 	});					
+				// }
+				// else{
+				// 	Swal.fire(
+				// 	msg_header,
+				// 	msg,
+				// 	icon_flag 
+				// 	).then(function(){
+				// 		window.location = "http://localhost/pascav2/public/";
+				// 	});							
+				// }
+
+				// Show the alert
+				Swal.fire(
+					msg_header,
+					msg,
+					icon_flag
+				).then(function () {
+					if (data.success === 'ok') {
+						window.location = "http://localhost/pascav2/public/dashboard";
+					}
+				});
+
+				}
+			
+			});
+
+			validation.validate().then(function(status) {
+		        if (status == 'Valid') {
+                    // Submit form
+                    KTUtil.scrollTop();
+				} else {
+					swal.fire({
+						msg_header,
+						msg,
+						icon_flag
+		                // text: "Sorry, looks like there are some errors detected, please try again.",
+		                // icon: "error",
+		                // buttonsStyling: false,
+		                // confirmButtonText: "Ok, got it!",
+                        // customClass: {
+    					// 	confirmButton: "btn font-weight-bold btn-light-primary"
+    					// }
+		            }).then(function() {
+						KTUtil.scrollTop();
+					});
+				}
+		    });
+	
+		});
+
         // $('#kt_login_signin_submit').on('click', function (e) {
         //     e.preventDefault();
 
@@ -95,79 +197,60 @@ var KTLogin = function() {
     }
 
     var _handleSignUpForm = function(e) {
-       // var validation;
-        var form = KTUtil.getById('kt_login_signup_form');
-
-        // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-        // validation = FormValidation.formValidation(
-		// 	form,
-		// 	{
-		// 		fields: {
-		// 			// fullname: {
-		// 			// 	validators: {
-		// 			// 		notEmpty: {
-		// 			// 			message: 'Username is required'
-		// 			// 		}
-		// 			// 	}
-		// 			// },
-		// 			icno: {
-		// 				validators: {
-		// 					notEmpty: {
-		// 						message: 'ICno/passport is required'
-		// 					}
-		// 				}
-		// 			},
-		// 			email: {
-        //                 validators: {
-		// 					notEmpty: {
-		// 						message: 'Email address is required'
-		// 					},
-        //                     emailAddress: {
-		// 						message: 'The value is not a valid email address'
-		// 					}
-		// 				}
-		// 			},
-        //             password: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'The password is required'
-        //                     }
-        //                 }
-        //             },
-        //             cpassword: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'The password confirmation is required'
-        //                     },
-        //                     identical: {
-        //                         compare: function() {
-        //                             return form.querySelector('[name="password"]').value;
-        //                         },
-        //                         message: 'The password and its confirm are not the same'
-        //                     }
-        //                 }
-        //             },
-        //             agree: {
-        //                 validators: {
-        //                     notEmpty: {
-        //                         message: 'You must accept the terms and conditions'
-        //                     }
-        //                 }
-        //             },
-		// 		},
-		// 		plugins: {
-		// 			trigger: new FormValidation.plugins.Trigger(),
-		// 			bootstrap: new FormValidation.plugins.Bootstrap()
-		// 		}
-		// 	}
-		// );
+        var validation;
+		validation = FormValidation.formValidation(
+			KTUtil.getById('kt_login_signup_form'),
+			{
+				fields: {
+					usr: {
+						validators: {
+							notEmpty: {
+								message: 'Username is required'
+							}
+						}
+					},
+					email: {
+                        validators: {
+							notEmpty: {
+								message: 'Email address is required'
+							},
+                            emailAddress: {
+								message: 'The value is not a valid email address'
+							}
+						}
+					},
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The password is required'
+                            }
+                        }
+                    },
+                    cpassword: {/* belum semak lg jika password x sama x keluar error */
+                        validators: {
+                            notEmpty: {
+                                message: 'The password confirmation is required'
+                            },
+                            identical: {
+                                compare: function() {
+                                    return querySelector('[name="password"]').value;
+                                },
+                                message: 'The password and its confirm are not the same'
+                            }
+                        }
+                    },
+				},
+				plugins: {
+					trigger: new FormValidation.plugins.Trigger(),
+					bootstrap: new FormValidation.plugins.Bootstrap()
+				}
+			}
+		);
+		
 
 		$('#kt_login_signup_submit').on('click', function (e) {
             e.preventDefault();
-
-			// $('#login_submit').click(function (e) {
-		
-		
+	
 				var form = document.getElementById('kt_login_signup_form');
 				var formData = new FormData(form);
 		
@@ -175,7 +258,8 @@ var KTLogin = function() {
 		
 				$.ajax({
 				type: "POST",
-				url: "http://localhost/pascav2/public/regnewlogin" ,
+				//url: "http://localhost/pascav2/public/regnewlogin" ,
+				 url: "http://localhost/pascav2/public/regnewloginp051" ,
 				data: formData,
 						processData: false,  // tell jQuery not to process the data
 						contentType: false,   // tell jQuery not to set contentType		
@@ -256,94 +340,28 @@ var KTLogin = function() {
 					}
 				
 				});
-		
-			// });	
 
-            // validation.validate().then(function(status) {
-		    //     if (status == 'Valid') {
-            //         swal.fire({
-		    //             text: "All is cool! Now you submit this form",
-		    //             icon: "success",
-		    //             buttonsStyling: false,
-		    //             confirmButtonText: "Ok, got it!",
-            //             customClass: {
-    		// 				confirmButton: "btn font-weight-bold btn-light-primary"
-    		// 			}
-		    //         // }).then(function() {
-			// 		// 	KTUtil.scrollTop();
-			// 		// });
-			// 		}).then(function(result) {
-			// 			if (result.isConfirmed) {
-			// 			var form = document.getElementById('kt_login_signup_form');
-			// 			var formData = new FormData(form);
-
-			// 			$.ajax({
-			// 				type: "POST",
-			// 				url: "http://localhost/pascav2/regnewlogin/" ,
-			// 				data: formData,
-			// 						processData: false,  // tell jQuery not to process the data
-			// 						contentType: false,   // tell jQuery not to set contentType		
-			// 				beforeSend: function() {
-			// 						  $(".se-pre-con").fadeIn("slow");
-			// 						},
-			// 				  dataType: 'json',
-			// 				  success: function(data){
-										
-			// 					$(".se-pre-con").fadeOut("slow");
-					
-			// 					switch (data.success) {
-			// 					  case 'ko':
-			// 					  var msg_header = "Ralat";
-			// 					  var msg = "Sila cuba semula.";
-			// 					  var icon_flag = 'error';
-			// 					  break;						
-			// 					  case 'ok':
-			// 					  var msg_header = "Berjaya";
-			// 					  var msg = "Rekod telah dihantar.";
-			// 					  var icon_flag = 'success';
-			// 					  break;
-			// 					  default:
-			// 					  var msg_header = "Ralat";
-			// 					  var msg = "Sila cuba semula.";
-			// 					  var icon_flag = 'error';	
-			// 					}
-					
-			// 					if(data.success=='ok'){
-										
-			// 					  Swal.fire(
-			// 						msg_header,
-			// 						msg,
-			// 						icon_flag 
-			// 					  ).then(function(){
-			// 						  window.location = "http://localhost/pascav2/public/dashboard";
-			// 					  });					
-			// 					}
-			// 					else{
-			// 					  Swal.fire(
-			// 						msg_header,
-			// 						msg,
-			// 						icon_flag 
-			// 					  )						
-			// 					}
-			// 				  }
-							
-			// 			  });
-			// 			}
-			// 		});
-			// 	} else {
-			// 		swal.fire({
-		    //             text: "Sorry, looks like there are some errors detected, please try again.",
-		    //             icon: "error",
-		    //             buttonsStyling: false,
-		    //             confirmButtonText: "Ok, got it!",
-            //             customClass: {
-    		// 				confirmButton: "btn font-weight-bold btn-light-primary"
-    		// 			}
-		    //         }).then(function() {
-			// 			KTUtil.scrollTop();
-			// 		});
-			// 	}
-		    // });
+				validation.validate().then(function(status) {
+					if (status == 'Valid') {
+						// Submit form
+						KTUtil.scrollTop();
+					} else {
+						swal.fire({
+							msg_header,
+							msg,
+							icon_flag
+							// text: "Sorry, looks like there are some errors detected, please try again.",
+							// icon: "error",
+							// buttonsStyling: false,
+							// confirmButtonText: "Ok, got it!",
+							// customClass: {
+							// 	confirmButton: "btn font-weight-bold btn-light-primary"
+							// }
+						}).then(function() {
+							KTUtil.scrollTop();
+						});
+					}
+				});
         });
         // Handle cancel button
         $('#kt_login_signup_cancel').on('click', function (e) {
@@ -388,7 +406,8 @@ var KTLogin = function() {
 
 			$.ajax({
 				type: "POST",
-				url: "http://localhost/pascav2/public/forgotpwd" ,
+				//url: "http://localhost/pascav2/public/forgotpwd" ,
+				url: "http://localhost/pascav2/public/forgotpwdp051" ,
 				data: formData,
 						processData: false,  // tell jQuery not to process the data
 						contentType: false,   // tell jQuery not to set contentType		

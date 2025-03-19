@@ -1,54 +1,4 @@
 $(document).ready(function () {
-
-//     var navListItems = $('div.setup-panel div a'),
-//     allWells = $('.setup-content'),
-//     allNextBtn = $('.nextBtn');
-//    // alert(allNextBtn);
-
-//     allWells.show();//default hide
-
-//     navListItems.click(function (e) {
-//         e.preventDefault();
-//         var $target = $($(this).attr('href')),
-//             $item = $(this);
-	
-//         if (!$item.hasClass('disabled')) {
-//             navListItems.removeClass('btn-success').addClass('btn-default');
-//             $item.addClass('btn-success');
-//             allWells.hide();
-//             $target.show();
-//             $target.find('input:eq(0)').focus();
-//         }
-	
-//     });
-
-//     allNextBtn.click(function () {
-
-//         isValid = true;
-
-//         var curStep = $(this).closest(".setup-content"),
-//         curStepBtn = curStep.attr("id"),
-//         nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-//         curInputs = curStep.find("input[type='text']"),
-//         //curInputs = curStep.find(""),
-//         isValid = true;
-
-//       //  alert(curStep);
-
-//         $(".form-group").removeClass("has-error");
-//         for (var i = 0; i < curInputs.length; i++) {
-//             if (!curInputs[i].validity.valid) {
-//                 isValid = false;
-//                 $(curInputs[i]).closest(".form-group").addClass("has-error");
-//             }
-//         }
-
-//         if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
-
-//     });
-
-//     $('div.setup-panel div a.btn-success').trigger('click');
-
 /*selectdropdown */
     $('#laluan').on('change', function () {
 
@@ -431,72 +381,72 @@ $('#bndrcorradd').on('input', function () {
 // });
   /*kod negara */
 
-//   $.ajax({
-//     url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
-//     method: 'GET',
-//     dataType: 'json', // Expect JSON response
-//     success: function (response) {
-//         // Check if the response contains data
-//         if (response && response.length > 0) {
-//             // Iterate through the data
-//             response.forEach(function (item) {
-//                 // Append each item as an option
-//                 $('#kdnegara').append(
-//                     $('<option>', {
-//                         value: item.c028kod, // Use 'id' from response
-//                         text: item.c028keterangan, // Use 'name' from response
-//                     })
-//                 );
-//                 //negara warganegara
-//                 $('#warganeg').append(
-//                   $('<option>', {
-//                       value: item.c028kod, // Use 'id' from response
-//                       text: item.c028keterangan, // Use 'name' from response
-//                   })
-//               );
-//               //negara warganegara home
-//               $('#kdnegarahome').append(
-//                 $('<option>', {
-//                     value: item.c028kod, // Use 'id' from response
-//                     text: item.c028keterangan, // Use 'name' from response
-//                 })
-//             );
-//             //negara award uni
-//             $('#highunicountry').append(
-//                 $('<option>', {
-//                     value: item.c028kod, // Use 'id' from response
-//                     text: item.c028keterangan, // Use 'name' from response
-//                 })
-//             );
+  $.ajax({
+    url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                // Append each item as an option
+                $('#kdnegara').append(
+                    $('<option>', {
+                        value: item.c028kod, // Use 'id' from response
+                        text: item.c028keterangan, // Use 'name' from response
+                    })
+                );
+                //negara warganegara
+                $('#warganeg').append(
+                  $('<option>', {
+                      value: item.c028kod, // Use 'id' from response
+                      text: item.c028keterangan, // Use 'name' from response
+                  })
+              );
+              //negara warganegara home
+              $('#kdnegarahome').append(
+                $('<option>', {
+                    value: item.c028kod, // Use 'id' from response
+                    text: item.c028keterangan, // Use 'name' from response
+                })
+            );
+            //negara award uni
+            $('#highunicountry').append(
+                $('<option>', {
+                    value: item.c028kod, // Use 'id' from response
+                    text: item.c028keterangan, // Use 'name' from response
+                })
+            );
 
-//             //award masterphd country
-//              $('#masterphdcountry').append(
-//                 $('<option>', {
-//                     value: item.c028kod, // Use 'id' from response
-//                     text: item.c028keterangan, // Use 'name' from response
-//                 })
-//             );
+            //award masterphd country
+             $('#masterphdcountry').append(
+                $('<option>', {
+                    value: item.c028kod, // Use 'id' from response
+                    text: item.c028keterangan, // Use 'name' from response
+                })
+            );
 
-//             });
+            });
 
             
 
-//             // Refresh the selectpicker to update UI
-//             $('#kdnegara').selectpicker('refresh');
-//             $('#warganeg').selectpicker('refresh');
-//             $('#kdnegarahome').selectpicker('refresh');
-//             $('#highunicountry').selectpicker('refresh');
-//             $('#masterphdcountry').selectpicker('refresh');
+            // Refresh the selectpicker to update UI
+            $('#kdnegara').selectpicker('refresh');
+            $('#warganeg').selectpicker('refresh');
+            $('#kdnegarahome').selectpicker('refresh');
+            $('#highunicountry').selectpicker('refresh');
+            $('#masterphdcountry').selectpicker('refresh');
 
-//         } else {
-//            // alert('No data found');
-//             console.log("fail ret ajax negara");
-//         }
-//     },
-//     error: function (xhr, status, error) {
-//         console.error('Error fetching data:', error);
-//     },
-// });
+        } else {
+           // alert('No data found');
+            console.log("fail ret ajax negara");
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+});
  
 /*kod negeri */
 // $.ajax({
@@ -781,13 +731,14 @@ $('#file1').on('change', function (event) {
 //             $('#kdtaja').selectpicker('refresh');        
 
 $.ajax({
-    url: 'http://localhost/pascav2/public/displayprofile', // Replace with your server endpoint
+   // url: 'http://localhost/pascav2/public/displayprofile',
+    url: 'http://localhost/pascav2/public/displayprofilep001',
     method: 'GET',
    dataType: 'json', // Expect JSON response
     success: function (result) {
-        var nokppass  =  result.p00usrid;
+        var nokppass  =  result.p001nokp;//result.p00usrid;
         // var statwarga =  result.ktrgwarga;
-        var email     =  result.p00emel;
+        var email     =  result.p001email;//result.p00emel;
         var nama      =  result.p001nama;
         var dob       =  result.p001tkhlahir;
         var nooku     =  result.p001nooku;
@@ -810,33 +761,33 @@ $.ajax({
         var image     =  result.p001upgambar ;
         var namauni   =  result.p001unilama ;
         var highcgpa  =  result.p001cgpa ;
-        var masteruni  =  result.p001unilama2 ;
-        var cgpamaster =  result.p001cgpa2 ;
-        var penyelia =  result.p001penyelia ;
-        var proposal =  result.p001tajuk ;
-        var passport =  result.p001uppassport ;
-        var akadtgg =  result.p001uptrans ;
-        var upproposal =  result.p001upproposal;
-        var upresit =  result.p001upresit;
-        var upbi =  result.p001upmuet;
-        var namaejen =  result.p001ejenname ;
-        var emelejen =  result.p001ejenemail ;
-        var almtsemasa =  result.almtsemasa ;
-        var negeri =  result.negeri ;
-        var resultbi =  result.p001muet ;
-        var noregbi = result.p001noreg;
-        var tkhexmbi = result.p001tkhexm;
-        var doclaluan = result.p001uplaluan;
-        var docworkexp = result.p001upworkex;
-        var statmohon = result.p001status;
-        var statdesc = result.statdesc;
+        var masteruni   =  result.p001unilama2 ;
+        var cgpamaster  =  result.p001cgpa2 ;
+        var penyelia    =  result.p001penyelia ;
+        var proposal    =  result.p001tajuk ;
+        var passport    =  result.p001uppassport ;
+        var akadtgg     =  result.p001uptrans ;
+        var upproposal  =  result.p001upproposal;
+        var upresit     =  result.p001upresit;
+        var upbi        =  result.p001upmuet;
+        var namaejen    =  result.p001ejenname ;
+        var emelejen    =  result.p001ejenemail ;
+        var almtsemasa  =  result.almtsemasa ;
+        var negeri      =  result.negeri ;
+        var resultbi    =  result.p001muet ;
+        var noregbi     = result.p001noreg;
+        var tkhexmbi    = result.p001tkhexm;
+        var doclaluan   = result.p001uplaluan;
+        var docworkexp  = result.p001upworkex;
+        var statmohon   = result.p001status;
+        var statdesc    = result.statdesc;
         var amounthouse = result.p001amthouse;
-        var program = result.p001kprog;
-        var mode = result.desckaedah;
-        var method = result.descmode;
-        var kwarga = result.desckwarga;
-        var negara = result.p001alamatneg;
-        var nosurat = result.p001nosrttawar;
+        var program     = result.p001kprog;
+        var mode        = result.desckaedah;
+        var method      = result.descmode;
+        var kwarga      = result.desckwarga;
+        var negara      = result.p001alamatneg;
+        var nosurat     = result.p001nosrttawar;
         //display skrin accept
       //  $('#labelkdprogrm').text(program);
         $('#labelmodest').text(mode);
@@ -848,68 +799,68 @@ $.ajax({
         //+++++++++++++++++
         $("#labeladdcountry").text(negara);
         //++++++++++++++++
-        $.ajax({
-            url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
-            method: 'GET',
-            dataType: 'json', // Expect JSON response
-            success: function (response) {
-                if (response && response.length > 0) {
-                    $('#kdnegara').empty();
-                    $('#warganeg').empty();
-                    $('#kdnegarahome').empty();
-                    $('#highunicountry').empty();
-                    $('#masterphdcountry').empty();
+        // $.ajax({
+        //     url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
+        //     method: 'GET',
+        //     dataType: 'json', // Expect JSON response
+        //     success: function (response) {
+        //         if (response && response.length > 0) {
+        //             $('#kdnegara').empty();
+        //             $('#warganeg').empty();
+        //             $('#kdnegarahome').empty();
+        //             $('#highunicountry').empty();
+        //             $('#masterphdcountry').empty();
         
-                    var negaraDescription = 'Not Found'; // Default if no match
+        //             var negaraDescription = 'Not Found'; // Default if no match
         
-                    response.forEach(function (item) {
-                        var option = $('<option>', {
-                            value: item.c028kod,
-                            text: item.c028keterangan
-                        });
+        //             response.forEach(function (item) {
+        //                 var option = $('<option>', {
+        //                     value: item.c028kod,
+        //                     text: item.c028keterangan
+        //                 });
         
-                        // Append to all dropdowns
-                        $('#kdnegara').append(option.clone());
-                        $('#warganeg').append(option.clone());
-                        $('#kdnegarahome').append(option.clone());
-                        $('#highunicountry').append(option.clone());
-                        $('#masterphdcountry').append(option);
+        //                 // Append to all dropdowns
+        //                 $('#kdnegara').append(option.clone());
+        //                 $('#warganeg').append(option.clone());
+        //                 $('#kdnegarahome').append(option.clone());
+        //                 $('#highunicountry').append(option.clone());
+        //                 $('#masterphdcountry').append(option);
         
-                        // Lookup country description if it matches negeri (country code)
-                        if (item.c028kod === negara) {
-                            negaraDescription = item.c028keterangan;
-                        }
-                    });
+        //                 // Lookup country description if it matches negeri (country code)
+        //                 if (item.c028kod === negara) {
+        //                     negaraDescription = item.c028keterangan;
+        //                 }
+        //             });
         
-                    // Set description to label
-                    $("#labeladdcountry").text(negaraDescription);
+        //             // Set description to label
+        //             $("#labeladdcountry").text(negaraDescription);
 
-                    // Pre-select the user's negeri//
-                    $('#kdnegara').val(negara);  // Pre-select for #kdnegeri
-                    $('#warganeg').val(negara);  // Pre-select for #kdnegerihome
-                    $('#kdnegarahome').val(negara);  // Pre-select for #kdnegerihome
-                    $('#highunicountry').val(negara);  // Pre-select for #kdnegerihome
-                    $('#masterphdcountry').val(negara);  // Pre-select for #kdnegerihome
+        //             // Pre-select the user's negeri//
+        //             $('#kdnegara').val(negara);  // Pre-select for #kdnegeri
+        //             $('#warganeg').val(negara);  // Pre-select for #kdnegerihome
+        //             $('#kdnegarahome').val(negara);  // Pre-select for #kdnegerihome
+        //             $('#highunicountry').val(negara);  // Pre-select for #kdnegerihome
+        //             $('#masterphdcountry').val(negara);  // Pre-select for #kdnegerihome
         
-                    // Refresh the selectpicker to update UI
-                    setTimeout(function () {
-                    $('#kdnegara').selectpicker('refresh');
-                    $('#warganeg').selectpicker('refresh');
-                    $('#kdnegarahome').selectpicker('refresh');
-                    $('#highunicountry').selectpicker('refresh');
-                    $('#masterphdcountry').selectpicker('refresh');
-                    },100)
+        //             // Refresh the selectpicker to update UI
+        //             setTimeout(function () {
+        //             $('#kdnegara').selectpicker('refresh');
+        //             $('#warganeg').selectpicker('refresh');
+        //             $('#kdnegarahome').selectpicker('refresh');
+        //             $('#highunicountry').selectpicker('refresh');
+        //             $('#masterphdcountry').selectpicker('refresh');
+        //             },100)
         
-                } else {
-                   // console.log("fail ret ajax negara");
-                    $("#labeladdcountry").text("Negara not found");
-                }
-            },
-            error: function (xhr, status, error) {
-               // console.error('Error fetching data:', error);
-                $("#labeladdcountry").text("Error fetching negara data");
-            }
-        });
+        //         } else {
+        //            // console.log("fail ret ajax negara");
+        //             $("#labeladdcountry").text("Negara not found");
+        //         }
+        //     },
+        //     error: function (xhr, status, error) {
+        //        // console.error('Error fetching data:', error);
+        //         $("#labeladdcountry").text("Error fetching negara data");
+        //     }
+        // });
         //+++++++++++
         $("#labeladdstate").text(negeri);
         // Step 2 - Second AJAX to get full negeri list
