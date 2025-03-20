@@ -347,7 +347,7 @@
 		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!-- begin custom js -->
-		<script src="assets/js/custom/custom.js"></script>
+		<script src="assets/js/custom/custom_dashboard.js"></script>
 		<script src="../assets/js/custom/customfunc.js"></script>
 		<!-- end custom js -->
 		<!--end::Global Theme Bundle-->

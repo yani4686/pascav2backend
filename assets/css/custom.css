@@ -625,4 +625,19 @@ background: none; /* Remove default background */
 .apply-button-img:hover {
     transform: scale(1.05); /* Slight zoom effect */
 }
+
+.bootstrap-select .dropdown-menu {
+    max-width: 100% !important; /* Ensures it fits inside the container */
+    width: auto !important; /* Prevents it from exceeding the select box */
+    min-width: 300px; /* Adjust as needed */
+}
+
+.bootstrap-select .dropdown-menu.inner {
+    max-height: 300px !important; /* Limits dropdown height to fit */
+    overflow-y: auto !important; /* Enables scrolling if too many options */
+}
+
+.bootstrap-select {
+    width: 100% !important; /* Ensures it adapts to the container */
+}
   

@@ -327,8 +327,8 @@
 
 										 <div class="row">
 											<div class="col">
-												<button class="btn btn-primary saveNextBtn pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
-												<button class="btn btn-primary saveBtn pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
+												<button class="btn btn-primary saveNextBtn pull-right m-1" id="btnstep1sn" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+												<button class="btn btn-primary saveBtn pull-right m-1" id="btnstep1sv" type="button" data-inline="true" data-action="save">Save</button>
 												<!-- <button class="btn btn-primary pull-right m-1" type="button" onclick="executeSubmitFrmStep1('SubmitConfirmStep1')" data-inline="true">Save</button> -->
 											</div>
 										</div>
@@ -349,11 +349,11 @@
 									<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Campus <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" id ="modest" name ="modest">
-															<option value ="1">Gong Badak</option>
-															<option value ="2">Tembila</option>
-                                                            <option value ="3">Kota</option>
-                                                            <option value ="4">Kota</option>
+                                                        <select class ="form-control selectpicker" title="Please Choose" id ="kampus" name ="kampus">
+															<option value ="1">Gong Badak Campus</option>
+															<option value ="2">Tembila Campus</option>
+                                                            <option value ="3">Medicine Campus</option>
+                                                            <option value ="4">UniSZA International Campus</option>
                                                         </select>
                                                     </div>
                                                 	<label class="col-lg-3 col-form-label">Mode Of Study <span class="text-danger">*</span></label>
@@ -364,6 +364,8 @@
                                                             <option value ="9">Mix-Mode</option>
                                                         </select>
                                                     </div>
+									</div>
+									<div class="form-group row">
                                                  	<label class="col-lg-3 col-form-label">Type of Study <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
                                                         <select class ="form-control selectpicker" title="Please Choose" id="typest" name="typest">
@@ -371,15 +373,16 @@
                                                             <option value="2">Full Time</option>
                                                         </select>
                                                     </div>
-                                            </div>
+                                            <!-- </div>
 
-                                            <div class="form-group row">
-                                                	<label class="col-lg-3 col-form-label">Programme <span class="text-danger">*</span></label>
+                                    <div class="form-group row"> -->
+
+                                            <label class="col-lg-3 col-form-label">Programme <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
                                                         <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdprg" name="kdprg">
                                                         </select>
                                                     </div>
-											</div>
+									</div>
 										
                                             <div class="form-group row" id="hidespc">
 													<label class="col-lg-3 col-form-label">Specialization <span class="text-danger">*</span></label>
@@ -477,8 +480,10 @@
 
                                             <div class ="form-group row" id ="hidesv">
                                                         <label class="col-lg-2 col-form-label">Proposed Supervisor <span class="text-danger">*</span></label>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-4 d-flex align-items-center">
                                                                 <input type="text" class="form-control" name="prosv" id="prosv" />
+																
+																<a href="https://experts.unisza.edu.my/" class="ml-3 font-weight-bold" target="_blank">Experts Unisza</a>.
                                                             </div>
                                             </div>
 
@@ -530,26 +535,24 @@
 																	<option value="IE">IELTS</option>
 																	<option value="TF">TOEFL</option>
 																	<option value="CF">CEFR</option>
-																</select>
+																</select>															
 															</div>
-												</div>
-												<div class="form-group row mt-3">
-														<label class="col-lg-2 col-form-label text-lg-left">Score<span class="text-danger">*</span></label>
-														<div class="col-lg-3">
+												<!-- </div>
+												<div class="form-group row mt-3"> -->
+													<label class="col-lg-2 col-form-label text-lg-left">Score<span class="text-danger">*</span></label>
+														<div class="col-lg-3 d-flex align-items-center">
 															<input type="text" class="form-control" name="resultaddbi" id="resultaddbi" />
-															<!-- <span class="form-text text-muted">Malaysian University English Test(MUET)</span> -->
+															</div><img class="ml-2" id="info-mdl-6_2" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="English competency equivalence score">
 														</div>
-												<!-- </div> -->
-												<!-- <div class="form-group row"> -->
+												<div class="form-group row mt-3">
 													<label class="col-lg-2 col-form-label text-lg-left">Registration/Candidate No.<span class="text-danger">*</span></label>
-													<div class="col-lg-3">
-														<input type="text" class="form-control" name="registerid" id="registerid" />
-													</div>
-
+														<div class="col-lg-4">
+															<input type="text" class="form-control" name="registerid" id="registerid" />
+														</div>
 													<label class="col-lg-2 col-form-label text-lg-left">Date of Examination <span class="text-danger">*</span></label>
-                                                    <div class="col-lg-3">
-                                                        <input type="date" class="form-control" name="datexm" id="datexm"/>
-                                                    </div>
+														<div class="col-lg-4">
+															<input type="date" class="form-control" name="datexm" id="datexm"/>
+														</div>
 
 												</div>
 										</div>
@@ -559,8 +562,8 @@
 
                                         <div class="row">
 											<div class="col">
-												<button class="btn btn-primary saveNextBtn1 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
-												<button class="btn btn-primary saveBtn1 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
+												<button class="btn btn-primary saveNextBtn1 pull-right m-1" id="btnstep2sn" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+												<button class="btn btn-primary saveBtn1 pull-right m-1" id="btnstep2sv" type="button" data-inline="true" data-action="save">Save</button>
 											</div>
 										</div>
 									<!--  -->                                           
@@ -656,8 +659,8 @@
 									
 												<div class="row">
 													<div class="col">
-														<button class="btn btn-primary saveNextBtn2 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
-														<button class="btn btn-primary saveBtn2 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
+														<button class="btn btn-primary saveNextBtn2 pull-right m-1" id="btnstep3sn" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+														<button class="btn btn-primary saveBtn2 pull-right m-1" id="btnstep3sv" type="button" data-inline="true" data-action="save">Save</button>
 													</div>
 												</div>
 									<!--  -->
@@ -740,8 +743,8 @@
 
 									<div class="row">
 										<div class="col">
-											<button class="btn btn-primary saveNextBtn3 pull-right m-1" type="button" data-inline="true" data-action="save-next">Save & Next</button>
-											<button class="btn btn-primary saveBtn3 pull-right m-1" type="button" data-inline="true" data-action="save">Save</button>
+											<button class="btn btn-primary saveNextBtn3 pull-right m-1" id="btnstep4sn" type="button" data-inline="true" data-action="save-next">Save & Next</button>
+											<button class="btn btn-primary saveBtn3 pull-right m-1" id="btnstep4sv" type="button" data-inline="true" data-action="save">Save</button>
 										</div>
 									</div>
 									<!--  -->
@@ -795,8 +798,8 @@
 
 												<div class="row">
 													<div class="col">
-														<a href="pascav2/public/summary"><button class="btn btn-primary saveNextBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Summary & Print</button></a>
-														<button class="btn btn-primary saveBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Submit Application</button>
+														<!-- <a href="pascav2/public/summary"><button class="btn btn-primary saveNextBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Summary & Print</button></a> -->
+														<button class="btn btn-primary saveBtn4 pull-right m-1" id="btnLastSubmit" type="button" data-inline="true" data-action="save-next">Submit Application</button>
 													</div>
 												</div>
 									<!--  -->
@@ -804,302 +807,7 @@
 									</div>
 									</div>
 
-						</div>
-
-						<!-- <div class="panel panel-primary setup-content" id="step-6">
-
-							<div class="panel-heading"><h3 class="panel-title">Summary & Print</h3></div>
-																				
-								<div class="panel-body form-horizontal m-10">
-
-								<div class="d-flex justify-content-end">
-									<div class="d-flex justify-content-end">
-									<a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon printPageIcon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="icon-2x text-dark-50 flaticon-download"></i>
-									</a>
-									</div>
-								</div>
-
-								<div class="mb-3">
-								
-								<h3 class="font-size-h6 mb-5">Profile Information</h3>								
-									<div class="separator separator-dashed my-6"></div>
-
-									<div class="form-group row">
-												<label class="col-xl-3 col-lg-3 col-form-label">Passport-sized Picture<span class="text-danger">*</span><img style="margin:5px"></label>
-													<div class="col-lg-9 col-xl-6">
-														<div class="image-boxdashboard" id="imageBox">
-																<img id="previewImage1" src="./pascav2/assets/media/users/blank.png" alt="Passport Picture" style="width: 100%; height: 100%; display: block;">
-															</div>
-													</div>
-									</div>
-
-									<div class="form-group row my-2">
-												
-												<label class="col-lg-3 col-form-label">Name : </label>
-												<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelnama" data-name="labelnama"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">IC/Passport No. : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelic" data-name="labelic"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Date Of Birth : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeldob"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Nationality Status : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelnatstat"></span>
-													</div>
-												
-												<label class="col-lg-3 col-form-label">Nationality : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelnat"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Disablity : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeldisable"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Email : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelemel"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Corresponding Address : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdcurr"></span>
-													</div>
-												
-												<label class="col-lg-3 col-form-label">State : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdstate"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Country : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Tel No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Mobile No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
-													</div>
-
-												
-												<label class="col-lg-3 col-form-label">Off. No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Fax No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
-													</div>
-
-											<label class="col-lg-3 col-form-label"></label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id=""></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Home Address : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdcurr"></span>
-													</div>
-												
-												<label class="col-lg-3 col-form-label">State : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdstate"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Country : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Tel No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Mobile No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
-													</div>
-
-												
-												<label class="col-lg-3 col-form-label">Off. No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Fax No : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
-													</div>
-												
-								</div>
-
-								<div class="separator separator-dashed my-6"></div>
-								<h3 class="font-size-h6 mb-5">Application Details</h3>
-
-								<div class="form-group row my-2">
-
-											 <label class="col-lg-3 col-form-label">Mode of Study : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelmodestdy"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Type of Study : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labeltypestudy"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Programme : </label>
-													<div class="col-lg-4">
-														<span class="form-control-plaintext font-weight-bolder" id="labelkdprogram"></span>
-													</div>
-								</div>
-
-								<div class="separator separator-dashed my-6"></div>
-								<h3 class="font-size-h6 mb-5">Academic Qualification</h3>
-
-								<div class="form-group row my-2">
-
-												<label class="col-lg-2 col-form-label">Highest Tertiary Education : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labeltypestudy"></span>
-													</div>	
-													
-												<label class="col-lg-2 col-form-label">Awarding University (Bachelor/equivalent) : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-												<label class="col-lg-2 col-form-label">Class/CGPA : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelcgpa"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Country Awarding : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-													<label class="col-lg-2 col-form-label">Awarding University (Master /equivalent) : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-												<label class="col-lg-2 col-form-label">Class/CGPA : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelcgpa"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Country Awarding : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Proposed Research Title/Area : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Proposed Supervisor : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-
-												<label class="col-lg-3 col-form-label">Portfolio Document : </label>
-													<div class="col-lg-4"> 
-														<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-													</div>
-								</div>
-
-								<div class="separator separator-dashed my-6"></div>
-								<h3 class="font-size-h6 mb-5">English Language Proficiency</h3>
-
-								<div class="form-group row my-2">								
-
-											<label class="col-lg-3 col-form-label">Exam Type : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">Result : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">Registration No./Candidate No. : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">Date of Examination : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>								
-								</div>
-
-								<div class="separator separator-dashed my-6"></div>
-								<h3 class="font-size-h6 mb-5">Additional</h3>
-
-								<div class="form-group row my-2">								
-
-											<label class="col-lg-3 col-form-label">Agent Name : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">Agent Email : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">Type Of Sponsorship : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>
-
-											<label class="col-lg-3 col-form-label">HouseHold Income : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>								
-								</div>
-
-								<div class="separator separator-dashed my-6"></div>
-								<h3 class="font-size-h6 mb-5">Submission</h3>
-
-								<div class="form-group row my-2">								
-
-											<label class="col-lg-6 col-form-label">Approval of Program Changes : </label>
-												<div class="col-lg-4"> 
-													<span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
-												</div>					
-								</div>
-
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-primary printPdf pull-right m-1" type="button" data-inline="true">Print</button>
-														</div>
-												</div>
-								
-								</div>
-								</div>
-						</div> -->
-				<!-- xx -->
+						</div>					
 			</form>
 
 		</div><!-- end container -->
@@ -1112,15 +820,15 @@
 			<!--begin::Copyright-->
 			<div class="text-dark order-2 order-md-1">
 				<span class="text-muted font-weight-bold mr-2">2020©</span>
-				<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">yani</a>
+				<a href="" target="_blank" class="text-dark-75 text-hover-primary">yani</a>
 			</div>
 			<!--end::Copyright-->
 			<!--begin::Nav-->
-			<div class="nav nav-dark">
-				<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">About</a>
-				<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">Team</a>
-				<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-0">Contact</a>
-			</div>
+			<!-- <div class="nav nav-dark">
+				<a href="" target="_blank" class="nav-link pl-0 pr-5">About</a>
+				<a href="" target="_blank" class="nav-link pl-0 pr-5">Team</a>
+				<a href="" target="_blank" class="nav-link pl-0 pr-0">Contact</a>
+			</div> -->
 			<!--end::Nav-->
 		</div>
 		<!--end::Container-->
@@ -1152,6 +860,7 @@
         <!-- begin custom js -->
         <script src="pascav2/assets/js/custom/custom.js"></script>
         <script src="pascav2/assets/js/custom/customfunc.js"></script>
+        <script src="pascav2/assets/js/custom/lookup.js"></script>
         <script src="pascav2/assets/js/custom/profile.js"></script>
         <!-- end custom js -->
 	</body>

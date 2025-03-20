@@ -54,38 +54,22 @@ class ApplyController extends ResourceController
 
     public function getkodnegeri()
     {
-        // Path to your JSON file
-        $filePath = WRITEPATH . 'data/kodnegeri.json';
+        $db = Config::connect();
 
-        // Check if file exists
-        if (!file_exists($filePath)) {
-            return $this->respond(['error' => 'File not found'], 404);
-        }
+        $Query = $db->query("SELECT a090knegeri,a090negeri FROM ppsdblocal.a090 WHERE a090knegeri NOT LIKE '%-%' and a090knegeri not in ('99','61','62','66','67','68','71','74','75','88','91') order by a090knegeri");
+        $result = $Query->getResult();
 
-        // Load the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
-
-        // Return the JSON response
-        return $this->respond($data, 200);
+        return $this->response->setJSON($result);
     }
 
     public function getkodkecacatan()
     {
-        // Path to your JSON file
-        $filePath = WRITEPATH . 'data/kodkecacatan.json';
+        $db = Config::connect();
 
-        // Check if file exists
-        if (!file_exists($filePath)) {
-            return $this->respond(['error' => 'File not found'], 404);
-        }
+        $Query = $db->query("SELECT z013akod,z013abi FROM ppsdblocal.z013a where z013abi<>'' order by z013abi");
+        $result = $Query->getResult();
 
-        // Load the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
-
-        // Return the JSON response
-        return $this->respond($data, 200);
+        return $this->response->setJSON($result);
     }
     public function getkodpenaja()
     {
@@ -183,11 +167,14 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         WHEN p001kaedah = '9' THEN 'MIX_MODE' end as desckaedah,
         p001modebelajar,CASE  
         WHEN p001modebelajar = '1' THEN 'Full Time'
-        WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
-        p001kwarganegara 
+        WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,
+        CASE p001kwarganegara 
         WHEN '1' THEN 'MALAYSIAN' 
         WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p001kbumi,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
-        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        p001kcacat,p001muet,p001akadtinggi,CASE p001akadtinggi 
+        WHEN '1' THEN 'Bachelor / Equivalent'
+        WHEN '2' THEN 'Master Degree / Equivalent'
+        WHEN '3' THEN 'Diploma' end as descakadttg,p001kpenaja,p001status,CASE 
         WHEN p001status = '' THEN 'Draft'
         WHEN p001status IS NULL THEN 'Draft'
         WHEN p001status = '0' THEN 'New'
@@ -199,8 +186,14 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         WHEN p001status = '6' THEN 'Gagal Fakulti2'
         END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         CASE 
-        p001kbumi WHEN '1' THEN 'Malaysian' 
-        WHEN '2' THEN 'Non Malaysian' end as ktrgwarga,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        p001kbumi 
+        WHEN '1' THEN 'Malaysian' 
+        WHEN '2' THEN 'Non Malaysian' end as ktrgwarga,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,concat(p001alamatt1,' ',p001alamatt2,' ',p001bandart,' ',p001poskodt) as almttetap,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar,
+        CASE p001katbi
+        WHEN 'MT' THEN 'MUET'
+        WHEN 'IE' THEN 'IELTS'
+        WHEN 'TF' THEN 'TOEFL'
+        WHEN 'CF' THEN 'CEFR' end descbi,p001noreg,p001tkhexm
         from ppsdblocal.p001 where p001email='$idsess'");
         $result = $loginQuery->getRow();
 
@@ -424,29 +417,30 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
 
         $input = $this->request->getPost();
 
-          $kaedah      = !empty($input['modest']) ? $input['modest'] : null;//$input['no_oku'] ?? '';
-          $modebelajar = !empty($input['typest']) ? $input['typest'] : null;//$input["kppass"] ?? '';
-          $program     = !empty($input['kdprg']) ? $input['kdprg'] : null;//$input['fullname'] ?? '';
-          $highedu     = !empty($input['highedu']) ? $input['highedu'] : null;//$input['dob'] ?? '';
-          $highuniname = !empty($input['highuni']) ? $input['highuni'] : null;//$input['dob'] ?? '';
-          $highunicgpa = !empty($input['highcgpa']) ? $input['highcgpa'] : null;//$input['dob'] ?? '';
-		  $highcountryuni     = !empty($input['highunicountry']) ? $input['highunicountry'] : null;//$input['warganeg'] ?? '';
-		  $unimasterphd       = !empty($input['unimasterphd']) ? $input['unimasterphd'] : null;//$input['warganeg'] ?? '';
-		  $cgpamasterphd      = !empty($input['cgpamasterphd']) ? $input['cgpamasterphd'] : null;//$input['warganeg'] ?? '';
-		  $masterphdcountry   = !empty($input['masterphdcountry']) ? $input['masterphdcountry'] : null;//$input['stsoku'] ?? '';
-          $exp         = !empty($input['exp']) ? $input['exp'] : null;//$input['corradd'] ?? '';
-          $proresearch = !empty($input['proresearch']) ? $input['proresearch'] : null;//$input['corradd1'] ?? '';
-          $prosv       = !empty($input['prosv']) ? $input['prosv'] : null;//$input['postcorradd'] ?? '';
-          $typebi      = !empty($input['bitype']) ? $input['bitype'] : null;
-          $resultbi    = !empty($input['resultaddbi']) ? $input['resultaddbi'] : null;
-          $noregbi     = !empty($input['registerid']) ? $input['registerid'] : null;
-          $datexm      = !empty($input['datexm']) ? $input['datexm'] : '0000-00-00';
+        $kaedah             = !empty($input['modest']) ? $input['modest'] : null;
+        $kampus             = !empty($input['kampus']) ? $input['kampus'] : null;
+        $modebelajar        = !empty($input['typest']) ? $input['typest'] : null;
+        $program            = !empty($input['kdprg']) ? $input['kdprg'] : null;
+        $highedu            = !empty($input['highedu']) ? $input['highedu'] : null;
+        $highuniname        = !empty($input['highuni']) ? $input['highuni'] : null;
+        $highunicgpa        = !empty($input['highcgpa']) ? $input['highcgpa'] : null;
+		$highcountryuni     = !empty($input['highunicountry']) ? $input['highunicountry'] : null;
+		$unimasterphd       = !empty($input['unimasterphd']) ? $input['unimasterphd'] : null;
+		$cgpamasterphd      = !empty($input['cgpamasterphd']) ? $input['cgpamasterphd'] : null;
+		$masterphdcountry   = !empty($input['masterphdcountry']) ? $input['masterphdcountry'] : null;
+        $exp                = !empty($input['exp']) ? $input['exp'] : null;
+        $proresearch        = !empty($input['proresearch']) ? $input['proresearch'] : null;
+        $prosv              = !empty($input['prosv']) ? $input['prosv'] : null;
+        $typebi             = !empty($input['bitype']) ? $input['bitype'] : null;
+        $resultbi           = !empty($input['resultaddbi']) ? $input['resultaddbi'] : null;
+        $noregbi            = !empty($input['registerid']) ? $input['registerid'] : null;
+        $datexm             = !empty($input['datexm']) ? $input['datexm'] : null;
          // '{' . implode(',', $datexm) . '}'
 
         // Save data to the database    
          // Update database
-    $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001upworkex=?,
-    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi,$datexm, $p001nokp]);
+    $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001kkampus=?,p001upworkex=?,
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$kampus,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi,$datexm, $p001nokp]);
 
     if ($db->affectedRows() > 0) {
     return $this->response->setJSON(['success' => 'ok']);

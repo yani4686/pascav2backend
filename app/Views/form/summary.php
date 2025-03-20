@@ -25,7 +25,7 @@
 					<div class="content d-flex flex-column flex-column-fluid">
 						<!--begin::Container-->
 						<div class="container">
-                            <form role="form" id="idFrmSummary">
+                            <div id="idFrmSummary">
 							    <div class="panel panel-primary">
                                 <div class="panel-heading"><h3 class="panel-title">Summary Application</h3></div>
 																				
@@ -36,7 +36,7 @@
                                                                                 </div> -->
                                                                                 <div class="d-flex justify-content-end">
                                                                                     <div class="d-flex justify-content-end">
-                                                                                    <a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon printPageIcon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                    <a href="#" class="btn btn-clean btn-hover-light-primary btn-sm btn-icon printPageIcon" data-toggle="dropdown" data-toggle="tooltip" title="Print Here" aria-haspopup="true" aria-expanded="false">
                                                                                         <i class="icon-2x text-dark-50 flaticon-download"></i>
                                                                                     </a>
                                                                                     </div>
@@ -139,38 +139,27 @@
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Home Address : </label>
                                                                                                     <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdcurr"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdtetap"></span>
                                                                                                     </div>
                                                                                                 
                                                                                                 <label class="col-lg-3 col-form-label">State : </label>
                                                                                                     <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdstate"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdstatettp"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Country : </label>
                                                                                                     <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdcountry"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdcountryttp"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Tel No : </label>
                                                                                                     <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-                                                                                                    </div>
-                                                
-                                                                                                <label class="col-lg-3 col-form-label">Mobile No : </label>
-                                                                                                    <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
-                                                                                                    </div>
-                                                
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdtelttp"></span>
+                                                                                                    </div>                              
                                                                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Off. No : </label>
                                                                                                     <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdtel"></span>
-                                                                                                    </div>
-                                                
-                                                                                                <label class="col-lg-3 col-form-label">Fax No : </label>
-                                                                                                    <div class="col-lg-4">
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdhp"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeladdtelttp"></span>
                                                                                                     </div>
                                                                                                 
                                                                                 </div>
@@ -189,6 +178,11 @@
                                                                                                     <div class="col-lg-4">
                                                                                                         <span class="form-control-plaintext font-weight-bolder" id="labeltypestudy"></span>
                                                                                                     </div>
+
+                                                                                                <label class="col-lg-3 col-form-label">Faculty : </label>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelfaculty"></span>
+                                                                                                </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Programme : </label>
                                                                                                     <div class="col-lg-4">
@@ -203,7 +197,7 @@
                                                 
                                                                                                 <label class="col-lg-2 col-form-label">Highest Tertiary Education : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeltypestudy"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labeltypestudyhigh"></span>
                                                                                                     </div>	
                                                                                                     
                                                                                                 <label class="col-lg-2 col-form-label">Awarding University (Bachelor/equivalent) : </label>
@@ -213,12 +207,12 @@
                                                 
                                                                                                 <label class="col-lg-2 col-form-label">Class/CGPA : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelcgpa"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelcgpab"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Country Awarding : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawardunihigh"></span>
                                                                                                     </div>
                                                 
                                                                                                     <label class="col-lg-2 col-form-label">Awarding University (Master /equivalent) : </label>
@@ -259,22 +253,22 @@
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Exam Type : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelbi"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Result : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelresultbi"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Registration No./Candidate No. : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelregbi"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Date of Examination : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labeldatexmbi"></span>
                                                                                                 </div>								
                                                                                 </div>
                                                 
@@ -285,26 +279,26 @@
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Agent Name : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelagentname"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Agent Email : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelagentemail"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">Type Of Sponsorship : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labeltaja"></span>
                                                                                                 </div>
                                                 
                                                                                             <label class="col-lg-3 col-form-label">HouseHold Income : </label>
                                                                                                 <div class="col-lg-4"> 
-                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                    <span class="form-control-plaintext font-weight-bolder" id="labelincome"></span>
                                                                                                 </div>								
                                                                                 </div>
                                                 
-                                                                                <div class="separator separator-dashed my-6"></div>
+                                                                                <!-- <div class="separator separator-dashed my-6"></div>
                                                                                 <h3 class="font-size-h6 mb-5">Submission</h3>
                                                 
                                                                                 <div class="form-group row my-2">								
@@ -313,19 +307,19 @@
                                                                                                 <div class="col-lg-4"> 
                                                                                                     <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
                                                                                                 </div>					
-                                                                                </div>
+                                                                                </div> -->
                                                 
-                                                                                                <div class="row">
+                                                                                                <!-- <div class="row">
                                                                                                     <div class="col">
                                                                                                         <button class="btn btn-primary printPdf pull-right m-1" type="button" data-inline="true">Print</button>
                                                                                                         </div>
-                                                                                                </div>
+                                                                                                </div> -->
                                                                                 <!--  -->
                                                                                 </div>
                                                                                 </div>
 								
 								</div>   
-                            </form>
+                            </div>
 
 					<!--end::Content-->
 					<!--begin::Footer-->
@@ -355,6 +349,10 @@
         <script src="pascav2/assets/js/custom/custom.js"></script>
         <script src="pascav2/assets/js/custom/customfunc.js"></script>
         <!-- end custom js -->
+        <!-- add on plugin -->
+        <!-- Add this inside your page -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 	</body>
 	<!--end::Body-->
 </html>

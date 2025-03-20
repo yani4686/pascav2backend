@@ -213,9 +213,9 @@ $('.saveBtn4').on('click', function() {
     saveForm('save-next', this, 'http://localhost/pascav2/public/insstep5'); 
 });
 
-$('.saveNextBtn4').on('click', function() { 
-    saveForm('save-next', this, 'http://localhost/pascav2/public/insstep5'); 
-});
+// $('.saveNextBtn4').on('click', function() { 
+//     saveForm('save-next', this, 'http://localhost/pascav2/public/insstep5'); 
+// });
 
 
 
@@ -248,11 +248,6 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
     }
 
     var formData = new FormData();
-
-    // Collect inputs
-    // curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='date']").each(function() {
-    //     formData.append(this.name, $(this).val());
-    // });
 
     curStep.find("input[type='text'], input[type='radio']:checked, input[type='checkbox']:checked, select, textarea, input[type='date']").each(function () {
         formData.append(this.name, $(this).val());
@@ -303,9 +298,12 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
                 if (data.success === 'ok') {
                     if (actionType === 'save-next') {
                         moveToNextStep(curStep);
-                    } else {
+                    } 
+                    
+                    else {
                         window.location = "http://localhost/pascav2/public/apply";
                     }
+
                 } else {
                     window.location = "http://localhost/pascav2/public/apply";
                 }
@@ -805,47 +803,8 @@ $(".printPdf").click(function () {
     }
 });
 
-//print pdf using window print
-$(".printPageIcon").click(function () {
-
-    var curStep = $(this).closest(".setup-content");
-    var curStepBtn = curStep.attr("id");
-
-   // alert(curStepBtn);
-
-    // Clone the content of the current step
-    var contentToPrint = curStep.clone();
-
-    // Create a new window or iframe for printing
-    var printWindow = window.open('', '', 'width=1000, height=600');
-
-    if(curStepBtn === 'step-6'){
-
-        // Append the cloned content to the new window
-    printWindow.document.write('<html><head><title>Print</title>');
-    printWindow.document.write('<style>body{font-family: Arial, sans-serif;}</style>');  // Optional CSS styling
-    printWindow.document.write('</head><body>');
-    printWindow.document.write(contentToPrint.html());
-    printWindow.document.write('</body></html>');
-
-    // Wait for the content to load, then print it
-    printWindow.document.close();  // Close the document to finish writing
-    printWindow.print();  // Trigger the print dialog
-    printWindow.close();  // Close the print window after printing
-
-    }else{
-        alert("error");
-    }
-
-});
-
 //upd add info after accept offer
 $(".updaddinfo").click(function () {
-
- //alert("update & belum ada backend");
- //var formData = new FormData(form);
-
- //console.log(formData);
 
  $.ajax({
  type: "POST",
