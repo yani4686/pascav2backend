@@ -1,0 +1,2030 @@
+INFO - 2025-03-19 00:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 00:08:25 --> Error: Class "App\Controllers\LoginModelp051" not found
+[Method: POST, Route: regnewloginp051]
+in APPPATH\Controllers\LoginController.php on line 31.
+ 1 ROOTPATH\system\CodeIgniter.php(903): App\Controllers\LoginController->__construct()
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 00:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 00:11:56 --> Error: Class "App\Controllers\LoginModelp051" not found
+[Method: POST, Route: regnewloginp051]
+in APPPATH\Controllers\LoginController.php on line 31.
+ 1 ROOTPATH\system\CodeIgniter.php(903): App\Controllers\LoginController->__construct()
+ 2 ROOTPATH\system\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 00:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 00:15:25 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; of relation &quot;p051&quot; does not exist
+LINE 1: ...051&quot; (&quot;p051username&quot;, &quot;p051password&quot;, &quot;p051emel&quot;, &quot;p051katwa...
+                                                             ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "pp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pp...')
+#4 C:\laragon\www\pascav2\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pp...', Array, false)
+#5 C:\laragon\www\pascav2\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\pascav2\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\pascav2\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\pascav2\app\Controllers\LoginController.php(188): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->regnewloginp051()
+#10 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#11 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-19 00:15:25 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; of relation &quot;p051&quot; does not exist
+LINE 1: ...051&quot; (&quot;p051username&quot;, &quot;p051password&quot;, &quot;p051emel&quot;, &quot;p051katwa...
+                                                             ^
+[Method: POST, Route: regnewloginp051]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (:p051username:, :p051password:, :p051emel:, :p051katwarga:, :p051statsahreg:, :p051verifycode:, :p051tkhreg:)', [...], false)
+ 2 ROOTPATH\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 ROOTPATH\system\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 ROOTPATH\system\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\LoginController.php(188): CodeIgniter\Model->insert([...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->regnewloginp051()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:15:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; of relation &quot;p051&quot; does not exist
+LINE 1: ...051&quot; (&quot;p051username&quot;, &quot;p051password&quot;, &quot;p051emel&quot;, &quot;p051katwa...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (\'nurulaina\', \'123\', \'aina@gmail.com\', \'1\', \'0\', \'dc120b3016689e5ff7c1a2e0099fbd0c\', \'2025-03-19 00:15:24\')')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (\'nurulaina\', \'123\', \'aina@gmail.com\', \'1\', \'0\', \'dc120b3016689e5ff7c1a2e0099fbd0c\', \'2025-03-19 00:15:24\')')
+ 3 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (:p051username:, :p051password:, :p051emel:, :p051katwarga:, :p051statsahreg:, :p051verifycode:, :p051tkhreg:)', [...], false)
+ 4 ROOTPATH\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 ROOTPATH\system\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 ROOTPATH\system\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\LoginController.php(188): CodeIgniter\Model->insert([...])
+ 8 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->regnewloginp051()
+ 9 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:15:25 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; of relation &quot;p051&quot; does not exist
+LINE 1: ...051&quot; (&quot;p051username&quot;, &quot;p051password&quot;, &quot;p051emel&quot;, &quot;p051katwa...
+                                                             ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; of relation &quot;p051&quot; does not exist
+LINE 1: ...051&quot; (&quot;p051username&quot;, &quot;p051password&quot;, &quot;p051emel&quot;, &quot;p051katwa...
+                                                             ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (\'nurulaina\', \'123\', \'aina@gmail.com\', \'1\', \'0\', \'dc120b3016689e5ff7c1a2e0099fbd0c\', \'2025-03-19 00:15:24\')')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (\'nurulaina\', \'123\', \'aina@gmail.com\', \'1\', \'0\', \'dc120b3016689e5ff7c1a2e0099fbd0c\', \'2025-03-19 00:15:24\')')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (\'nurulaina\', \'123\', \'aina@gmail.com\', \'1\', \'0\', \'dc120b3016689e5ff7c1a2e0099fbd0c\', \'2025-03-19 00:15:24\')')
+ 5 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p051" ("p051username", "p051password", "p051emel", "p051katwarga", "p051statsahreg", "p051verifycode", "p051tkhreg") VALUES (:p051username:, :p051password:, :p051emel:, :p051katwarga:, :p051statsahreg:, :p051verifycode:, :p051tkhreg:)', [...], false)
+ 6 ROOTPATH\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 ROOTPATH\system\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 ROOTPATH\system\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\LoginController.php(188): CodeIgniter\Model->insert([...])
+10 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->regnewloginp051()
+11 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+12 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 00:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 00:28:20 --> ErrorException: Attempt to read property "p00usrid" on null
+[Method: GET, Route: verifylogin/76fc2c9130a5b60e46b8432ec00828bd]
+in APPPATH\Controllers\LoginController.php on line 407.
+ 1 APPPATH\Controllers\LoginController.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p00usrid" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 407)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifylogin('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:29:30 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katw...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katw...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katw...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katw...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 00:29:30 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:29:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:29:30 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 5 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:31:45 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katw...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katw...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katw...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katw...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 00:31:45 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:31:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:31:45 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 5 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:31:59 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katw...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katw...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katw...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katw...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 00:31:59 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:31:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:31:59 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 5 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:33:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katw...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katw...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katw...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katw...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 00:33:21 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:33:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:33:21 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051katwarga&quot; does not exist
+LINE 1: SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00katwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 5 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p00daftar where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:35:03 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = integer
+LINE 1: ...de='76fc2c9130a5b60e46b8432ec00828bd' and p051statsahreg = 0
+                                                                    ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katw...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katw...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katw...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katw...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 00:35:03 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = integer
+LINE 1: ...de='76fc2c9130a5b60e46b8432ec00828bd' and p051statsahreg = 0
+                                                                    ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:35:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = integer
+LINE 1: ...de='76fc2c9130a5b60e46b8432ec00828bd' and p051statsahreg = 0
+                                                                    ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:35:03 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = integer
+LINE 1: ...de='76fc2c9130a5b60e46b8432ec00828bd' and p051statsahreg = 0
+                                                                    ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  operator does not exist: character varying = integer
+LINE 1: ...de=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0
+                                                                    ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 5 APPPATH\Controllers\LoginController.php(459): CodeIgniter\Database\BaseConnection->query('SELECT p051katwarga,p051emel from ppsdblocal.p051 where p051verifycode=\'76fc2c9130a5b60e46b8432ec00828bd\' and p051statsahreg = 0')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:35:56 --> ErrorException: Undefined variable $p00emel
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in APPPATH\Controllers\LoginController.php on line 465.
+ 1 APPPATH\Controllers\LoginController.php(465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p00emel', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 465)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:37:06 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null). in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "pp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pp...')
+#4 C:\laragon\www\pascav2\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pp...', Array, false)
+#5 C:\laragon\www\pascav2\app\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-19 00:37:06 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 2 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:37:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 3 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 4 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 6 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:37:06 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 5 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 6 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 8 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:37:06 --> ErrorException: Attempt to read property "p051katwarga" on null
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in APPPATH\Controllers\LoginController.php on line 462.
+ 1 APPPATH\Controllers\LoginController.php(462): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p051katwarga" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 462)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:37:08 --> ErrorException: Attempt to read property "p051katwarga" on null
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in APPPATH\Controllers\LoginController.php on line 462.
+ 1 APPPATH\Controllers\LoginController.php(462): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p051katwarga" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 462)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-19 00:38:58 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null). in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "pp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pp...')
+#4 C:\laragon\www\pascav2\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pp...', Array, false)
+#5 C:\laragon\www\pascav2\app\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60...')
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-19 00:38:58 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+[Method: GET, Route: verifyloginp051/76fc2c9130a5b60e46b8432ec00828bd]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 2 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 4 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:38:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 3 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 4 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 6 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 00:38:58 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  null value in column &quot;p001nokp&quot; of relation &quot;p001&quot; violates not-null constraint
+DETAIL:  Failing row contains (null, null, null, null, null, null, null, null, null, null, null, 1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, aina@gmail.com, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, UniSZA/PPS/2025/3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (\'1\', \'aina@gmail.com\', \'UniSZA/PPS/2025/3\')')
+ 5 ROOTPATH\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ppsdblocal"."p001" ("p001kbumi", "p001email", "p001norujuk") VALUES (:p001kbumi:, :p001email:, :p001norujuk:)', [...], false)
+ 6 APPPATH\Controllers\LoginController.php(477): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->verifyloginp051('76fc2c9130a5b60e46b8432ec00828bd')
+ 8 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 00:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 00:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-19 00:59:03 --> ErrorException: Attempt to read property "p00emel" on null
+[Method: POST, Route: forgotpwd]
+in APPPATH\Controllers\LoginController.php on line 548.
+ 1 APPPATH\Controllers\LoginController.php(548): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p00emel" on null', 'C:\\laragon\\www\\pascav2\\app\\Controllers\\LoginController.php', 548)
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->forgotpwd()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 05:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 05:30:31 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051emel&quot; does not exist
+LINE 1: SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00emel&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051emel...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051emel...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051emel...')
+#4 C:\laragon\www\pascav2\app\Controllers\LoginController.php(582): CodeIgniter\Database\BaseConnection->query('SELECT p051emel...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\LoginController->forgotpwdp051()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 05:30:31 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051emel&quot; does not exist
+LINE 1: SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00emel&quot;.
+[Method: POST, Route: forgotpwdp051]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\LoginController.php(582): CodeIgniter\Database\BaseConnection->query('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = ? and p051statsahreg = 1', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->forgotpwdp051()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 05:30:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p051emel&quot; does not exist
+LINE 1: SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00emel&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = \'aina@gmail.com\' and p051statsahreg = 1')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = \'aina@gmail.com\' and p051statsahreg = 1')
+ 3 APPPATH\Controllers\LoginController.php(582): CodeIgniter\Database\BaseConnection->query('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = ? and p051statsahreg = 1', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->forgotpwdp051()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 05:30:31 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p051emel&quot; does not exist
+LINE 1: SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00emel&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p051emel&quot; does not exist
+LINE 1: SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE...
+               ^
+HINT:  Perhaps you meant to reference the column &quot;p00daftar.p00emel&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = \'aina@gmail.com\' and p051statsahreg = 1')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = \'aina@gmail.com\' and p051statsahreg = 1')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = \'aina@gmail.com\' and p051statsahreg = 1')
+ 5 APPPATH\Controllers\LoginController.php(582): CodeIgniter\Database\BaseConnection->query('SELECT p051emel,p051password FROM ppsdblocal.p00daftar WHERE p051emel = ? and p051statsahreg = 1', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\LoginController->forgotpwdp051()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 05:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 06:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 07:05:14 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 07:05:14 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+[Method: GET, Route: displayprofilep001]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:05:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 3 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:05:14 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 5 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 07:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 07:05:19 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;. in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 07:05:19 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+[Method: GET, Route: displayprofilep001]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:05:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 3 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:05:19 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;p00katwarga&quot; does not exist
+LINE 10: ...  WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarg...
+                                                              ^
+HINT:  Perhaps you meant to reference the column &quot;p001.p001kwarga&quot;.', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 5 APPPATH\Controllers\ApplyController.php(204): CodeIgniter\Database\BaseConnection->query('SELECT p001nokp,p001nama,p001kprog,p001kaedah,CASE 
+        WHEN p001kaedah = \'7\' THEN \'COURSEWORK\'
+        WHEN p001kaedah = \'8\' THEN \'RESEARCH\'
+        WHEN p001kaedah = \'9\' THEN \'MIX_MODE\' end as desckaedah,
+        p001modebelajar,CASE  
+        WHEN p001modebelajar = \'1\' THEN \'Full Time\'
+        WHEN p001modebelajar = \'2\' THEN \'Part Time\' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,CASE 
+        p001kwarganegara 
+        WHEN \'1\' THEN \'MALAYSIAN\' 
+        WHEN \'2\' THEN \'NON MALAYSIAN\' end as desckwarga,p00katwarga,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001muet,p001akadtinggi,p001kpenaja,p001status,CASE 
+        WHEN p001status = \'\' THEN \'Draft\'
+        WHEN p001status IS NULL THEN \'Draft\'
+        WHEN p001status = \'0\' THEN \'New\'
+        WHEN p001status = \'1\' THEN \'Approved\'
+        WHEN p001status = \'2\' THEN \'Lulus Fakulti1\'
+        WHEN p001status = \'3\' THEN \'Gagal Fakulti1\'
+        WHEN p001status = \'4\' THEN \'Pindah Fakulti\'
+        WHEN p001status = \'5\' THEN \'Lulus Fakulti2\'
+        WHEN p001status = \'6\' THEN \'Gagal Fakulti2\'
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        CASE 
+        p00katwarga WHEN \'1\' THEN \'Malaysian\' 
+        WHEN \'2\' THEN \'Non Malaysian\' end as ktrgwarga,concat(p001alamat1,\' \',p001alamat2,\' \',p001bandar,\' \',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
+        from ppsdblocal.p001 where p001email=\'aina@gmail.com\'')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->DisplayProfilep001()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 07:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 07:11:38 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 07:11:38 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:11:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 3 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:11:38 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = \'NURUL AINA\', 
+                    ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 5 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 07:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-19 07:11:56 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdbloc...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdbloc...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdbloc...')
+#4 C:\laragon\www\pascav2\app\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdbloc...', Array)
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-19 07:11:56 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+[Method: POST, Route: insstep1]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:11:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 3 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-19 07:11:56 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = 'NURUL AINA', 
+                    ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;p001nama&quot;
+LINE 3:             p001nama = \'NURUL AINA\', 
+                    ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE ppsdblocal.p001 SET 
+            p001nokp = \'931213462020\'
+            p001nama = \'NURUL AINA\', 
+            p001sesimsk = \'JAN-2025\', 
+            p001tkhlahir = \'1993-03-01\', 
+            p001kwarganegara = \'1\', 
+            p001kwarga = \'M01\', 
+            p001alamat1 = NULL, 
+            p001alamat2 = NULL, 
+            p001bandar = NULL, 
+            p001knegeri = NULL, 
+            p001poskod = NULL, 
+            p001alamatt1 = NULL, 
+            p001alamatt2 = NULL, 
+            p001bandart = NULL, 
+            p001knegerit = NULL, 
+            p001poskodt = NULL, 
+            p001notel = NULL, 
+            p001nohp = NULL, 
+            p001kcacat = \'12\', 
+            p001upgambar = NULL, 
+            p001laluanmohon = \'SP\', 
+            p001nooku = NULL, 
+            p001faxno = NULL, 
+            p001offno = NULL, 
+            p001faxnot = NULL, 
+            p001offnot = NULL, 
+            p001alamatneg = NULL, 
+            p001alamatnegt = NULL, 
+            p001notelt = NULL, 
+            p001nohpt = NULL, 
+            p001uplaluan = NULL 
+         WHERE p001email =\'aina@gmail.com\'')
+ 5 APPPATH\Controllers\ApplyController.php(370): CodeIgniter\Database\BaseConnection->query('UPDATE ppsdblocal.p001 SET 
+            p001nokp = ?
+            p001nama = ?, 
+            p001sesimsk = ?, 
+            p001tkhlahir = ?, 
+            p001kwarganegara = ?, 
+            p001kwarga = ?, 
+            p001alamat1 = ?, 
+            p001alamat2 = ?, 
+            p001bandar = ?, 
+            p001knegeri = ?, 
+            p001poskod = ?, 
+            p001alamatt1 = ?, 
+            p001alamatt2 = ?, 
+            p001bandart = ?, 
+            p001knegerit = ?, 
+            p001poskodt = ?, 
+            p001notel = ?, 
+            p001nohp = ?, 
+            p001kcacat = ?, 
+            p001upgambar = ?, 
+            p001laluanmohon = ?, 
+            p001nooku = ?, 
+            p001faxno = ?, 
+            p001offno = ?, 
+            p001faxnot = ?, 
+            p001offnot = ?, 
+            p001alamatneg = ?, 
+            p001alamatnegt = ?, 
+            p001notelt = ?, 
+            p001nohpt = ?, 
+            p001uplaluan = ? 
+         WHERE p001email =?', [...])
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\ApplyController->InsStep1()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApplyController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-19 07:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 07:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-19 23:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
