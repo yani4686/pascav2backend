@@ -33,6 +33,8 @@ class AcceptController extends ResourceController
     //     return $this->response->setJSON($result);
     // }
 
+    //
+
 
     public function UpdAccept()
     {

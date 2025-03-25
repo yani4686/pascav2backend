@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () {//
 
   $("#reloadBtn").click(function () {
     window.location.reload(true);

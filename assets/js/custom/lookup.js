@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /*kod negara */
+    /*kod negara *///
   $.ajax({
     url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
     method: 'GET',

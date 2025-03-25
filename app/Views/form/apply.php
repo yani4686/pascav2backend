@@ -732,6 +732,7 @@
 											<div class="col-lg-4" id="divtypefinance2">
 											<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
 													</select>
+													<!--  -->
 
 													<input type="text" class="form-control" id="income" name="income"/>
 													<span class="form-text text-muted">Please State Amount in Ringgit Malaysia (RM)</span>

@@ -1,4 +1,5 @@
 //hide and display based on mode belajar (research or coursework)
+//
 $("#hidespc, #hiderse, #hidesv, #hidework").hide();
 
 $('#modest').on('change', function () {
