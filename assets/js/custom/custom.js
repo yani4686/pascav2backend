@@ -1,19 +1,20 @@
 //hide and display based on mode belajar (research or coursework)
-$('#modest').on('change', function () {
-    var val_modest = $(this).val(); // Get selected value
+$("#hidespc, #hiderse, #hidesv, #hidework").hide();
 
-    if (val_modest === '8') { // Ensure correct comparison
-        $("#hidespc").show();
-        $("#hiderse").show();
-        $("#hidesv").show();
+$('#modest').on('change', function () {
+    var val_modest = $(this).val() || ""; // Handle null/undefined
+
+    if (val_modest === '8') {
+        $("#hidespc, #hiderse, #hidesv").show();
         $("#hidework").hide();
+    } else if (val_modest === '') { // If no selection
+        $("#hidespc, #hiderse, #hidesv, #hidework").hide();
     } else {
-        $("#hidespc").hide();
-        $("#hiderse").hide();
-        $("#hidesv").hide();
+        $("#hidespc, #hiderse, #hidesv").hide();
         $("#hidework").show();
     }
 });
+
 
 $(document).ready(function () {
 /*selectdropdown */
@@ -571,7 +572,7 @@ $.ajax({
     }
 });
 //+++++++++display on label lookup oku++++++++++++++++
-var descoku = val_oku;
+var descoku = val_oku || "default_value";
 $.ajax({
     url: "http://localhost/pascav2/public/getkodkecacatan", 
     type: "GET",
@@ -602,6 +603,7 @@ $.ajax({
 //+++++++++display on label lookup negeri++++++++++++++++
 var descnegeri = negeri;
 var descnegerittp = negerittp;
+var selectedText1;
 $.ajax({
     url: "http://localhost/pascav2/public/getkodnegeri", 
     type: "GET",
@@ -631,6 +633,7 @@ $.ajax({
 //+++++++++display on label lookup negara++++++++++++++++
 var descnegera = negara;
 var descnegarattp = negaratetap
+var selectedText2;
 $.ajax({
     url: "http://localhost/pascav2/public/getkodnegara", 
     type: "GET",

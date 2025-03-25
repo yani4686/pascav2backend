@@ -226,7 +226,7 @@ class LoginController extends ResourceController
 
             $subject = "Registration Emel Verification";
             $message = "Click the link below to verify your email:\n";
-            $message .= "http://localhost/pascav2/public/verifylogin/$verifycode";
+            $message .= "http://localhost/pascav2/public/verifyloginp051/$verifycode";
             $headers = "From: yani4686@gmail.com";
 
             //test send dr local shj blm test kt server
@@ -359,7 +359,7 @@ class LoginController extends ResourceController
 
             $subject = "Registration Emel Verification";
             $message = "Click the link below to verify your email:\n";
-            $message .= "http://localhost/pascav2/public/verifyloginp051/$verifycode";
+            $message .= "http://localhost/pascav2/public/verify/$verifycode";
             $headers = "From: yani4686@gmail.com";
 
             //test send dr local shj blm test kt server
