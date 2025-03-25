@@ -95,11 +95,22 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z038kodmohes,z038kelayakan  FROM ppsdblocal.z038 where z038kodmohes<>'-1' and z038kodmohes<>'-2'     ");
+        $Query = $db->query("SELECT z038kodmohes,z038kelayakan  FROM ppsdblocal.z038 where z038kodmohes<>'-1' and z038kodmohes<>'-2'");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
     }
+
+    public function getkodincome()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT DISTINCT z039kodmohes,z039pendapatan  FROM ppsdblocal.z039 WHERE z039id<> '14' AND z039id<> '15' AND z039id<> '16' ");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
+
 
     public function getkodsek()
     {

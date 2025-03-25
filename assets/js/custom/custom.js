@@ -15,7 +15,6 @@ $('#modest').on('change', function () {
     }
 });
 
-
 $(document).ready(function () {
 /*selectdropdown */
     $('#laluan').on('change', function () {
@@ -437,7 +436,6 @@ $.ajax({
    dataType: 'json', // Expect JSON response
     success: function (result) {
         var nokppass  =  result.p001nokp;//result.p00usrid;
-        // var statwarga =  result.ktrgwarga;
         var email     =  result.p001email;//result.p00emel;
         var nama      =  result.p001nama;
         var dob       =  result.p001tkhlahir;
@@ -572,7 +570,8 @@ $.ajax({
     }
 });
 //+++++++++display on label lookup oku++++++++++++++++
-var descoku = val_oku || "default_value";
+ var descoku = val_oku || "default_value";
+ 
 $.ajax({
     url: "http://localhost/pascav2/public/getkodkecacatan", 
     type: "GET",

@@ -210,7 +210,7 @@ $('.saveNextBtn3').on('click', function() {
 });
 
 $('.saveBtn4').on('click', function() { 
-    saveForm('save-next', this, 'http://localhost/pascav2/public/insstep5'); 
+    saveForm('save-next-last', this, 'http://localhost/pascav2/public/insstep5'); 
 });
 
 // $('.saveNextBtn4').on('click', function() { 
@@ -299,7 +299,9 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
                     if (actionType === 'save-next') {
                         moveToNextStep(curStep);
                     } 
-                    
+                    else if(actionType === 'save-next-last'){
+                        window.location = "http://localhost/pascav2/public/summary";
+                    }                  
                     else {
                         window.location = "http://localhost/pascav2/public/apply";
                     }

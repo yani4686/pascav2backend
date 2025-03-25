@@ -242,7 +242,7 @@
 										<div class="card card-custom">
 											<div class="card-body p-0">
 												<div class="d-flex align-items-center" style="height: 150px;"">
-													<a href="./apply"  class="apply-link">
+													<a href="./apply"  class="apply-link" id="reloadBtn">
 														<img src="./assets/images/click_here.png" class="apply-button-img"/>
 													</a>		
 												</div>

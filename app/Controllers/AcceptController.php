@@ -13,21 +13,41 @@ class AcceptController extends ResourceController
     protected $modelName = 'App\Models\ApplyModel';
     protected $format    = 'json';
 
+    public function getkodbangsa()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != '' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
+
+    // public function getkodlayakmasuk()
+    // {
+    //     $db = Config::connect();
+
+    //     $Query = $db->query("SELECT z038kodmohes,z038kelayakan  FROM ppsdblocal.z038 where z038kodmohes<>'-1' and z038kodmohes<>'-2'");
+    //     $result = $Query->getResult();
+
+    //     return $this->response->setJSON($result);
+    // }
+
+
     public function UpdAccept()
     {
         $session = session();
 
         $user = $session->get('username');
+        $idsess = $session->get('id');
 
         $db = Config::connect();
 
         // Fetch user details
-    $query = $db->table('ppsdblocal.p00daftar')
+    $query = $db->table('ppsdblocal.p001')
     ->select('p001nokp')
-    ->join('ppsdblocal.p001', 'ppsdblocal.p00daftar.p00usrid = ppsdblocal.p001.p001nokp')
     ->where([
-        'p00username' => $user,
-        'p000statsahreg' => 1
+        'p001email' => $idsess
     ])
     ->get();
 
@@ -68,16 +88,15 @@ class AcceptController extends ResourceController
         $session = session();
 
         $user = $session->get('username');
+        $idsess = $session->get('id');
 
         $db = Config::connect();
 
         // Fetch user details
-    $query = $db->table('ppsdblocal.p00daftar')
+    $query = $db->table('ppsdblocal.p001')
     ->select('p001nokp')
-    ->join('ppsdblocal.p001', 'ppsdblocal.p00daftar.p00usrid = ppsdblocal.p001.p001nokp')
     ->where([
-        'p00username' => $user,
-        'p000statsahreg' => 1
+        'p001email' => $idsess
     ])
     ->get();
 

@@ -70,29 +70,33 @@ $.ajax({
   method: 'GET',
   dataType: 'json', // Expect JSON response
   success: function (response) {
+    let $select1 = $('#kdnegeri');
+        $select1.empty(); // Clear existing options
+    let $select2 = $('#kdnegerihome');
+        $select2.empty(); // Clear existing options
       // Check if the response contains data
       if (response && response.length > 0) {
           // Iterate through the data
           response.forEach(function (item) {
               // Append each item as an option
-              $('#kdnegeri').append(
+              $select1.append(
                   $('<option>', {
-                      value: item.a090knegeri, // Use 'id' from response
-                      text: item.a090negeri, // Use 'name' from response
+                      value: item.a090knegeri, 
+                      text: item.a090negeri, 
                   })
               );
                  // negeri home
-                 $('#kdnegerihome').append(
+                 $select2.append(
                   $('<option>', {
-                      value: item.a090knegeri, // Use 'id' from response
-                      text: item.a090negeri, // Use 'name' from response
+                      value: item.a090knegeri, 
+                      text: item.a090negeri, 
                   })
               );
           });
 
           // Refresh the selectpicker to update UI
-          $('#kdnegeri').selectpicker('refresh');
-          $('#kdnegerihome').selectpicker('refresh');
+          $select1.selectpicker('refresh');
+          $select2.selectpicker('refresh');
 
       } else {
         //  alert('No data found');
@@ -109,21 +113,24 @@ $.ajax({
     method: 'GET',
     dataType: 'json', // Expect JSON response
     success: function (response) {
+        let $select = $('#stsoku');
+        $select.empty(); // Clear existing options
         // Check if the response contains data
-        if (response && response.length > 0) {
-            // Iterate through the data
+        if (response && response.length > 0) {            
             response.forEach(function (item) {
                 // Append each item as an option
-                $('#stsoku').append(
+                $select.append(
                     $('<option>', {
                         value: item.z013akod, // Use 'id' from response
                         text: item.z013abi, // Use 'name' from response
                     })
                 );
             });
-  
-            // Refresh the selectpicker to update UI
-            $('#stsoku').selectpicker('refresh');
+            
+            $select.selectpicker('refresh'); 
+            // setTimeout(() => { 
+            //     $select.selectpicker('refresh'); 
+            // }, 1000);
   
         } else {
          //   alert('No data found');
@@ -163,47 +170,112 @@ $.ajax({
           console.error('Error fetching data:', error);
       },
     });
+
+//   /* kod layak masuk */
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkodlayak',
+    method: 'GET',
+    dataType: 'json',
+    success: function (response) {
+        if (response && response.length > 0) {
+            response.forEach(function (item) {
+                var layakCode = String(item.z038kodmohes).trim();//samakan type data
+                var layakktrg = item.z038kelayakan;
+                $('#lykmsk').append(
+                    $('<option>', {
+                        value: layakCode,
+                        text: layakktrg, 
+                    })
+                );
+            });
   
+          //  $('#kdtaja').selectpicker('val', response[0].a010kpenaja);
+            $('#lykmsk').selectpicker('refresh');
+  
+        } else {
+           // alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
+  
+//   /* kod income */
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkodincome',
+    method: 'GET',
+    dataType: 'json',
+    success: function (response) {
+        if (response && response.length > 0) {
+            response.forEach(function (item) {
+                var incomeCode = String(item.z039kodmohes).trim();//samakan type data
+                var incomektrg = item.z039pendapatan;
+                $('#incomekd').append(
+                    $('<option>', {
+                        value: incomeCode,
+                        text: incomektrg, 
+                    })
+                );
+            });
+  
+          //  $('#kdtaja').selectpicker('val', response[0].a010kpenaja);
+            $('#incomekd').selectpicker('refresh');
+  
+        } else {
+           // alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
     
 //   // kod dun
-  $.ajax({
-      url: 'http://localhost/pascav2/public/getkoddun', // Replace with your server endpoint
-      method: 'GET',
-      dataType: 'json', // Expect JSON response
-      success: function (response) {
-         // console.log(response);
-          // Check if the response contains data
-          if (response && response.length > 0) {
-              // Iterate through the data
-              response.forEach(function (item) {
-                  var dunCode = item.z041dun;        // Retrieve the value of 'z041dun'
-                  var dunktrg = item.z041dun;
-                 // var parlimen = item.z041parlimen;
-  
-                 // console.log(dunktrg);
-                  // Append each item as an option
-                  $('#dun').append(
-                      $('<option>', {
-                          value: dunCode, // Use 'id' from response
-                          text: dunktrg, // Use 'name' from response
-                      })
-                  );
-  
-                 // $('#parlimen').val(parlimen);
-              });
-    
-              // Refresh the selectpicker to update UI
-              $('#dun').selectpicker('refresh');
-    
-          } else {
-              //alert('No data found');
-              console.log("fail ret ajax dun");
-          }
-      },
-      error: function (xhr, status, error) {
-          console.error('Error fetching data:', error);
-      },
-    });
+var parlimenMap = {}; // Store DUN-to-Parlimen mapping
+
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkoddun',
+    method: 'GET',
+    dataType: 'json',
+    success: function (response) {
+        if (response && response.length > 0) {
+            var select = $('#dun').empty().append('<option value="">Select DUN</option>'); // Clear existing options
+            
+            response.forEach(function (item) {
+                var dunCode = item.z041dun;   // DUN code
+                var parlimen = item.z041parlimen; // Parliament name
+
+                // Store DUN-to-Parlimen mapping
+                parlimenMap[dunCode] = parlimen;
+
+                // Append options to the dropdown
+                select.append(
+                    $('<option>', {
+                        value: dunCode,
+                        text: dunCode // Display DUN code in dropdown
+                    })
+                );
+            });
+
+            // Refresh selectpicker
+            $('#dun').selectpicker('refresh');
+        } else {
+            console.log("Failed to retrieve DUN data");
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    }
+});
+
+// 🔹 Handle DUN selection change
+$('#dun').on('change', function () {
+    var selectedDun = $(this).val();
+    var selectedParlimen = parlimenMap[selectedDun] || 'N/A'; // Get parlimen or default 'N/A'
+
+    $('#labeladdparlimen').text(selectedParlimen); // Display in span
+});
 //     // kod sek
   $.ajax({
       url: 'http://localhost/pascav2/public/getkodsek', // Replace with your server endpoint
@@ -242,6 +314,38 @@ $.ajax({
           console.error('Error fetching data:', error);
       },
     });
+//kod bangsa
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkodbangsa', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                var raceCode = item.z018kodbgsa;     
+                var racektrg = item.z018bgsa;
+                // Append each item as an option
+                $('#race').append(
+                    $('<option>', {
+                        value: raceCode, // Use 'id' from response
+                        text: racektrg, // Use 'name' from response
+                    })
+                );
+            });
+  
+            // Refresh the selectpicker to update UI
+            $('#race').selectpicker('refresh');
+  
+        } else {
+            alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
 // /*kodprogram*/ 
 // $.ajax({
 //     type: "GET",

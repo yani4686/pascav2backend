@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+  $("#reloadBtn").click(function () {
+    window.location.reload(true);
+});
   /* Display pd dashboard */
 
 $.ajax({

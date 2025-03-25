@@ -405,9 +405,9 @@
 														<label class="col-lg-2 col-form-label">Highest Tertiary Education <span class="text-danger">*</span></label>
 														<div class="col-lg-4">
 															<select class ="form-control selectpicker" title="Please Choose" id="highedu" name="highedu">
-																<option value="1">Bachelor/Equivalent</option>
-																<option value="2">Master Degree/Equivalent</option>
-																<option value="3">Diploma</option>
+																<option value="1">BACHELOR'S DEGREE/Equivalent</option>
+																<option value="2">MASTER'S DEGREE/Equivalent</option>
+																<option value="3">DIPLOMA</option>
 															</select>
 														</div>
                                                 </div>
@@ -729,9 +729,12 @@
 													<!-- <input type="text" class="form-control" id="kdtaja1" name="kdtaja1"/> -->
 											</div>																						
 										<label id="house" class="col-lg-2 col-form-label">HouseHold Income<span class="text-danger">*</span></label> 
-											<div class="col-lg-3" id="divtypefinance2">
+											<div class="col-lg-4" id="divtypefinance2">
+											<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
+													</select>
+
 													<input type="text" class="form-control" id="income" name="income"/>
-													<span class="form-text text-muted">Amount in Ringgit Malaysia (RM)</span>
+													<span class="form-text text-muted">Please State Amount in Ringgit Malaysia (RM)</span>
 											</div>																				
 										<label id="upload"class="col-lg-4 col-form-label">Upload Document<span class="text-danger">*</span>
 											<div class="col-lg-6 custom-file" id ="divtypefinance3">
@@ -799,7 +802,7 @@
 												<div class="row">
 													<div class="col">
 														<!-- <a href="pascav2/public/summary"><button class="btn btn-primary saveNextBtn4 pull-right m-1" type="button" data-inline="true" data-action="save-next">Summary & Print</button></a> -->
-														<button class="btn btn-primary saveBtn4 pull-right m-1" id="btnLastSubmit" type="button" data-inline="true" data-action="save-next">Submit Application</button>
+														<button class="btn btn-primary saveBtn4 pull-right m-1" id="btnLastSubmit" type="button" data-inline="true" data-action="save-next-last">Submit Application</button>
 													</div>
 												</div>
 									<!--  -->

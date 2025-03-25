@@ -38,6 +38,7 @@ $routes->get('/getkodpenaja', 'ApplyController::getkodpenaja');
 $routes->get('/getkoddun', 'ApplyController::getkoddun');
 $routes->get('/getkodlayak', 'ApplyController::getkodlayak');
 $routes->get('/getkodsek', 'ApplyController::getkodsek');
+$routes->get('/getkodincome', 'ApplyController::getkodincome');
 $routes->get('/displayprofile', 'ApplyController::DisplayProfile');
 $routes->get('/displayprofilep001', 'ApplyController::DisplayProfilep001');
 $routes->post('/insstep1', 'ApplyController::InsStep1');
@@ -50,6 +51,8 @@ $routes->post('/generatepdf', 'ApplyController::generatePdf');
 
 $routes->post('/updaccept', 'AcceptController::UpdAccept');
 $routes->post('/viewsurat', 'AcceptController::ViewSurat');
+$routes->get('/getkodbangsa', 'AcceptController::getkodbangsa');
+//$routes->get('/getkodlayakmasuk', 'AcceptController::getkodlayakmasuk');
 
 $routes->get('/retpermohonan', 'SaringController::retpermohonan');
 $routes->get('/countpermohonan', 'SaringController::countpermohonan');

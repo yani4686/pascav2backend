@@ -90,53 +90,116 @@
 
 									 
 
-									 <div class="form-group  row my-2">
+									<div class="form-group  row my-2">
 
 									 <label class="col-lg-3 col-form-label">Race: </label>
 												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" name = "labelrace" id="labelrace"></span>
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="race" name="race">
+												</select>
 												</div>
 									 	
-										<label class="col-lg-3 col-form-label">Nationality: </label>
-												<div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" name = "labelnat" id="labelnat"></span>
-												</div>
-										
+										<label class="col-lg-3 col-form-label">Nationality: </label>										
+                                                    <div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganeg" name ="warganeg">
+                                                        </select>
+                                                    </div>
+									</div>
+									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Corresponding Address : </label>
-												<div class="col-lg-4">
+												<!-- <div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" name ="labeladdcurr" id="labeladdcurr"></span>
-												</div>
-											
+												</div> -->
+												<div class="col-lg-8">
+                                                        <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()"/>
+                                                </div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Post/Zip code <span class="text-danger">*</span></label>
+											<div class="col-lg-3">
+												<input type="text" class="form-control" name="postcorradd" id="postcorradd" />
+											</div>
+										<label class="col-lg-3 col-form-label">City<span class="text-danger">*</span></label>
+										<div class="col-lg-4">
+											<input type="text" class="form-control" name="bndrcorradd" id="bndrcorradd" oninput="this.value = this.value.toUpperCase()"/>
+										</div>
+									</div>
+									<div class="form-group row">		
 										<label class="col-lg-3 col-form-label">State : </label>
-												<div class="col-lg-4">
+												<!-- <div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" name = "labeladdstate" id="labeladdstate"></span>
-												</div>
+												</div> -->
+												<div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdnegeri" name="kdnegeri">
+                                                        </select>
+                                                    </div>
 
 										<label class="col-lg-3 col-form-label">Country : </label>
-												<div class="col-lg-4">
+												<!-- <div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" name ="labeladdcountry" id="labeladdcountry"></span>
-												</div>	
+												</div>	 -->
+												<div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose"data-live-search="true" id="kdnegara" name="kdnegara" >
+                                                        </select>
+                                                </div>
 									</div>	
 									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Dun <span class="text-danger">*</span></label>
-												<div class="col-lg-4">
+										<label class="col-lg-3 col-form-label">Dun <span class="text-danger">*</span></label>										
+												<div class="col-lg-4">												
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="dun" name="dun">
-												</select>
+												</select><span class="form-text text-muted">**For local applicant only</span>
 												</div>
+												
 										<label class="col-lg-3 col-form-label">Parliment <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
-													<!-- <input type="text" class="form-control" name="parliment" id="parlimen" readonly/> -->
-													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="parlimen" name="parlimen">
-												</select>
-												</div>									
+												<span class="form-control-plaintext font-weight-bolder" name ="labeladdparlimen" id="labeladdparlimen"></span>
+													<!-- <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="parlimen" name="parlimen">
+												</select> -->
+												</div>
+									</div>
+									<div class="form-group row">									
 										<label class="col-lg-3 col-form-label">Type of Secondary School <span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="sek" name="sek">
 												</select>
+												<span class="form-text text-muted">**For local applicant only</span>
 												</div>
-										<label class="col-lg-3 col-form-label">BI(SPM)<span class="text-danger">*</span></label>
+										<label class="col-lg-3 col-form-label">Admission Qualification <span class="text-danger">*</span></label>
+												<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="lykmsk" name="lykmsk">
+												</select>
+												</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">BI (SPM)<span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 													<input type="text" class="form-control" name="bispm" id="bispm"/>
+													</select><span class="form-text text-muted">**For local applicant only</span>
+												</div>
+										<label class="col-lg-3 col-form-label">BM (SPM)<span class="text-danger">*</span></label>
+												<div class="col-lg-4">
+													<input type="text" class="form-control" name="bispm" id="bispm"/>
+													</select><span class="form-text text-muted">**For local applicant only</span>
+												</div>
+									</div>
+									<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Income<span class="text-danger">*</span></label>
+												<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
+													</select>
+												</div>
+												<div class="col-lg-4">
+												<input type="text" class="form-control" id="income" name="income"/>
+												</div>
+									</div>
+									<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Status OKU<span class="text-danger">*</span></label>
+											<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="stsoku" name ="stsoku">
+												</select>
+											</div>
+									<label class="col-lg-3 col-form-label" id="nooku">No OKU<span class="text-danger">*</span></label>
+												<div class="col-lg-4" id="divoku">
+													<input type="text" class="form-control" name="no_oku" id="no_oku" />
 												</div>
 									</div>
 
@@ -238,6 +301,7 @@
         <!-- begin custom js -->
         <script src="pascav2/assets/js/custom/custom.js"></script>
         <script src="pascav2/assets/js/custom/customfunc.js"></script>
+		<script src="pascav2/assets/js/custom/lookup.js"></script>
         <!-- end custom js -->
 	</body>
 	<!--end::Body-->
