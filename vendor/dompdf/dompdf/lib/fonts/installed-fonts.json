@@ -1,9 +1,0 @@
-{
-    "poppins": {
-        "300": "C:\\laragon\\www\\pascav2\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_300_096c67f2c401b5adcfb85ef3657d93a5",
-        "normal": "C:\\laragon\\www\\pascav2\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_normal_6862830f0e4f47c0d95b160502b4acb1",
-        "500": "C:\\laragon\\www\\pascav2\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_500_b1ea1dd81b9833fc00e3d54d294b72d4",
-        "600": "C:\\laragon\\www\\pascav2\\vendor\\dompdf\\dompdf\/lib\/fonts\/poppins_600_deda90b30d59260cec8c11c0fbe8cbd6",
-        "bold": "poppins_bold_28ba70a191b1bcf188aff96471a4e35e"
-    }
-}

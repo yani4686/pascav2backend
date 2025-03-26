@@ -1,112 +1,199 @@
 $(document).ready(function () {
-    /*kod negara *///
-  $.ajax({
-    url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
-    method: 'GET',
-    dataType: 'json', // Expect JSON response
-    success: function (response) {
-        // Check if the response contains data
-        if (response && response.length > 0) {
-            // Iterate through the data
-            response.forEach(function (item) {
-                // Append each item as an option
-                $('#kdnegara').append(
-                    $('<option>', {
-                        value: item.c028kod, // Use 'id' from response
-                        text: item.c028keterangan, // Use 'name' from response
-                    })
-                );
-                //negara warganegara
-                $('#warganeg').append(
-                  $('<option>', {
-                      value: item.c028kod, // Use 'id' from response
-                      text: item.c028keterangan, // Use 'name' from response
-                  })
-              );
-              //negara warganegara home
-              $('#kdnegarahome').append(
-                $('<option>', {
-                    value: item.c028kod, // Use 'id' from response
-                    text: item.c028keterangan, // Use 'name' from response
-                })
-            );
-            //negara award uni
-            $('#highunicountry').append(
-                $('<option>', {
-                    value: item.c028kod, // Use 'id' from response
-                    text: item.c028keterangan, // Use 'name' from response
-                })
-            );
+    // Fetch and populate 'kod negeri'
+    $.ajax({
+        url: 'http://localhost/pascav2/public/getkodnegeri', // Replace with your server endpoint
+        method: 'GET',
+        dataType: 'json', // Expect JSON response
+        success: function (response) {
+            let $select1 = $('#kdnegeri');
+            let $select2 = $('#kdnegerihome');
 
-            //award masterphd country
-             $('#masterphdcountry').append(
-                $('<option>', {
-                    value: item.c028kod, // Use 'id' from response
-                    text: item.c028keterangan, // Use 'name' from response
-                })
-            );
+            $select1.empty(); // Clear existing options
+            $select2.empty();
 
-            });
+            if (response && response.length > 0) {
+                response.forEach(function (item) {
+                    let option = $('<option>', {
+                        value: item.a090knegeri,
+                        text: item.a090negeri
+                    });
 
-            // Refresh the selectpicker to update UI
-            $('#kdnegara').selectpicker('refresh');
-            $('#warganeg').selectpicker('refresh');
-            $('#kdnegarahome').selectpicker('refresh');
-            $('#highunicountry').selectpicker('refresh');
-            $('#masterphdcountry').selectpicker('refresh');
+                    $select1.append(option);
+                    $select2.append(option.clone()); // Clone option for kdnegerihome
+                });
 
-        } else {
-           // alert('No data found');
-            console.log("fail ret ajax negara");
+                // Refresh the selectpicker to update UI
+                $select1.selectpicker('refresh');
+                $select2.selectpicker('refresh');
+            } else {
+                console.log("fail ret ajax negeri");
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Error fetching data:', error);
         }
-    },
-    error: function (xhr, status, error) {
-        console.error('Error fetching data:', error);
-    },
-});
+    });
+
+    // Fetch and populate 'kod negara'
+    function loadCountries(selectedCountry = "M01") { // Default to Malaysia
+        console.log("Loading countries..."); // Debugging
+        $.ajax({
+            url: 'http://localhost/pascav2/public/getkodnegara',
+            method: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                console.log("Country Response:", response); // Debugging
+                if (response && response.length > 0) {
+                    let countryOptions = '';
+                    response.forEach(function (item) {
+                        if (selectedCountry === "M01" && item.c028keterangan === "MALAYSIA") {
+                            countryOptions += `<option value="${item.c028kod}" selected>${item.c028keterangan}</option>`;
+                        } 
+                        // Add all countries for foreign selections
+                        else if (selectedCountry !== "M01") {
+                            countryOptions += `<option value="${item.c028kod}">${item.c028keterangan}</option>`;
+                        }
+                    });
+
+                    $('#kdnegara, #warganeg, #kdnegarahome, #highunicountry, #masterphdcountry')
+                        .empty()
+                        .append(countryOptions)
+                        .selectpicker('refresh');
+
+                        console.log("Countries loaded successfully"); // Debugging
+                } else {
+                    console.log("fail ret ajax negara");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('Error fetching data:', error);
+            }
+        });
+    }
+
+    loadCountries(); // Initial call to load all countries
+
+    // Event listener: Check if selected negeri is '71', then remove Malaysia from countries
+    $('#kdnegeri, #kdnegerihome').change(function () {
+        let selectedState = $(this).val();
+        console.log("Selected Negeri:", selectedState); 
+
+        if (selectedState === '71') {
+            console.log("Foreign Negeri Selected: Showing all countries");
+            loadCountries(""); // Load all countries except Malaysia
+        } else {
+            console.log("Local Negeri Selected: Defaulting to Malaysia");
+            loadCountries("M01"); // Only show Malaysia
+        }
+    });
+    /*kod negara *///
+//   $.ajax({
+//     url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint
+//     method: 'GET',
+//     dataType: 'json', // Expect JSON response
+//     success: function (response) {
+//         // Check if the response contains data
+//         if (response && response.length > 0) {
+//             // Iterate through the data
+//             response.forEach(function (item) {
+//                 // Append each item as an option
+//                 $('#kdnegara').append(
+//                     $('<option>', {
+//                         value: item.c028kod, // Use 'id' from response
+//                         text: item.c028keterangan, // Use 'name' from response
+//                     })
+//                 );
+//                 //negara warganegara
+//                 $('#warganeg').append(
+//                   $('<option>', {
+//                       value: item.c028kod, // Use 'id' from response
+//                       text: item.c028keterangan, // Use 'name' from response
+//                   })
+//               );
+//               //negara warganegara home
+//               $('#kdnegarahome').append(
+//                 $('<option>', {
+//                     value: item.c028kod, // Use 'id' from response
+//                     text: item.c028keterangan, // Use 'name' from response
+//                 })
+//             );
+//             //negara award uni
+//             $('#highunicountry').append(
+//                 $('<option>', {
+//                     value: item.c028kod, // Use 'id' from response
+//                     text: item.c028keterangan, // Use 'name' from response
+//                 })
+//             );
+
+//             //award masterphd country
+//              $('#masterphdcountry').append(
+//                 $('<option>', {
+//                     value: item.c028kod, // Use 'id' from response
+//                     text: item.c028keterangan, // Use 'name' from response
+//                 })
+//             );
+
+//             });
+
+//             // Refresh the selectpicker to update UI
+//             $('#kdnegara').selectpicker('refresh');
+//             $('#warganeg').selectpicker('refresh');
+//             $('#kdnegarahome').selectpicker('refresh');
+//             $('#highunicountry').selectpicker('refresh');
+//             $('#masterphdcountry').selectpicker('refresh');
+
+//         } else {
+//            // alert('No data found');
+//             console.log("fail ret ajax negara");
+//         }
+//     },
+//     error: function (xhr, status, error) {
+//         console.error('Error fetching data:', error);
+//     },
+// });
 // /*kod negeri */
-$.ajax({
-  url: 'http://localhost/pascav2/public/getkodnegeri', // Replace with your server endpoint
-  method: 'GET',
-  dataType: 'json', // Expect JSON response
-  success: function (response) {
-    let $select1 = $('#kdnegeri');
-        $select1.empty(); // Clear existing options
-    let $select2 = $('#kdnegerihome');
-        $select2.empty(); // Clear existing options
-      // Check if the response contains data
-      if (response && response.length > 0) {
-          // Iterate through the data
-          response.forEach(function (item) {
-              // Append each item as an option
-              $select1.append(
-                  $('<option>', {
-                      value: item.a090knegeri, 
-                      text: item.a090negeri, 
-                  })
-              );
-                 // negeri home
-                 $select2.append(
-                  $('<option>', {
-                      value: item.a090knegeri, 
-                      text: item.a090negeri, 
-                  })
-              );
-          });
+// $.ajax({
+//   url: 'http://localhost/pascav2/public/getkodnegeri', // Replace with your server endpoint
+//   method: 'GET',
+//   dataType: 'json', // Expect JSON response
+//   success: function (response) {
+//     let $select1 = $('#kdnegeri');
+//         $select1.empty(); // Clear existing options
+//     let $select2 = $('#kdnegerihome');
+//         $select2.empty(); // Clear existing options
+//       // Check if the response contains data
+//       if (response && response.length > 0) {
+//           // Iterate through the data
+//           response.forEach(function (item) {
+//               // Append each item as an option
+//               $select1.append(
+//                   $('<option>', {
+//                       value: item.a090knegeri, 
+//                       text: item.a090negeri, 
+//                   })
+//               );
+//                  // negeri home
+//                  $select2.append(
+//                   $('<option>', {
+//                       value: item.a090knegeri, 
+//                       text: item.a090negeri, 
+//                   })
+//               );
+//           });
 
-          // Refresh the selectpicker to update UI
-          $select1.selectpicker('refresh');
-          $select2.selectpicker('refresh');
+//           // Refresh the selectpicker to update UI
+//           $select1.selectpicker('refresh');
+//           $select2.selectpicker('refresh');
 
-      } else {
-        //  alert('No data found');
-          console.log("fail ret ajax negeri");
-      }
-  },
-  error: function (xhr, status, error) {
-      console.error('Error fetching data:', error);
-  },
-});
+//       } else {
+//         //  alert('No data found');
+//           console.log("fail ret ajax negeri");
+//       }
+//   },
+//   error: function (xhr, status, error) {
+//       console.error('Error fetching data:', error);
+//   },
+// });
 // /*kod kecacatan */
 $.ajax({
     url: 'http://localhost/pascav2/public/getkodkecacatan', // Replace with your server endpoint

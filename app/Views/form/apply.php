@@ -420,7 +420,7 @@
                                                 		<label class="col-lg-3 col-form-label">Class/CGPA <span class="text-danger">*</span></label>
                                                     	<div class="col-lg-3">
                                                             <input type="text" class="form-control" name="highcgpa" id="highcgpa"/>
-                                                        </div><img style="margin:5px" id="info-mdl-6" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Please click here for details information">
+                                                        </div><img style="margin:5px" id="info-mdl-6" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Cumulative Grade Point Average Equivalence (CGPA) guidelines">
                                                 </div>
                                                 <div class="form-group row">
 														<label class="col-lg-2 col-form-label">Awarding Country <span class="text-danger">*</span></label>
@@ -438,7 +438,7 @@
 														<label class="col-lg-3 col-form-label">Class/CGPA <span class="text-danger">*</span></label>
 														<div class="col-lg-3">
                                                             <input type="text" class="form-control" id= "cgpamasterphd" name="cgpamasterphd" />
-                                                        </div><img style="margin:5px" id="info-mdl-6_1" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Please click here for details information">
+                                                        </div><img style="margin:5px" id="info-mdl-6_1" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Cumulative Grade Point Average Equivalence (CGPA) guidelines">
                                                 </div>
 
                                                 <div class="form-group row">

@@ -1,0 +1,811 @@
+INFO - 2025-03-26 00:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 00:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-26 01:16:01 --> Error: Undefined constant Kint\Renderer\AbstractRenderer::SORT_FULL
+[Method: GET, Route: /]
+in SYSTEMPATH\Autoloader\Autoloader.php on line 532.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(499): CodeIgniter\Autoloader\Autoloader->configureKint()
+ 2 SYSTEMPATH\Boot.php(302): CodeIgniter\Autoloader\Autoloader->initializeKint(true)
+ 3 SYSTEMPATH\Boot.php(56): CodeIgniter\Boot::initializeKint()
+ 4 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:16:19 --> Error: Undefined constant Kint\Renderer\AbstractRenderer::SORT_FULL
+[Method: GET, Route: /]
+in SYSTEMPATH\Autoloader\Autoloader.php on line 532.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(499): CodeIgniter\Autoloader\Autoloader->configureKint()
+ 2 SYSTEMPATH\Boot.php(302): CodeIgniter\Autoloader\Autoloader->initializeKint(true)
+ 3 SYSTEMPATH\Boot.php(56): CodeIgniter\Boot::initializeKint()
+ 4 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:34:21 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:34:21 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:34:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:34:21 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:39:26 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:39:26 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:39:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:39:26 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:39:31 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:39:31 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:39:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:39:31 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:41:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:42:21 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:42:21 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:42:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:42:21 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:42:38 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:42:38 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:42:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:42:38 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 01:43:14 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 01:43:14 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:43:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 01:43:14 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 01:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 01:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 02:56:01 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 02:56:01 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 02:56:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 02:56:01 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 02:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 02:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 02:59:24 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 02:59:24 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 02:59:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 02:59:24 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 03:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 03:08:50 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 03:08:50 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:08:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:08:50 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 03:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-26 03:09:01 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 03:09:01 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:09:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:09:01 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-26 03:09:06 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^ in C:\laragon\www\pascav2\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 204)
+#1 C:\laragon\www\pascav2\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 C:\laragon\www\pascav2\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 C:\laragon\www\pascav2\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 C:\laragon\www\pascav2\app\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 C:\laragon\www\pascav2\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+#6 C:\laragon\www\pascav2\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+#7 C:\laragon\www\pascav2\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pascav2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\pascav2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-03-26 03:09:06 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+[Method: GET, Route: getkodbangsa]
+in ROOTPATH\system\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 3 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 4 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:09:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 209.
+ 1 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 2 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 5 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 6 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 03:09:06 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^
+in ROOTPATH\system\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;ppsdblocal.z018&quot; does not exist
+LINE 1: SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 w...
+                                                   ^', 'C:\\laragon\\www\\pascav2\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 ROOTPATH\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 3 ROOTPATH\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 4 ROOTPATH\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 5 APPPATH\Controllers\AcceptController.php(20): CodeIgniter\Database\BaseConnection->query('SELECT distinct z018kodbgsa,z018bgsa  FROM ppsdblocal.z018 where z018kodbgsa != \'\' and LENGTH(z018kodbgsa)=4 order by z018bgsa asc')
+ 6 ROOTPATH\system\CodeIgniter.php(933): App\Controllers\AcceptController->getkodbangsa()
+ 7 ROOTPATH\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcceptController))
+ 8 ROOTPATH\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-03-26 03:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-26 03:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

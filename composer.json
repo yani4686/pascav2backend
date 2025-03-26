@@ -12,7 +12,6 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "codeigniter4/framework": "^4.0",
-        "dompdf/dompdf": "^3.0",
         "psr/log": "3.0",
         "tecnickcom/tcpdf": "^6.8"
     },

@@ -56,7 +56,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT a090knegeri,a090negeri FROM ppsdblocal.a090 WHERE a090knegeri NOT LIKE '%-%' and a090knegeri not in ('99','61','62','66','67','68','71','74','75','88','91') order by a090knegeri");
+        $Query = $db->query("SELECT a090knegeri,a090negeri FROM ppsdblocal.a090 WHERE a090knegeri NOT LIKE '%-%' and a090knegeri not in ('99','61','62','66','67','68','74','75','88','91') order by a090knegeri");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
