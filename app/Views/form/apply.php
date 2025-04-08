@@ -726,14 +726,14 @@
 											<div class="col-lg-4" id="divtypefinance1">
 													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdtaja" name="kdtaja">
 													</select>
+													<input type="text" class="form-control" id="dlltaja" name="dlltaja" data-toggle="tooltip" title="Please State Sponsorship"/>
+													<!-- <span class="form-text text-muted">Please State Sponsorship</span> -->
 													<!-- <input type="text" class="form-control" id="kdtaja1" name="kdtaja1"/> -->
 											</div>																						
 										<label id="house" class="col-lg-2 col-form-label">HouseHold Income<span class="text-danger">*</span></label> 
 											<div class="col-lg-4" id="divtypefinance2">
-											<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
 													</select>
-													<!--  -->
-
 													<input type="text" class="form-control" id="income" name="income"/>
 													<span class="form-text text-muted">Please State Amount in Ringgit Malaysia (RM)</span>
 											</div>																				

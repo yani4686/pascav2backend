@@ -219,10 +219,10 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         $user = $session->get('username');
         $idsess = $session->get('id');
 
+        $db = Config::connect();
+
         //hardcode dulu sesi pasca nnt retrieve dari table a042
         $sesi = 'JAN-2025';
-
-        $db = Config::connect();
 
         /* ret file name upload */
         $fileQuery = $db->query("SELECT p001nokp,p001upgambar,p001uplaluan from ppsdblocal.p001 where p001email='$idsess'");

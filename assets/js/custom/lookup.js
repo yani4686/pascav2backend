@@ -248,6 +248,19 @@ $.ajax({
     
             //  $('#kdtaja').selectpicker('val', response[0].a010kpenaja);
               $('#kdtaja').selectpicker('refresh');
+
+              // Show/hide dlltaja based on selected value
+            $('#kdtaja').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+                var selectedValue = $(this).val();
+                if (selectedValue === "26") {
+                    $('#dlltaja').show();
+                } else {
+                    $('#dlltaja').hide();
+                }
+            });
+
+            // Initially hide the dlltaja input
+            $('#dlltaja').hide();
     
           } else {
              // alert('No data found');
