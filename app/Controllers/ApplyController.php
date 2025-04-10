@@ -233,6 +233,9 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         $existingpasspic = $result->p001upgambar;
         $existinguplaluan = $result->p001uplaluan;
 
+        $input = $this->request->getPost();
+        $kppass      = !empty($input['kppass']) ? $input['kppass'] : null;//$input["kppass"] ?? '';
+
         //##########
          // check file name and path
         // $file = $this->request->getFile('file1');
@@ -295,16 +298,16 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
          }
 
          // File upload logic
-         $newNamePic = $this->handleFileUpload($this->request->getFile('file1'), $uploadDir, $p001nokp, 'pic');
-         $newNameFilelaluan = $this->handleFileUpload($this->request->getFile('filelalu'), $uploadDir, $p001nokp, 'laluan');      
+         $newNamePic = $this->handleFileUpload($this->request->getFile('file1'), $uploadDir, $kppass, 'pic');
+         $newNameFilelaluan = $this->handleFileUpload($this->request->getFile('filelalu'), $uploadDir, $kppass, 'laluan');      
          
          $newNamePic = $newNamePic ?? $existingpasspic;
          $newNameFilelaluan = $newNameFilelaluan ?? $existinguplaluan;
 
-    $input = $this->request->getPost();
+  
 
     $laluan      = !empty($input['laluan']) ? $input['laluan'] : null;//$input['laluan'] ?? '';
-    $kppass      = !empty($input['kppass']) ? $input['kppass'] : null;//$input["kppass"] ?? '';
+    
     $fullname    = !empty($input['fullname']) ? $input['fullname'] : null;//$input['fullname'] ?? '';
     $dob         = !empty($input['dob']) ? $input['dob'] : '0000-00-00';//$input['dob'] ?? '';
     $statwarga     = !empty($input['wargast']) ? $input['wargast'] : null;//$input['warganeg'] ?? '';

@@ -535,9 +535,9 @@ class LoginController extends ResourceController
     {
         $input = $this->request->getPost();
 
-		$emel       = $input['email'];
+		$emel  = $input['email'];
 
-        $db = Config::connect();
+        $db    = Config::connect();
 
         $sql = "SELECT p00emel,p00password FROM ppsdblocal.p00daftar WHERE p00emel = ?";
         // Execute the query and get the result
@@ -552,7 +552,7 @@ class LoginController extends ResourceController
 
             $subject = "Forgot Password Request";
             $message = "Your Password is $pwd";
-            $message .= " Click Here <a href=http://localhost/pascav2/public/></a> To Login";
+            $message .= " Click Here <a href=http://localhost/pascav2/public/></a> To Reset and Login";
             $headers = "From: yani4686@gmail.com";
 
             //test send dr local shj blm test kt server
@@ -575,35 +575,65 @@ class LoginController extends ResourceController
 
 		$emel       = $input['email'];
 
-        $db = Config::connect();
+        if (empty($emel)) {
+          //  return $this->response->setJSON(['success' => 'email_empty']);
+            $data['success'] = 'email_empty';
+        }
 
-        $sql = "SELECT p051emel,p051password FROM ppsdblocal.p051 WHERE p051emel = ? and p051statsahreg = 1";
-        // Execute the query and get the result
+        $db = Config::connect();
+        $sql = "SELECT p051emel, p051password, p051verifycode, p051statsahreg FROM ppsdblocal.p051 WHERE p051emel = ?";
         $query = $db->query($sql, [$emel]);
+        $existingUser = $query->getRow();
         
         // Fetch the result
         $existingUser = $query->getRow(); 
-        $emel = $existingUser->p051emel;
-        $pwd = $existingUser->p051password;
+        $emel         = $existingUser->p051emel;
+        $pwd          = $existingUser->p051password;
+        $verifycode   = $existingUser->p051verifycode;
+        $statreg      = $existingUser->p051statsahreg;
 
-        if($existingUser){
+        if (!$existingUser) {
+            $data['success'] = 'email_empty';
+        }
 
-            $subject = "Forgot Password Request";
+        $subject = "Account Notification";
+        $headers = "From: yani4686@gmail.com\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+
+        if ($existingUser->p051statsahreg === '1') {
+
+        // Generate secure token
+         $tokennew = bin2hex(random_bytes(32));
+         $expires = date('Y-m-d H:i:s', strtotime('+1 hour'));
+
+         // Save token and expiry
+         $sql = "UPDATE ppsdblocal.p051 
+         SET p051resettoken = ?, p051resettime = ? 
+         WHERE p051emel = ?";
+ 
+        $db->query($sql, [$tokennew, $expires, $emel]);
+            //page reset pwd dh create tp belum create function lg
+            // $resetLink = base_url("resetpassword/$token");
+            // $message = "You have requested a password reminder. <br>";
+            // $message .= "Click the link below to proceed:<br>";
+            // $message .= "<a href='http://localhost/pascav2/public/resetpassword/$token '>Click here to reset your password</a>";
+            // $message .= "This link will expire in 1 hour.";
             $message = "Your Password is $pwd";
-            $message .= " Click Here <a href=http://localhost/pascav2/public/></a> To Login";
-            $headers = "From: yani4686@gmail.com";
-
-            //test send dr local shj blm test kt server
-            if (mail($emel, $subject, $message, $headers)) {
-                $data['success'] = 'successemail';
-            } else {
-                $data['success'] = 'failedemail';
-            }             
-        }
-        else{
-            $data['success'] = 'email_empty';         
+            $message .= "<a href='http://localhost/pascav2/public '>Click Here To Login</a>";
+        } elseif($existingUser->p051statsahreg === '0' && $existingUser->p051password){
+            $message = "Your account is not activated yet. <br>";
+            $message .= "Please activate your account using the link below:<br>";
+            $message .= "<a href='http://localhost/pascav2/public/verifyloginp051/{$existingUser->p051verifycode} '>Activate Account</a>";
+        }else{
+           $message = "empty.";
         }
 
+        if (mail($emel, $subject, $message, $headers)) {
+            $data['success'] = 'successemail';
+        } else {
+            $data['success'] = 'failedemail';
+        }
         return $this->response->setJSON($data);
     }
 }

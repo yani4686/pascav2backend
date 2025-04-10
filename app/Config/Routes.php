@@ -11,6 +11,7 @@ $routes->get('/apply', 'Home::applySc');
 $routes->get('/accept', 'Home::acceptanceSc');
 $routes->get('/dashboard', 'Home::dashboardSc');
 $routes->get('/summary', 'Home::summmarySc');
+$routes->get('/changepwd', 'Home::changepwdSc');
 $routes->get('/test', 'Home::test');
 
 $routes->get('/getdata', 'DashboardController::getAllSessionData');
@@ -26,9 +27,11 @@ $routes->post('/regnewlogin', 'LoginController::regnewlogin');
 $routes->post('/regnewloginp051', 'LoginController::regnewloginp051');
 $routes->match(['GET','POST'],'/verifylogin/(:any)', 'LoginController::verifylogin/$1');
 $routes->match(['GET','POST'],'/verifyloginp051/(:any)', 'LoginController::verifyloginp051/$1');
+$routes->match(['GET','POST'],'/resetpassword/(:any)', 'LoginController::resetpassword/$1');
 $routes->get('/verify', 'LoginController::verify');
 $routes->post('/forgotpwd', 'LoginController::forgotpwd');
 $routes->post('/forgotpwdp051', 'LoginController::forgotpwdp051');
+$routes->match(['GET','POST'],'/resetpassword/(:any)', 'LoginController::resetpassword/$1');
 
 $routes->get('/getkodprogram', 'ApplyController::getkodprogram');
 $routes->get('/getkodnegara', 'ApplyController::getkodnegara');
@@ -52,6 +55,7 @@ $routes->post('/generatepdf', 'ApplyController::generatePdf');
 $routes->post('/updaccept', 'AcceptController::UpdAccept');
 $routes->post('/viewsurat', 'AcceptController::ViewSurat');
 $routes->get('/getkodbangsa', 'AcceptController::getkodbangsa');
+$routes->get('/getinfomohon', 'AcceptController::GetInfoPemohon');
 //$routes->get('/getkodlayakmasuk', 'AcceptController::getkodlayakmasuk');
 
 $routes->get('/retpermohonan', 'SaringController::retpermohonan');

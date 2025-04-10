@@ -35,14 +35,14 @@ $(document).ready(function () {
     });
 
     // Fetch and populate 'kod negara'
-    function loadCountries(selectedCountry = "M01") { // Default to Malaysia
-        console.log("Loading countries..."); // Debugging
+    function loadCountries(selectedCountry = "M01", targetSelectors = ['#kdnegara', '#kdnegarahome']) { // Default to Malaysia
+       // console.log("Loading countries..."); // Debugging
         $.ajax({
             url: 'http://localhost/pascav2/public/getkodnegara',
             method: 'GET',
             dataType: 'json',
             success: function (response) {
-                console.log("Country Response:", response); // Debugging
+               // console.log("Country Response:", response); // Debugging
                 if (response && response.length > 0) {
                     let countryOptions = '';
                     response.forEach(function (item) {
@@ -55,12 +55,12 @@ $(document).ready(function () {
                         }
                     });
 
-                    $('#kdnegara, #warganeg, #kdnegarahome, #highunicountry, #masterphdcountry')
-                        .empty()
-                        .append(countryOptions)
-                        .selectpicker('refresh');
+                    $(targetSelectors.join(', '))
+                    .empty()
+                    .append(countryOptions)
+                    .selectpicker('refresh');
 
-                        console.log("Countries loaded successfully"); // Debugging
+                     //   console.log("Countries loaded successfully"); // Debugging
                 } else {
                     console.log("fail ret ajax negara");
                 }
@@ -71,21 +71,32 @@ $(document).ready(function () {
         });
     }
 
-    loadCountries(); // Initial call to load all countries
+    loadCountries();
+    loadCountries("X99", ['#warganeg','#highunicountry', '#masterphdcountry']);
 
     // Event listener: Check if selected negeri is '71', then remove Malaysia from countries
-    $('#kdnegeri, #kdnegerihome').change(function () {
+    $('#kdnegeri').change(function () {
         let selectedState = $(this).val();
-        console.log("Selected Negeri:", selectedState); 
-
+        
         if (selectedState === '71') {
-            console.log("Foreign Negeri Selected: Showing all countries");
-            loadCountries(""); // Load all countries except Malaysia
+            // Foreign state → show all countries
+            loadCountries("", ['#kdnegara']);
         } else {
-            console.log("Local Negeri Selected: Defaulting to Malaysia");
-            loadCountries("M01"); // Only show Malaysia
+            // Local state → only Malaysia
+            loadCountries("M01", ['#kdnegara']);
         }
     });
+    
+    $('#kdnegerihome').change(function () {
+        let selectedState = $(this).val();
+        
+        if (selectedState === '71') {
+            loadCountries("", ['#kdnegarahome']);
+        } else {
+            loadCountries("M01", ['#kdnegarahome']);
+        }
+    });
+
     /*kod negara *///
 //   $.ajax({
 //     url: 'http://localhost/pascav2/public/getkodnegara', // Replace with your server endpoint

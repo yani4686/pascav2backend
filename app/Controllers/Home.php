@@ -54,6 +54,10 @@ class Home extends BaseController
 
       return view('indexMain');
     }
+    public function changepwdSc(): string
+    {
+        return view('form/changepwd');
+    }
     public function test(): string
     {
         return view('form/test');

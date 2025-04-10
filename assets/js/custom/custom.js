@@ -201,7 +201,7 @@ $(document).ready(function () {
 		
 		Swal.fire({
 		  title: 'Name Guidelines',
-		  html: '<b>Local</b> : Please enter name according to IC. [<a href="../assets/doc/GUIDELINE_PASSPORT.pdf.crdownload" autofocus>Click Here</a>]<br><b>International</b> : Please enter name according to Machine Readable Zone (MRZ) name in the international passport.[<a href="../assets/doc/GUIDELINE_PASSPORT.pdf.crdownload" autofocus>Click Here</a>]',
+		  html: '<b>Local</b> : Please enter name according to IC. [<a href="pascav2/public/assets/doc/GUIDELINE_PASSPORT.pdf.crdownload" autofocus>Click Here</a>]<br><b>International</b> : Please enter name according to Machine Readable Zone (MRZ) name in the international passport.[<a href="pascav2/public/assets/doc/GUIDELINE_PASSPORT.pdf.crdownload" autofocus>Click Here</a>]',
 		//   imageUrl: '../assets/doc/GUIDELINE_PASSPORT.pdf',
 		  width: 500,
 		  customClass: 'swal-margin',
@@ -456,7 +456,6 @@ $.ajax({
         var faxno     =  result.p001faxno ;
         var offno     =  result.p001offno ;
         var faxnot    =  result.p001faxnot ;
-        var offnot    =  result.p001offnot ;
         var image     =  result.p001upgambar ;
         var namauni   =  result.p001unilama ;
         var highcgpa  =  result.p001cgpa ;
@@ -471,10 +470,6 @@ $.ajax({
         var upbi        =  result.p001upmuet;
         var namaejen    =  result.p001ejenname ;
         var emelejen    =  result.p001ejenemail ;
-        var almtsemasa  =  result.almtsemasa ;
-        var almttetap   =  result.almttetap;
-        var negeri      =  result.p001knegeri ;
-        var negerittp   = result.p001knegerit
         var resultbi    =  result.p001muet ;
         var noregbi     = result.p001noreg;
         var tkhexmbi    = result.p001tkhexm;
@@ -484,12 +479,6 @@ $.ajax({
         var statdesc    = result.statdesc;
         var amounthouse = result.p001amthouse;
         var program     = result.p001kprog;
-        var mode        = result.desckaedah;
-        var method      = result.descmode;
-        var kwarga      = result.desckwarga;
-        var negara      = result.p001alamatneg;
-        var negaratetap = result.p001alamatnegt;
-        var nosurat     = result.p001nosrttawar;
         var ststerima   = result.p001ststerimatwr;
         var val_oku     = result.p001kcacat;
         var val_laluan  = result.p001laluanmohon;
@@ -513,31 +502,13 @@ $.ajax({
                 });
             });
         });
+
         //++++++++++++++++lookup kod program+++++++++++++++++++++++++++
- var retprogram = program;
  $.ajax({
     type: "GET",
     url: "http://localhost/pascav2/public/getkodprogram",
     success: function(data) {
         var json_data = data;
-        var foundProgram = null;
-        
-        $.each(json_data, function(key, cat) {
-            if (cat.p020kprog === retprogram) {
-                foundProgram = cat;
-            }
-        });
-
-        if (foundProgram) {
-            var displayText = foundProgram.p020kprog + " - " + foundProgram.p020namaprogbi + " - " + foundProgram.z054bnecdetail;
-            $('#labelkdprogrm').text(displayText);
-            $('#labelkdprogram').text(displayText);
-            $('#labelfakulti').text(foundProgram.a019bi);
-            $('#labelfaculty').text(foundProgram.a019bi);
-        } else {
-            $('#labelkdprogrm').text("Program not found: " + retprogram);
-        }
-
         var select = $("#kdprg").empty(); // Empty the select before adding new options
     
         $.each(json_data, function(key, cat) {
@@ -570,123 +541,7 @@ $.ajax({
         console.error("Error fetching data: " + error);
     }
 });
-//+++++++++display on label lookup oku++++++++++++++++
- var descoku = val_oku || "default_value";
- 
-$.ajax({
-    url: "http://localhost/pascav2/public/getkodkecacatan", 
-    type: "GET",
-    dataType: "json",
-    success: function (data) {
-        if (!descoku) {
-            console.error("descoku is not initialized properly.");
-            return;
-        }
-
-        let selectedText = ""; // Define before using
-
-        // Loop through the options to find the matching text
-        $.each(data, function (index, item) {
-            if (item.z013akod == descoku) { // Use correct property names
-                selectedText = item.z013abi; // Get the description
-            }
-        });
-
-        // Display the description in #labeldisable
-        $("#labeldisable").text(selectedText);
-    },
-    error: function (xhr, status, error) {
-        console.error("AJAX Error:", error);
-    }
-});
-
-//+++++++++display on label lookup negeri++++++++++++++++
-var descnegeri = negeri;
-var descnegerittp = negerittp;
-var selectedText1;
-$.ajax({
-    url: "http://localhost/pascav2/public/getkodnegeri", 
-    type: "GET",
-    dataType: "json",
-    success: function (data) {
-
-        let selectedText = ""; // Define before using
-
-        // Loop through the options to find the matching text
-        $.each(data, function (index, item) {
-            if (item.a090knegeri == descnegeri) { // Use correct property names
-                selectedText = item.a090negeri; // Get the description
-            }
-            if (item.a090knegeri == descnegerittp) { // Use correct property names
-                selectedText1 = item.a090negeri; // Get the description
-            }
-        });
-
-        // Display the description in #labeldisable
-        $("#labeladdstate").text(selectedText);
-        $("#labeladdstatettp").text(selectedText1);
-    },
-    error: function (xhr, status, error) {
-        console.error("AJAX Error:", error);
-    }
-});
-//+++++++++display on label lookup negara++++++++++++++++
-var descnegera = negara;
-var descnegarattp = negaratetap
-var selectedText2;
-$.ajax({
-    url: "http://localhost/pascav2/public/getkodnegara", 
-    type: "GET",
-    dataType: "json",
-    success: function (data) {
-
-        let selectedText = ""; // Define before using
-
-        // Loop through the options to find the matching text
-        $.each(data, function (index, item) {
-            if (item.c028kod == descnegera) { // Use correct property names
-                selectedText = item.c028keterangan; // Get the description
-            }
-            if (item.c028kod == descnegarattp) { // Use correct property names
-                selectedText2 = item.c028keterangan; // Get the description
-            }
-        });
-        // Display the description in #labeldisable
-        $("#labeladdcountry").text(selectedText);
-        $("#labeladdcountryttp").text(selectedText2);
-        $("#labelawardunihigh").text(selectedText2);
-    },
-    error: function (xhr, status, error) {
-        console.error("AJAX Error:", error);
-    }
-});
-//+++++++++display on label lookup tajaan++++++++++++++++
-var desctaja = result.p001kpenaja;
-$.ajax({
-    url: "http://localhost/pascav2/public/getkodpenaja", 
-    type: "GET",
-    dataType: "json",
-    success: function (data) {
-
-        let selectedText = ""; // Define before using
-
-        // Loop through the options to find the matching text
-        $.each(data, function (index, item) {
-            if (String(item.a010kpenaja).trim() === String(desctaja).trim()) { // Ensure proper matching
-                selectedText = item.a010penaja; // Get the description
-            }
-        });
-
-        console.log("Matched Text:", selectedText); // Debug: Check if match is found
-
-        // Display the description in #labeltaja
-        $('#labeltaja').text(selectedText);
-    },
-    error: function (xhr, status, error) {
-        console.error("AJAX Error:", error);
-    }
-});
-
+       
 //++++++++++hide n display icon exist upload++++++++++++++++++++++++++++
         if (passport === '' || passport === null){
             $('#iconpass').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
@@ -798,13 +653,9 @@ $.ajax({
         }
     //+++++++++++display on label/input++++++++++++++++    
         $('#kppass').val(nokppass);
-        $('#labelic').text(nokppass);
         $('#email').val(email);
-        $('#labelemel').text(email);
         $('#fullname').val(nama);
-        $('#labelnama').text(nama);
         $('#dob').val(dob);
-        $('#labeldob').text(dob);
         $('#no_oku').val(nooku);
         $('#corradd').val(almt1);
         $('#corradd1').val(almt2);
@@ -820,7 +671,6 @@ $.ajax({
         $('#hpnohome').val(nohpt);
         $('#faxno').val(faxno);
         $('#offno').val(offno);
-        // $('#offnohome').val(faxnot);
         $('#faxnohome').val(faxnot);
         $('#highuni').val(namauni);
         $('#highcgpa').val(highcgpa);
@@ -845,30 +695,9 @@ $.ajax({
             'href': urldisplayworkexp,
             'target': '_blank' // Ensures the link opens in a new tab
         });
-
-    //++++++++++++display skrin acceptance/summary+++++++++++++
-        $('#labelmodest').text(mode);
-        $('#methodst').text(method);
-        $('#labelnat').text(kwarga);
-        $('#labelnosurat').text(nosurat);
-        $('#labeladdhp').text(nohp);
-        $('#labelnatstat').text(kwarga);
-        $('#labelmodestdy').text(mode);
-        $('#labeltypestudy').text(method);
-        $('#labeltypestudyhigh').text(akadtgg);
-        $('#labelawarduni').text(namauni);
-        $('#labelcgpab').text(highcgpa);
-        $("#labeladdcurr").text(almtsemasa);
-        $("#labeladdtetap").text(almttetap);
-        $("#labelbi").text(bikat);
-        $("#labelresultbi").text(resultbi);
-        $("#labelregbi").text(noregbi);
-        $("#labeldatexmbi").text(tkhexmbi);
-        $("#labelagentname").text();
-        $("#labelagentemail").text();
-        $("#labelincome").text(amounthouse);
-
     //+++++++++++++isplay value pd select dropdown+++++++++++++++++++++++++
+    setTimeout(function () {
+
     $("#wargast").val(result.p001kwarganegara);    
     $("#warganeg").val(result.p001kwarga);
     $("#stsoku").val(result.p001kcacat);
@@ -884,10 +713,7 @@ $.ajax({
     $("#masterphdcountry").val(result.p001knegaracgpa2);
     $("#exp").val(result.p001bilexp);
     $("#bitype").val(result.p001katbi);
-    
   
-  setTimeout(function () {
-    //var profileValue = String(result.p001kpenaja).trim();
     var profileValue = result.p001kpenaja ? String(result.p001kpenaja).trim() : "";
     var exists = $("#kdtaja option[value='" + profileValue + "']").length > 0;
 
@@ -897,7 +723,7 @@ $.ajax({
         $("#kdtaja").val("").trigger('change'); // Set to empty instead
     }
     $('#kdtaja').selectpicker('refresh');
-     }, 100);
+    
 
    $('#wargast').selectpicker('refresh');
    $('#warganeg').selectpicker('refresh');
@@ -916,7 +742,7 @@ $.ajax({
    $('#exp').selectpicker('refresh');
    $('#kdtaja').selectpicker('refresh');
    $('#bitype').selectpicker('refresh');
-
+}, 100);
 //++++++++++preview doc attch+++++++++++++++++++
 // Define modal-related elements
 var modal = document.getElementById('myModal1');
@@ -987,8 +813,7 @@ if(val_laluan === 'AP' || val_laluan === 'NG'){
     $("#docap").hide();
    }
 //++++++++++hidendisplaymode research+++++++++++++
-var val_modest = $('#modest').val(); // Get default value
-
+var val_modest = result.p001kaedah; 
 if (val_modest === '8') {
     $("#hidespc").show();
     $("#hiderse").show();
@@ -1035,6 +860,212 @@ if (val_modest === '8') {
     }//respon
 
   });//ajax displayprofile
+
+  /* Display pd acceptance & summary form */  
+  $.ajax({
+     url: 'http://localhost/pascav2/public/getinfomohon',
+     method: 'GET',
+    dataType: 'json', // Expect JSON response
+     success: function (result) {
+        var nokppass  =  result.p001nokp;//result.p00usrid;
+        var email     =  result.p001email;//result.p00emel;
+        var nama      =  result.p001nama;
+        var dob       =  result.p001tkhlahir;
+        var nohp      =  result.p001nohp ;
+        var namauni   =  result.p001unilama ;
+        var highcgpa  =  result.p001cgpa ;
+        var akadtgg     =  result.p001uptrans ;
+        var almtsemasa  =  result.almtsemasa ;
+        var almttetap   =  result.almttetap;
+        var negeri      =  result.p001knegeri ;
+        var negerittp   = result.p001knegerit
+        var resultbi    =  result.p001muet ;
+        var noregbi     = result.p001noreg;
+        var tkhexmbi    = result.p001tkhexm;
+        var amounthouse = result.p001amthouse;
+        var mode        = result.desckaedah;
+        var method      = result.descmode;
+        var kwarga      = result.desckwarga;
+        var negara      = result.p001alamatneg;
+        var negaratetap = result.p001alamatnegt;
+        var nosurat     = result.p001nosrttawar;
+        var val_oku     = result.p001kcacat;
+        var akadtgg     = result.descakadttg;
+        var bikat       = result.descbi;
+        var kdprogram     = result.p001kprog;
+
+        $('#labeldob').text(dob);
+        $('#labelnama').text(nama);
+        $('#labelemel').text(email);
+        $('#labelic').text(nokppass);
+        $('#labelmodest').text(mode);
+        $('#methodst').text(method);
+        $('#labelnat').text(kwarga);
+        $('#labelnosurat').text(nosurat);
+        $('#labeladdhp').text(nohp);
+        $('#labelnatstat').text(kwarga);
+        $('#labelmodestdy').text(mode);
+        $('#labeltypestudy').text(method);
+        $('#labeltypestudyhigh').text(akadtgg);
+        $('#labelawarduni').text(namauni);
+        $('#labelcgpab').text(highcgpa);
+        $("#labeladdcurr").text(almtsemasa);
+        $("#labeladdtetap").text(almttetap);
+        $("#labelbi").text(bikat);
+        $("#labelresultbi").text(resultbi);
+        $("#labelregbi").text(noregbi);
+        $("#labeldatexmbi").text(tkhexmbi);
+        $("#labelagentname").text();
+        $("#labelagentemail").text();
+        $("#labelincome").text(amounthouse);
+
+
+         //++++++++++++++++lookup kod program+++++++++++++++++++++++++++
+ var retprogram = kdprogram;
+ $.ajax({
+    type: "GET",
+    url: "http://localhost/pascav2/public/getkodprogram",
+    success: function(data) {
+        var json_data = data;
+        var foundProgram = null;
+        
+        $.each(json_data, function(key, cat) {
+            if (cat.p020kprog === retprogram) {
+                foundProgram = cat;
+            }
+        });
+
+        if (foundProgram) {
+            var displayText = foundProgram.p020kprog + " - " + foundProgram.p020namaprogbi + " - " + foundProgram.z054bnecdetail;
+            $('#labelkdprogrm').text(displayText);
+            $('#labelkdprogram').text(displayText);
+            $('#labelfakulti').text(foundProgram.a019bi);
+            $('#labelfaculty').text(foundProgram.a019bi);
+        } else {
+            $('#labelkdprogrm').text("Program not found: " + retprogram);
+        }
+    },
+    error: function(xhr, status, error) {
+        console.error("Error fetching data: " + error);
+    }
+});
+
+        //+++++++++display on label lookup negara++++++++++++++++
+var descnegera = negara;
+var descnegarattp = negaratetap
+var selectedText2;
+$.ajax({
+    url: "http://localhost/pascav2/public/getkodnegara", 
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        let selectedText = ""; // Define before using
+
+        // Loop through the options to find the matching text
+        $.each(data, function (index, item) {
+            if (item.c028kod == descnegera) { // Use correct property names
+                selectedText = item.c028keterangan; // Get the description
+            }
+            if (item.c028kod == descnegarattp) { // Use correct property names
+                selectedText2 = item.c028keterangan; // Get the description
+            }
+        });
+        // Display the description in #labeldisable
+        $("#labeladdcountry").text(selectedText);
+        $("#labeladdcountryttp").text(selectedText2);
+        $("#labelawardunihigh").text(selectedText2);
+    },
+    error: function (xhr, status, error) {
+        console.error("AJAX Error:", error);
+    }
+});
+
+//+++++++++display on label lookup tajaan++++++++++++++++
+var desctaja = result.p001kpenaja;
+$.ajax({
+    url: "http://localhost/pascav2/public/getkodpenaja", 
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        let selectedText = ""; // Define before using
+
+        // Loop through the options to find the matching text
+        $.each(data, function (index, item) {
+            if (String(item.a010kpenaja).trim() === String(desctaja).trim()) { // Ensure proper matching
+                selectedText = item.a010penaja; // Get the description
+            }
+        });
+
+        // Display the description in #labeltaja
+        $('#labeltaja').text(selectedText);
+    },
+    error: function (xhr, status, error) {
+        console.error("AJAX Error:", error);
+    }
+});
+//+++++++++display on label lookup negeri++++++++++++++++
+var descnegeri = negeri;
+var descnegerittp = negerittp;
+var selectedText1;
+$.ajax({
+    url: "http://localhost/pascav2/public/getkodnegeri", 
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        let selectedText = ""; // Define before using
+
+        // Loop through the options to find the matching text
+        $.each(data, function (index, item) {
+            if (item.a090knegeri == descnegeri) { // Use correct property names
+                selectedText = item.a090negeri; // Get the description
+            }
+            if (item.a090knegeri == descnegerittp) { // Use correct property names
+                selectedText1 = item.a090negeri; // Get the description
+            }
+        });
+
+        // Display the description in #labeldisable
+        $("#labeladdstate").text(selectedText);
+        $("#labeladdstatettp").text(selectedText1);
+    },
+    error: function (xhr, status, error) {
+        console.error("AJAX Error:", error);
+    }
+});
+//+++++++++display on label lookup oku++++++++++++++++
+var descoku = val_oku || "default_value";
+ 
+$.ajax({
+    url: "http://localhost/pascav2/public/getkodkecacatan", 
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+        if (!descoku) {
+            console.error("descoku is not initialized properly.");
+            return;
+        }
+
+        let selectedText = ""; // Define before using
+
+        // Loop through the options to find the matching text
+        $.each(data, function (index, item) {
+            if (item.z013akod == descoku) { // Use correct property names
+                selectedText = item.z013abi; // Get the description
+            }
+        });
+
+        // Display the description in #labeldisable
+        $("#labeldisable").text(selectedText);
+    },
+    error: function (xhr, status, error) {
+        console.error("AJAX Error:", error);
+    }
+});
+     }//respon
+    });//ajax
 
   //print pdf using window print
 $(".printPageIcon").click(function () {

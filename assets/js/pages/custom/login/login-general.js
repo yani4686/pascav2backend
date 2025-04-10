@@ -440,7 +440,7 @@ var KTLogin = function() {
                     icon_flag = 'error';
                     break;
                 case 'successemail':
-                    msg_header = "Registration successful!";
+                    msg_header = "Record Emel Found!";
                     msg = "Check your email to verify your account..";
                     icon_flag = 'success';
                     break;
