@@ -42,6 +42,7 @@ $routes->get('/getkoddun', 'ApplyController::getkoddun');
 $routes->get('/getkodlayak', 'ApplyController::getkodlayak');
 $routes->get('/getkodsek', 'ApplyController::getkodsek');
 $routes->get('/getkodincome', 'ApplyController::getkodincome');
+$routes->get('/getfaculty', 'ApplyController::getfaculty');
 $routes->get('/displayprofile', 'ApplyController::DisplayProfile');
 $routes->get('/displayprofilep001', 'ApplyController::DisplayProfilep001');
 $routes->post('/insstep1', 'ApplyController::InsStep1');

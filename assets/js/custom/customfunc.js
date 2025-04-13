@@ -11,54 +11,49 @@ $(document).ready(function () {
 //include jump page from dashboard
 
     // Initially hide all steps
-    var navListItems = $('div.setup-panel div a'),
-        allWells = $('.setup-content'),
-        allNextBtn = $('.nextBtn');
+    // var navListItems = $('div.setup-panel div a'),
+    //     allWells = $('.setup-content'),
+    //     allNextBtn = $('.nextBtn');
 
-    allWells.hide(); // Default hide all steps
+    // allWells.hide(); // Default hide all steps
+    // // Handle clicking on step links in the wizard
+    // navListItems.click(function (e) {
+    //     e.preventDefault();
+    //     var $target = $($(this).attr('href')),
+    //         $item = $(this);
 
-    // Handle clicking on step links in the wizard
-    navListItems.click(function (e) {
-        e.preventDefault();
-        var $target = $($(this).attr('href')),
-            $item = $(this);
-
-        // Make sure the current item is not disabled
-        if (!$item.hasClass('disabled')) {
-            // Reset the button states
-            navListItems.removeClass('btn-success').addClass('btn-default');
-            $item.addClass('btn-success');
+    //     // Make sure the current item is not disabled
+    //     if (!$item.hasClass('disabled')) {
+    //         // Reset the button states
+    //         navListItems.removeClass('btn-success').addClass('btn-default');
+    //         $item.addClass('btn-success');
             
-            // Hide all steps and show the current step
-            allWells.hide();
-            $target.show();
-            $target.find('input:eq(0)').focus(); // Focus the first input of the step
-        }
-    });
+    //         // Hide all steps and show the current step
+    //         allWells.hide();
+    //         $target.show();
+    //         $target.find('input:eq(0)').focus(); // Focus the first input of the step
+    //     }
+    // });
+    // // Handle Next button click
+    // allNextBtn.click(function () {
+    //     var curStep = $(this).closest(".setup-content"),
+    //         curStepBtn = curStep.attr("id"),
+    //         nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+    //         curInputs = curStep.find(""),
+    //         isValid = true;
+    //     // Check for valid inputs
+    //     $(".form-group").removeClass("has-error");
+    //     for (var i = 0; i < curInputs.length; i++) {
+    //         if (!curInputs[i].validity.valid) {
+    //             isValid = false;
+    //             $(curInputs[i]).closest(".form-group").addClass("has-error");
+    //         }
+    //     }
+    //     // If valid, move to the next step
+    //     if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    // });
 
-    // Handle Next button click
-    allNextBtn.click(function () {
-        var curStep = $(this).closest(".setup-content"),
-            curStepBtn = curStep.attr("id"),
-            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-            curInputs = curStep.find(""),
-            isValid = true;
-
-        // Check for valid inputs
-        $(".form-group").removeClass("has-error");
-        for (var i = 0; i < curInputs.length; i++) {
-            if (!curInputs[i].validity.valid) {
-                isValid = false;
-                $(curInputs[i]).closest(".form-group").addClass("has-error");
-            }
-        }
-
-        // If valid, move to the next step
-        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
-    });
-
-//click to step from dashboard without using wizard
-//--page apply
+//click to step from dashboard without using wizard -jump to page apply
 $(".setup-content").hide();
 
     // Get the step parameter from the URL, default to "step-1" if not present
@@ -75,13 +70,11 @@ $(".setup-content").hide();
     } else {
         console.log("Error: Target step not found: " + targetStep);  // Debugging: Show error if not found
     }
-
     // Optionally, update the navigation buttons
     $('div.setup-panel div a').removeClass('btn-success').addClass('btn-default');  // Reset all buttons
     $('div.setup-panel div a[href="#' + targetStep + '"]').addClass('btn-success');  // Activate the current step button
 
-// Handle clicking on dashboard links (e.g., go-to-step-1, go-to-step-2)
-//page dashboard
+// Handle clicking on dashboard links (e.g., go-to-step-1, go-to-step-2)-page dashboard
 $(".dashboard-link").click(function (e) {
     e.preventDefault();  // Prevent the default link action
     
@@ -327,429 +320,6 @@ function moveToNextStep(curStep) {
         nextStepWizard.removeAttr('disabled').trigger('click');
     }
 }
-
-
-
-    //==========================
-
-   // method 2
-//    $(".save").click(function () {
-
-//     var curStep = $(this).closest(".setup-content");
-//     var curStepBtn = curStep.attr("id");
-
-//     var formData = new FormData();
-
-//     // Append all other input fields
-//     curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='date']").each(function () {
-//         formData.append(this.name, $(this).val());
-//     });
-
-//     // Append file inputs
-//     curStep.find("input[type='file']").each(function () {
-//         if (this.files.length > 0) {
-//             for (let i = 0; i < this.files.length; i++) {
-//                 formData.append(this.name, this.files[i]);
-//                // console.log(files[i].name);
-//             }
-//         }
-//     });
-
-//     // Send the form data
-//     $.ajax({
-//         url: "http://localhost/pascav2/public/insstep1",
-//         type: 'POST',
-//         data: formData,
-//         processData: false, // Prevent jQuery from converting the FormData into a string
-//         contentType: false, // Let the browser set the correct Content-Type
-//         beforeSend: function() {
-//             $(".se-pre-con").fadeIn("slow");
-//           },	
-//           dataType: 'json',				
-//           success: function(data){
-              
-//               $(".se-pre-con").fadeOut("slow");
-              
-//               switch (data.success) {
-//                 case 'ko':
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';
-//                 break;						
-//                 case 'ok':
-//                 var msg_header = "Success";
-//                 var msg = "Record have been successfully saved.";
-//                 var icon_flag = 'success';
-//                 break;
-//                 default:
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';	
-//             }
-              
-//               if(data=='ok'){
-              
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag 
-//                   ).then(function(){
-//                           window.location = "http://localhost/pascav2/public/apply";
-//                   });					
-//               }
-//               else{
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag     
-//                   ).then(function(){
-//                     window.location = "http://localhost/pascav2/public/apply";
-//                 });						
-//               }
-//           },
-//         error: function (error) {
-//             console.error('Error:', error);
-//         }
-//     });
-// });
-//step2
-// $(".save1").click(function () {
-
-//     var curStep = $(this).closest(".setup-content");
-//     var curStepBtn = curStep.attr("id");
-
-//     var formData = new FormData();
-
-//     // Append all other input fields
-//     curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='date']").each(function () {
-//         formData.append(this.name, $(this).val());
-//     });
-
-//     // Append file inputs
-//     curStep.find("input[type='file']").each(function () {
-//         if (this.files.length > 0) {
-//             for (let i = 0; i < this.files.length; i++) {
-//                 formData.append(this.name, this.files[i]);
-//                 //console.log(files[i].name);
-//             }
-//         }
-//     });
-
-//     // Send the form data
-//     $.ajax({
-//         url: "http://localhost/pascav2/public/insstep2",
-//         type: 'POST',
-//         data: formData,
-//         processData: false, // Prevent jQuery from converting the FormData into a string
-//         contentType: false, // Let the browser set the correct Content-Type
-//         beforeSend: function() {
-//             $(".se-pre-con").fadeIn("slow");
-//           },	
-//           dataType: 'json',				
-//           success: function(data){
-              
-//               $(".se-pre-con").fadeOut("slow");
-              
-//               switch (data.success) {
-//                 case 'ko':
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';
-//                 break;						
-//                 case 'ok':
-//                 var msg_header = "Success";
-//                 var msg = "Record have been successfully saved.";
-//                 var icon_flag = 'success';
-//                 break;
-//                 default:
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';	
-//             }
-              
-//               if(data=='ok'){
-              
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag 
-//                   ).then(function(){
-//                           window.location = "http://localhost/pascav2/public/apply";
-//                   });					
-//               }
-//               else{
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag     
-//                   ).then(function(){
-//                     window.location = "http://localhost/pascav2/public/apply";
-//                 });						
-//               }
-//           },
-//         error: function (error) {
-//             console.error('Error:', error);
-//         }
-//     });
-// });
-//step3
-// $(".save2").click(function () {
-
-//     var curStep = $(this).closest(".setup-content");
-//     var curStepBtn = curStep.attr("id");
-
-//    // alert(curStepBtn);
-
-//     var formData = new FormData();
-
-//     // Append all other input fields
-//     curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='date']").each(function () {
-//         formData.append(this.name, $(this).val());
-//     });
-
-//     // Append file inputs
-//     curStep.find("input[type='file']").each(function () {
-//         if (this.files.length > 0) {
-//             for (let i = 0; i < this.files.length; i++) {
-//                 formData.append(this.name, this.files[i]);
-//                 //console.log(files[i].name);
-//             }
-//         }
-//     });
-
-//     // Send the form data
-//     $.ajax({
-//         url: "http://localhost/pascav2/public/insstep3",
-//         type: 'POST',
-//         data: formData,
-//         processData: false, // Prevent jQuery from converting the FormData into a string
-//         contentType: false, // Let the browser set the correct Content-Type
-//         beforeSend: function() {
-//             $(".se-pre-con").fadeIn("slow");
-//           },	
-//           dataType: 'json',				
-//           success: function(data){
-              
-//               $(".se-pre-con").fadeOut("slow");
-              
-//               switch (data.success) {
-//                 case 'ko':
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';
-//                 break;						
-//                 case 'ok':
-//                 var msg_header = "Success";
-//                 var msg = "Record have been successfully saved.";
-//                 var icon_flag = 'success';
-//                 // case 'error':
-//                 // var msg_header = "error";
-//                 // var msg = "Please fill in required value.";
-//                 // var icon_flag = 'error';
-//                 break;
-//                 default:
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';	
-//             }
-              
-//               if(data=='ok'){
-              
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag 
-//                   ).then(function(){
-//                           window.location = "http://localhost/pascav2/public/apply";
-//                   });					
-//               }
-//               else{
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag     
-//                   ).then(function(){
-//                     window.location = "http://localhost/pascav2/public/apply";
-//                 });						
-//               }
-//           },
-//         error: function (error) {
-//             console.error('Error:', error);
-//         }
-//     });
-// });
-
-//step4
-// $(".save3").click(function () {
-
-//     var curStep = $(this).closest(".setup-content");
-//     var curStepBtn = curStep.attr("id");
-
-//    // alert(curStepBtn);
-
-//     var formData = new FormData();
-
-//     // Append all other input fields
-//     curStep.find("input[type='text'],input[type='url'],select,textarea,input[type='date']").each(function () {
-//         formData.append(this.name, $(this).val());
-//     });
-
-//     // Append file inputs
-//     curStep.find("input[type='file']").each(function () {
-//         if (this.files.length > 0) {
-//             for (let i = 0; i < this.files.length; i++) {
-//                 formData.append(this.name, this.files[i]);
-//                 //console.log(files[i].name);
-//             }
-//         }
-//     });
-
-//     // Send the form data
-//     $.ajax({
-//         url: "http://localhost/pascav2/public/insstep4",
-//         type: 'POST',
-//         data: formData,
-//         processData: false, // Prevent jQuery from converting the FormData into a string
-//         contentType: false, // Let the browser set the correct Content-Type
-//         beforeSend: function() {
-//             $(".se-pre-con").fadeIn("slow");
-//           },	
-//           dataType: 'json',				
-//           success: function(data){
-              
-//               $(".se-pre-con").fadeOut("slow");
-              
-//               switch (data.success) {
-//                 case 'ko':
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';
-//                 break;						
-//                 case 'ok':
-//                 var msg_header = "Success";
-//                 var msg = "Record have been successfully saved.";
-//                 var icon_flag = 'success';
-//                 // case 'error':
-//                 // var msg_header = "error";
-//                 // var msg = "Please fill in required value.";
-//                 // var icon_flag = 'error';
-//                 break;
-//                 default:
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';	
-//             }
-              
-//               if(data=='ok'){
-              
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag 
-//                   ).then(function(){
-//                           window.location = "http://localhost/pascav2/public/apply";
-//                   });					
-//               }
-//               else{
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag     
-//                   ).then(function(){
-//                     window.location = "http://localhost/pascav2/public/apply";
-//                 });						
-//               }
-//           },
-//         error: function (error) {
-//             console.error('Error:', error);
-//         }
-//     });
-// });
-
-//step5
-// $(".save4").click(function () {
-
-//     var curStep = $(this).closest(".setup-content");
-//     var curStepBtn = curStep.attr("id");
-
-//    // alert(curStepBtn);
-
-//     var formData = new FormData();
-
-//     var curInputs = curStep.find("input[type='text'],input[type='radio'],input[type='checkbox']").serialize();
-//     // alert(curInputs);
-//     // Append file inputs
-//     curStep.find("input[type='file']").each(function () {
-//         if (this.files.length > 0) {
-//             for (let i = 0; i < this.files.length; i++) {
-//                 formData.append(this.name, this.files[i]);
-//                 //console.log(files[i].name);
-//             }
-//         }
-//     });
-
-//     // Send the form data
-//     $.ajax({
-//         url: "http://localhost/pascav2/public/insstep5",
-//         type: 'POST',
-//         data: curInputs,
-//         contentType: 'application/x-www-form-urlencoded',
-//         processData: false, // Prevent jQuery from converting the FormData into a string
-//       //  contentType: false, // Let the browser set the correct Content-Type
-//         beforeSend: function() {
-//             $(".se-pre-con").fadeIn("slow");
-//           },	
-//           dataType: 'json',				
-//           success: function(data){
-              
-//               $(".se-pre-con").fadeOut("slow");
-              
-//               switch (data.success) {
-//                 case 'ko':
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';
-//                 break;						
-//                 case 'ok':
-//                 var msg_header = "Success";
-//                 var msg = "Record have been successfully saved.";
-//                 var icon_flag = 'success';
-//                 // case 'error':
-//                 // var msg_header = "error";
-//                 // var msg = "Please fill in required value.";
-//                 // var icon_flag = 'error';
-//                 break;
-//                 default:
-//                 var msg_header = "Error";
-//                 var msg = "Please try again.";
-//                 var icon_flag = 'error';	
-//             }
-              
-//               if(data=='ok'){
-              
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag 
-//                   ).then(function(){
-//                           window.location = "http://localhost/pascav2/public/apply";
-//                   });					
-//               }
-//               else{
-//                   Swal.fire(
-//                     msg_header,
-//                     msg,
-//                     icon_flag     
-//                   ).then(function(){
-//                     window.location = "http://localhost/pascav2/public/apply";
-//                 });						
-//               }
-//           },
-//         error: function (error) {
-//             console.error('Error:', error);
-//         }
-//     });
-// });
 
 //print pdf summary
 $(".printPdf").click(function () {

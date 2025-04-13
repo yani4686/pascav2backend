@@ -457,14 +457,46 @@ $.ajax({
         console.error('Error fetching data:', error);
     },
   });
+//kod faculty
+$.ajax({
+    url: 'http://localhost/pascav2/public/getfaculty', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                var facCode = item.a019kbhg;     
+                var facktrg = item.a019bi;
+                // Append each item as an option
+                $('#fac').append(
+                    $('<option>', {
+                        value: facCode, // Use 'id' from response
+                        text: facktrg, // Use 'name' from response
+                    })
+                );
+            });
+  
+            // Refresh the selectpicker to update UI
+            $('#fac').selectpicker('refresh');
+  
+        } else {
+            alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
 // /*kodprogram*/ 
 // $.ajax({
 //     type: "GET",
 //     url: "http://localhost/pascav2/public/getkodprogram",
 //     success: function(data) {
 //         var json_data = data;
-//         var select = $("#kdprg").empty(); // Clear existing options
-
+//         var select = $("#kdprg").empty(); // Empty the select before adding new options
+    
 //         $.each(json_data, function(key, cat) {
 //             var option = "<option value='" + cat.p020kprog + "' data-subtext='" + cat.a019bi + "'>" 
 //                 + cat.p020namaprogbi + " - " + cat.z054bnecdetail + 
@@ -482,24 +514,10 @@ $.ajax({
 //                 select.append(option);
 //             }
 //         });
-
-//         // Enable live search
-//         $('#kdprg').attr("data-live-search", "true");
-
-//         // Retrieve existing value (if any)
-//         let existingValue = $('#kdprg').data("selected-value"); // Make sure to set this data attribute before AJAX call
-
-//         // Refresh selectpicker and set value if exists
-//         $('#kdprg').selectpicker('destroy').selectpicker();
-
-//         if (existingValue) {
-//             $('#kdprg').val(existingValue).selectpicker('refresh'); // Set selected value
-//         }
 //     },
 //     error: function(xhr, status, error) {
 //         console.error("Error fetching data: " + error);
 //     }
 // });
-
 
 });

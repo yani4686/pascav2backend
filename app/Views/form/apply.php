@@ -373,12 +373,18 @@
                                                             <option value="2">Full Time</option>
                                                         </select>
                                                     </div>
-                                            <!-- </div>
+                                            </div>
 
-                                    <div class="form-group row"> -->
+                                    <div class="form-group row">
+
+											<!-- <label class="col-lg-3 col-form-label">Faculty <span class="text-danger">*</span></label>
+                                                    <div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="fac" name="fac">
+                                                        </select>
+                                                    </div> -->
 
                                             <label class="col-lg-3 col-form-label">Programme <span class="text-danger">*</span></label>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-6">
                                                         <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdprg" name="kdprg">
                                                         </select>
                                                     </div>

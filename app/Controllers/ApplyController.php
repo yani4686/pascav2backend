@@ -18,20 +18,39 @@ class ApplyController extends ResourceController
      */
     public function getkodprogram()
     {
-        // Path to your JSON file
-        $filePath = WRITEPATH . 'data/kodprogram.json';
+        $db = Config::connect();
 
-        // Check if file exists
-        if (!file_exists($filePath)) {
-            return $this->respond(['error' => 'File not found'], 404);
-        }
+        $Query = $db->query("SELECT p020kprog,p020namaprogbi,a019bi,z054bnecdetail,p020kaedah  FROM ppsdblocal.p020,ppsdblocal.a019,ppsdblocal.p020x,ppsdblocal.z054b  
+        where p020kprog=p020xkprog and p020xnec=z054bknecdetail and a019kbhg = p020kfakulti --and p020kfakulti='' AND p020kaedah=''
+        and (p020kodmqa ='1' or p020kodmqa ='2') AND p020namaprogbi IS NOT NULL order by p020kfakulti,p020kprog");
+        $result = $Query->getResult();
 
-        // Load the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
+        return $this->response->setJSON($result);
+        // // Path to your JSON file
+        // $filePath = WRITEPATH . 'data/kodprogram.json';
 
-        // Return the JSON response
-        return $this->respond($data, 200);
+        // // Check if file exists
+        // if (!file_exists($filePath)) {
+        //     return $this->respond(['error' => 'File not found'], 404);
+        // }
+
+        // // Load the JSON data
+        // $jsonData = file_get_contents($filePath);
+        // $data = json_decode($jsonData, true);
+
+        // // Return the JSON response
+        // return $this->respond($data, 200);
+    }
+
+    public function getfaculty()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT a019bi,a019kbhg FROM ppsdblocal.a019 WHERE (a019bi LIKE '%FACULTY%' OR a019bahagian LIKE 'INS%' OR a019bahagian LIKE 'AGR%' OR a019bi LIKE 'CENTRE%') AND 
+        a019kbhg IN (select p020kfakulti from ppsdblocal.p020 where (p020kodmqa ='1' or p020kodmqa ='2')) ");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
     }
 
     public function getkodnegara()
@@ -152,7 +171,7 @@ class ApplyController extends ResourceController
     WHEN p001status = '4' THEN 'Pindah Fakulti'
     WHEN p001status = '5' THEN 'Lulus Fakulti2'
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
-END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         CASE 
         p00katwarga WHEN '1' THEN 'Malaysian' 
         WHEN '2' THEN 'Non Malaysian' end as ktrgwarga,p00emel,p00usrid,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001knegeri as negeri,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar
@@ -195,7 +214,8 @@ END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upres
         WHEN p001status = '4' THEN 'Pindah Fakulti'
         WHEN p001status = '5' THEN 'Lulus Fakulti2'
         WHEN p001status = '6' THEN 'Gagal Fakulti2'
-        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001kkampus,
+p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         CASE 
         p001kbumi 
         WHEN '1' THEN 'Malaysian' 

@@ -436,8 +436,8 @@ $.ajax({
     method: 'GET',
    dataType: 'json', // Expect JSON response
     success: function (result) {
-        var nokppass  =  result.p001nokp;//result.p00usrid;
-        var email     =  result.p001email;//result.p00emel;
+        var nokppass  =  result.p001nokp;
+        var email     =  result.p001email;
         var nama      =  result.p001nama;
         var dob       =  result.p001tkhlahir;
         var nooku     =  result.p001nooku;
@@ -486,7 +486,109 @@ $.ajax({
         var val_taja    = result.p001kpenaja;
         var akadtgg     = result.descakadttg;
         var bikat       = result.descbi;
-      
+        var kampus      = result.p001kkampus;
+
+        function setSelectValue(selectId, value, retries = 10) {
+            value = value ? String(value).trim() : "";
+            var $select = $(selectId);
+        
+            function trySet() {
+                var exists = $select.find("option[value='" + value + "']").length > 0;
+        
+                if (exists) {
+                    $select.val(value).trigger('change');
+                    $select.selectpicker('refresh');
+                } else if (retries > 0) {
+                    // Try again after short delay
+                    setTimeout(() => {
+                        retries--;
+                        trySet();
+                    }, 200); // Wait 200ms and try again
+                } else {
+                    // Final fallback: set blank
+                    $select.val('').trigger('change');
+                    $select.selectpicker('refresh');
+                    console.warn(`Value "${value}" not found for ${selectId}`);
+                }
+            }
+        
+            trySet();
+        }
+         //+++++++++++display on label/input++++++++++++++++    
+         $('#kppass').val(nokppass);
+         $('#email').val(email);
+         $('#fullname').val(nama);
+         $('#dob').val(dob);
+         $('#no_oku').val(nooku);
+         $('#corradd').val(almt1);
+         $('#corradd1').val(almt2);
+         $('#homeadd').val(almtt1);
+         $('#homeadd1').val(almtt2);
+         $('#postcorradd').val(poskod);
+         $('#bndrcorradd').val(bandar);
+         $('#posthomeadd').val(poskodt);
+         $('#bndrhomeadd').val(bandart);
+         $('#notel').val(notel);
+         $('#hpno').val(nohp);
+         $('#notelhome').val(notelt);
+         $('#hpnohome').val(nohpt);
+         $('#faxno').val(faxno);
+         $('#offno').val(offno);
+         $('#faxnohome').val(faxnot);
+         $('#highuni').val(namauni);
+         $('#highcgpa').val(highcgpa);
+         $('#unimasterphd').val(masteruni);
+         $('#cgpamasterphd').val(cgpamaster);
+         $('#proresearch').val(proposal);
+         $("#prosv").val(penyelia);
+         $("#namaejen").val(namaejen);
+         $("#emailejen").val(emelejen);
+         $("#resultaddbi").val(resultbi);
+         $("#registerid").val(noregbi);
+         $("#datexm").val(tkhexmbi);
+         $("#stat").text(statdesc);
+         $("#income").val(amounthouse);
+         $("#kampus").val(kampus);
+        //+++++++++++++display value pd select dropdown+++++++++++++++++++++++++
+        setSelectValue("#wargast", result.p001kwarganegara);
+        setSelectValue("#warganeg", result.p001kwarga);
+        setSelectValue("#stsoku", result.p001kcacat);
+        setSelectValue("#laluan", result.p001laluanmohon);
+        setSelectValue("#modest", result.p001kaedah);
+        setSelectValue("#typest", result.p001modebelajar);
+        setSelectValue("#highedu", result.p001akadtinggi);
+        setSelectValue("#highunicountry", result.p001knegaracgpa);
+        setSelectValue("#masterphdcountry", result.p001knegaracgpa2);
+        setSelectValue("#exp", result.p001bilexp);
+        setSelectValue("#bitype", result.p001katbi);
+        setSelectValue("#kampus", result.p001kkampus);
+        setSelectValue("#kdnegeri", result.p001knegeri);
+        setSelectValue("#kdnegara", result.p001alamatneg);
+        setSelectValue("#kdnegerihome", result.p001knegerit);
+        setSelectValue("#kdnegarahome", result.p001alamatnegt);
+        setSelectValue("#kdtaja", result.p001kpenaja);
+ 
+         $("#cpt1 a").attr({
+             'href': urldisplaydoclaluan,
+             'target': '_blank' // Ensures the link opens in a new tab
+         });
+ 
+         $("#cpt2 a").attr({
+             'href': urldisplayworkexp,
+             'target': '_blank' // Ensures the link opens in a new tab
+         });
+   
+   //  setTimeout(function () {
+    //  var profileValue = result.p001kpenaja ? String(result.p001kpenaja).trim() : "";
+    //  var exists = $("#kdtaja option[value='" + profileValue + "']").length > 0;
+ 
+    //  if (exists) {
+    //      $("#kdtaja").val(profileValue).trigger('change');
+    //  } else {
+    //      $("#kdtaja").val("").trigger('change'); // Set to empty instead
+    //  }
+    //  $('#kdtaja').selectpicker('refresh');
+ //}, 100);
         //+++++++++++resize selectdropwdown++++++++++
         $('#kdprg').selectpicker({
             container: 'body', // Prevents dropdown from being constrained by parent div
@@ -509,7 +611,7 @@ $.ajax({
     url: "http://localhost/pascav2/public/getkodprogram",
     success: function(data) {
         var json_data = data;
-        var select = $("#kdprg").empty(); // Empty the select before adding new options
+        var select = $("#kdprg").empty(); 
     
         $.each(json_data, function(key, cat) {
             var option = "<option value='" + cat.p020kprog + "' data-subtext='" + cat.a019bi + "'>" 
@@ -651,98 +753,7 @@ $.ajax({
             $('#previewImage1').attr('src', 'http://localhost/pascav2/assets/media/users/blank.png').hide();
             $('#image-box').removeClass('has-image');
         }
-    //+++++++++++display on label/input++++++++++++++++    
-        $('#kppass').val(nokppass);
-        $('#email').val(email);
-        $('#fullname').val(nama);
-        $('#dob').val(dob);
-        $('#no_oku').val(nooku);
-        $('#corradd').val(almt1);
-        $('#corradd1').val(almt2);
-        $('#homeadd').val(almtt1);
-        $('#homeadd1').val(almtt2);
-        $('#postcorradd').val(poskod);
-        $('#bndrcorradd').val(bandar);
-        $('#posthomeadd').val(poskodt);
-        $('#bndrhomeadd').val(bandart);
-        $('#notel').val(notel);
-        $('#hpno').val(nohp);
-        $('#notelhome').val(notelt);
-        $('#hpnohome').val(nohpt);
-        $('#faxno').val(faxno);
-        $('#offno').val(offno);
-        $('#faxnohome').val(faxnot);
-        $('#highuni').val(namauni);
-        $('#highcgpa').val(highcgpa);
-        $('#unimasterphd').val(masteruni);
-        $('#cgpamasterphd').val(cgpamaster);
-        $('#proresearch').val(proposal);
-        $("#prosv").val(penyelia);
-        $("#namaejen").val(namaejen);
-        $("#emailejen").val(emelejen);
-        $("#resultaddbi").val(resultbi);
-        $("#registerid").val(noregbi);
-        $("#datexm").val(tkhexmbi);
-        $("#stat").text(statdesc);
-        $("#income").val(amounthouse);
-
-        $("#cpt1 a").attr({
-            'href': urldisplaydoclaluan,
-            'target': '_blank' // Ensures the link opens in a new tab
-        });
-
-        $("#cpt2 a").attr({
-            'href': urldisplayworkexp,
-            'target': '_blank' // Ensures the link opens in a new tab
-        });
-    //+++++++++++++isplay value pd select dropdown+++++++++++++++++++++++++
-    setTimeout(function () {
-
-    $("#wargast").val(result.p001kwarganegara);    
-    $("#warganeg").val(result.p001kwarga);
-    $("#stsoku").val(result.p001kcacat);
-    $("#laluan").val(result.p001laluanmohon);
-    $("#kdnegeri").val(result.p001knegeri);
-    $("#kdnegerihome").val(result.p001knegerit);
-    $("#kdnegara").val(result.p001alamatneg);
-    $("#kdnegarahome").val(result.p001alamatnegt);
-    $("#modest").val(result.p001kaedah);
-    $("#typest").val(result.p001modebelajar);
-    $("#highedu").val(result.p001akadtinggi);
-    $("#highunicountry").val(result.p001knegaracgpa);
-    $("#masterphdcountry").val(result.p001knegaracgpa2);
-    $("#exp").val(result.p001bilexp);
-    $("#bitype").val(result.p001katbi);
-  
-    var profileValue = result.p001kpenaja ? String(result.p001kpenaja).trim() : "";
-    var exists = $("#kdtaja option[value='" + profileValue + "']").length > 0;
-
-    if (exists) {
-        $("#kdtaja").val(profileValue).trigger('change');
-    } else {
-        $("#kdtaja").val("").trigger('change'); // Set to empty instead
-    }
-    $('#kdtaja').selectpicker('refresh');
-    
-
-   $('#wargast').selectpicker('refresh');
-   $('#warganeg').selectpicker('refresh');
-   $('#stsoku').selectpicker('refresh');
-   $('#laluan').selectpicker('refresh');
-   $('#kdnegeri').selectpicker('refresh');
-   $('#kdnegerihome').selectpicker('refresh');
-   $('#kdnegara').selectpicker('refresh');
-   $('#kdnegarahome').selectpicker('refresh');
-   $('#modest').selectpicker('refresh');
-   $('#typest').selectpicker('refresh');
-   $('#kdprg').selectpicker('refresh');
-   $('#highedu').selectpicker('refresh');
-   $('#highunicountry').selectpicker('refresh');
-   $('#masterphdcountry').selectpicker('refresh');
-   $('#exp').selectpicker('refresh');
-   $('#kdtaja').selectpicker('refresh');
-   $('#bitype').selectpicker('refresh');
-}, 100);
+   
 //++++++++++preview doc attch+++++++++++++++++++
 // Define modal-related elements
 var modal = document.getElementById('myModal1');
@@ -813,17 +824,23 @@ if(val_laluan === 'AP' || val_laluan === 'NG'){
     $("#docap").hide();
    }
 //++++++++++hidendisplaymode research+++++++++++++
-var val_modest = result.p001kaedah; 
-if (val_modest === '8') {
+var val_modestget = result.p001kaedah || "";
+if (val_modestget === '8') {
     $("#hidespc").show();
     $("#hiderse").show();
     $("#hidesv").show();
     $("#hidework").hide();
-} else {
+} else if (val_modestget === '7'|| val_modestget === '9') {
     $("#hidespc").hide();
     $("#hiderse").hide();
     $("#hidesv").hide();
     $("#hidework").show();
+}
+else {
+    $("#hidespc").hide();
+    $("#hiderse").hide();
+    $("#hidesv").hide();
+    $("#hidework").hide();
 }
     //+++++hidendisplayfield agent++++++++++++++++++++++++
     if(namaejen === null ){
@@ -892,7 +909,9 @@ if (val_modest === '8') {
         var val_oku     = result.p001kcacat;
         var akadtgg     = result.descakadttg;
         var bikat       = result.descbi;
-        var kdprogram     = result.p001kprog;
+        var kdprogram   = result.p001kprog;
+        var negAwarding = result.p001knegaracgpa;  
+        var negAwarding2 = result.p001knegaracgpa2;  
 
         $('#labeldob').text(dob);
         $('#labelnama').text(nama);
@@ -953,7 +972,7 @@ if (val_modest === '8') {
         //+++++++++display on label lookup negara++++++++++++++++
 var descnegera = negara;
 var descnegarattp = negaratetap
-var selectedText2;
+var selectedText2,selectedText3,selectedText4;
 $.ajax({
     url: "http://localhost/pascav2/public/getkodnegara", 
     type: "GET",
@@ -970,11 +989,18 @@ $.ajax({
             if (item.c028kod == descnegarattp) { // Use correct property names
                 selectedText2 = item.c028keterangan; // Get the description
             }
+            if (item.c028kod == negAwarding) { // Use correct property names
+                selectedText3 = item.c028keterangan; // Get the description
+            }
+            if (item.c028kod == negAwarding2) { // Use correct property names
+                selectedText4 = item.c028keterangan; // Get the description
+            }
         });
         // Display the description in #labeldisable
         $("#labeladdcountry").text(selectedText);
         $("#labeladdcountryttp").text(selectedText2);
-        $("#labelawardunihigh").text(selectedText2);
+        $("#labelawardunihigh").text(selectedText3);
+        $("#labelawarduni").text(selectedText4);
     },
     error: function (xhr, status, error) {
         console.error("AJAX Error:", error);
