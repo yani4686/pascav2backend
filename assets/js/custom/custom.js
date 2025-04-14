@@ -241,7 +241,8 @@ $(document).ready(function () {
 		  title: 'Processing Fee Guidelines',
 		  html: '<b>Processing Fee Payment</b>:<br>Local student: RM 25.00<br>International Student: USD 25/ RM60.00<br><br><b>Method of payment</b>:<br>Local Student:<br><b>Beneficiary Bank</b>: Bank Islam Malaysia Berhad (BIMB)<br><b>Beneficiary Account No</b>: 130 170 100 82394<br><b>Beneficiary Name</b>: TETUAN UNIVERSITI SULTAN ZAINAL ABIDIN<br><br>International Student:<br><b>Beneficiary Bank</b>: RHB Bank Berhad<br><b>Beneficiary Account No</b>: 2-63015-0002402-0<br><b>Beneficiary Name</b>: BENDAHARI UNIVERSITI SULTAN ZAINAL ABIDIN<br><b>Swift Code</b>: RHBBMYKL',
 		//   imageUrl: 'http://localhost/pascav2/assets/images/100_2.png',
-		  width: 800,
+          width: 800,
+          height: 800,
 		  customClass: 'swal-margin',
 		//   imageAlt: 'Custom image',
 		})	
@@ -464,7 +465,7 @@ $.ajax({
         var penyelia    =  result.p001penyelia ;
         var proposal    =  result.p001tajuk ;
         var passport    =  result.p001uppassport ;
-        var akadtgg     =  result.p001uptrans ;
+        var uptrans     =  result.p001uptrans ;
         var upproposal  =  result.p001upproposal;
         var upresit     =  result.p001upresit;
         var upbi        =  result.p001upmuet;
@@ -484,8 +485,8 @@ $.ajax({
         var val_laluan  = result.p001laluanmohon;
         var val_bitype  = result.p001katbi;
         var val_taja    = result.p001kpenaja;
-        var akadtgg     = result.descakadttg;
-        var bikat       = result.descbi;
+       // var akadtgg     = result.descakadttg;
+       // var bikat       = result.descbi;
         var kampus      = result.p001kkampus;
 
         function setSelectValue(selectId, value, retries = 10) {
@@ -652,7 +653,7 @@ $.ajax({
             $('#iconpass').removeClass().addClass('fas fa-check-circle text-success');
             $("#docic").show();
         }
-        if (akadtgg === '' || akadtgg === null){
+        if (uptrans === '' || uptrans === null){
             $('#iconakad').removeClass().addClass('fas fa-times-circle text-danger mr-5'); 
             $("#docaka").hide();
         }else{
@@ -736,7 +737,7 @@ $.ajax({
 
         urldisplaypic = 'http://localhost/pascav2/public/uploads/' + image;
         urldisplaypass = url + passport;
-        urldisplayakadtggi = url + akadtgg;
+        urldisplayakadtggi = url + uptrans;
         urldisplayupproposal = url + upproposal;
         urldisplayresit = url + upresit;
         urldisplayeng = url + upbi;
@@ -763,14 +764,13 @@ var iframe = document.getElementById("content1");
 // Handle the "View File" link click event to open the modal
 document.querySelectorAll('.view-file').forEach(function(link) {
     link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default link behavior
+        e.preventDefault();
 
         var fileType = link.getAttribute('data-file');
-        //var urldisplaypass = urldisplaypass; // Replace with actual passport URL
 
         if (fileType === 'passport') {
             fileUrl = urldisplaypass;
-        }else if (fileType === 'akadtgg') {
+        }else if (fileType === 'upakadtgg') {
             fileUrl = urldisplayakadtggi;
         }else if (fileType === 'proposal') {
             fileUrl = urldisplayupproposal;
@@ -781,7 +781,9 @@ document.querySelectorAll('.view-file').forEach(function(link) {
         }
     
     // Set the iframe's source to the passport image URL
-    iframe.src = fileUrl;
+    //iframe.src = fileUrl;
+    // ✅ Force-refresh by appending a timestamp
+    iframe.src = fileUrl + "?t=" + new Date().getTime();
     
     // Show the modal
     modal.style.display = "block";
@@ -891,7 +893,7 @@ else {
         var nohp      =  result.p001nohp ;
         var namauni   =  result.p001unilama ;
         var highcgpa  =  result.p001cgpa ;
-        var akadtgg     =  result.p001uptrans ;
+        //var akadtgg     =  result.p001uptrans ;
         var almtsemasa  =  result.almtsemasa ;
         var almttetap   =  result.almttetap;
         var negeri      =  result.p001knegeri ;

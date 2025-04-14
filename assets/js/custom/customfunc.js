@@ -10,48 +10,48 @@ $(document).ready(function () {
 
 //include jump page from dashboard
 
-    // Initially hide all steps
-    // var navListItems = $('div.setup-panel div a'),
-    //     allWells = $('.setup-content'),
-    //     allNextBtn = $('.nextBtn');
+//Initially hide all steps
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn');
 
-    // allWells.hide(); // Default hide all steps
-    // // Handle clicking on step links in the wizard
-    // navListItems.click(function (e) {
-    //     e.preventDefault();
-    //     var $target = $($(this).attr('href')),
-    //         $item = $(this);
+    allWells.hide(); // Default hide all steps
+    // Handle clicking on step links in the wizard
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
 
-    //     // Make sure the current item is not disabled
-    //     if (!$item.hasClass('disabled')) {
-    //         // Reset the button states
-    //         navListItems.removeClass('btn-success').addClass('btn-default');
-    //         $item.addClass('btn-success');
+        // Make sure the current item is not disabled
+        if (!$item.hasClass('disabled')) {
+            // Reset the button states
+            navListItems.removeClass('btn-success').addClass('btn-default');
+            $item.addClass('btn-success');
             
-    //         // Hide all steps and show the current step
-    //         allWells.hide();
-    //         $target.show();
-    //         $target.find('input:eq(0)').focus(); // Focus the first input of the step
-    //     }
-    // });
-    // // Handle Next button click
-    // allNextBtn.click(function () {
-    //     var curStep = $(this).closest(".setup-content"),
-    //         curStepBtn = curStep.attr("id"),
-    //         nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-    //         curInputs = curStep.find(""),
-    //         isValid = true;
-    //     // Check for valid inputs
-    //     $(".form-group").removeClass("has-error");
-    //     for (var i = 0; i < curInputs.length; i++) {
-    //         if (!curInputs[i].validity.valid) {
-    //             isValid = false;
-    //             $(curInputs[i]).closest(".form-group").addClass("has-error");
-    //         }
-    //     }
-    //     // If valid, move to the next step
-    //     if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
-    // });
+            // Hide all steps and show the current step
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus(); // Focus the first input of the step
+        }
+    });
+    // Handle Next button click
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find(""),
+            isValid = true;
+        // Check for valid inputs
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+        // If valid, move to the next step
+        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    });
 
 //click to step from dashboard without using wizard -jump to page apply
 $(".setup-content").hide();
@@ -227,11 +227,13 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
 
     curInputs.each(function () {
         var val = $(this).val();
+        var wrapper = $(this).closest(".col-lg-4,.col-lg-6,.col-lg-8");//for highlight color
         // Log for debugging (optional)
         console.log("Validating field:", $(this).attr("name"), "Value:", val);
         if (val === null || val.trim() === "") {
             isValid = false;
-            $(this).closest(".form-group").addClass("has-error");
+            //$(this).closest(".form-group").addClass("has-error");
+            wrapper.addClass("has-error");//for highlight color
         }
     });
     
@@ -295,10 +297,25 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
                     } 
                     else if(actionType === 'save-next-last'){
                         window.location = "http://localhost/pascav2/public/summary";
-                    }                  
+                    } 
                     else {
-                        window.location = "http://localhost/pascav2/public/apply";
-                    }
+                        // ✅ "save" only — just stay on current step
+                        // You can optionally refresh values or show a green border here
+                        console.log("Save only - stay on current step.");
+                        location.reload(); // 🔁 Reloads the full page
+                        // const stepId = curStep.attr('id');
+
+                        // // Reload just this step content via AJAX
+                        // $.get(window.location.href, function (response) {
+                        //     const updatedStep = $(response).find(`#${stepId}`);
+                        //     $(`#${stepId}`).html(updatedStep.html());
+                        //     console.log("Step refreshed via AJAX.");
+                        // });
+                      //  Swal.fire("Saved!", "Your progress has been saved.", "success");
+                    }                 
+                    // else {
+                    //     window.location = "http://localhost/pascav2/public/apply";
+                    // }
 
                 } else {
                     window.location = "http://localhost/pascav2/public/apply";

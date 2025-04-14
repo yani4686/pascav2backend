@@ -150,7 +150,7 @@
                                     <div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">Date of Birth <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <input type="date" class="form-control" name="dob" id="dob"/>
+                                                        <input type="date" class="form-control" name="dob" id="dob" required/>
                                                     </div>
 									</div>
 
@@ -165,7 +165,7 @@
                                                     </div>
                                                     <label class="col-lg-3 col-form-label">Nationality <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganeg" name ="warganeg">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganeg" name ="warganeg" required>
                                                         </select>
                                                     </div>
                                     </div>
@@ -173,7 +173,7 @@
 									<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Disablity <span class="text-danger">*</span></label>
 														<div class="col-lg-4">
-															<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="stsoku" name ="stsoku">
+															<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="stsoku" name ="stsoku" required>
 															</select>
 														</div>
 													<label class="col-lg-3 col-form-label" id="nooku">No OKU<span class="text-danger">*</span></label>
@@ -187,7 +187,7 @@
                                      <div class="form-group row">
                                                     <label class="col-lg-3 col-form-label">Corresponding Address<span class="text-danger">*</span></label>
                                                     <div class="col-lg-8">
-                                                        <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()"/>
+                                                        <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()" required/>
                                                     </div>
 									</div>
 									<div class="form-group row">
@@ -586,7 +586,7 @@
 												
 									<!--  -->
                                                <div class="form-group row">                                             
-													<label class="col-lg-6 col-form-label">Scanned Copy of IC (Malaysian candidates)/Passport <span class="text-danger">*</span id="val_ada"><i id="iconpass" class="fas"></i></label>
+													<label class="col-lg-6 col-form-label">Scanned Copy of IC (Malaysian)/Passport (International) <span class="text-danger">*</span id="val_ada"><i id="iconpass" class="fas"></i></label>
 														<div class="col-lg-4 custom-file">
 															<input type="file" class="custom-file-input" id="fileic" name="fileic"/>
 															<label class="custom-file-label" for="fileic">Choose file</label>
@@ -612,7 +612,7 @@
                                                         <label class="custom-file-label" for="fileaka">Choose file</label>
                                                     </div>
 													<div style="padding: 20px;" id="cpt">
-														<a href="#" id="docaka" name="docaka" data-file="akadtgg" class="view-file text-primary font-weight-bolder">View File</a>
+														<a href="#" id="docaka" name="docaka" data-file="upakadtgg" class="view-file text-primary font-weight-bolder">View File</a>
 													</div>
 											</div>
 											<div class="form-group row">
@@ -626,7 +626,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">English Language Qualification<span class="text-danger">*</span><i id="iconeng" class="fas"></i></label>
+                                                <label class="col-lg-6 col-form-label">English Language Qualification - <span class="font-weight-bolder" id="labelbi"></span><span class="text-danger">*</span><i id="iconeng" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileEng" name="fileEng"/>
                                                         <label class="custom-file-label" for="fileEng">Choose file</label>
@@ -646,7 +646,7 @@
 													</div>
 											</div>
 											<div class="form-group row">
-                                                <label class="col-lg-6 col-form-label">Processing Fee Receipt<span class="text-danger">*</span><img style="margin:5px" id="info-mdl-5" src="pascav2/assets/images/info-icon-small.png" width="20" height="20"><i id="iconresit" class="fas"></i></label>
+                                                <label class="col-lg-6 col-form-label">Processing Fee Receipt<span class="text-danger">*</span><img style="margin:5px" id="info-mdl-5" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Please click for details information about processing fee"><i id="iconresit" class="fas"></i></label>
                                                     <div class="col-lg-4 custom-file">
                                                         <input type="file" class="custom-file-input" id="fileFee" name="fileFee"/>
                                                         <label class="custom-file-label" for="fileFee">Choose file</label>

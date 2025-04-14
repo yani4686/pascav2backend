@@ -84,35 +84,21 @@
 									
 
 									 <h4 class="font-size-h6 mb-5">Update Additional Personal Details</h4>
-			<span class="form-text text-muted">Please update Additional Information below before Download Offer Letter</span>
-		
-
-									 <!-- <div class="separator separator-dashed my-6"></div> -->
-
-									 
-
-									<div class="form-group  row my-2">
-
-									 <label class="col-lg-3 col-form-label">Race: </label>
-												<div class="col-lg-4">
-													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="race" name="race">
-												</select>
-												</div>
-									 	
-										<label class="col-lg-3 col-form-label">Nationality: </label>										
-                                                    <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganeg" name ="warganeg">
-                                                        </select>
-                                                    </div>
-									</div>
+			<span class="form-text text-muted">Please fill in/update the addtional information form below. All fields must be filled up to obtain Offer Letter</span>
+									 <div class="separator separator-dashed my-6"></div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Corresponding Address : </label>
 												<!-- <div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" name ="labeladdcurr" id="labeladdcurr"></span>
 												</div> -->
-												<div class="col-lg-8">
+												<div class="col-lg-4">
                                                         <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()"/>
                                                 </div>
+												<div class="col-lg-4">
+                                                        <input type="text" class="form-control" name="corradd" id="corradd" oninput="this.value = this.value.toUpperCase()"/>
+                                                </div>
+									<!-- </div>
+									<div class="form-group row"> -->										
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Post/Zip code <span class="text-danger">*</span></label>
@@ -120,20 +106,16 @@
 												<input type="text" class="form-control" name="postcorradd" id="postcorradd" />
 											</div>
 										<label class="col-lg-3 col-form-label">City<span class="text-danger">*</span></label>
-										<div class="col-lg-4">
-											<input type="text" class="form-control" name="bndrcorradd" id="bndrcorradd" oninput="this.value = this.value.toUpperCase()"/>
-										</div>
+											<div class="col-lg-4">
+												<input type="text" class="form-control" name="bndrcorradd" id="bndrcorradd" oninput="this.value = this.value.toUpperCase()"/>
+											</div>											
 									</div>
-									<div class="form-group row">		
-										<label class="col-lg-3 col-form-label">State : </label>
-												<!-- <div class="col-lg-4">
-													<span class="form-control-plaintext font-weight-bolder" name = "labeladdstate" id="labeladdstate"></span>
-												</div> -->
+									<div class="form-group row">
+									<label class="col-lg-3 col-form-label">State : </label>
 												<div class="col-lg-4">
                                                         <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdnegeri" name="kdnegeri">
                                                         </select>
                                                     </div>
-
 										<label class="col-lg-3 col-form-label">Country : </label>
 												<!-- <div class="col-lg-4">
 													<span class="form-control-plaintext font-weight-bolder" name ="labeladdcountry" id="labeladdcountry"></span>
@@ -142,7 +124,45 @@
                                                         <select class ="form-control selectpicker" title="Please Choose"data-live-search="true" id="kdnegara" name="kdnegara" >
                                                         </select>
                                                 </div>
-									</div>	
+									</div>
+									<div class="separator separator-dashed my-6"></div>
+									<div class="form-group row">
+									 <label class="col-lg-3 col-form-label">Place of Birth: </label>
+												<div class="col-lg-4">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="birthplace" name="birthplace">
+												</select>
+												</div>
+									<label class="col-lg-3 col-form-label">Gender: </label>
+												<div class="col-lg-4">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="gender" name="gender">
+												</select>
+												</div>
+									</div>
+									<div class="form-group row">	
+										<label class="col-lg-3 col-form-label">Nationality Status: </label>										
+                                                    <div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganegsta" name ="warganegsta">
+                                                        </select>
+                                                    </div>											 	
+										<label class="col-lg-3 col-form-label">Nationality: </label>										
+                                                    <div class="col-lg-4">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="warganeg" name ="warganeg">
+                                                        </select>
+                                                    </div>
+									</div>																									
+									<div class="form-group row">
+
+									 <label class="col-lg-3 col-form-label">Race: </label>
+												<div class="col-lg-4">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="race" name="race">
+												</select>
+												</div>
+									<label class="col-lg-3 col-form-label">Religion: </label>
+												<div class="col-lg-4">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="religion" name="religion">
+												</select>
+												</div>
+									</div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Dun <span class="text-danger">*</span></label>										
 												<div class="col-lg-4">												
@@ -171,12 +191,12 @@
 												</div>
 									</div>
 									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">BI (SPM)<span class="text-danger">*</span></label>
+										<label class="col-lg-3 col-form-label">English Language (SPM)<span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 													<input type="text" class="form-control" name="bispm" id="bispm"/>
 													</select><span class="form-text text-muted">**For local applicant only</span>
 												</div>
-										<label class="col-lg-3 col-form-label">BM (SPM)<span class="text-danger">*</span></label>
+										<label class="col-lg-3 col-form-label">Malay Language (SPM)<span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 													<input type="text" class="form-control" name="bispm" id="bispm"/>
 													</select><span class="form-text text-muted">**For local applicant only</span>
