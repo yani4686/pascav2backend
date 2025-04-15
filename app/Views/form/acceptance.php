@@ -50,26 +50,26 @@
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder" id="labelkdprogrm" data-name="labelkdprogrm"></span>
 											</div>										
-											<label class="col-2 col-form-label">Faculty</label>
+											<label class="col-2 col-form-label">Faculty:</label>
 											<div class="col-lg-4">
 												<span class="form-control-plaintext font-weight-bolder" id="labelfakulti" data-name="labelfakulti"></span>
 											</div>
 										</div>
 										<div class="form-group row my-2">
 												
-											<label class="col-2 col-form-label">Mode Of Study:</label>
+											<label class="col-2 col-form-label">Email:</label>
 											<div class="col-lg-4">
-												<span class="form-control-plaintext font-weight-bolder" id="labelmodest" data-name="labelmodest"></span>
+												<span class="form-control-plaintext font-weight-bolder" id="labelemel" data-name="labelemel"></span>
 											</div>																			
-											<label class="col-2 col-form-label">Mode Of Registration:</label>
+											<label class="col-2 col-form-label">Date Of Birth:</label>
 											<div class="col-lg-4">
-												<span class="form-control-plaintext font-weight-bolder" id="methodst" data-name="methodst"></span>
+												<span class="form-control-plaintext font-weight-bolder" id="labeldob" data-name="labeldob"></span>
 											</div>
 										</div>
 										<div class="form-group row my-2">
 											<label class="col-2 col-form-label">Date Of Approval:</label>
 											<div class="col-lg-4">
-												<span class="form-control-plaintext font-weight-bolder">18 November 2024</span>
+												<span class="form-control-plaintext font-weight-bolder" id="tkhstatus" data-name="tkhstatus"></span>
 											</div>
 							
 											<label class="col-2 col-form-label">Offer Letter No:</label>
@@ -78,13 +78,16 @@
 											</div>
 										</div>
 										<div class="separator separator-dashed my-6"></div>
-										<!--  -->
-										
+										<!--  -->								
 
-									
-
-									 <h4 class="font-size-h6 mb-5">Update Additional Personal Details</h4>
-			<span class="form-text text-muted">Please fill in/update the addtional information form below. All fields must be filled up to obtain Offer Letter</span>
+									 <h4 class="font-size-h6 mb-5">Update Additional Personal Details</h4><span class="form-text text-muted">Please fill in/update the addtional information form below. All fields must be filled up to obtain Offer Letter</span>
+									 <div class="separator separator-dashed my-6"></div>
+									 <div class="form-group row">
+										<label class="col-lg-3 col-form-label">Mobile No <span class="text-danger">*</span></label>
+											<div class="col-lg-3">
+												<input type="text" class="form-control" name="mobilenoupd" id="mobilenoupd" />
+											</div>
+									</div>
 									 <div class="separator separator-dashed my-6"></div>
 									<div class="form-group row">
 										<label class="col-lg-3 col-form-label">Corresponding Address : </label>
@@ -161,6 +164,24 @@
 												<div class="col-lg-4">
 													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="religion" name="religion">
 												</select>
+												</div>							
+									</div>
+									<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Marital Status: </label>
+												<div class="col-lg-4">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="marital" name="marital">
+												</select>
+												</div>
+									</div>
+									<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Status OKU<span class="text-danger">*</span></label>
+											<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="stsoku" name ="stsoku">
+												</select>
+											</div>
+									<label class="col-lg-3 col-form-label" id="nooku">No OKU<span class="text-danger">*</span></label>
+												<div class="col-lg-4" id="divoku">
+													<input type="text" class="form-control" name="no_oku" id="no_oku" />
 												</div>
 									</div>
 									<div class="form-group row">
@@ -203,24 +224,26 @@
 												</div>
 									</div>
 									<div class="form-group row">
-									<label class="col-lg-3 col-form-label">Income<span class="text-danger">*</span></label>
+										<label class="col-lg-3 col-form-label">Entrance Qualification<span class="text-danger">*</span></label>
+												<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="entrance" name="entrance">
+													</select>
+												</div>
+									
+										<label class="col-lg-3 col-form-label">Sponsorship<span class="text-danger">*</span></label>
+												<div class="col-lg-4">
+												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="tajaan" name="tajaan">
+													</select>
+												</div>
+												</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Income<span class="text-danger">*</span></label>
 												<div class="col-lg-4">
 												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="incomekd" name="incomekd">
 													</select>
 												</div>
 												<div class="col-lg-4">
 												<input type="text" class="form-control" id="income" name="income"/>
-												</div>
-									</div>
-									<div class="form-group row">
-									<label class="col-lg-3 col-form-label">Status OKU<span class="text-danger">*</span></label>
-											<div class="col-lg-4">
-												<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id ="stsoku" name ="stsoku">
-												</select>
-											</div>
-									<label class="col-lg-3 col-form-label" id="nooku">No OKU<span class="text-danger">*</span></label>
-												<div class="col-lg-4" id="divoku">
-													<input type="text" class="form-control" name="no_oku" id="no_oku" />
 												</div>
 									</div>
 

@@ -893,7 +893,7 @@ else {
         var nohp      =  result.p001nohp ;
         var namauni   =  result.p001unilama ;
         var highcgpa  =  result.p001cgpa ;
-        //var akadtgg     =  result.p001uptrans ;
+        var tkhstatus     =  result.p001tkhstatus ;
         var almtsemasa  =  result.almtsemasa ;
         var almttetap   =  result.almttetap;
         var negeri      =  result.p001knegeri ;
@@ -923,7 +923,9 @@ else {
         $('#methodst').text(method);
         $('#labelnat').text(kwarga);
         $('#labelnosurat').text(nosurat);
+        $('#tkhstatus').text(tkhstatus);
         $('#labeladdhp').text(nohp);
+        $('#mobilenoupd').val(nohp);
         $('#labelnatstat').text(kwarga);
         $('#labelmodestdy').text(mode);
         $('#labeltypestudy').text(method);

@@ -156,7 +156,7 @@ class AcceptController extends ResourceController
         p001kcacat,p001muet,p001akadtinggi,CASE p001akadtinggi 
         WHEN '1' THEN 'Bachelor / Equivalent'
         WHEN '2' THEN 'Master Degree / Equivalent'
-        WHEN '3' THEN 'Diploma' end as descakadttg,p001kpenaja,p001status,CASE 
+        WHEN '3' THEN 'Diploma' end as descakadttg,p001kpenaja,p001tkhstatus,p001status,CASE 
         WHEN p001status = '' THEN 'Draft'
         WHEN p001status IS NULL THEN 'Draft'
         WHEN p001status = '0' THEN 'New'
