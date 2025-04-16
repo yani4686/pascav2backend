@@ -396,10 +396,13 @@ $(".printPdf").click(function () {
 //upd add info after accept offer
 $(".updaddinfo").click(function () {
 
+    var form = document.getElementById('idFrmAddInfo');
+    var formData = new FormData(form);
+
  $.ajax({
  type: "POST",
  url: "http://localhost/pascav2/public/updaccept" ,
- //data: formData,
+ data: formData,
          processData: false,  // tell jQuery not to process the data
          contentType: false,   // tell jQuery not to set contentType		
  beforeSend: function() {

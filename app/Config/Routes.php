@@ -57,7 +57,10 @@ $routes->post('/updaccept', 'AcceptController::UpdAccept');
 $routes->post('/viewsurat', 'AcceptController::ViewSurat');
 $routes->get('/getkodbangsa', 'AcceptController::getkodbangsa');
 $routes->get('/getinfomohon', 'AcceptController::GetInfoPemohon');
-//$routes->get('/getkodlayakmasuk', 'AcceptController::getkodlayakmasuk');
+$routes->get('/getkodrace', 'AcceptController::getkodrace');
+$routes->get('/getkodreligion', 'AcceptController::getkodreligion');
+$routes->get('/getkodstakhawin', 'AcceptController::getkodstakhawin');
+$routes->get('/getgredspmbibm', 'AcceptController::getgredspmbibm');
 
 $routes->get('/retpermohonan', 'SaringController::retpermohonan');
 $routes->get('/countpermohonan', 'SaringController::countpermohonan');

@@ -7,9 +7,11 @@ $(document).ready(function () {
         success: function (response) {
             let $select1 = $('#kdnegeri');
             let $select2 = $('#kdnegerihome');
+            let $select3 = $('#birthplace');
 
             $select1.empty(); // Clear existing options
             $select2.empty();
+            $select3.empty();
 
             if (response && response.length > 0) {
                 response.forEach(function (item) {
@@ -20,11 +22,13 @@ $(document).ready(function () {
 
                     $select1.append(option);
                     $select2.append(option.clone()); // Clone option for kdnegerihome
+                    $select3.append(option.clone()); // Clone option for kdnegerihome
                 });
 
                 // Refresh the selectpicker to update UI
                 $select1.selectpicker('refresh');
                 $select2.selectpicker('refresh');
+                $select3.selectpicker('refresh');
             } else {
                 console.log("fail ret ajax negeri");
             }
@@ -249,7 +253,7 @@ $.ajax({
               response.forEach(function (item) {
                   var tajaCode = String(item.a010kpenaja).trim();//samakan type data
                   var tajaktrg = item.a010penaja;
-                  $('#kdtaja').append(
+                  $('#kdtaja,#tajaan').append(
                       $('<option>', {
                           value: tajaCode,
                           text: tajaktrg, 
@@ -258,20 +262,20 @@ $.ajax({
               });
     
             //  $('#kdtaja').selectpicker('val', response[0].a010kpenaja);
-              $('#kdtaja').selectpicker('refresh');
+              $('#kdtaja,#tajaan').selectpicker('refresh');
 
               // Show/hide dlltaja based on selected value
-            $('#kdtaja').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+            $('#kdtaja,#tajaan').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
                 var selectedValue = $(this).val();
                 if (selectedValue === "26") {
-                    $('#dlltaja').show();
+                    $('#dlltaja,#dlltaja1').show();
                 } else {
-                    $('#dlltaja').hide();
+                    $('#dlltaja,#dlltaja1').hide();
                 }
             });
 
             // Initially hide the dlltaja input
-            $('#dlltaja').hide();
+            $('#dlltaja,#dlltaja1').hide();
     
           } else {
              // alert('No data found');
@@ -457,6 +461,134 @@ $.ajax({
         console.error('Error fetching data:', error);
     },
   });
+  //kod religion
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkodreligion', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                var religionCode = item.z016kodmohes;     
+                var religionktrg = item.z016nmagamabi;
+                // Append each item as an option
+                $('#religion').append(
+                    $('<option>', {
+                        value: religionCode, // Use 'id' from response
+                        text: religionktrg, // Use 'name' from response
+                    })
+                );
+            });
+  
+            // Refresh the selectpicker to update UI
+            $('#religion').selectpicker('refresh');
+  
+        } else {
+            alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
+   //kod status khawin
+$.ajax({
+    url: 'http://localhost/pascav2/public/getkodstakhawin', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                var staKhawinCode = item.z017kodmohes;     
+                var staKhawinktrg = item.z017statuskhwinbi;
+                // Append each item as an option
+                $('#marital').append(
+                    $('<option>', {
+                        value: staKhawinCode, // Use 'id' from response
+                        text: staKhawinktrg, // Use 'name' from response
+                    })
+                );
+            });
+  
+            // Refresh the selectpicker to update UI
+            $('#marital').selectpicker('refresh');
+  
+        } else {
+            alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
+     //kod gred spm bibm
+$.ajax({
+    url: 'http://localhost/pascav2/public/getgredspmbibm', // Replace with your server endpoint
+    method: 'GET',
+    dataType: 'json', // Expect JSON response
+    success: function (response) {
+        // Check if the response contains data
+        if (response && response.length > 0) {
+            // Iterate through the data
+            response.forEach(function (item) {
+                var gredCode = item.a003agredsubj;     
+                var gredktrg = item.a003aktrgpjg;
+                // Append each item as an option
+                $('#bispm,#bmspm').append(
+                    $('<option>', {
+                        value: gredCode, // Use 'id' from response
+                        text: gredktrg, // Use 'name' from response
+                    })
+                );
+            });
+  
+            // Refresh the selectpicker to update UI
+            $('#bispm,#bmspm').selectpicker('refresh');
+  
+        } else {
+            alert('No data found');
+        }
+    },
+    error: function (xhr, status, error) {
+        console.error('Error fetching data:', error);
+    },
+  });
+  //kod race
+// $.ajax({
+//     url: 'http://localhost/pascav2/public/getkodrace', // Replace with your server endpoint
+//     method: 'GET',
+//     dataType: 'json', // Expect JSON response
+//     success: function (response) {
+//         // Check if the response contains data
+//         if (response && response.length > 0) {
+//             // Iterate through the data
+//             response.forEach(function (item) {
+//                 var raceCode = item.z018kodbgsa;     
+//                 var racektrg = item.z018bgsa;
+//                 // Append each item as an option
+//                 $('#race').append(
+//                     $('<option>', {
+//                         value: raceCode, // Use 'id' from response
+//                         text: racektrg, // Use 'name' from response
+//                     })
+//                 );
+//             });
+  
+//             // Refresh the selectpicker to update UI
+//             $('#race').selectpicker('refresh');
+  
+//         } else {
+//             alert('No data found');
+//         }
+//     },
+//     error: function (xhr, status, error) {
+//         console.error('Error fetching data:', error);
+//     },
+//   });
 //kod faculty
 $.ajax({
     url: 'http://localhost/pascav2/public/getfaculty', // Replace with your server endpoint

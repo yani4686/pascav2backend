@@ -35,6 +35,45 @@ class AcceptController extends ResourceController
 
     //
 
+    public function getkodrace()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT distinct(a008kodhrmis),a008bangsa FROM ppsdblocal.a008 WHERE a008kbangsa<>'-1' AND a008kbangsa<>'-2' and a008kodhrmis<>''");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
+
+    public function getkodreligion()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT z016kodmohes,z016nmagamabi from ppsdblocal.z016 where z016kodmohes not in ('','5','-2','-1','10')");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
+
+    public function getkodstakhawin()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT z017kodmohes,z017statuskhwinbi from ppsdblocal.z017 where z017kodmohes not in ('-1','-2')");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
+
+    public function getgredspmbibm()
+    {
+        $db = Config::connect();
+
+        $Query = $db->query("SELECT a003agredsubj,a003aktrgpjg FROM ppsdblocal.a003a WHERE a003agredsubj<>'R' AND a003agredsubj<>'T' AND a003agredsubj<>'X'");
+        $result = $Query->getResult();
+
+        return $this->response->setJSON($result);
+    }
 
     public function UpdAccept()
     {
@@ -64,10 +103,21 @@ class AcceptController extends ResourceController
 
     $p001nokp = $result->p001nokp;
 
+    //get post from form
+    $input = $this->request->getPost();
+    $birthplace   = !empty($input['birthplace']) ? $input['birthplace'] : null;
+    $gender       = !empty($input['gender']) ? $input['gender'] : null;
+    $race         = !empty($input['race']) ? $input['race'] : null;
+    $religion     = !empty($input['religion']) ? $input['religion'] : null;
+
      // Update database
      $update = $db->table('ppsdblocal.p001')
      ->set([
-         'p001ststerimatwr' => '1',
+        'p001knlahir'  => $birthplace,
+        'p001kjantina' => $gender,
+        'p001kagama'   => $religion,
+        'p001kkaum'    => $race,
+        //'p001ststerimatwr' => '',
      ])
      ->where('p001nokp', $p001nokp)
      ->update();
@@ -152,7 +202,7 @@ class AcceptController extends ResourceController
         WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,
         CASE p001kwarganegara 
         WHEN '1' THEN 'MALAYSIAN' 
-        WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p001kbumi,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p001kbumi,p001knlahir,p001kjantina,p001kkaum,p001kagama,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
         p001kcacat,p001muet,p001akadtinggi,CASE p001akadtinggi 
         WHEN '1' THEN 'Bachelor / Equivalent'
         WHEN '2' THEN 'Master Degree / Equivalent'
@@ -169,8 +219,8 @@ class AcceptController extends ResourceController
         END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         CASE 
         p001kbumi 
-        WHEN '1' THEN 'Malaysian' 
-        WHEN '2' THEN 'Non Malaysian' end as ktrgwarga,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,concat(p001alamatt1,' ',p001alamatt2,' ',p001bandart,' ',p001poskodt) as almttetap,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar,
+        WHEN '1' THEN 'BUMIPUTERA' 
+        WHEN '2' THEN 'Non BUMIPUTERA' end as ktrgwarga,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,concat(p001alamatt1,' ',p001alamatt2,' ',p001bandart,' ',p001poskodt) as almttetap,p001katbi,p001noreg,p001tkhexm,p001uplaluan,p001upworkex,p001ststerimatwr,p001nosrttawar,
         CASE p001katbi
         WHEN 'MT' THEN 'MUET'
         WHEN 'IE' THEN 'IELTS'

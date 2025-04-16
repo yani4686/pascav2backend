@@ -227,22 +227,22 @@
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Country Awarding : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelcountry"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Proposed Research Title/Area : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelresearch"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Proposed Supervisor : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelsv"></span>
                                                                                                     </div>
                                                 
                                                                                                 <label class="col-lg-3 col-form-label">Portfolio Document : </label>
                                                                                                     <div class="col-lg-4"> 
-                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelawarduni"></span>
+                                                                                                        <span class="form-control-plaintext font-weight-bolder" id="labelportdoc"></span>
                                                                                                     </div>
                                                                                 </div>
                                                 

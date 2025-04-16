@@ -893,27 +893,69 @@ else {
         var nohp      =  result.p001nohp ;
         var namauni   =  result.p001unilama ;
         var highcgpa  =  result.p001cgpa ;
-        var tkhstatus     =  result.p001tkhstatus ;
+        var tkhstatus   =  result.p001tkhstatus ;
         var almtsemasa  =  result.almtsemasa ;
         var almttetap   =  result.almttetap;
+        var almttetap1  = result.p001alamatt1;
+        var postcodet    = result.p001poskodt;
         var negeri      =  result.p001knegeri ;
         var negerittp   = result.p001knegerit
         var resultbi    =  result.p001muet ;
         var noregbi     = result.p001noreg;
         var tkhexmbi    = result.p001tkhexm;
-        var amounthouse = result.p001amthouse;
-        var mode        = result.desckaedah;
-        var method      = result.descmode;
-        var kwarga      = result.desckwarga;
-        var negara      = result.p001alamatneg;
-        var negaratetap = result.p001alamatnegt;
-        var nosurat     = result.p001nosrttawar;
-        var val_oku     = result.p001kcacat;
-        var akadtgg     = result.descakadttg;
-        var bikat       = result.descbi;
-        var kdprogram   = result.p001kprog;
-        var negAwarding = result.p001knegaracgpa;  
-        var negAwarding2 = result.p001knegaracgpa2;  
+        var amounthouse  = result.p001amthouse;
+        var mode         = result.desckaedah;
+        var method       = result.descmode;
+        var kwarga       = result.desckwarga;
+        var negara       = result.p001alamatneg;
+        var negaratetap  = result.p001alamatnegt;
+        var nosurat      = result.p001nosrttawar;
+        var val_oku      = result.p001kcacat;
+        var akadtgg      = result.descakadttg;
+        var bikat        = result.descbi;
+        var kdprogram    = result.p001kprog;
+        var negAwarding  = result.p001knegaracgpa;  
+        var negAwarding2 = result.p001knegaracgpa2;
+        var tmptlahir    = result.p001knlahir;  
+        var race         = result.p001kkaum;
+        var gender       = result.p001kjantina;
+        var religion     = result.p001kagama;
+      
+        //ret n display value selectdropdown
+        function setSelectValueinfo(selectId, value, retries = 10) {
+            value = value ? String(value).trim() : "";
+            var $select = $(selectId);
+        
+            function trySet() {
+                var exists = $select.find("option[value='" + value + "']").length > 0;
+        
+                if (exists) {
+                    $select.val(value).trigger('change');
+                    $select.selectpicker('refresh');
+                } else if (retries > 0) {
+                    // Try again after short delay
+                    setTimeout(() => {
+                        retries--;
+                        trySet();
+                    }, 200); // Wait 200ms and try again
+                } else {
+                    // Final fallback: set blank
+                    $select.val('').trigger('change');
+                    $select.selectpicker('refresh');
+                    console.warn(`Value "${value}" not found for ${selectId}`);
+                }
+            }
+        
+            trySet();
+        }
+
+         //+++++++++++++display value pd select dropdown+++++++++++++++++++++++++
+         setSelectValueinfo("#warganegsta", result.p001kwarganegara);
+         setSelectValueinfo("#tajaan", result.p001kpenaja);
+         setSelectValueinfo("#birthplace", tmptlahir);
+         setSelectValueinfo("#race", race);
+         setSelectValueinfo("#gender", gender);
+         setSelectValueinfo("#religion", religion);
 
         $('#labeldob').text(dob);
         $('#labelnama').text(nama);
@@ -941,6 +983,8 @@ else {
         $("#labelagentname").text();
         $("#labelagentemail").text();
         $("#labelincome").text(amounthouse);
+        $("#postcodehomeadd").val(postcodet);
+        $("#labeladdtetap").val(almttetap1);
 
 
          //++++++++++++++++lookup kod program+++++++++++++++++++++++++++
