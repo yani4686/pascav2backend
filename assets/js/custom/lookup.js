@@ -358,7 +358,8 @@ $.ajax({
             var select = $('#dun').empty().append('<option value="">Select DUN</option>'); // Clear existing options
             
             response.forEach(function (item) {
-                var dunCode = item.z041dun;   // DUN code
+                var dunCode = item.z041kod;   // DUN code
+                var dunDesc = item.z041dun;   // DUN code
                 var parlimen = item.z041parlimen; // Parliament name
 
                 // Store DUN-to-Parlimen mapping
@@ -368,7 +369,7 @@ $.ajax({
                 select.append(
                     $('<option>', {
                         value: dunCode,
-                        text: dunCode // Display DUN code in dropdown
+                        text: dunDesc // Display DUN code in dropdown
                     })
                 );
             });

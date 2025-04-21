@@ -104,7 +104,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z041kod,z041dun,z041parlimen FROM ppsdblocal.z041");
+        $Query = $db->query("SELECT trim(z041kod) as z041kod,z041dun,z041parlimen FROM ppsdblocal.z041");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -114,7 +114,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z038kodmohes,z038kelayakan  FROM ppsdblocal.z038 where z038kodmohes<>'-1' and z038kodmohes<>'-2'");
+        $Query = $db->query("SELECT trim(z038kodmohes) as z038kodmohes,z038kelayakan  FROM ppsdblocal.z038 where z038kodmohes<>'-1' and z038kodmohes<>'-2' order by z038kelayakan asc");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -124,7 +124,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT DISTINCT z039kodmohes,z039pendapatan  FROM ppsdblocal.z039 WHERE z039id<> '14' AND z039id<> '15' AND z039id<> '16' ");
+        $Query = $db->query("SELECT DISTINCT z039kodmohes,z039pendapatan  FROM ppsdblocal.z039 WHERE z039id<> '14' AND z039id<> '15' AND z039id<> '16' order by z039pendapatan asc ");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -135,7 +135,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z040kodmohes,z040jnssekolah  FROM ppsdblocal.z040 WHERE z040kod<>'1' AND z040kod<>'2' ");
+        $Query = $db->query("SELECT trim(z040kodmohes) as z040kodmohes,z040jnssekolah  FROM ppsdblocal.z040 WHERE z040kod<>'1' AND z040kod<>'2' ");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -672,197 +672,197 @@ public function InsStep5()
 
 }
 
-public function generatePdfExample(){
-    // Initialize Dompdf
-    $options = new Options();
-    $options->set('isHtml5ParserEnabled', true);
-    $options->set('isRemoteEnabled', true);
+// public function generatePdfExample(){
+//     // Initialize Dompdf
+//     $options = new Options();
+//     $options->set('isHtml5ParserEnabled', true);
+//     $options->set('isRemoteEnabled', true);
 
-    $dompdf = new Dompdf($options);
+//     $dompdf = new Dompdf($options);
 
-    // Fetch data for the last step (can be passed as session or parameters)
-    $session = session();
+//     // Fetch data for the last step (can be passed as session or parameters)
+//     $session = session();
 
-    $user = $session->get('username');
-    $idsess = $session->get('id');
+//     $user = $session->get('username');
+//     $idsess = $session->get('id');
 
-    $db = Config::connect();
+//     $db = Config::connect();
 
-    $loginQuery = $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
-    p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
-    case p001kwarganegara when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p001email
-    from ppsdblocal.p001 where p001email='$idsess' ");
-    $result = $loginQuery->getRow();
+//     $loginQuery = $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+//     p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+//     case p001kwarganegara when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p001email
+//     from ppsdblocal.p001 where p001email='$idsess' ");
+//     $result = $loginQuery->getRow();
 
-   // return $this->response->setJSON($result); 
+//    // return $this->response->setJSON($result); 
     
 
-    $data = [
-        'result' => $result,
-       // 'content' => 'This is the content of the last step.',
-    ];
+//     $data = [
+//         'result' => $result,
+//        // 'content' => 'This is the content of the last step.',
+//     ];
 
-    // Load a view for the PDF content
-    $html = view('form/apply', $data);
+//     // Load a view for the PDF content
+//     $html = view('form/apply', $data);
 
-    // Load HTML into Dompdf
-    $dompdf->loadHtml($html);
+//     // Load HTML into Dompdf
+//     $dompdf->loadHtml($html);
 
-    // Set paper size and orientation
-    $dompdf->setPaper('A4', 'portrait');
+//     // Set paper size and orientation
+//     $dompdf->setPaper('A4', 'portrait');
 
-    // Render the PDF
-    $dompdf->render();
+//     // Render the PDF
+//     $dompdf->render();
 
-    // Output the PDF (force download or inline)
-    return $this->response->setHeader('Content-Type', 'application/pdf')
-                          ->setBody($dompdf->output())
-                          ->setHeader('Content-Disposition', 'inline; filename="report.pdf"');
-}
+//     // Output the PDF (force download or inline)
+//     return $this->response->setHeader('Content-Type', 'application/pdf')
+//                           ->setBody($dompdf->output())
+//                           ->setHeader('Content-Disposition', 'inline; filename="report.pdf"');
+// }
 
-public function generatePdfSuratOffer(){
-// Initialize Dompdf
-$options = new Options();
-$options->set('isHtml5ParserEnabled', true);
-$options->set('isRemoteEnabled', true);
+// public function generatePdfSuratOffer(){
+// // Initialize Dompdf
+// $options = new Options();
+// $options->set('isHtml5ParserEnabled', true);
+// $options->set('isRemoteEnabled', true);
 
-$dompdf = new Dompdf($options);
+// $dompdf = new Dompdf($options);
 
-// Fetch data for the last step (can be passed as session or parameters)
-$session = session();
+// // Fetch data for the last step (can be passed as session or parameters)
+// $session = session();
 
-$user = $session->get('username');
-$idsess = $session->get('id');
+// $user = $session->get('username');
+// $idsess = $session->get('id');
 
-$db = Config::connect();
+// $db = Config::connect();
 
-$loginQuery = $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
-p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
-case p001kwarganegara when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p001email 
-from ppsdblocal.p001 where p001email='$idsess'");
-$result = $loginQuery->getRow();
+// $loginQuery = $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+// p001kcacat,p001akadtinggi,p001kpenaja,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+// case p001kwarganegara when '1' then 'Malaysian' when '2' then 'Non Malaysian' end as ktrgwarga,p001email 
+// from ppsdblocal.p001 where p001email='$idsess'");
+// $result = $loginQuery->getRow();
 
-// return $this->response->setJSON($result); 
+// // return $this->response->setJSON($result); 
 
 
-$data = [
-    'result' => $result,
-   // 'content' => 'This is the content of the last step.',
-];
+// $data = [
+//     'result' => $result,
+//    // 'content' => 'This is the content of the last step.',
+// ];
 
-// Load a view for the PDF content
-$html = view('form/acceptance', $data);
+// // Load a view for the PDF content
+// $html = view('form/acceptance', $data);
 
-// Load HTML into Dompdf
-$dompdf->loadHtml($html);
+// // Load HTML into Dompdf
+// $dompdf->loadHtml($html);
 
-// Set paper size and orientation
-$dompdf->setPaper('A4', 'portrait');
+// // Set paper size and orientation
+// $dompdf->setPaper('A4', 'portrait');
 
-// Render the PDF
-$dompdf->render();
+// // Render the PDF
+// $dompdf->render();
 
-// Output the PDF (force download or inline)
-return $this->response->setHeader('Content-Type', 'application/pdf')
-                      ->setBody($dompdf->output())
-                      ->setHeader('Content-Disposition', 'inline; filename="surat.pdf"');
-}
+// // Output the PDF (force download or inline)
+// return $this->response->setHeader('Content-Type', 'application/pdf')
+//                       ->setBody($dompdf->output())
+//                       ->setHeader('Content-Disposition', 'inline; filename="surat.pdf"');
+// }
 
-public function generatePdf(){
+// public function generatePdf(){
 
-    // Clear all output buffers
-    while (ob_get_level()) {
-        ob_end_clean();
-    }
+//     // Clear all output buffers
+//     while (ob_get_level()) {
+//         ob_end_clean();
+//     }
 
-    $options = new Options();
-    $options->set('isHtml5ParserEnabled', true);
-    $options->set('isRemoteEnabled', true);
+//     $options = new Options();
+//     $options->set('isHtml5ParserEnabled', true);
+//     $options->set('isRemoteEnabled', true);
 
-    $dompdf = new Dompdf($options);
+//     $dompdf = new Dompdf($options);
 
-     // Get POST data
-     $data = $this->request->getPost();
+//      // Get POST data
+//      $data = $this->request->getPost();
 
-     // Debug: Log received data
-     //error_log('POST Data: ' . json_encode($data));
+//      // Debug: Log received data
+//      //error_log('POST Data: ' . json_encode($data));
  
-     if (empty($data)) {
-         return $this->response->setJSON(['error' => 'No data received.']);
-     }
+//      if (empty($data)) {
+//          return $this->response->setJSON(['error' => 'No data received.']);
+//      }
 
-     // Example dynamic content for the header
-    $headerText = isset($data['header_text']) ? $data['header_text'] : "Default Header";
+//      // Example dynamic content for the header
+//     $headerText = isset($data['header_text']) ? $data['header_text'] : "Default Header";
 
-    // Get the Base64 image data from the form
-   // $passportImage = isset($data['passport_image']) ? $data['passport_image'] : null;
+//     // Get the Base64 image data from the form
+//    // $passportImage = isset($data['passport_image']) ? $data['passport_image'] : null;
 
-     // Decode the Base64 image and save it as a temporary file
-    //  if ($passportImage) {
-    //     // Remove the prefix 'data:image/png;base64,' if it exists
-    //     $imageData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $passportImage));
-    //     $imagePath = WRITEPATH . 'uploads/passport_image.png';
-    //     file_put_contents($imagePath, $imageData);
-    // }
+//      // Decode the Base64 image and save it as a temporary file
+//     //  if ($passportImage) {
+//     //     // Remove the prefix 'data:image/png;base64,' if it exists
+//     //     $imageData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $passportImage));
+//     //     $imagePath = WRITEPATH . 'uploads/passport_image.png';
+//     //     file_put_contents($imagePath, $imageData);
+//     // }
  
-     // Generate HTML content
-    $html = '<html><head><style>';
-    $html .= 'body { font-family: Helvetica, sans-serif; }';
-    $html .= '.header { text-align: center; font-size: 20px; font-weight: bold; margin-bottom: 10px; }';
-    $html .= '.line { border-top: 2px solid black; margin-top: 10px; margin-bottom: 20px; }';
-    $html .= '</style></head><body>';
+//      // Generate HTML content
+//     $html = '<html><head><style>';
+//     $html .= 'body { font-family: Helvetica, sans-serif; }';
+//     $html .= '.header { text-align: center; font-size: 20px; font-weight: bold; margin-bottom: 10px; }';
+//     $html .= '.line { border-top: 2px solid black; margin-top: 10px; margin-bottom: 20px; }';
+//     $html .= '</style></head><body>';
      
-// $html = '<h3 style="font-family: Helvetica, sans-serif; text-align: left;">Profile Information</h3>';
+// // $html = '<h3 style="font-family: Helvetica, sans-serif; text-align: left;">Profile Information</h3>';
 
-    // Horizontal line
-    $html .= '<div class="line"></div>';
+//     // Horizontal line
+//     $html .= '<div class="line"></div>';
 
-    // Embed the Base64 image if it exists
-    // if ($passportImage) {
-    //     // Embed the image in the PDF (Use the saved temporary file path)
-    //     $html .= '<img src="' . ' http://localhost/pascav2/public/uploads/860604465280_pic.jpg' . '" alt="Passport Image" style="width: 100px; height: auto;">';
-    // }
+//     // Embed the Base64 image if it exists
+//     // if ($passportImage) {
+//     //     // Embed the image in the PDF (Use the saved temporary file path)
+//     //     $html .= '<img src="' . ' http://localhost/pascav2/public/uploads/860604465280_pic.jpg' . '" alt="Passport Image" style="width: 100px; height: auto;">';
+//     // }
 
-    // Add the rest of the content (dynamically)
-    $html .= '<p style="font-family: Helvetica, sans-serif; text-align: left;font-weight: bold;">Profile Information.</p>';
-    foreach ($data as $key => $value) {
-        $html .= "<p style='font-family: Helvetica, sans-serif;'><strong>{$key}:</strong> " . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
-    }
+//     // Add the rest of the content (dynamically)
+//     $html .= '<p style="font-family: Helvetica, sans-serif; text-align: left;font-weight: bold;">Profile Information.</p>';
+//     foreach ($data as $key => $value) {
+//         $html .= "<p style='font-family: Helvetica, sans-serif;'><strong>{$key}:</strong> " . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . "</p>";
+//     }
 
-    // Horizontal line
-    $html .= '<div class="line"></div>';
+//     // Horizontal line
+//     $html .= '<div class="line"></div>';
     
-    // Close the HTML tags
-    $html .= '</body></html>';
+//     // Close the HTML tags
+//     $html .= '</body></html>';
 
-     // Debug: Save HTML to a file for inspection
-    // file_put_contents(WRITEPATH . 'logs/debug.html', $html);
+//      // Debug: Save HTML to a file for inspection
+//     // file_put_contents(WRITEPATH . 'logs/debug.html', $html);
  
-     // Debug: Output the HTML
-     //error_log('Generated HTML: ' . $html);
-     //exit;
+//      // Debug: Output the HTML
+//      //error_log('Generated HTML: ' . $html);
+//      //exit;
  
-     $dompdf->loadHtml($html);
-     $dompdf->setPaper('A4', 'portrait');
-     $dompdf->render();
+//      $dompdf->loadHtml($html);
+//      $dompdf->setPaper('A4', 'portrait');
+//      $dompdf->render();
 
-       // Debug: Check PDF output length
-    $pdfOutput = $dompdf->output();
-    //error_log('PDF Output Length: ' . strlen($pdfOutput));
+//        // Debug: Check PDF output length
+//     $pdfOutput = $dompdf->output();
+//     //error_log('PDF Output Length: ' . strlen($pdfOutput));
 
-     // Save the PDF to a file for inspection
-     //file_put_contents(WRITEPATH . 'logs/test.pdf', $pdfOutput);
+//      // Save the PDF to a file for inspection
+//      //file_put_contents(WRITEPATH . 'logs/test.pdf', $pdfOutput);
  
-     // Output the PDF
-     $response = $this->response;
-     $response->setHeader('Content-Type', 'application/pdf');
-     $response->setHeader('Content-Disposition', 'attachment; filename="test.pdf"');
-     $response->setBody($pdfOutput);
+//      // Output the PDF
+//      $response = $this->response;
+//      $response->setHeader('Content-Type', 'application/pdf');
+//      $response->setHeader('Content-Disposition', 'attachment; filename="test.pdf"');
+//      $response->setBody($pdfOutput);
  
-    // error_log('PDF Output Length: ' . strlen($response));
+//     // error_log('PDF Output Length: ' . strlen($response));
 
-     return $response;
-}
+//      return $response;
+// }
 
 /**
  * Handles file upload and backup if a file already exists.

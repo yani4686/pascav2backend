@@ -910,6 +910,7 @@ else {
         var negara       = result.p001alamatneg;
         var negaratetap  = result.p001alamatnegt;
         var nosurat      = result.p001nosrttawar;
+        var modifynoSurat = nosurat.replace(/_/g, '/');
         var val_oku      = result.p001kcacat;
         var akadtgg      = result.descakadttg;
         var bikat        = result.descbi;
@@ -920,6 +921,13 @@ else {
         var race         = result.p001kkaum;
         var gender       = result.p001kjantina;
         var religion     = result.p001kagama;
+        var maritalst    = result.p001kkahwin;
+        var dun          = result.p001kdun;
+        var sek          = result.p001sekmen;
+        var lykmasuk     = result.p001lykmsk;
+        var bispm        = result.p001bispm;
+        var bmspm        = result.p001bmspm;
+        var pndaptn      = result.p001kdapat;
       
         //ret n display value selectdropdown
         function setSelectValueinfo(selectId, value, retries = 10) {
@@ -928,7 +936,7 @@ else {
         
             function trySet() {
                 var exists = $select.find("option[value='" + value + "']").length > 0;
-        
+            
                 if (exists) {
                     $select.val(value).trigger('change');
                     $select.selectpicker('refresh');
@@ -956,6 +964,13 @@ else {
          setSelectValueinfo("#race", race);
          setSelectValueinfo("#gender", gender);
          setSelectValueinfo("#religion", religion);
+         setSelectValueinfo("#marital", maritalst);
+         setSelectValueinfo("#dun", dun);
+         setSelectValueinfo("#sek", sek);
+         setSelectValueinfo("#lykmsk", lykmasuk);
+         setSelectValueinfo("#bispm", bispm);
+         setSelectValueinfo("#bmspm", bmspm);
+         setSelectValueinfo("#incomekd", pndaptn);
 
         $('#labeldob').text(dob);
         $('#labelnama').text(nama);
@@ -964,7 +979,7 @@ else {
         $('#labelmodest').text(mode);
         $('#methodst').text(method);
         $('#labelnat').text(kwarga);
-        $('#labelnosurat').text(nosurat);
+        $('#labelnosurat').text(modifynoSurat);
         $('#tkhstatus').text(tkhstatus);
         $('#labeladdhp').text(nohp);
         $('#mobilenoupd').val(nohp);
@@ -1139,7 +1154,12 @@ $.ajax({
     }
 });
      }//respon
-    });//ajax
+});//ajax
+
+//for value no only
+$('#mobilenoupd').keyup(function (){
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+   });
 
   //print pdf using window print
 $(".printPageIcon").click(function () {

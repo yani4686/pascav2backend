@@ -29,6 +29,8 @@ $(document).ready(function () {
        var race         = result.p001kkaum;
        var gender       = result.p001kjantina;
        var religion     = result.p001kagama;
+       var maritalst    = result.p001kkahwin;
+       var dun          = result.p001kdun;
      
        //ret n display value selectdropdown
        function setSelectValueinfo(selectId, value, retries = 10) {
@@ -65,6 +67,8 @@ $(document).ready(function () {
         setSelectValueinfo("#race", race);
         setSelectValueinfo("#gender", gender);
         setSelectValueinfo("#religion", religion);
+        setSelectValueinfo("#marital", maritalst);
+        setSelectValueinfo("#dun", dun);
 
        $('#labeldob').text(dob);
        $('#labelnama').text(nama);

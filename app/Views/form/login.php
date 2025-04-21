@@ -114,7 +114,7 @@
 										<input type="checkbox" name="remember" />
 										<span></span>Remember me</label>
 									</div> -->
-									<a href="javascript:;" id="kt_login_forgot" class="text-muted text-hover-primary">Forget Password ?</a>
+									<a href="javascript:;" id="kt_login_forgot" class="text-muted text-hover-primary">Forgot Password ?</a>
 								</div>
 								<!-- <button id="kt_login_signin_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Sign In</button> -->
 								<button type="button" id="login_submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Log In</button>

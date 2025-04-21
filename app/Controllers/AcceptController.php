@@ -49,7 +49,7 @@ class AcceptController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z016kodmohes,z016nmagamabi from ppsdblocal.z016 where z016kodmohes not in ('','5','-2','-1','10')");
+        $Query = $db->query("SELECT trim(z016kodmohes) as z016kodmohes,z016nmagamabi from ppsdblocal.z016 where z016kodmohes not in ('','5','-2','-1','10')");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -59,7 +59,7 @@ class AcceptController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT z017kodmohes,z017statuskhwinbi from ppsdblocal.z017 where z017kodmohes not in ('-1','-2')");
+        $Query = $db->query("SELECT trim(z017kodmohes) as z017kodmohes,z017statuskhwinbi from ppsdblocal.z017 where z017kodmohes not in ('-1','-2')");
         $result = $Query->getResult();
 
         return $this->response->setJSON($result);
@@ -106,18 +106,34 @@ class AcceptController extends ResourceController
     //get post from form
     $input = $this->request->getPost();
     $birthplace   = !empty($input['birthplace']) ? $input['birthplace'] : null;
+    $nohp         = !empty($input['mobilenoupd']) ? $input['mobilenoupd'] : null;
     $gender       = !empty($input['gender']) ? $input['gender'] : null;
     $race         = !empty($input['race']) ? $input['race'] : null;
     $religion     = !empty($input['religion']) ? $input['religion'] : null;
+    $maritalst    = !empty($input['marital']) ? $input['marital'] : null;
+    $dun          = !empty($input['dun']) ? $input['dun'] : null;
+    $sek          = !empty($input['sek']) ? $input['sek'] : null;
+    $lykmasuk     = !empty($input['lykmsk']) ? $input['lykmsk'] : null;
+    $bigred       = !empty($input['bispm']) ? $input['bispm'] : null;
+    $bmgred       = !empty($input['bmspm']) ? $input['bmspm'] : null;
+    $incomekd     = !empty($input['incomekd']) ? $input['incomekd'] : null;
 
      // Update database
      $update = $db->table('ppsdblocal.p001')
      ->set([
+        'p001nohp'     => $nohp,
         'p001knlahir'  => $birthplace,
         'p001kjantina' => $gender,
         'p001kagama'   => $religion,
         'p001kkaum'    => $race,
-        //'p001ststerimatwr' => '',
+        'p001kkahwin'  => $maritalst,
+        'p001kdun'     => $dun,
+        'p001sekmen'   => $sek,
+        'p001lykmsk'   => $lykmasuk,
+        'p001bispm'   => $bigred,
+        'p001bmspm'   => $bmgred,
+        'p001kdapat'   => $incomekd,
+        'p001ststerimatwr' => '1',
      ])
      ->where('p001nokp', $p001nokp)
      ->update();
@@ -202,8 +218,8 @@ class AcceptController extends ResourceController
         WHEN p001modebelajar = '2' THEN 'Part Time' end as descmode,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,
         CASE p001kwarganegara 
         WHEN '1' THEN 'MALAYSIAN' 
-        WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p001kbumi,p001knlahir,p001kjantina,p001kkaum,p001kagama,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
-        p001kcacat,p001muet,p001akadtinggi,CASE p001akadtinggi 
+        WHEN '2' THEN 'NON MALAYSIAN' end as desckwarga,p001kbumi,p001knlahir,p001kjantina,p001kkaum,trim(p001kagama) as p001kagama,trim(p001kkahwin) as p001kkahwin,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,p001email,p001ststerimatwr,
+        p001kcacat,p001bispm,p001bmspm,p001muet,p001akadtinggi,trim(p001sekmen) as p001sekmen,trim(p001lykmsk) as p001lykmsk,p001kdapat,CASE p001akadtinggi 
         WHEN '1' THEN 'Bachelor / Equivalent'
         WHEN '2' THEN 'Master Degree / Equivalent'
         WHEN '3' THEN 'Diploma' end as descakadttg,p001kpenaja,p001tkhstatus,p001status,CASE 
@@ -216,7 +232,7 @@ class AcceptController extends ResourceController
         WHEN p001status = '4' THEN 'Pindah Fakulti'
         WHEN p001status = '5' THEN 'Lulus Fakulti2'
         WHEN p001status = '6' THEN 'Gagal Fakulti2'
-        END AS statdesc,p001upgambar,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
+        END AS statdesc,p001upgambar,trim(p001kdun) as p001kdun,p001uppassport,p001uptrans,p001upproposal,p001upresit,p001upmuet,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,
         CASE 
         p001kbumi 
         WHEN '1' THEN 'BUMIPUTERA' 

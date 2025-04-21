@@ -27,7 +27,7 @@
 						<div class="container">
                         	<form role="form" id="idFrmAddInfo">
 <!--  -->
-							<div class="panel panel-primary">
+							<div class="panel panel-primary accept-content">
 								<div class="panel-heading"><h3 class="panel-title">Acceptance Approval (MyMOHES DATA)</h3></div>
 								
 									<div class="panel-body form-horizontal m-10">
@@ -164,7 +164,7 @@
 									<div class="form-group row">
 									 <label class="col-lg-3 col-form-label">Place of Birth : </label>
 												<div class="col-lg-4">
-													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="birthplace" name="birthplace">
+													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="birthplace" name="birthplace" required>
 												</select>
 												</div>
 									<label class="col-lg-3 col-form-label">Gender: </label>

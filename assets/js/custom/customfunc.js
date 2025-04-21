@@ -396,6 +396,34 @@ $(".printPdf").click(function () {
 //upd add info after accept offer
 $(".updaddinfo").click(function () {
 
+    var valrequire = $(this).closest(".accept-content")
+   // alert(valrequire);
+
+      // Validate required fields
+      var valInputs = valrequire.find("input[required], select[required], textarea[required]");
+      var isValid = true;
+
+      // Remove previous error classes
+      valrequire.find(".form-group").removeClass("has-error");
+
+     valInputs.each(function () {
+        var val = $(this).val();
+        var wrapper = $(this).closest(".col-lg-4,.col-lg-6,.col-lg-8");//for highlight color
+        // Log for debugging (optional)
+        console.log("Validating field:", $(this).attr("name"), "Value:", val);
+        if (val === null || val.trim() === "") {
+            isValid = false;
+            //$(this).closest(".form-group").addClass("has-error");
+            wrapper.addClass("has-error");//for highlight color
+        }
+    });
+    
+    if (!isValid) {
+        // Show an error alert and stop execution if validation fails.
+        Swal.fire("Error", "Please fill in all required fields.", "error");
+        return; // Prevents AJAX call and moving to the next step
+    }
+
     var form = document.getElementById('idFrmAddInfo');
     var formData = new FormData(form);
 

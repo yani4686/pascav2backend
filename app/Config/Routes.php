@@ -50,8 +50,8 @@ $routes->post('/insstep2', 'ApplyController::InsStep2');
 $routes->post('/insstep3', 'ApplyController::InsStep3');
 $routes->post('/insstep4', 'ApplyController::InsStep4');
 $routes->post('/insstep5', 'ApplyController::InsStep5');
-$routes->get('/generatePdf', 'ApplyController::generatePdfExample');
-$routes->post('/generatepdf', 'ApplyController::generatePdf');
+//$routes->get('/generatePdf', 'ApplyController::generatePdfExample');
+//$routes->post('/generatepdf', 'ApplyController::generatePdf');
 
 $routes->post('/updaccept', 'AcceptController::UpdAccept');
 $routes->post('/viewsurat', 'AcceptController::ViewSurat');

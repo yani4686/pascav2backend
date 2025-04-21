@@ -3,18 +3,77 @@
 namespace App\Controllers;
 
 use TCPDF;
+use CodeIgniter\Database\Config;
+use CodeIgniter\RESTful\ResourceController;
+
+class CustomPDF extends TCPDF
+{
+    public function Footer()
+    {
+          // Position at 30 mm from bottom
+          $this->SetY(-30);
+          $this->SetFont('dejavusans', '', 9);
+  
+          // No line before the computer generated notice
+          $footer = '
+          <i>This is a computer generated letter. No signature is required.</i><br><br><i>Blok Anas, Kampus Gong Badak, 21300 Kuala Terengganu, Terengganu, Malaysia<br/>
+          E-mel: pps_gs-registration@unisza.edu.my</i><br/>
+          <hr style="border: 0.5px solid black; margin-top: 4px; margin-bottom: 2px;" />
+          <i>Pusat Pengajian Siswazah | Graduate School</i>
+          ';
+  
+          // Output footer aligned to the left
+          $this->writeHTMLCell(0, 0, 10, '', $footer, 0, 1, false, true, 'L', true);
+    }
+}
 
 class PdfController extends BaseController
 {
+    
     public function GenerateLetter()
     {
       //  ob_clean(); // Fix PDF corruption caused by output buffering
        // flush(); 
 
         ob_end_clean();
+
+        $session = session();
+
+        $user = $session->get('username');
+        $idsess = $session->get('id');
+
+        $cur = date('d-m-Y');
+
+        $db = Config::connect();
+
+        // Fetch user details
+        $query = $db->table('ppsdblocal.p001')
+        ->select('p001nosrttawar,p001nokp,p001nama,p001alamat1,p001poskod,p001bandar,p001knegeri,p001alamatneg,p001kprog,p001modebelajar,p001kaedah,p001kkampus,p001penyelia,p001tkhstatus')
+        ->where([
+            'p001email' => $idsess
+        ])
+        ->get();
+
+        $result = $query->getRow();
+
+        if (!$result) {
+        return $this->response->setJSON([
+        'success' => false,
+        'message' => 'User not found or registration not approved.',
+        ]);
+        }
+
+        $nokp     = $result->p001nokp;
+        $nama     = $result->p001nama;
+        $alamat1  = $result->p001alamat1;
+        $poskod   = $result->p001poskod;
+        $bandar   = $result->p001bandar;
+        $nosurat  = $result->p001nosrttawar;
+        $modifiednosurat = str_replace('_', '/', $nosurat);
     
         // Create a new TCPDF instance
-        $pdf = new TCPDF();
+       // $pdf = new TCPDF();
+        $pdf = new CustomPDF();
     
         // Set document properties
         $pdf->SetCreator('UniSZA');
@@ -24,6 +83,8 @@ class PdfController extends BaseController
     
         // Set font
         $pdf->SetFont('dejavusans', '', 12);
+
+        $pdf->setPrintHeader(false); // ✅ Disable default header
     
         // Add a page
         $pdf->AddPage();
@@ -51,13 +112,12 @@ class PdfController extends BaseController
             <img src="' . $imgSrc . '" width="120"/><br>
             Pusat Pengajian Siswazah | Graduate School
             <br><br>
-            Our Reference: PPS/UniSZA/01<br>
-            Date: 06/02/2024
+            Our Reference: '.$modifiednosurat.'<br>
+            Date: '.$cur.'
         </div>
     
         <div class="contentSurat">
-            <p><strong>NUR ALYANI</strong><br>
-            300 KG KOTA, MANIR<br></p>
+            <p><strong>'.$nama.' ('.$nokp.')</strong><br>'.$alamat1.'<br>'.$poskod.','.$bandar.'<br></p>
     
             <p>Dear Sir/Madam,</p>
     
