@@ -57,4 +57,19 @@ class DashboardController extends ResourceController
 
 
     }
+
+    public function DisplayInfoDashboard()
+    {
+        $session = session();
+
+        $user   = $session->get('username');
+        $idsess = $session->get('id');
+
+        $db = Config::connect();
+
+        $loginQuery = $db->query("SELECT p001upsuratoffer from ppsdblocal.p001 where p001email='$idsess'");
+        $result = $loginQuery->getRow();
+
+        return $this->response->setJSON($result);
+    }
 }

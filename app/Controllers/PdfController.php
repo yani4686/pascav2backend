@@ -48,7 +48,8 @@ class PdfController extends BaseController
 
         // Fetch user details
         $query = $db->table('ppsdblocal.p001')
-        ->select('p001nosrttawar,p001nokp,p001nama,p001alamat1,p001poskod,p001bandar,p001knegeri,p001alamatneg,p001kprog,p001modebelajar,p001kaedah,p001kkampus,p001penyelia,p001tkhstatus')
+        ->select('p001nosrttawar,p001nokp,p001nama,p001alamat1,p001poskod,p001bandar,p001knegeri,p001alamatneg,p001kprog,p001modebelajar,p001kaedah,p001kkampus,p001penyelia,
+        p001tkhstatus,p001kjantina')
         ->where([
             'p001email' => $idsess
         ])
@@ -68,8 +69,70 @@ class PdfController extends BaseController
         $alamat1  = $result->p001alamat1;
         $poskod   = $result->p001poskod;
         $bandar   = $result->p001bandar;
+        $negeri   = $result->p001knegeri;
         $nosurat  = $result->p001nosrttawar;
+        $kdprogram  = $result->p001kprog;
+        $kdkaedah  = $result->p001kaedah;
+        $kdmodebelajar  = $result->p001modebelajar;
+        $kdlokasi  = $result->p001kkampus;
+        $sv  = $result->p001penyelia;
+        $tkhoffer  = $result->p001tkhstatus;
+        $gender  = $result->p001kjantina;
         $modifiednosurat = str_replace('_', '/', $nosurat);
+
+        if( $kdkaedah = '7'){
+            $kaedahdesc = 'COURSEWORK';
+        } if( $kdkaedah = '8'){
+            $kaedahdesc = 'RESEARCH';
+        } if( $kdkaedah = '9'){
+            $kaedahdesc = 'MIX_MODE';
+        }
+
+        if( $kdmodebelajar = '1'){
+            $modebelajar = 'FULL TIME';
+        } if( $kdkaedah = '2'){
+            $modebelajar = 'PART TIME';
+        } 
+
+        if( $kdlokasi = '1'){
+            $lokasi = 'GONG BADAK CAMPUS';
+        }if( $kdlokasi = '2'){
+            $lokasi = 'TEMBILA CAMPUS';
+        }if( $kdlokasi = '3'){
+            $lokasi = 'MEDICINE CAMPUS';
+        }if( $kdlokasi = '4'){
+            $lokasi = 'UniSZA INTERNATIONAL CAMPUS';
+        }
+
+        if( $gender = 'L'){
+            $greet = 'Sir';
+        } if( $gender = 'P'){
+            $greet = 'Madam';
+        } else{
+            $greet = 'Sir/Madam';
+        }
+
+
+//negeri
+        $queryneg = $db->table('ppsdblocal.a090')
+        ->select('a090negeri')
+        ->where([
+            'a090knegeri' => $negeri
+        ])
+        ->get();
+
+        $resultneg = $queryneg->getRow();
+        $negeridesc  = $resultneg->a090negeri;   
+//nec
+$querynec = $db->query("SELECT p020namaprogbi,z054bnecdetail,a019bi FROM ppsdblocal.p020,ppsdblocal.a019,ppsdblocal.p020x,ppsdblocal.z054b  
+where p020kprog=p020xkprog and p020xnec=z054bknecdetail and a019kbhg = p020kfakulti and (p020kodmqa ='1' or p020kodmqa ='2') AND p020namaprogbi IS NOT NULL AND p020kprog='$kdprogram'");
+
+$resultnec = $querynec->getRow();
+$necdesc  = $resultnec->z054bnecdetail;   
+$programdesc  = $resultnec->p020namaprogbi;   
+$facdesc  = $resultnec->a019bi;   
+
+        
     
         // Create a new TCPDF instance
        // $pdf = new TCPDF();
@@ -117,9 +180,9 @@ class PdfController extends BaseController
         </div>
     
         <div class="contentSurat">
-            <p><strong>'.$nama.' ('.$nokp.')</strong><br>'.$alamat1.'<br>'.$poskod.','.$bandar.'<br></p>
+            <p><strong>'.$nama.' ('.$nokp.')</strong><br>'.$alamat1.'<br>'.$poskod.','.$bandar.'<br>'.$negeridesc.'<br></p>
     
-            <p>Dear Sir/Madam,</p>
+            <p>Dear '.$greet.',</p>
     
             <h1>OFFER OF ADMISSION TO THE POSTGRADUATE PROGRAM</h1>
     
@@ -129,14 +192,14 @@ class PdfController extends BaseController
             <p>Your offered program details are as follows:</p>
     
             <table>
-                <tr><td>Program</td><td>: MASTER OF SCIENCE</td></tr>
-                <tr><td>NEC</td><td>: ABC123</td></tr>
-                <tr><td>Mode</td><td>: RESEARCH</td></tr>
-                <tr><td>Faculty</td><td>: FST</td></tr>
-                <tr><td>Method of Registration</td><td>: FULL TIME</td></tr>
-                <tr><td>Campus</td><td>: GONG BADAK</td></tr>
-                <tr><td>Main Supervisor</td><td>: DR A</td></tr>
-                <tr><td>Date of Offer Approval</td><td>: 31/01/2024</td></tr>
+                <tr><td>Program</td><td>: '.$programdesc.'</td></tr>
+                <tr><td>NEC</td><td>: '.$necdesc.'</td></tr>
+                <tr><td>Mode</td><td>: '.$kaedahdesc.'</td></tr>
+                <tr><td>Faculty</td><td>: '.$facdesc .'</td></tr>
+                <tr><td>Method of Registration</td><td>: '.$modebelajar.'</td></tr>
+                <tr><td>Campus</td><td>: '.$lokasi.'</td></tr>
+                <tr><td>Main Supervisor</td><td>: '.$sv.'</td></tr>
+                <tr><td>Date of Offer Approval</td><td>: '.$tkhoffer.'</td></tr>
             </table>
     
             <p>This offer is valid for twelve (12) months from the date of offer.</p>
@@ -147,19 +210,47 @@ class PdfController extends BaseController
         $pdf->writeHTML($html, true, false, true, false, '');
     
         // Set headers to force the browser to display the PDF properly
-        header('Content-Type: application/pdf');
-        header('Content-Disposition: inline; filename="OfferLetter.pdf"');
-        header('Cache-Control: private, must-revalidate, max-age=0');
-        header('Pragma: public');
-        header('Expires: 0');
+        // header('Content-Type: application/pdf');
+        // header('Content-Disposition: inline; filename="OfferLetter.pdf"');
+        // header('Cache-Control: private, must-revalidate, max-age=0');
+        // header('Pragma: public');
+        // header('Expires: 0');
+
+        // Define the filename and path
+        $filename = $nokp . '_offer.pdf';
+        $savePath = WRITEPATH . 'uploads/offerLetter/' . $filename; // Ensure this directory exists and is writable
+    
     
         // Output the PDF
         $pdfOutput = $pdf->Output('OfferLetter.pdf', 'S'); // 'I' for inline display,'S' returns content instead of output
+        // Save the PDF to the specified path
+        $pdf->Output($savePath, 'F'); // 'F' stands for file
 
-       // Return the PDF using CodeIgniter's response object
-        return $this->response
-        ->setContentType('application/pdf')
-        ->setBody($pdfOutput);
+        // Update database
+        $update = $db->table('ppsdblocal.p001')
+        ->set([
+            'p001upsuratoffer' => $filename,
+        ])
+        ->where('p001nokp', $nokp)
+        ->update();
+
+        if ($update) {
+            // Only return PDF preview if DB update is successful
+            $pdfOutput = $pdf->Output('OfferLetter.pdf', 'S'); // Get content as string
+            return $this->response
+                ->setContentType('application/pdf')
+                ->setHeader('Content-Disposition', 'inline; filename="OfferLetter.pdf"')
+                ->setBody($pdfOutput);
+        } else {
+            // If DB update failed
+            $error = $db->error();
+            error_log("DB Update Error: " . json_encode($error));
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Database update failed.',
+                'error' => $error,
+            ]);
+        }
 
     }
     

@@ -17,6 +17,7 @@ $routes->get('/test', 'Home::test');
 $routes->get('/getdata', 'DashboardController::getAllSessionData');
 $routes->get('/getdisplaystatusmohon', 'DashboardController::getDisplayStatusMohon');
 $routes->get('/countdisplaydashboard', 'DashboardController::countDisplayDashboard');
+$routes->get('/displayinfodashboard', 'DashboardController::DisplayInfoDashboard');
 
 
 $routes->get('/testdb', 'LoginController::testDb');

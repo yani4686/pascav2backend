@@ -536,8 +536,24 @@ $("#previewModal").modal("show");
 
 //view pdf dr dashboard
 $('#viewpdf').click(function() {
+    $.ajax({
+        url: 'http://localhost/pascav2/public/displayinfodashboard', // Replace with your server endpoint
+        method: 'GET',
+       dataType: 'json', // Expect JSON response
+       //header :'"Cache-Control": "no-cache"',
+        success: function (result) {
+            var urloffer  =  result.p001upsuratoffer;
+
+            var url = 'http://localhost/pascav2/public/uploads/offerLetter/';
+            var urldisplayoffer;
+            urldisplayoffer = url + urloffer;
+
+            window.open(urldisplayoffer, '_blank');
+
+        }
+    });
    // alert('belum ada backend');
-    window.location.href="http://localhost/pascav2/public/generateletter";
+   // window.location.href="http://localhost/pascav2/public/generateletter";
   });
 
 });//end jquery doc function

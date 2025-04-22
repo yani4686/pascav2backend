@@ -162,7 +162,7 @@
 									</div>
 									<div class="separator separator-dashed my-6"></div>
 									<div class="form-group row">
-									 <label class="col-lg-3 col-form-label">Place of Birth : </label>
+									 <label class="col-lg-3 col-form-label">Birthplace : </label>
 												<div class="col-lg-4">
 													<select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="birthplace" name="birthplace" required>
 												</select>
@@ -340,38 +340,18 @@
 								  </div>
 								  
 								</form>
-				
-					<!--begin::Footer-->
-					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
-							<!--begin::Container-->
-							<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
-								<!--begin::Copyright-->
-								<div class="text-dark order-2 order-md-1">
-									<span class="text-muted font-weight-bold mr-2">2020©</span>
-									<a href="http://keenthemes.com/metronic" target="_blank" class="text-dark-75 text-hover-primary">yani</a>
-								</div>
-								<!--end::Copyright-->
-								<!--begin::Nav-->
-								<div class="nav nav-dark">
-									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">About</a>
-									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-5">Team</a>
-									<a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-0 pr-0">Contact</a>
-								</div>
-								<!--end::Nav-->
-							</div>
-							<!--end::Container-->
-					</div>
-					<!--end::Footer-->
 					</div><!-- end container -->
 				
 				</div><!--end::Content-->
-				
+				<!--begin::Footer-->
+				<?php echo view('form/footer_v1.php'); ?>
+				<!--end::Footer-->
 				</div><!--end::Wrapper-->
 					
 				</div><!--end::Page-->
 				
 				</div><!--End Starter-->
-				<?php echo view('/form/footer.php'); ?>
+				<!-- <?php echo view('/form/footer.php'); ?> -->
 	
 		<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
 		<!--begin::Global Config(global config for global JS scripts)-->
