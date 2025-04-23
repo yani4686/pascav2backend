@@ -528,7 +528,6 @@ $.ajax({
     url: "http://localhost/pascav2/public/viewsurat" ,    
     });
 
-    //alert("print & belum ada backend");
 window.location.href="http://localhost/pascav2/public/generateletter";
 $("#previewModal").modal("show");
 

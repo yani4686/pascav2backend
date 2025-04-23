@@ -55,20 +55,26 @@ class ApplyController extends ResourceController
 
     public function getkodnegara()
     {
-        // Path to your JSON file
-        $filePath = WRITEPATH . 'data/kodnegara.json';
+        $db = Config::connect();
 
-        // Check if file exists
-        if (!file_exists($filePath)) {
-            return $this->respond(['error' => 'File not found'], 404);
-        }
+        $Query = $db->query("SELECT c028kod,c028keterangan  FROM ppsdblocal.c028 order by c028keterangan asc");
+        $result = $Query->getResult();
 
-        // Load the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
+        return $this->response->setJSON($result);
+        // // Path to your JSON file
+        // $filePath = WRITEPATH . 'data/kodnegara.json';
 
-        // Return the JSON response
-        return $this->respond($data, 200);
+        // // Check if file exists
+        // if (!file_exists($filePath)) {
+        //     return $this->respond(['error' => 'File not found'], 404);
+        // }
+
+        // // Load the JSON data
+        // $jsonData = file_get_contents($filePath);
+        // $data = json_decode($jsonData, true);
+
+        // // Return the JSON response
+        // return $this->respond($data, 200);
     }
 
     public function getkodnegeri()

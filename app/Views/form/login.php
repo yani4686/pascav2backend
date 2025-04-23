@@ -140,11 +140,11 @@
 															<div class="radio-inline">
 																<label class="radio">
 																<input name="stswarga" id ="stswarga" type="radio" value="1"/>
-																<span></span>Malaysian</label>
+																<span></span>Citizen</label>
 
 																<label class="radio">
 																<input name="stswarga" id ="stswarga" type="radio" value="2"/>
-																<span></span>Non Malaysian</label>																
+																<span></span>Non Citizen</label>																
 															</div>
 														</div>
                                     </div>
