@@ -136,33 +136,26 @@ $(document).ready(function () {
          $("#hidetypefinance").hide();
 
         // status english
-        
+        // Attach handler FIRST
         $("input[name$='stselp']").on('click', function () {
+        var radio_value = $(this).val();
 
-          var radio_value = $(this).val();
+        if (radio_value === '') {
+        $("#muet, #adeng, #hidediveng").hide();
+        } else if (radio_value === 'y') {
+        $("#muet, #adeng, #hidediveng").show();
+        } else if (radio_value === 'n') {
+        $("#muet, #adeng, #hidediveng").hide();
+        }
+        });
 
-          if(radio_value==''){
-            $("#muet").hide();
-            $("#adeng").hide();
-            $("#hidediveng").hide();
-           }
-          else if(radio_value=='y'){ 
-            $("#muet").show();
-            $("#adeng").show();
-            $("#hidediveng").show();
-          }
-          else if(radio_value=='n'){ 
-            $("#muet").hide();
-            $("#adeng").hide();
-            $("#hidediveng").hide();
-          }
-          
-          });
-          
-          $('[name="stselp"]:checked').trigger('click');
-  
-          $("#hidediveng").hide();
-         // $("#adeng").hide();
+        // THEN trigger the selected state
+        var selected = $('[name="stselp"]:checked');
+        if (selected.length) {
+        selected.trigger('click');
+        } else {
+        $("#muet, #adeng, #hidediveng").hide();
+        }
 
          //status warga kt login
          $("input[name$='stswarga']").on('click', function () {
@@ -808,9 +801,11 @@ window.onclick = function(event) {
 }    
 
 //+++++++++++++++hidendisplay jenis bi+++++++++++++++++++
-       if(val_bitype!=''){
-         $("#hidediveng").show();
-       }
+if (val_bitype === '' || val_bitype === null) {
+    $("#hidediveng").hide();
+} else {
+    $("#hidediveng").show();
+}
 //+++++++++++++++hidendisplay no oku+++++++++++++++++++
        if(val_oku == '12' || val_oku != ''){
         $("#nooku").hide();
@@ -910,7 +905,13 @@ else {
         var negara       = result.p001alamatneg;
         var negaratetap  = result.p001alamatnegt;
         var nosurat      = result.p001nosrttawar;
-        var modifynoSurat = nosurat.replace(/_/g, '/');
+       // var modifynoSurat = nosurat.replace(/_/g, '/');
+        if (nosurat) {
+            var modifynoSurat = nosurat.replace(/_/g, '/');
+            console.log(modifynoSurat);
+        } else {
+            console.warn("Response is null or empty:", nosurat);
+        }
         var val_oku      = result.p001kcacat;
         var akadtgg      = result.descakadttg;
         var bikat        = result.descbi;
