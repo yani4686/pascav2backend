@@ -42,7 +42,8 @@ class PdfController extends BaseController
         $user = $session->get('username');
         $idsess = $session->get('id');
 
-        $cur = date('d-m-Y');
+        //$cur = date('d-m-Y');
+        $cur = date('d F, Y');
 
         $db = Config::connect();
 
@@ -80,35 +81,35 @@ class PdfController extends BaseController
         $gender  = $result->p001kjantina;
         $modifiednosurat = str_replace('_', '/', $nosurat);
 
-        if( $kdkaedah = '7'){
+        if ($kdkaedah == '7') {
             $kaedahdesc = 'COURSEWORK';
-        } if( $kdkaedah = '8'){
+        } elseif ($kdkaedah == '8') {
             $kaedahdesc = 'RESEARCH';
-        } if( $kdkaedah = '9'){
+        } elseif ($kdkaedah == '9') {
             $kaedahdesc = 'MIX_MODE';
         }
 
-        if( $kdmodebelajar = '1'){
+        if ($kdmodebelajar == '1') {
             $modebelajar = 'FULL TIME';
-        } if( $kdkaedah = '2'){
+        } elseif ($kdmodebelajar == '2') {
             $modebelajar = 'PART TIME';
-        } 
+        }
 
-        if( $kdlokasi = '1'){
+        if ($kdlokasi == '1') {
             $lokasi = 'GONG BADAK CAMPUS';
-        }if( $kdlokasi = '2'){
+        } elseif ($kdlokasi == '2') {
             $lokasi = 'TEMBILA CAMPUS';
-        }if( $kdlokasi = '3'){
+        } elseif ($kdlokasi == '3') {
             $lokasi = 'MEDICINE CAMPUS';
-        }if( $kdlokasi = '4'){
+        } elseif ($kdlokasi == '4') {
             $lokasi = 'UniSZA INTERNATIONAL CAMPUS';
         }
 
-        if( $gender = 'L'){
+        if ($gender == 'L') {
             $greet = 'Sir';
-        } if( $gender = 'P'){
+        } elseif ($gender == 'P') {
             $greet = 'Madam';
-        } else{
+        } else {
             $greet = 'Sir/Madam';
         }
 
@@ -145,7 +146,8 @@ $facdesc  = $resultnec->a019bi;
         $pdf->SetSubject('Offer of Admission');
     
         // Set font
-        $pdf->SetFont('dejavusans', '', 12);
+        $pdf->SetFont('helvetica', '', 12);
+        $pdf->SetMargins(25, 10, 25); // ✅ Add this line to control left/right space
 
         $pdf->setPrintHeader(false); // ✅ Disable default header
     
@@ -163,16 +165,23 @@ $facdesc  = $resultnec->a019bi;
         $html = '
         <style>
             h1 {
-                 text-align: left; font-size: 14px; 
+                 text-align: left; font-size: 13px; 
                 }
+            .headerLogo { text-align: right; }
             .headerSurat { text-align: right; font-size: 12px; }
-            .contentSurat { text-align: left;font-size: 10px; }
-            table {width: 100%; border: none; }
-            td { padding: 2px; border: none;}
+            .contentSurat { text-align: left;font-size: 12px; }
+            table {width: 100%;
+                border: none;
+                border-collapse: collapse; }
+            td { padding: 1px; border: none; vertical-align: top;}
+            .label {width: 40%;}
+            .value {width: 70%;}
         </style>
-    
+        
+        <div class="headerLogo">
+            <img src="' . $imgSrc . '" width="200px"/>
+        </div>
         <div class="headerSurat">
-            <img src="' . $imgSrc . '" width="120"/><br>
             Pusat Pengajian Siswazah | Graduate School
             <br><br>
             Our Reference: '.$modifiednosurat.'<br>
@@ -180,9 +189,9 @@ $facdesc  = $resultnec->a019bi;
         </div>
     
         <div class="contentSurat">
-            <p><strong>'.$nama.' ('.$nokp.')</strong><br>'.$alamat1.'<br>'.$poskod.','.$bandar.'<br>'.$negeridesc.'<br></p>
+            <br>'.$nama.' ('.$nokp.')<br>'.$alamat1.'<br>'.$poskod.','.$bandar.'<br>'.$negeridesc.'<br>
     
-            <p>Dear '.$greet.',</p>
+            <br><br>Dear '.$greet.',
     
             <h1>OFFER OF ADMISSION TO THE POSTGRADUATE PROGRAM</h1>
     
@@ -192,14 +201,14 @@ $facdesc  = $resultnec->a019bi;
             <p>Your offered program details are as follows:</p>
     
             <table>
-                <tr><td>Program</td><td>: '.$programdesc.'</td></tr>
-                <tr><td>NEC</td><td>: '.$necdesc.'</td></tr>
-                <tr><td>Mode</td><td>: '.$kaedahdesc.'</td></tr>
-                <tr><td>Faculty</td><td>: '.$facdesc .'</td></tr>
-                <tr><td>Method of Registration</td><td>: '.$modebelajar.'</td></tr>
-                <tr><td>Campus</td><td>: '.$lokasi.'</td></tr>
-                <tr><td>Main Supervisor</td><td>: '.$sv.'</td></tr>
-                <tr><td>Date of Offer Approval</td><td>: '.$tkhoffer.'</td></tr>
+                <tr><td class="label">Program</td><td class="value">: '.$programdesc.'</td></tr>
+                <tr><td class="label">NEC</td><td class="value">: '.$necdesc.'</td></tr>
+                <tr><td class="label">Mode</td><td class="value">: '.$kaedahdesc.'</td></tr>
+                <tr><td class="label">Faculty</td><td class="value">: '.$facdesc .'</td></tr>
+                <tr><td class="label">Method of Registration</td><td class="value">: '.$modebelajar.'</td></tr>
+                <tr><td class="label">Campus</td><td class="value">: '.$lokasi.'</td></tr>
+                <tr><td class="label">Main Supervisor</td><td class="value">: '.$sv.'</td></tr>
+                <tr><td class="label">Date of Offer Approval</td><td class="value">: '.$tkhoffer.'</td></tr>
             </table>
     
             <p>This offer is valid for twelve (12) months from the date of offer.</p>

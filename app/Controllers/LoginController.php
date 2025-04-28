@@ -163,14 +163,6 @@ class LoginController extends ResourceController
 		$emel       = $input['email'];
         $verifycode = $verification_code = bin2hex(random_bytes(16)); // Generate a random verification code
        
-        // if ($warga == '1') {
-        //     $username = $icno;
-        // } elseif ($warga == '2') {
-        //     $username = $passport;
-        // } else {
-        //     $username = 'noinput';
-        // }
-
         $db = Config::connect();
 
         $sql = "SELECT * FROM ppsdblocal.p051 WHERE p051emel = ?";
@@ -183,8 +175,8 @@ class LoginController extends ResourceController
 
         if ($existingUser) {
             // If emel exists, return error response
-            $data['success'] = 'username_taken';
-            return $this->response->setJSON($data);
+            $data['success'] = 'exist';
+           return $this->response->setJSON($data);
         }
 
        //error_log("existingUser: " . print_r($existingUser, true));
@@ -197,13 +189,6 @@ class LoginController extends ResourceController
             'password'  => 'required',
             'email'     => 'required|valid_email',
         ];
-
-    // Conditionally validate icno or passno based on stswarga value
-    // if ($warga == '1') {
-    //     $validationRule['icno'] = 'required';
-    // } elseif ($warga == '2') {
-    //     $validationRule['passno'] = 'required';
-    // }
 
     // Validate the input fields with dynamic validation rules
     if (!$this->validate($validationRule)) {

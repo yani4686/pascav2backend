@@ -306,9 +306,9 @@ var KTLogin = function() {
                     msg = "Record has been submitted.";
                     icon_flag = 'success';
                     break;
-				case 'username_taken':
+				case 'exist':
 					msg_header = "Error";
-					msg = "This username (IC/Passport) is already taken.";  // Use the message sent from the backend
+					msg = "This email is already used.";  // Use the message sent from the backend
 					icon_flag = 'error';
 					break;
                 default:
