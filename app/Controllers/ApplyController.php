@@ -317,15 +317,39 @@ p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmoh
 
         $uploadDir = WRITEPATH . 'uploads/';
          error_log('Resolved path: ' . WRITEPATH . 'uploads/');
+        $publicPath = FCPATH . 'uploads/';
+        error_log('Resolved path: ' . FCPATH . 'uploads/');
      
          // Ensure upload directory exists
          if (!is_dir($uploadDir)) {
              mkdir($uploadDir, 0777, true);
          }
 
+         if (!is_dir(dirname($publicPath))) {
+            mkdir(dirname($publicPath), 0777, true);
+        }
+
          // File upload logic
          $newNamePic = $this->handleFileUpload($this->request->getFile('file1'), $uploadDir, $kppass, 'pic');
-         $newNameFilelaluan = $this->handleFileUpload($this->request->getFile('filelalu'), $uploadDir, $kppass, 'laluan');      
+         $newNameFilelaluan = $this->handleFileUpload($this->request->getFile('filelalu'), $uploadDir, $kppass, 'laluan');    
+         
+         // Function to copy a file from private to public
+            function copyToPublic($fileName, $sourceDir, $targetDir) {
+                if ($fileName) {
+                    $source = $sourceDir . $fileName;
+                    $target = $targetDir . $fileName;
+
+                    if (!copy($source, $target)) {
+                        error_log("❌ Failed to copy $fileName to public folder.");
+                    } else {
+                        error_log("✅ Copied $fileName to public folder.");
+                    }
+                }
+            }
+
+            // Copy both files to public folder
+            copyToPublic($newNamePic, $uploadDir, $publicPath);
+            copyToPublic($newNameFilelaluan, $uploadDir, $publicPath);
          
          $newNamePic = $newNamePic ?? $existingpasspic;
          $newNameFilelaluan = $newNameFilelaluan ?? $existinguplaluan;
@@ -469,18 +493,21 @@ p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmoh
 		$cgpamasterphd      = !empty($input['cgpamasterphd']) ? $input['cgpamasterphd'] : null;
 		$masterphdcountry   = !empty($input['masterphdcountry']) ? $input['masterphdcountry'] : null;
         $exp                = !empty($input['exp']) ? $input['exp'] : null;
-        $proresearch        = !empty($input['proresearch']) ? $input['proresearch'] : null;
+        $rawInput = $input['proresearch'] ?? '';
+        list($proresearch_original, $proresearch_translated, $isTranslated) = translateIfNeeded($rawInput);      
+        $proresearch = $proresearch_translated ?: $proresearch_original;
+        //$proresearch        = !empty($input['proresearch']) ? $input['proresearch'] : null;
         $prosv              = !empty($input['prosv']) ? $input['prosv'] : null;
+        $urlart              = !empty($input['urlart']) ? $input['urlart'] : null;
         $typebi             = !empty($input['bitype']) ? $input['bitype'] : null;
         $resultbi           = !empty($input['resultaddbi']) ? $input['resultaddbi'] : null;
         $noregbi            = !empty($input['registerid']) ? $input['registerid'] : null;
         $datexm             = !empty($input['datexm']) ? $input['datexm'] : null;
-         // '{' . implode(',', $datexm) . '}'
 
         // Save data to the database    
          // Update database
     $updateQuery = $db->query("UPDATE ppsdblocal.p001 SET p001kprog = ?, p001tajuk = ?, p001penyelia = ?,p001kaedah = ?,p001modebelajar = ?,p001akadtinggi = ?,p001cgpa = ?,p001unilama=?,p001bilexp=?,p001kkampus=?,p001upworkex=?,
-    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$kampus,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi,$datexm, $p001nokp]);
+    p001knegaracgpa=?,p001cgpa2=?,p001katbi=?,p001muet=?,p001noreg=?,p001tkhexm=?,p001uppfolio =? WHERE p001nokp = ?",[$program, $proresearch,$prosv,$kaedah,$modebelajar,$highedu,$highunicgpa,$highuniname,$exp,$kampus,$newNameExpr,$highcountryuni,$cgpamasterphd,$typebi,$resultbi,$noregbi,$datexm,$urlart, $p001nokp]);
 
     if ($db->affectedRows() > 0) {
     return $this->response->setJSON(['success' => 'ok']);

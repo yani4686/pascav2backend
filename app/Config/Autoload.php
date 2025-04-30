@@ -133,7 +133,8 @@ class Autoload extends AutoloadConfig
      *
      * @var list<string>
      */
-    public $helpers = [];
+    //public $helpers = [];
+    public $helpers = ['translate'];
 
     public $libraries = ['session'];//yani test
 }

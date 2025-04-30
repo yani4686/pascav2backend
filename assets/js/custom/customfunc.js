@@ -242,6 +242,32 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
         Swal.fire("Error", "Please fill in all required fields.", "error");
         return; // Prevents AJAX call and moving to the next step
     }
+//required if meet certain condition
+    var laluanVal = $('#laluan').val();
+    var filelalu = $('#filelalu');
+    var urllaluan = $("#cpt1 a").attr("href");
+
+    var kaedah = $('#modest').val();
+    var proposal = $('#proresearch').val();
+    //alert(urllaluan);
+
+    var program = $('#kdprg').val();
+    var urlportfolio = $('#urlart').val();
+
+    if (laluanVal === 'AP' && filelalu.get(0).files.length === 0 && (urllaluan === '' || urllaluan.includes('/null'))) {
+        Swal.fire("Error", "Please upload a file for laluan 'AP'.", "error");
+        return;
+    }
+
+    if (kaedah === '8' && (!proposal)) {
+        Swal.fire("Error", "Please insert details of proposal. ", "error");
+        return;
+    }
+
+    if ((program === 'PD6005' || program === 'PD5004') && (!urlportfolio)) {
+        Swal.fire("Error", "Please insert details of Portfolio Document. ", "error");
+        return;
+    }
 
     var formData = new FormData();
 
@@ -274,6 +300,7 @@ function saveForm(actionType, button, url) {  // Accept button & URL as paramete
             let msg_header, msg, icon_flag;
 
             switch (data.success) {
+                
                 case 'ko':
                     msg_header = "Error";
                     msg = "Please try again.";

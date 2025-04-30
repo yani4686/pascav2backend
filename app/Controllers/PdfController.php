@@ -228,12 +228,48 @@ $facdesc  = $resultnec->a019bi;
         // Define the filename and path
         $filename = $nokp . '_offer.pdf';
         $savePath = WRITEPATH . 'uploads/offerLetter/' . $filename; // Ensure this directory exists and is writable
-    
-    
+      //  $publicPath = FCPATH . 'uploads/offerLetter/' . $filename;
+        // file_put_contents(FCPATH . 'uploads/offerLetter/test.txt', 'test');
+        // error_log($publicPath);
+        // error_log($savePath);
+
+        // Ensure writable folder exists
+        if (!is_dir(dirname($savePath))) {
+            mkdir(dirname($savePath), 0755, true);
+        }
+
+        // Ensure public folder exists
+        // if (!is_dir(dirname($publicPath))) {
+        //     mkdir(dirname($publicPath), 0755, true);
+        // }
+
         // Output the PDF
         $pdfOutput = $pdf->Output('OfferLetter.pdf', 'S'); // 'I' for inline display,'S' returns content instead of output
         // Save the PDF to the specified path
         $pdf->Output($savePath, 'F'); // 'F' stands for file
+
+        // Check if the file already exists and delete it
+        if (file_exists($savePath)) {
+            // Make sure the file is not locked before deleting
+            if (is_writable($savePath)) {
+                unlink($savePath);
+            } else {
+                return $this->response->setJSON([
+                    'success' => false,
+                    'message' => 'Existing file is not writable or is in use.',
+                ]);
+            }
+        }
+
+        // // Copy to public folder
+        // if (!copy($savePath, $publicPath)) {
+        //     $error = error_get_last();
+        //         return $this->response->setJSON([
+        //             'success' => false,
+        //             'message' => 'Failed to copy file to public path: ' . $publicPath,
+        //             'error' => $error['message'] ?? 'Unknown error',
+        //         ]);
+        // }
 
         // Update database
         $update = $db->table('ppsdblocal.p001')

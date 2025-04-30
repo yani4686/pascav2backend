@@ -349,7 +349,7 @@
 									<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Campus <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" id ="kampus" name ="kampus">
+                                                        <select class ="form-control selectpicker" title="Please Choose" id ="kampus" name ="kampus" required>
 															<option value ="1">Gong Badak Campus</option>
 															<option value ="2">Tembila Campus</option>
                                                             <option value ="3">Medicine Campus</option>
@@ -358,7 +358,7 @@
                                                     </div>
                                                 	<label class="col-lg-3 col-form-label">Mode Of Study <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" id ="modest" name ="modest">
+                                                        <select class ="form-control selectpicker" title="Please Choose" id ="modest" name ="modest" required>
 															<option value ="7">Coursework</option>
 															<option value ="8">Research</option>
                                                             <option value ="9">Mix-Mode</option>
@@ -368,7 +368,7 @@
 									<div class="form-group row">
                                                  	<label class="col-lg-3 col-form-label">Type of Study <span class="text-danger">*</span></label>
                                                     <div class="col-lg-4">
-                                                        <select class ="form-control selectpicker" title="Please Choose" id="typest" name="typest">
+                                                        <select class ="form-control selectpicker" title="Please Choose" id="typest" name="typest" required>
                                                             <option value="1">Part Time</option>
                                                             <option value="2">Full Time</option>
                                                         </select>
@@ -385,22 +385,34 @@
 
                                             <label class="col-lg-3 col-form-label">Programme <span class="text-danger">*</span></label>
                                                     <div class="col-lg-6">
-                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdprg" name="kdprg">
+                                                        <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="kdprg" name="kdprg" required>
                                                         </select>
                                                     </div>
 									</div>
 										
                                             <div class="form-group row" id="hidespc">
 													<label class="col-lg-3 col-form-label">Specialization <span class="text-danger">*</span></label>
-													<div class="col-lg-4">
+													<div class="col-lg-6">
                                                         <select class ="form-control selectpicker" title="Please Choose" data-live-search="true">
-                                                                <option>Guidance And Counselling</option>
-                                                                <option>Psychology And Counselling</option>
+                                                                <option value = "1">Guidance And Counselling</option>
+                                                                <option value = "2">Psychology And Counselling</option>
+                                                                <option value = "3">Educational Psychology & Counselling (Malay Writing Only)</option>
+                                                                <option value = "4">Educational Administration & Management</option>
+                                                                <option value = "5">Educational Management</option>
+                                                                <option value = "6">Educational Administration</option>
+                                                                <option value = "7">Curriculum Development in Education</option>
+                                                                <option value = "8">Strategic Management and Organizational Issues in Education</option>
+                                                                <option value = "9">Strategic Planning</option>
+                                                                <option value = "10">Sociology of Education</option>
+                                                                <option value = "11">Human Resource Development</option>
+                                                                <option value = "12">Human Resource Management</option>
+                                                                <option value = "13">Educational Technology</option>
                                                         </select>
-                                                    </div>
-                                                <span class="form-text text-muted">Note : Choose specialization only for those who choose <br> Mode of Study: RESEARCH
+														<span class="form-text text-muted">Note : Choose specialization only for those who choose <br> Mode of Study: RESEARCH <br>
                                 FACULTY OF ISLAMIC CONTEMPORARY STUDIES<br>(1) MASTER OF EDUCATION - Teacher training and education sciences<br>(2) DOCTOR OF PHILOSOPHY - Teacher training and education sciences                             
-												</span>                            
+												</span>  
+                                                    </div>
+                                                                          
                                             </div>
 
                                 <div class="separator separator-dashed my-6"></div>
@@ -410,7 +422,7 @@
                                                 <div class="form-group row">
 														<label class="col-lg-2 col-form-label">Highest Tertiary Education <span class="text-danger">*</span></label>
 														<div class="col-lg-4">
-															<select class ="form-control selectpicker" title="Please Choose" id="highedu" name="highedu">
+															<select class ="form-control selectpicker" title="Please Choose" id="highedu" name="highedu" required>
 																<option value="1">BACHELOR'S DEGREE/Equivalent</option>
 																<option value="2">MASTER'S DEGREE/Equivalent</option>
 																<option value="3">DIPLOMA</option>
@@ -421,17 +433,17 @@
                                                 <div class="form-group row">
 														<label class="col-lg-2 col-form-label">Awarding University (Bachelor/equivalent) <font color="red">*</font></label>
 														<div class="col-lg-6">
-                                                            <input type="text" class="form-control" name="highuni" id="highuni"/>
+                                                            <input type="text" class="form-control" name="highuni" id="highuni" oninput="this.value = this.value.toUpperCase()"/>
                                                         </div>
                                                 		<label class="col-lg-3 col-form-label">Class/CGPA <span class="text-danger">*</span></label>
                                                     	<div class="col-lg-3">
-                                                            <input type="text" class="form-control" name="highcgpa" id="highcgpa"/>
+                                                            <input type="text" class="form-control" name="highcgpa" id="highcgpa" required/>
                                                         </div><img style="margin:5px" id="info-mdl-6" src="pascav2/assets/images/info-icon-small.png" width="20" height="20" data-toggle="tooltip" title="Cumulative Grade Point Average Equivalence (CGPA) guidelines">
                                                 </div>
                                                 <div class="form-group row">
 														<label class="col-lg-2 col-form-label">Awarding Country <span class="text-danger">*</span></label>
 														<div class="col-lg-4">
-                                                            <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="highunicountry" name="highunicountry">
+                                                            <select class ="form-control selectpicker" title="Please Choose" data-live-search="true" id="highunicountry" name="highunicountry" required>
                                                             </select>
                                                         </div>
                                                 </div>
@@ -572,6 +584,8 @@
 												<button class="btn btn-primary saveBtn1 pull-right m-1" id="btnstep2sv" type="button" data-inline="true" data-action="save">Save</button>
 											</div>
 										</div>
+
+										<div class="se-pre-con"></div>
 									<!--  -->                                           
 									</div>
 									</div>

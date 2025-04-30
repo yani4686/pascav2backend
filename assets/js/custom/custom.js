@@ -561,17 +561,7 @@ $.ajax({
         setSelectValue("#kdnegerihome", result.p001knegerit);
         setSelectValue("#kdnegarahome", result.p001alamatnegt);
         setSelectValue("#kdtaja", result.p001kpenaja);
- 
-         $("#cpt1 a").attr({
-             'href': urldisplaydoclaluan,
-             'target': '_blank' // Ensures the link opens in a new tab
-         });
- 
-         $("#cpt2 a").attr({
-             'href': urldisplayworkexp,
-             'target': '_blank' // Ensures the link opens in a new tab
-         });
-   
+
    //  setTimeout(function () {
     //  var profileValue = result.p001kpenaja ? String(result.p001kpenaja).trim() : "";
     //  var exists = $("#kdtaja option[value='" + profileValue + "']").length > 0;
@@ -736,6 +726,16 @@ $.ajax({
         urldisplayeng = url + upbi;
         urldisplaydoclaluan = url + doclaluan;
         urldisplayworkexp = url + docworkexp;
+
+        $("#cpt1 a").attr({
+            'href': urldisplaydoclaluan,
+            'target': '_blank' // Ensures the link opens in a new tab
+        });
+
+        $("#cpt2 a").attr({
+            'href': urldisplayworkexp,
+            'target': '_blank' // Ensures the link opens in a new tab
+        });
 
         if (image) {
             $('#previewImage').attr('src', urldisplaypic).show();
