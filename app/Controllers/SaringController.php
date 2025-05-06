@@ -65,9 +65,16 @@ class SaringController extends ResourceController
 
         // log_message("debug: " . $selectprogram);
 
-        $selectMohon= $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when '7' then 'Coursework' when '8' then 'Research' when '9' then 'Mix-Mode' end as kaedah, case p001modebelajar when '1' then 'Full Time' when '2' then 'Park Time' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
-        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt 
-        from ppsdblocal.p001");
+        $selectMohon= $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,
+        case p001kaedah 
+        when '7' then 'Coursework' 
+        when '8' then 'Research' 
+        when '9' then 'Mix-Mode' end as kaedah, 
+        case p001modebelajar 
+        when '1' then 'Full Time' 
+        when '2' then 'Park Time' end as modebelajar,p001modebelajar,p001tajuk,p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,p001alamat1,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,p001notel,p001nohp,
+        p001kcacat,p001akadtinggi,p001kpenaja,p001tkhpohon,p001status,p001upgambar,p001uppassport,p001cgpa,p001unilama,p001bilexp,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,p001ejenname,p001ejenemail,p001laluanmohon,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001alamatneg,p001alamatnegt,p001notelt,p001nohpt
+        from ppsdblocal.p001 where p001status != ''");
      
         $result = $selectMohon->getResult();
 
