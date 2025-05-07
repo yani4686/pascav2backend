@@ -20,7 +20,7 @@ class ApplyController extends ResourceController
     {
         $db = Config::connect();
 
-        $Query = $db->query("SELECT p020kprog,p020namaprogbi,a019bi,z054bnecdetail,p020kaedah  FROM ppsdblocal.p020,ppsdblocal.a019,ppsdblocal.p020x,ppsdblocal.z054b  
+        $Query = $db->query("SELECT p020kprog,p020namaprogbi,a019bi,trim(z054bnecdetail) as z054bnecdetail,p020kaedah  FROM ppsdblocal.p020,ppsdblocal.a019,ppsdblocal.p020x,ppsdblocal.z054b  
         where p020kprog=p020xkprog and p020xnec=z054bknecdetail and a019kbhg = p020kfakulti --and p020kfakulti='' AND p020kaedah=''
         and (p020kodmqa ='1' or p020kodmqa ='2') AND p020namaprogbi IS NOT NULL order by p020kfakulti,p020kprog");
         $result = $Query->getResult();
