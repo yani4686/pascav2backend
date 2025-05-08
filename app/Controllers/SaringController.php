@@ -98,11 +98,11 @@ class SaringController extends ResourceController
 
         $idpemohon = $id;
 
-        $selectMohon= $db->query("SELECT p001nokp,p001nama,p001kprog,p001kaedah,case p001kaedah when '7' then 'Coursework' when '8' then 'Research' when '9' then 'Mix-Mode' end as kaedah, 
-case p001modebelajar when '1' then 'Full Time' when '2' then 'Park Time' end as modebelajar,p001modebelajar,p001tajuk,
+        $selectMohon= $db->query("SELECT p001nokp,p001nama,trim(p001kprog) as p001kprog,p001kaedah,case p001kaedah when '7' then 'Coursework' when '8' then 'Research' when '9' then 'Mix-Mode' end as kaedah, 
+case p001modebelajar when '1' then 'Full Time' when '2' then 'Part Time' end as modebelajar,p001modebelajar,p001tajuk,
 p001penyelia,p001tkhlahir,p001kwarga,p001kwarganegara,case p001kwarganegara when '1' then 'Malaysia' when '2' then 'Non Malaysia' when '3' then 'PR' end as ktrgnstatwarga,
 p001alamat1,concat(p001alamat1,' ',p001alamat2,' ',p001bandar,' ',p001poskod) as almtsemasa,p001alamat2,p001bandar,p001knegeri,p001poskod,p001alamatt1,p001alamatt2,p001bandart,p001knegerit,p001poskodt,concat(p001alamatt1,' ',p001alamatt2,' ',p001bandart,' ',p001poskodt) as almttetap,p001notel,
-p001nohp,p001kcacat,z13a.z013aketerangan,p001akadtinggi,case p001akadtinggi when '1' then 'Bachelor' when '2' then 'Master Degree' when '3' then 'Diploma' end as akadtggi,p001kpenaja,p001tkhpohon,p001status,CASE 
+p001nohp,p001email,p001kcacat,z13a.z013aketerangan,p001akadtinggi,case p001akadtinggi when '1' then 'Bachelor' when '2' then 'Master Degree' when '3' then 'Diploma' end as akadtggi,trim(p001kpenaja) as p001kpenaja,p001tkhpohon,p001status,CASE 
     WHEN p001status = '' THEN 'Draft'
     WHEN p001status IS NULL THEN 'Draft'
     WHEN p001status = '0' THEN 'New'
@@ -112,8 +112,8 @@ p001nohp,p001kcacat,z13a.z013aketerangan,p001akadtinggi,case p001akadtinggi when
     WHEN p001status = '4' THEN 'Pindah Fakulti'
     WHEN p001status = '5' THEN 'Approved(Faculty2)'
     WHEN p001status = '6' THEN 'Gagal Fakulti2'
-END AS statdesc,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,concat('http://localhost/pascav2/public/uploads/',p001upmuet) as urlupbi,p001cgpa,p001unilama,p001bilexp,p001catatan,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
-p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,
+END AS statdesc,concat('http://localhost/pascav2/public/uploads/',p001upgambar) as urlgmbr,p001upgambar,concat('http://localhost/pascav2/public/uploads/',p001uppassport) as urlnokppass,p001uppassport,concat('http://localhost/pascav2/public/uploads/',p001uptrans) as urlcert,concat('http://localhost/pascav2/public/uploads/',p001upproposal) as urlpro,concat('http://localhost/pascav2/public/uploads/',p001upmuet) as urlupbi,p001cgpa,p001unilama,p001bilexp,p001catatan,(select c028keterangan from ppsdblocal.c028 where c028kod=p001knegaracgpa) as negunilama,p001knegaracgpa,p001cgpa2,p001knegaracgpa2,p001unilama2,
+p001ejenname,p001ejenemail,case p001laluanmohon when 'SP' then 'Normal' when 'AP' then 'APEL.A Qualification' end as laluan,p001laluanmohon,case p001setujutransfer when '1' then 'Pemohon bersetuju untuk menerima tawaran program oleh pihak UniSZA yang bersesuai dengan permohonan' when '0' then 'Pemohon kekal untuk pilihan sedia ada' end as setujutransfer,p001setujutransfer,p001nooku,p001faxno,p001offno,p001faxnot,p001offnot,p001amthouse,
 p001alamatneg,p001alamatnegt,p001notelt,p001nohpt,p001muet,CASE  
 WHEN p001katbi = 'MT' THEN 'MUET' 
 WHEN p001katbi = 'IE' THEN 'IELTS'
